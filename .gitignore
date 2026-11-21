@@ -1,0 +1,29 @@
+node_modules
+dist
+.DS_Store
+.env
+.env.local
+
+# Remotion
+out
+.remotion
+
+# Render output: frames are intermediate, MP4s are rebuildable from source.
+exports/_frames-*
+exports/*.mp4
+exports/*.mov
+exports/*.png
+exports/*.jpg
+
+# Generated media can be large. Keep the folders, ignore heavy binaries by default.
+# Approved, final assets that the episode depends on should be force-added:
+#   git add -f assets/characters/mallanna-front.png
+audio/*.wav
+audio/*.mp3
+audio/*.m4a
+assets/**/*.png
+assets/**/*.jpg
+assets/**/*.jpeg
+assets/**/*.webp
+assets/**/*.mp4
+!**/.gitkeep
