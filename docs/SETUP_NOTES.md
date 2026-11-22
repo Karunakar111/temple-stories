@@ -93,3 +93,24 @@ An individual creator qualifies for the **free licence**, so renders pass
 If this channel is ever run by a company of 4+ people, read
 https://www.remotion.dev/docs/license and buy a licence. **Karunakar should confirm
 this applies to him.**
+
+## Timing: the waveform is the clock
+
+`scripts/timing.py <part>` derives shot boundaries from the real narration instead of
+from estimates. It decodes the audio to a 4 kHz mono envelope, finds every pause the
+voice actually leaves, then walks the shots in order — each taking its proportional share
+of the *remaining* time based on the words *remaining* — and snaps each boundary to the
+nearest real pause.
+
+Two things worth knowing:
+
+- **`silencedetect` is useless on this audio.** The generated speech has a continuous
+  noise floor, so even at −50 dB it reports zero pauses. The RMS-envelope approach finds
+  74 and 80 real phrase gaps in the two parts.
+- **The chant needs an override.** It is four words delivered slowly, so proportional
+  allocation starves it. `OVERRIDES` in the script sets its boundary from the measured
+  pause map. Any boundary that sounds wrong after a preview render should be fixed there
+  rather than by arguing with the heuristic.
+
+Measured for episode 1: Part 1 **67.68 s / 2030 frames**, Part 2 **70.88 s / 2126 frames**,
+both read at **~2.0 Telugu words per second**.

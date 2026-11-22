@@ -35,9 +35,16 @@ Times are estimates for episode 1 and should fall sharply by episode 3.
       what is on screen | asset needed.
 - [ ] Write for the **ear**, not the page. Read it aloud, out loud, to a wall.
 - [ ] First 3 seconds must earn the next 10. No "Namaskaram, welcome to the channel."
-- [ ] Target word count ≈ **runtime in seconds × 1.5** for Telugu narration (Telugu words
-      are long; English runs nearer × 2). Then cut 10%. Silence over a good image is not
-      dead air; it is the image doing its job. Always confirm against the real audio.
+- [ ] Target word count ≈ **runtime in seconds × 2.0** for Telugu narration. **Measured**
+      on episode 1: the cloned voice reads Telugu at **1.99–2.00 words/second** across both
+      parts. (Earlier guesses of ÷2.5 and ×1.5 were both wrong — ÷2.5 would have produced a
+      32-word script for 80 seconds, and ×1.5 over-ran by a third.) Silence over a good
+      image is not dead air; it is the image doing its job.
+- [ ] **Never trust the estimate.** Generate the narration, then run
+      `python3 scripts/timing.py <part>` — it measures the real waveform, finds the pauses
+      the voice actually leaves, and writes the shot boundaries to
+      `src/episodes/*-timing.json`. The composition reads that file. Estimates are for
+      writing; the waveform is for building.
 - [ ] Name the communities and people correctly. Check every proper noun twice.
 - [ ] Mark any line that depends on a **[?]** claim and resolve it or cut it.
 
