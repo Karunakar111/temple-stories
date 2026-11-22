@@ -337,3 +337,106 @@ and a different kind of work — not something to fake from the web.
 - [తెలుగువారి జానపద కళారూపాలు / బగ్గు గొల్లల ఒగ్గు కథలు — Telugu Wikisource](https://te.wikisource.org/wiki/తెలుగువారి_జానపద_కళారూపాలు/బగ్గు_గొల్లల_ఒగ్గు_కథలు)
 - [ఒగ్గు కళను నెగ్గించింది — Namasthe Telangana](https://www.ntnews.com/zindagi/jamma-mallari-is-one-of-the-finest-and-the-only-female-oggu-katha-artist-2024951)
 - [తరాల గాథ.. ఒగ్గు కథ! — Namasthe Telangana](https://www.ntnews.com/sunday/తరాల-గాథ-ఒగ్గు-కథ-178487)
+
+---
+
+# Third research pass — the characters (2026-11-22)
+
+Karunakar: *"people are interested in the back story — who and why they built it, and who
+are those characters."* And: *"we don't have to be sure about the facts, we can say
+స్థలపురాణం ప్రకారం / స్థానికంగా చెప్పుకునే కథ ప్రకారం."*
+
+**He is right, and the evidence proves it.** This pass found three *different* accounts of
+Mallanna's origin, and a wife that only one community's telling mentions. That is not a
+research failure — that is what a living oral tradition looks like. The honest way to
+present it is exactly the frame he proposed. **Adopting it.**
+
+> **Framing rule from here on.** Open with the door — *"ఇక్కడి స్థలపురాణం ప్రకారం…"* or
+> *"స్థానికంగా చెప్పుకునే కథ ప్రకారం…"* — then tell the story with full confidence and
+> full colour. Say it once, not every line. Where two communities tell it differently,
+> say so: that difference is itself the most interesting thing about this god.
+
+## 15. CONFIRMED by Karunakar — the powder goes to the fields **[A]**
+
+Previously [B] on one *Sakshi* feature. Karunakar confirms first-hand. **This is now solid
+enough to build an episode on.**
+
+## 16. The idol is termite-mound clay — పుట్టమట్టి **[B]**
+
+> *"సుమారు ఐదు వందల సంవత్సరాల క్రితమే దట్టమైన అడవుల మధ్య ఈ మృత్తికా విగ్రహాన్ని"*
+> *About five hundred years ago, this clay idol, in the middle of dense forest.*
+
+Not just "clay" — **పుట్టమట్టి, soil from a termite mound.** This matters: Sontheimer
+independently records that Khandoba across the Deccan is associated with **termite
+mounds**. Local tradition and outside scholarship arrive at the same thing. Under the
+sthala-puranam frame this can be told as it is told.
+
+## 17. Who Mallanna is — told three ways **[B/C]**
+
+| Telling | Origin |
+|---|---|
+| Kuruma folklore (Wikisource) | Shiva's **first** sweat drop became **Beerappa**; the **second** became **Mallanna** |
+| Kuruma community account | Son of **Adireddi and Neelima Devi**, born by the grace of Parameswara |
+| Temple/Veerashaiva register | An **incarnation of Shiva**; Mallikarjuna |
+
+**[A]** Also called **Mailaru Devudu**. Caste deity of the pastoral communities. He came
+down, the tellings say, to **protect cattle in the forest**.
+**[A]** Associated hill shrines: Einavolu, Komaravelli, Odela, Katta Mallanna, Jagityala,
+Parvatala, Srisailam, Egulagunta.
+**[A]** A distinction I had flattened: **Gollas worship Mallanna; Kurumas worship
+Beerappa.** They are brothers from the same sweat.
+
+## 18. The wives — and a third one I had missed
+
+**Golla Ketamma [A]** — daughter of the **Yadava / Golla** community.
+
+**Balija Medalamma [A]** — daughter of the **Linga Balija** community. Married after
+Mallanna met **conditions set by her brothers**:
+> *"మేడాలమ్మను ఆమె సోదరులు పెట్టిన షరతులకు అంగీకరించి మల్లన్న వివాహం చేసుకున్నాడు"*
+
+**[B] And she is said to be an avatar of Bhramaramba Devi** — the goddess of Srisailam.
+Which quietly ties Komuravelli's Mallikarjuna to Srisailam's Mallikarjuna. A devotee would
+feel that connection.
+
+**Bapana Ratnangi [C] — a Brahmin wife, in the Kuruma telling only.** And the detail that
+makes it matter: **the Oggu Pujaris claim descent from her line.** Their right to be the
+god's priests is written into the god's marriage. Only one source — but as a *story*,
+under the sthala-puranam frame, it is the best single thing found in three passes.
+
+## 19. The Oggu priests, concretely **[A]**
+
+- **Hereditary surnames**: Majjiga, **Bandari**, Are, Sera, Marate.
+- **Two kinds**: **Jaggollu** (temple-based, play the *jaggu*) and **Kurmollu**
+  (travelling performers).
+- **Their role in a Golla wedding** begins **three days before**: *maila polu* (the bride's
+  ritual preparation), the drum procession, then **Nagavelli** at the wedding itself —
+  Surya Namaskaram and songs of **Mallanna's own marriage** — and they return **eight days
+  later** for *gadapa kadagatam*, washing the threshold.
+
+So when the texts say no Golla/Kuruma wedding happens until the Mallanna story is told,
+this is the shape of it. A family's wedding is built around the god's wedding.
+
+**[A]** Mallanna Panduga is given here as **Kartika Amavasya → Ugadi** — longer than the
+Sankranti→Ugadi window in §4. **[?] Both are probably true at different scales.**
+
+## 20. Structure: the katha has six kandas **[B]**
+
+Academic description of Mallanna Katha: an oral caste myth in **six episodes (kandas)**.
+**[?] Get the six.** That is the episode list for a series, handed over ready-made.
+
+## 21. Where the full story actually is — and it is not on the web
+
+Three passes, and no source on the open web carries the full narrative. That is consistent
+rather than disappointing: **the story has no written text.** To get it properly:
+
+1. **Recorded Oggu Katha performances** — the primary source, and they exist on video.
+2. **Folklore scholarship** — Shodhganga theses and Telugu folklore collections that
+   transcribe the kandas. Not reachable through plain web search; needs the repository.
+3. **The performers themselves** — Oggu Pujaris at the temple during jatara.
+4. **Karunakar's own family.** Cheapest and best. Ask.
+
+**New sources**
+- [Komuravelli Mallanna temple history & rituals — telugu13.com](https://www.telugu13.com/2026/06/komuravelli-mallanna-temple-history-jatara-rituals.html)
+- [Kurumas: Oggu Katha — kurumashistory.blogspot.com](http://kurumashistory.blogspot.com/2015/04/kurumas-oggu-katha.html)
+- [కొమురవెల్లి మల్లన్నకు కోటిదండాలు — Sakshi](https://www.sakshi.com/news/family/komuravelli-mallanna-196283)
+- [Temple Stories and History: Komaravelli Mallanna](http://templestoriesandhistory.blogspot.com/2014/01/komaravelli-mallanna.html)
