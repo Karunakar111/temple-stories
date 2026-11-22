@@ -69,17 +69,23 @@ channel's format, and it is repeatable at any temple.
 
 ---
 
-## 4. The four recurring devices
+## 4. The five recurring devices
 
-1. **The location pin.** Identical design every episode, inside the first 5 seconds:
+1. **The chant.** Every episode opens on the temple's own cry, over black, before any
+   picture — and closes on it, alone on screen, so it is the easiest thing in the video to
+   copy into a comment. For Komuravelli: **"కొమురవెల్లి మల్లన్నకు — కోటి దండాలు!"** Use what
+   devotees actually shout at *that* temple, not a generic *జై*. A real chant names the
+   deity and often the place, which means the audio hook and the location land together.
+2. **The location pin — and say it out loud.** Spoken in the narration *and* shown as a
+   card. Most people hear a reel before they read it; the card is for sound-off. Identical design every episode, inside the first 5 seconds:
    **temple · district · distance from Hyderabad.** This is the fix for "people must
    understand which temple." It is a card, not a sentence of narration — it costs no
    narration time and it is readable with sound off.
-2. **The open-loop question** in the hook, always about a physical object or act.
-3. **The payoff line** always returning to that object.
-4. **The village question** at the end, always asking for the village name.
+3. **The open-loop question** in the hook, always about a physical object or act.
+4. **The payoff line** always returning to that object.
+5. **The village question** at the end, always asking for the village name.
 
-Keep all four identical in position and design across episodes. The repetition *is* the
+Keep all five identical in position and design across episodes. The repetition *is* the
 brand — a viewer should recognise the format two seconds in.
 
 ---
@@ -114,7 +120,8 @@ pay off inside the episode too.
 
 ## 7. Rules
 
-- **Location in the first 5 seconds, every time.** Never save it for the end.
+- **Chant first, location next — both inside the first 16 seconds, every time.** Never
+  save the location for the end, and never let it be a card alone.
 - **One complete story per episode.** Never a catalogue of facts. If it can't be told
   whole, it's two episodes.
 - **No dates, budgets, or administration.** Nobody cares.
