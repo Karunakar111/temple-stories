@@ -15,6 +15,8 @@ import { PALETTE } from "../design/palette";
 import { LocationPin } from "../components/LocationPin";
 import { Subtitle } from "../components/Subtitle";
 import { ShotPlaceholder } from "../components/ShotPlaceholder";
+import { Scene } from "../components/Scene";
+import { SHOTS, SECOND_IMAGE } from "./shots";
 
 export type Timing = typeof part1;
 
@@ -63,6 +65,7 @@ const Shot: React.FC<{
   part: 1 | 2;
 }> = ({ index, durationInFrames, telugu, english, part }) => {
   const frame = useCurrentFrame();
+  const shot = SHOTS[part][index - 1];
   const opacity = interpolate(
     frame,
     [0, FADE, durationInFrames - FADE, durationInFrames],
@@ -72,7 +75,13 @@ const Shot: React.FC<{
 
   return (
     <AbsoluteFill style={{ opacity }}>
-      <ShotPlaceholder index={index} part={part} telugu={telugu} />
+      <Scene
+        image={shot?.image ?? null}
+        move={shot?.move ?? "still"}
+        overscan={shot?.overscan}
+        second={SECOND_IMAGE[`${part}-${index}`]}
+        fallback={<ShotPlaceholder index={index} part={part} telugu={telugu} />}
+      />
       <Subtitle text={english} />
     </AbsoluteFill>
   );
