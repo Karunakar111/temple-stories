@@ -113,3 +113,47 @@ commenting on it. But it is a real fork and Karunakar decides.
 Keep the rendering-rules, palette and no-text blocks **byte-identical** across every
 generation; change only the subject paragraph. That consistency is what makes the series
 look like one thing.
+
+---
+
+## The real murti — iconography is locked to this
+
+Karunakar sent a photograph of the actual Komuravelli idol (2026-11-22). **Generated
+Mallanna must be recognisable as *this* deity**, not a generic Shiva. Devotees know this
+face. Observed from the photograph:
+
+| Feature | Detail |
+|---|---|
+| **Moustache** | **Huge upturned handlebar moustache.** This is his single most identifying feature. Non-negotiable in every frame. |
+| **Face** | Deep blue, broad, fierce. Large round wide-open eyes. Frontal. |
+| **Crown** | Tall ornate golden *kireetam*, wide and layered, with side flares at the ears. |
+| **Body** | Seated. Bright green torso with heavy gold ornament. Not a slender figure — broad and solid. |
+| **Garlands** | Heavy marigold — saturated yellow and orange — layered over everything. |
+| **Consorts** | One either side, smaller, bright-coloured. Matches Ketamma and Medalamma flanking him. |
+| **At his feet** | Large demon heads at the base, and a hooded serpent to one side. |
+| **Setting** | Set into a rock recess in the hill — the cave face is visible behind the idol. |
+| **Register** | Painted clay folk idol. Bright, saturated, unembarrassed colour. Turquoise, green, magenta, yellow, vermillion. |
+
+### What this changes
+
+**1. Mallanna's character design is now fixed.** Blue face, enormous handlebar moustache,
+tall gold crown, broad seated bearing, marigold. Any Mallanna without the moustache is
+wrong, however beautiful.
+
+**2. Palette gets two registers, not one.** The muted amber/indigo scheme above is right
+for the *story* — forest, night, the chase, the sacrifice. But the temple and jatara shots
+should use **the real murti's bright folk palette**: saturated turquoise, green, magenta,
+marigold yellow, vermillion. That contrast is useful, not a problem:
+
+> **The story is remembered in dusk colours. The present day is bright.**
+
+So Part 2's return to the hill and the final jatara shots shift into the loud, living
+colour of the actual temple — and that shift is itself the point. The past is a story; the
+turmeric in your hand is now.
+
+**3. The rock recess matters.** He is set into the hill, not standing on it. Shots of the
+shrine should show the cave face behind him.
+
+**4. The demon heads and the serpent at his feet** are part of how he is actually depicted
+and should appear in the shrine shots, even though this episode's story doesn't tell them.
+They are a visible promise of other episodes.
