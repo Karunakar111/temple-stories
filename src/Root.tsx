@@ -6,6 +6,7 @@ import part2 from "./episodes/01-part2-timing.json";
 import { ProofShot } from "./three/ProofShot";
 import { PatnamDraw } from "./components/PatnamDraw";
 import { Ep01Open } from "./episodes/Ep01Open";
+import { Ep01Part1 as Ep01Part1Drawn } from "./episodes/Ep01Part1";
 import p1t from "./episodes/01-part1-timing.json";
 
 export const RemotionRoot: React.FC = () => {
@@ -49,6 +50,14 @@ export const RemotionRoot: React.FC = () => {
         id="Ep01Open"
         component={Ep01Open}
         durationInFrames={p1t.shots[0].durationInFrames + p1t.shots[1].durationInFrames}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Ep01Part1Drawn"
+        component={Ep01Part1Drawn}
+        durationInFrames={p1t.durationInFrames}
         fps={30}
         width={1080}
         height={1920}

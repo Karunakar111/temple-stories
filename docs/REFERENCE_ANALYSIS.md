@@ -94,3 +94,47 @@ Paper Desk, Laptop Reveal, Notifications, Iso Flow.
 Real 3D is still available to us where it genuinely helps: `src/three/HillFlyover.tsx`
 proves a procedural low-poly hill with a flying camera and walking pilgrims renders fine
 here, with no models and no credits.
+
+---
+
+## What code-drawing actually turned out to be good at (2026-11-22)
+
+Built all nine shots of Part 1 in code and rendered them. The result splits cleanly,
+and the split is worth recording because it should drive every future episode.
+
+### Works, and works well
+
+- **Maps and routes.** The Hyderabad → Siddipet → Komuravelli open is the strongest
+  thing in the part. Precise, legible, and it does the series' job of saying *where*.
+- **Counters and diagrams.** 85 కి.మీ. climbing, 400 రోజులు climbing. Cheap and effective.
+- **Landscape and architecture.** The dusk hill, the termite mound, the garden rows, the
+  stone chamber. Flat geometric scenery is easy to author and reads immediately.
+- **Type as an actor.** The chant, the condition card, the closing question.
+- **The patnam.** Still the best thing made so far.
+- **Silhouettes and motion.** The journey arc with the horse riding its head.
+
+### Does not work
+
+- **Organic creatures.** Three attempts at the five-headed serpent produced, in order:
+  a squiggle, green balloons on stalks, and detached alien heads. 
+- **Hands.** The hand holding the bandari renders as a blue blob at every scale tried.
+- **Anything needing anatomy.** Human figures only became acceptable once they were
+  rebuilt as outlined folk figures with flat fills — and "acceptable" is the ceiling.
+
+### Why
+
+Authoring organic form as SVG bezier coordinates, without seeing the canvas while
+drawing, is slow and unreliable. Geometry, type and diagrams have no such problem
+because they are specified by numbers that mean what they say.
+
+### The direction this points to
+
+**Draw the whole episode in the patnam's language.** Not "illustrations rendered in
+code" — *powder-line folk motifs*, which is the one creature register that has actually
+worked, and which is authentic to this temple besides. The serpent appears the way the
+patnam draws a serpent. The horse the way the patnam draws a horse. Everything on flat
+dark ground in turmeric, vermillion, green and rice-flour line.
+
+That turns the limitation into the identity: a series drawn the way its own temple
+draws, in the powder its own story is about. Nothing else in Telugu devotional content
+looks like that, and it is the only register where the creatures have come out right.
