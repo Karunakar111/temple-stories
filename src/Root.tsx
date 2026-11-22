@@ -6,6 +6,7 @@ import part2 from "./episodes/01-part2-timing.json";
 import { ProofShot } from "./three/ProofShot";
 import { PatnamDraw } from "./components/PatnamDraw";
 import { Sample } from "./three/Sample";
+import { CharacterStill, WalkTest } from "./three/CharacterTest";
 import { Ep01Open } from "./episodes/Ep01Open";
 import { Ep01Part1 as Ep01Part1Drawn } from "./episodes/Ep01Part1";
 import p1t from "./episodes/01-part1-timing.json";
@@ -71,6 +72,10 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
       />
+      <Composition id="CharacterStill" component={CharacterStill}
+        durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="WalkTest" component={WalkTest}
+        durationInFrames={60} fps={30} width={1080} height={1920} />
     </>
   );
 };

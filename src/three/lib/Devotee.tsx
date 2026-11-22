@@ -1,6 +1,8 @@
 import React from "react";
 import * as THREE from "three";
 import { PALETTE } from "../../design/palette";
+import { Head } from "./Head";
+import { SimpleHand } from "./Hands";
 
 /**
  * A walking devotee, rigged procedurally.
@@ -79,9 +81,28 @@ export const Devotee: React.FC<DevoteeProps> = ({
       <group position={[0, 0.92 + bob, 0]} rotation={[0, 0, sway]}>
         {/* pelvis */}
         <group rotation={[0, pelvisTwist, 0]}>
-          <mesh castShadow>
-            <capsuleGeometry args={[0.15, 0.1, 4, 8]} />
-            <meshStandardMaterial color={hex(cloth)} roughness={0.9} />
+          {/* dhoti — a lathed skirt with a hem, which is what gives the silhouette */}
+          <mesh castShadow receiveShadow position={[0, -0.02, 0]}>
+            <latheGeometry
+              args={[
+                [
+                  new THREE.Vector2(0.02, 0.1),
+                  new THREE.Vector2(0.15, 0.08),
+                  new THREE.Vector2(0.165, -0.02),
+                  new THREE.Vector2(0.185, -0.16),
+                  new THREE.Vector2(0.2, -0.3),
+                  new THREE.Vector2(0.192, -0.33),
+                  new THREE.Vector2(0.02, -0.33),
+                ],
+                18,
+              ]}
+            />
+            <meshStandardMaterial color={hex(cloth)} roughness={0.95} side={THREE.DoubleSide} />
+          </mesh>
+          {/* waist cord */}
+          <mesh position={[0, 0.06, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow>
+            <torusGeometry args={[0.152, 0.012, 6, 20]} />
+            <meshStandardMaterial color={hex(PALETTE.vermillion)} roughness={1} />
           </mesh>
 
           {/* legs */}
@@ -107,10 +128,33 @@ export const Devotee: React.FC<DevoteeProps> = ({
 
         {/* torso */}
         <group position={[0, 0.3, 0]} rotation={[0.06, chestTwist, 0]}>
-          <mesh castShadow>
-            <capsuleGeometry args={[0.145, 0.32, 4, 12]} />
-            <meshStandardMaterial color={hex(cloth)} roughness={0.9} />
+          {/* chest — lathed profile so it tapers from shoulder to waist like a body,
+              not a capsule. Points are (radius, height) up the torso. */}
+          <mesh castShadow receiveShadow>
+            <latheGeometry
+              args={[
+                [
+                  new THREE.Vector2(0.015, -0.2),
+                  new THREE.Vector2(0.125, -0.18),
+                  new THREE.Vector2(0.138, -0.08),
+                  new THREE.Vector2(0.142, 0.02),
+                  new THREE.Vector2(0.168, 0.12),
+                  new THREE.Vector2(0.158, 0.2),
+                  new THREE.Vector2(0.075, 0.24),
+                  new THREE.Vector2(0.02, 0.25),
+                ],
+                20,
+              ]}
+            />
+            <meshStandardMaterial color={hex(cloth)} roughness={0.92} side={THREE.DoubleSide} />
           </mesh>
+          {/* shoulders */}
+          {[-0.155, 0.155].map((x, i) => (
+            <mesh key={i} position={[x, 0.13, 0]} castShadow scale={[1, 0.8, 1]}>
+              <sphereGeometry args={[0.062, 12, 10]} />
+              <meshStandardMaterial color={hex(cloth)} roughness={0.92} />
+            </mesh>
+          ))}
           {/* shawl over one shoulder — reads instantly as a pilgrim */}
           <mesh position={[0.08, 0.02, 0.02]} rotation={[0, 0, -0.34]} castShadow>
             <boxGeometry args={[0.055, 0.5, 0.26]} />
@@ -122,28 +166,23 @@ export const Devotee: React.FC<DevoteeProps> = ({
             <group key={i} position={[x, 0.16, 0]} rotation={[arm, 0, i ? -0.1 : 0.1]}>
               <Limb length={0.3} radius={0.052} color={skin}>
                 <group rotation={[-elbow, 0, 0]}>
-                  <Limb length={0.29} radius={0.045} color={skin} />
+                  <Limb length={0.29} radius={0.045} color={skin}>
+                    <SimpleHand skin={skin} curl={0.45} />
+                  </Limb>
                 </group>
               </Limb>
             </group>
           ))}
 
+          {/* neck */}
+          <mesh position={[0, 0.235, 0]} castShadow>
+            <cylinderGeometry args={[0.042, 0.05, 0.07, 10]} />
+            <meshStandardMaterial color={hex(skin)} roughness={0.75} />
+          </mesh>
+
           {/* head */}
-          <group position={[0, 0.32, 0]} rotation={[-0.04, -chestTwist * 0.5, 0]}>
-            <mesh castShadow>
-              <capsuleGeometry args={[0.105, 0.07, 4, 10]} />
-              <meshStandardMaterial color={hex(skin)} roughness={0.8} />
-            </mesh>
-            {/* hair */}
-            <mesh position={[0, 0.022, -0.008]} castShadow>
-              <sphereGeometry args={[0.1, 14, 10, 0, Math.PI * 2, 0, Math.PI * 0.5]} />
-              <meshStandardMaterial color={hex("#17120f")} roughness={1} />
-            </mesh>
-            {/* turmeric mark on the forehead */}
-            <mesh position={[0, 0.02, 0.1]}>
-              <circleGeometry args={[0.016, 10]} />
-              <meshStandardMaterial color={hex(PALETTE.turmeric)} emissive={hex(PALETTE.turmeric)} emissiveIntensity={0.3} />
-            </mesh>
+          <group position={[0, 0.345, 0]} rotation={[-0.04, -chestTwist * 0.5, 0]}>
+            <Head skin={skin} />
           </group>
 
           {carryPot ? (
