@@ -224,3 +224,116 @@ through the articles above — do not quote them until read):
 
 **Not used:** travel-SEO sites (templepurohit, astroved, travellers*.com and similar).
 They repeat each other, cite nothing, and several are near-identical content farms.
+
+---
+
+# Second research pass (2026-11-22, after Karunakar's note)
+
+Karunakar's objection: the first script was *about* a story without ever *being* one, and
+"where is that story?" Fair. This pass went to Telugu sources. It found the story — and
+found something better than the angle I had.
+
+## 8. The patnam is not decoration. It is the story. **[A]**
+
+From *Sakshi* (major Telugu daily) and the Telangana folklore literature:
+
+> **"జానపద రూపాల్లోని ఒగ్గు పూజారులు కథను చెబుతూ పట్నం వేస్తారు"**
+> *The Oggu priests lay the patnam **while telling the story**.*
+
+The drawing and the telling are **one act**. The Oggu priest narrates Mallanna's story and
+draws it into the ground at the same time. The patnam is the story in powder.
+
+**[A] Made of five natural colours:** turmeric (yellow), vermillion (red), rose petals
+(pink), dried green-leaf powder (green), rice flour (white).
+
+**[A] Pedda Patnam** at Maha Shivaratri: laid near the temple well, roughly **50 yards
+across, 41 rows**.
+
+**[A] Ritual objects** set before it: the **oragommu** (Mallanna's single-pronged trident)
+and the **damaru**.
+
+### And then the powder goes into the fields **[B]**
+
+After the puja, the god's sacred animals cross the patnam, and devotees gather up the
+scattered powder:
+
+> **"ఈ ముగ్గును పొలాల్లో చల్లితే పంటలు బాగా పండుతాయని"**
+> *If this muggu is scattered in the fields, the crops will grow well.*
+
+**One source (Sakshi), so [B] — but if it holds, it is the whole episode.** The story is
+sung → drawn into the ground → walked across → carried home → scattered on farmland →
+becomes the harvest. A story that turns into food.
+
+**[?] Karunakar must confirm this.** It is the kind of thing a Telangana family knows
+first-hand, and it cannot go on screen as fact on one newspaper feature alone.
+
+## 9. Two weddings a year, one for each tradition **[A]**
+
+The god is married **twice annually, by two different rites**:
+- **Veerashaiva Agama** tradition — last Sunday of Margashira
+- **Yadu (Golla) tradition** — at Maha Shivaratri
+
+The dual priesthood from §4 is not symbolic. Each community marries the god in its own way.
+
+## 10. No Kuruma wedding happens until this story is told **[A]**
+
+From the Telugu folklore text (*Telugu vaari jaanapada kalaarupaalu*, Wikisource):
+
+> **"మల్లన్న కథను కురుమల వివాహ సందర్భాలలో చెపుతూ వుంటారు"**
+> *The Mallanna story is told at Kuruma wedding occasions* — and the marriage is
+> conducted **only after the story has been told**.
+
+The Oggu performers are hereditary **purohits**, with territorial boundaries (*హద్దులు*);
+crossing another's territory risks excommunication.
+
+So the story is not entertainment and not heritage. It is **load-bearing**: ordinary
+families cannot get married until it has been sung.
+
+## 11. Mallanna is born from Shiva's sweat **[B]**
+
+Kuruma origin tradition: **Beerappa** came from Shiva's *first* sweat (**తొలి చెమట**),
+**Mallanna** from the *second* (**మలి చెమట**). Specific, strange, and not the standard
+"incarnation of Shiva" line. One folklore source — [B].
+
+## 12. "Oggu" means Shiva's drum **[A]**
+
+> **"శైవ సంప్రదాయంలో ఒక వర్గం వారు శివుని డమరుకాన్ని ఒగ్గు అంటారని"**
+> *In Shaiva tradition one group calls Shiva's damaru an "oggu."*
+
+The art form is named after the drum in Shiva's hand. Performers invoke **Ganga Devi**
+before beginning.
+
+## 13. Other additions **[A]**
+
+- Families lay **patnams at home**, every one to three years, to fulfil vows — relatives
+  invited, a household festival.
+- Devotees travel from **Odisha, Chhattisgarh and Karnataka**. Pan-regional, not local.
+- *Sakshi* gives the jatara as **19 January – 24 March**; *The Hans India* gave
+  18 January – 16 March 2026. **[?] Dates vary by year and by source — never state a
+  future date without the temple's own announcement.**
+
+## 14. On "a history of the temple" — why I recommend against it
+
+Karunakar asked whether this should be temple history. Honest answer: **we cannot source
+one.** Everything verifiable is either modern administration or unprovable repetition:
+
+| Claim | Status |
+|---|---|
+| ₹36.18 cr endowment + ₹9.776 cr development funding | **[A]** — and dull on screen |
+| Railway station opened 2026 | **[A]** — dull |
+| Clay idol ~500 years old | **[B]** — no primary source found |
+| Komaranna the Yadava founded it | **[B/?]** — untraceable to temple or department |
+| Anything before ~1900 | **nothing found** |
+
+A "history of Komuravelli" episode built on this would be the same unsourced sentences
+every travel-SEO page repeats. That is precisely the material §7 rejects.
+
+**What a real history episode would need:** temple and Endowments Department records,
+any inscriptions on site, district gazetteers, and a visit. That is a worthwhile project
+and a different kind of work — not something to fake from the web.
+
+**New sources this pass**
+- [పట్నాల మల్లన్నకు పదివేల దణ్ణాలు — Sakshi](https://www.sakshi.com/telugu-news/family/sakshi-special-story-about-komuravelli-mallanna-jaathara-2341000)
+- [తెలుగువారి జానపద కళారూపాలు / బగ్గు గొల్లల ఒగ్గు కథలు — Telugu Wikisource](https://te.wikisource.org/wiki/తెలుగువారి_జానపద_కళారూపాలు/బగ్గు_గొల్లల_ఒగ్గు_కథలు)
+- [ఒగ్గు కళను నెగ్గించింది — Namasthe Telangana](https://www.ntnews.com/zindagi/jamma-mallari-is-one-of-the-finest-and-the-only-female-oggu-katha-artist-2024951)
+- [తరాల గాథ.. ఒగ్గు కథ! — Namasthe Telangana](https://www.ntnews.com/sunday/తరాల-గాథ-ఒగ్గు-కథ-178487)
