@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { Episode01 } from "./episodes/Episode01";
 import part1 from "./episodes/01-part1-timing.json";
 import part2 from "./episodes/01-part2-timing.json";
+import { ProofShot } from "./three/ProofShot";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -22,6 +23,14 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{ part: 2 as const }}
         durationInFrames={part2.durationInFrames}
         fps={part2.fps}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ProofShot3D"
+        component={ProofShot}
+        durationInFrames={150}
+        fps={30}
         width={1080}
         height={1920}
       />
