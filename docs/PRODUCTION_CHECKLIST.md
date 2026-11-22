@@ -35,8 +35,9 @@ Times are estimates for episode 1 and should fall sharply by episode 3.
       what is on screen | asset needed.
 - [ ] Write for the **ear**, not the page. Read it aloud, out loud, to a wall.
 - [ ] First 3 seconds must earn the next 10. No "Namaskaram, welcome to the channel."
-- [ ] Target word count = runtime in seconds ÷ 2.5 for Telugu narration — then cut 10%.
-      Silence over a good image is not dead air; it is the image doing its job.
+- [ ] Target word count ≈ **runtime in seconds × 1.5** for Telugu narration (Telugu words
+      are long; English runs nearer × 2). Then cut 10%. Silence over a good image is not
+      dead air; it is the image doing its job. Always confirm against the real audio.
 - [ ] Name the communities and people correctly. Check every proper noun twice.
 - [ ] Mark any line that depends on a **[?]** claim and resolve it or cut it.
 
