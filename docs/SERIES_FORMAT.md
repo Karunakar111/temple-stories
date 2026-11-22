@@ -88,7 +88,7 @@ brand — a viewer should recognise the format two seconds in.
 
 | Beat | Content |
 |---|---|
-| **Object + pin** | Hands throwing turmeric. Pin: **కొమురవెల్లి · సిద్దిపేట జిల్లా · హైదరాబాద్ నుంచి ~90 కి.మీ.** `[?] verify the distance.` Open loop: *"ఈ పసుపు ఎక్కడి నుంచి వచ్చిందో తెలుసా?"* — do you know where this turmeric came from? |
+| **Object + pin** | Hands throwing turmeric. Pin: **కొమురవెల్లి · సిద్దిపేట జిల్లా · హైదరాబాద్ నుంచి 85 కి.మీ.** `[?] verify the distance.` Open loop: *"ఈ పసుపు ఎక్కడి నుంచి వచ్చిందో తెలుసా?"* — do you know where this turmeric came from? |
 | **Context** | Before the temple there was forest, sheep, and frightened herders. The god who came for them was Mallanna — not carved from stone, shaped from **పుట్టమట్టి**. |
 | **Story** | He wants to marry Medalamma. Her brothers demand the **bandari**. It's kept far away, guarded by a five-headed serpent. He flies there, takes a gardener's name, waits until he is trusted, takes it — is seen — escapes as a **black dog**. **Ganga loses her right hand** shielding him. He flies home and marries her. |
 | **Payoff** | *That* is the turmeric in your hand at the jatara. Closes the loop. |

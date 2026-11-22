@@ -35,7 +35,7 @@ Each part keeps the series signature (object → story → object) on its own te
 
 | # | Time | Telugu | English subtitle | On screen |
 |---|------|--------|------------------|-----------|
-| 1 | 0:00–0:07 | ఈ పసుపు మీరు కూడా చల్లి ఉంటారు. ఇది ఎక్కడి నుంచి వచ్చిందో తెలుసా? | You've thrown this turmeric yourself. Do you know where it came from? | Tight on a hand sinking into a heap of turmeric, lifting a fistful, throwing it into low sun. Slow. **Location pin fades up:** కొమురవెల్లి మల్లన్న · సిద్దిపేట జిల్లా · హైదరాబాద్ నుంచి ~90 కి.మీ. |
+| 1 | 0:00–0:07 | ఈ పసుపు మీరు కూడా చల్లి ఉంటారు. ఇది ఎక్కడి నుంచి వచ్చిందో తెలుసా? | You've thrown this turmeric yourself. Do you know where it came from? | Tight on a hand sinking into a heap of turmeric, lifting a fistful, throwing it into low sun. Slow. **Location pin fades up:** కొమురవెల్లి మల్లన్న · సిద్దిపేట జిల్లా · హైదరాబాద్ నుంచి 85 కి.మీ. |
 | 2 | 0:07–0:20 | ఇక్కడి స్థలపురాణం ప్రకారం — గుడి కట్టకముందు ఈ కొండ మీద అడవి ఉండేది. గొర్రెలు, వాటి కాపరులు. వాళ్ల కోసం దిగొచ్చిన దేవుడే మల్లన్న. రాయి కాదు — పుట్టమట్టి. | By the sthala puranam told here — before the temple, this hill was forest. Sheep, and their herders. The god who came down for them was Mallanna. Not stone — termite-mound earth. | Parallax pull-back from the hand to the hill at dusk: forest layer, herd layer, sky. A termite mound in foreground; a form rising from it, lit from within. |
 | 3 | 0:20–0:30 | మల్లన్నకు మేడలమ్మ అంటే ఇష్టం. లింగ బలిజల బిడ్డ. కానీ ఆమె అన్నలు ఒక షరతు పెట్టారు. | Mallanna loved Medalamma — a daughter of the Linga Balijas. But her brothers set one condition. | Medalamma, frame right, turned slightly away. Three brothers step in between — a wall of shoulders. |
 | 4 | 0:30–0:41 | బండారి తీసుకురా. పసుపు కొమ్ములు. అవి ఎక్కడో దూరంగా ఉన్నాయి — ఐదు తలల పాము కాపలాగా. | Bring the bandari. The turmeric horns. They were kept far away — with a five-headed serpent on guard. | **CARD:** gold-framed, on dark — **పసుపు కొమ్ములు** / *the turmeric horns*. Then cut to the serpent coiled around a low stone chamber, five heads, eyes open. |
@@ -44,7 +44,7 @@ Each part keeps the series signature (object → story → object) on its own te
 | 7 | 1:08–1:20 | ఒక రోజు — పాము కళ్లు మూసుకున్న క్షణంలో — బండారి ఆయన చేతిలో. మొదటిసారి. కానీ ఎవరో చూశారు. | One day — in the moment the serpent's eyes closed — the bandari was in his hand. For the first time. But someone saw. | Five heads; five pairs of eyes close one after another. His hand enters, closes on the turmeric horns. Hold on the hand. Then, out of focus behind him, a figure turns. |
 | 8 | 1:20–1:30 | పసుపు దొరికింది. ఇక ఇంటికి చేరాలి. అది తర్వాతి కథ. ఈలోపు చెప్పండి — మీ ఊళ్లో ఆ అన్నలు ఏం అడిగారని చెప్తారు? | He had the turmeric. Now he had to get it home. That's the next story. Till then, tell us — in your village, what do they say the brothers asked for? | **His** hand holding turmeric, framed exactly like the viewer's hand in shot 1. Pin returns, now reading *Part 2 — next Sunday*. |
 
-**Part 1 ≈ 90 s · 128 Telugu words.**
+**Part 1 ≈ 90 s · 117 Telugu words (~1.3 w/s).**
 
 ---
 
@@ -60,7 +60,7 @@ Each part keeps the series signature (object → story → object) on its own te
 | 6 | 1:04–1:20 | ఆ బండారే — ఈ రోజు మీరు జాతరలో పిడికిళ్లతో చల్లే పసుపు. సంక్రాంతి నుంచి ఉగాది దాకా, ప్రతి ఆదివారం. మీరు చల్లే ప్రతి పిడికెడు — గంగమ్మ చేయి. మల్లన్న ఓపిక. | That bandari — is the turmeric you throw by the fistful at the jatara. Sankranti to Ugadi, every Sunday. Every fistful you throw — is Ganga's hand. And Mallanna's patience. | **CARD:** సంక్రాంతి → ఉగాది · ప్రతి ఆదివారం. Then his hand full of turmeric **dissolves into the viewer's hand from Part 1, shot 1** — same frame, same light. Pull back: the jatara crowd on the hill, turmeric in the air like weather. |
 | 7 | 1:20–1:28 | మీ ఊళ్లో ఈ కథ ఎలా చెప్తారు? గంగమ్మ చేయి పోయిందా — లేక వేరే కథ ఉందా? కింద చెప్పండి, ఊరి పేరుతో. | How is this told in your village? Did Ganga lose her hand — or is there another telling? Tell us below, with your village's name. | Back to the single hand, turmeric falling from it, slow. Pin. |
 
-**Part 2 ≈ 88 s · 118 Telugu words.**
+**Part 2 ≈ 88 s · 99 Telugu words (~1.1 w/s — Ganga's beat needs the air).**
 
 ---
 
@@ -110,7 +110,7 @@ marked as such above.
 
 ## Open
 
-1. **Distance from Hyderabad** on the pin — sources say 85–95 km. **Verify before render.**
+1. ~~Distance~~ — verified **85 km** (Wikipedia + road guides; 22 km past Siddipet on the Hyderabad–Mancherial highway).
 2. **Telangana dialect pass** — Karunakar's call, see above.
 3. **Does Karunakar's family tell the Ganga beat this way?** It is the emotional peak of
    the episode and the comment question is built on it. A family telling would be credited.
