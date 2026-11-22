@@ -9,6 +9,10 @@
 
 > *"The turmeric people throw at Mallanna's temple? He stole it. Disguised as a gardener,
 > for months. And a goddess lost her hand getting him home."*
+>
+> And the second one, for anyone who has stood next to a patnam:
+> *"That big drawing on the ground isn't a rangoli. The priest is drawing the story while
+> he sings it — and afterwards people take the powder home to their fields."*
 
 ## Why two parts, and where the cut is
 
@@ -27,7 +31,13 @@ Each part keeps the series signature (object → story → object) on its own te
   him are "the guards." Every dramatic beat survives; nothing is invented or contradicted.
 - **One card per part**, at the hinge. Part 1: the condition. Part 2: the payoff.
 - **"Why here?"** answered in Part 2: *he came back to this very hill.*
-- Sthala puranam frame once, at the top of Part 1, then full confidence.
+- **Frame line is now "ఇక్కడ ఒగ్గు పూజారులు పాడే కథ ప్రకారం"** — more accurate than
+  *sthala puranam* (this story is an Oggu Katha, not a written text), and it plants the word
+  so Part 2's payoff lands on something the viewer has already heard. If Karunakar prefers
+  the familiarity of *స్థలపురాణం ప్రకారం*, it's a one-phrase swap.
+- **Oggu Katha and the patnam live in Part 2's payoff, not Part 1's setup.** Said early
+  they're exposition; said at the end they're the reveal — *the story you just watched is
+  still being sung and drawn, here, in this turmeric.*
 
 ---
 
@@ -36,7 +46,7 @@ Each part keeps the series signature (object → story → object) on its own te
 | # | Time | Telugu | English subtitle | On screen |
 |---|------|--------|------------------|-----------|
 | 1 | 0:00–0:07 | ఈ పసుపు మీరు కూడా చల్లి ఉంటారు. ఇది ఎక్కడి నుంచి వచ్చిందో తెలుసా? | You've thrown this turmeric yourself. Do you know where it came from? | Tight on a hand sinking into a heap of turmeric, lifting a fistful, throwing it into low sun. Slow. **Location pin fades up:** కొమురవెల్లి మల్లన్న · సిద్దిపేట జిల్లా · హైదరాబాద్ నుంచి 85 కి.మీ. |
-| 2 | 0:07–0:20 | ఇక్కడి స్థలపురాణం ప్రకారం — గుడి కట్టకముందు ఈ కొండ మీద అడవి ఉండేది. గొర్రెలు, వాటి కాపరులు. వాళ్ల కోసం దిగొచ్చిన దేవుడే మల్లన్న. రాయి కాదు — పుట్టమట్టి. | By the sthala puranam told here — before the temple, this hill was forest. Sheep, and their herders. The god who came down for them was Mallanna. Not stone — termite-mound earth. | Parallax pull-back from the hand to the hill at dusk: forest layer, herd layer, sky. A termite mound in foreground; a form rising from it, lit from within. |
+| 2 | 0:07–0:21 | ఇక్కడ ఒగ్గు పూజారులు పాడే కథ ప్రకారం — గుడి కట్టకముందు ఈ కొండ మీద అడవి ఉండేది. గొర్రెలు, వాటి కాపరులు. వాళ్ల కోసం దిగొచ్చిన దేవుడే మల్లన్న. రాయి కాదు — పుట్టమట్టి. | By the story the Oggu priests sing here — before the temple, this hill was forest. Sheep, and their herders. The god who came down for them was Mallanna. Not stone — termite-mound earth. | Parallax pull-back from the hand to the hill at dusk: forest layer, herd layer, sky. A termite mound in foreground; a form rising from it, lit from within. |
 | 3 | 0:20–0:30 | మల్లన్నకు మేడలమ్మ అంటే ఇష్టం. లింగ బలిజల బిడ్డ. కానీ ఆమె అన్నలు ఒక షరతు పెట్టారు. | Mallanna loved Medalamma — a daughter of the Linga Balijas. But her brothers set one condition. | Medalamma, frame right, turned slightly away. Three brothers step in between — a wall of shoulders. |
 | 4 | 0:30–0:41 | బండారి తీసుకురా. పసుపు కొమ్ములు. అవి ఎక్కడో దూరంగా ఉన్నాయి — ఐదు తలల పాము కాపలాగా. | Bring the bandari. The turmeric horns. They were kept far away — with a five-headed serpent on guard. | **CARD:** gold-framed, on dark — **పసుపు కొమ్ములు** / *the turmeric horns*. Then cut to the serpent coiled around a low stone chamber, five heads, eyes open. |
 | 5 | 0:41–0:50 | దేవతలు ఆయనకు ఒక ఎగిరే గుర్రం ఇచ్చారు. మల్లన్న బయల్దేరాడు. | The gods gave him a flying horse. Mallanna set out. | The horse, white, against a night sky. Rider small. Parallax clouds passing. The widest shot in the episode. |
@@ -57,10 +67,11 @@ Each part keeps the series signature (object → story → object) on its own te
 | 3 | 0:18–0:30 | కొండలు దాటాడు. నదులు దాటాడు. వాళ్లు వదల్లేదు. | Over hills. Across rivers. They didn't let go. | **The parallax set-piece.** Dog in mid-ground, running right; hills, river, sky as separate layers at different speeds. Guards enter from left in silhouette every few seconds — always there. |
 | 4 | 0:30–0:50 | చివరికి గంగమ్మ అడ్డొచ్చింది. ఆయన్ని కాపాడటానికి చేయి అడ్డుపెట్టింది. ఆ దెబ్బకు — ఆమె కుడి చేయి పోయింది. అయినా మల్లన్నను వదల్లేదు. | At last Ganga stepped in. She put her arm across to shield him. The blow took her right hand. Even so — she didn't let go of Mallanna. | Ganga rises from the river between the dog and the guards. Arm out, flat, a gate. The strike lands — **cut to black for a full second** — then Ganga, standing, right arm ending at the wrist, the dog behind her. Hold. This is the shot the episode is for. |
 | 5 | 0:50–1:04 | ఎగిరే గుర్రం మీద ఆయన తిరిగొచ్చాడు — **ఈ కొండకే.** బండారిలో కొంత ఎల్లమ్మకు ఇచ్చాడు. మిగతాది తీసుకుని — మేడలమ్మను పెళ్లాడాడు. | On the flying horse he came back — **to this very hill.** He gave Yellamma a share of the bandari. With the rest — he married Medalamma. | The horse descends onto the hill from shot 2 of Part 1 — same hill, now recognised. Yellamma receives a handful. Medalamma, frame right as before, now turns to face him. The brothers step aside. |
-| 6 | 1:04–1:20 | ఆ బండారే — ఈ రోజు మీరు జాతరలో పిడికిళ్లతో చల్లే పసుపు. సంక్రాంతి నుంచి ఉగాది దాకా, ప్రతి ఆదివారం. మీరు చల్లే ప్రతి పిడికెడు — గంగమ్మ చేయి. మల్లన్న ఓపిక. | That bandari — is the turmeric you throw by the fistful at the jatara. Sankranti to Ugadi, every Sunday. Every fistful you throw — is Ganga's hand. And Mallanna's patience. | **CARD:** సంక్రాంతి → ఉగాది · ప్రతి ఆదివారం. Then his hand full of turmeric **dissolves into the viewer's hand from Part 1, shot 1** — same frame, same light. Pull back: the jatara crowd on the hill, turmeric in the air like weather. |
-| 7 | 1:20–1:28 | మీ ఊళ్లో ఈ కథ ఎలా చెప్తారు? గంగమ్మ చేయి పోయిందా — లేక వేరే కథ ఉందా? కింద చెప్పండి, ఊరి పేరుతో. | How is this told in your village? Did Ganga lose her hand — or is there another telling? Tell us below, with your village's name. | Back to the single hand, turmeric falling from it, slow. Pin. |
+| 6 | 1:04–1:24 | ఆ బండారే — ఈ రోజు మీరు జాతరలో చల్లే పసుపు. ఈ కథ ఏ పుస్తకంలోనూ లేదు. ఒగ్గు పూజారి పాడతాడు. పాడుతూనే — అదే పసుపుతో నేల మీద గీస్తాడు. అదే పట్నం. మీరు ముగ్గు అనుకున్నది — ఈ కథే. | That bandari — is the turmeric you throw at the jatara. This story is in no book. The Oggu priest sings it. And as he sings — he draws it on the ground, in that same turmeric. That is the patnam. What you took for a rangoli — is this story. | His hand full of turmeric **dissolves into the viewer's hand from Part 1, shot 1**. Then: the Oggu priest — knee-tied pant, head cloth, cowrie chain, dolu at his hip — singing. Below him, hands laying turmeric lines on stone. **The lines resolve into a horse. A dog. A five-headed serpent.** The story we just watched, in powder. |
+| 7 | 1:24–1:38 | పూజ అయ్యాక ఆ పొడిని జనం పొలాల్లోకి తీసుకెళ్తారు. పంట పండాలని. సంక్రాంతి నుంచి ఉగాది దాకా — ప్రతి ఆదివారం. మీరు చల్లే ప్రతి పిడికెడు — గంగమ్మ చేయి. మల్లన్న ఓపిక. | When the puja ends, people carry that powder home to their fields. For the harvest. Sankranti to Ugadi — every Sunday. Every fistful you throw — is Ganga's hand. And Mallanna's patience. | Hands sweeping the finished patnam into a cloth. A field at first light; a hand scattering yellow into the furrows. **CARD:** సంక్రాంతి → ఉగాది · ప్రతి ఆదివారం. Pull back: the jatara on the hill, turmeric in the air like weather. |
+| 8 | 1:38–1:46 | మీ ఊళ్లో ఈ కథ ఎలా చెప్తారు? గంగమ్మ చేయి పోయిందా — లేక వేరే కథ ఉందా? కింద చెప్పండి, ఊరి పేరుతో. | How is this told in your village? Did Ganga lose her hand — or is there another telling? Tell us below, with your village's name. | Back to the single hand, turmeric falling from it, slow. Pin. |
 
-**Part 2 ≈ 88 s · 99 Telugu words (~1.1 w/s — Ganga's beat needs the air).**
+**Part 2 ≈ 106 s · 131 Telugu words (~1.25 w/s).**
 
 ---
 
@@ -91,12 +102,14 @@ design, repeated) · **two guards** (silhouette only) · **Ganga** · **Yellamma
 Scenes: hand + turmeric heap · hill at dusk (forest / herd / sky layers) · termite mound
 with rising form · serpent chamber, five heads · white horse on night sky (cloud layers) ·
 walled garden · chase landscape (hills / river / sky layers) · river for Ganga's rise ·
-the hill at return · jatara crowd with turmeric in air.
+the hill at return · **the Oggu priest singing** (costume per research §3) · **hands drawing
+the patnam** — lines that resolve into the horse / dog / serpent · patnam swept into cloth ·
+a field at first light, turmeric into furrows · jatara crowd with turmeric in air.
 
 Cards (Remotion, real text, no generation): location pin · *పసుపు కొమ్ములు* · *Part 2* ·
 *సంక్రాంతి → ఉగాది*.
 
-**Parallax shots (worth the layer separation):** P1 §2, §5; P2 §3, §6. Everything else flat.
+**Parallax shots (worth the layer separation):** P1 §2, §5; P2 §3, §7. Everything else flat.
 **Shot that gets the most generations:** P2 §4, Ganga's hand. Get it right.
 **No AI-generated Telugu lettering in any image.** Ever.
 
@@ -104,8 +117,10 @@ Cards (Remotion, real text, no generation): location pin · *పసుపు క
 
 Spine from research §22 (fourth pass). Destination and pursuers' identity withheld by
 decision. Ganga's hand, the black dog, the gardener, the five-headed serpent, the flying
-horse, Yellamma's share: all in the sources as told. *"ఈ కొండకే"* is the sthala puranam's
-own claim — he came back here. The closing reflection in P2 §6 is the narrator's, and is
+horse, Yellamma's share: all in the sources as told. *"ఈ కొండకే"* is the tradition's
+own claim — he came back here. The patnam drawn *while* the story is sung, and the
+powder carried to the fields: research §8 and §15, the latter confirmed first-hand by
+Karunakar. The closing reflection in P2 §6 is the narrator's, and is
 marked as such above.
 
 ## Open
