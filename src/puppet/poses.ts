@@ -6,7 +6,7 @@ import type { Pose } from "./rig";
  */
 
 export const IDLE: Pose = {
-  armRU: -6, armRL: -14, handR: 0,
+  armRU: -6, armRL: -14, handR: 0, handOpen: 0.3,
   armLU: 7, armLL: 12,
   legRU: 2, legRL: -2, legLU: -2, legLL: 2,
   chest: 0, headTilt: 0, headTurn: 0, rise: 0,
@@ -14,27 +14,27 @@ export const IDLE: Pose = {
 
 export const HOLDING: Pose = {
   ...IDLE,
-  armRU: -34, armRL: -46, handR: 10,
+  armRU: -34, armRL: -46, handR: 10, handOpen: 0,
   headTilt: 2, headTurn: 1,
 };
 
 export const LIFT: Pose = {
   ...IDLE,
-  armRU: -118, armRL: -34, handR: -14,
+  armRU: -118, armRL: -34, handR: -14, handOpen: 0.08,
   armLU: 16, armLL: 18,
   chest: -3, headTilt: -5, headTurn: 2, rise: -6,
 };
 
 export const SCATTER: Pose = {
   ...IDLE,
-  armRU: -142, armRL: 22, handR: -52,
+  armRU: -142, armRL: 22, handR: -52, handOpen: 1,
   armLU: 22, armLL: 24,
   chest: -6, headTilt: -8, headTurn: 3, rise: -10,
 };
 
 export const BLESS: Pose = {
   ...IDLE,
-  armRU: -96, armRL: -8, handR: 0,
+  armRU: -96, armRL: -8, handR: 0, handOpen: 0.55,
   armLU: 10, armLL: 14,
   chest: -1, headTilt: -2,
 };

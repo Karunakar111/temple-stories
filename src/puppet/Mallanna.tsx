@@ -1,5 +1,6 @@
 import React from "react";
-import { INK, GOLD, GOLD_DK, Segment, JointDisc, type Pose } from "./rig";
+import { INK, GOLD, GOLD_DK, Segment, type Pose } from "./rig";
+import { Hand } from "./Hand";
 
 /**
  * Mallanna, as a cut-out puppet.
@@ -113,9 +114,9 @@ export const Mallanna: React.FC<{
       {/* ── BACK ARM (behind the torso) ───────────────────────────────── */}
       <g transform={`translate(-54 -196)`}>
         <Segment length={78} top={15} bottom={12} fill={SKIN_DK} rotate={p("armLU", 8)}
-          jointR={14} band={{ at: 0.86, color: GOLD_DK }}>
-          <Segment length={72} top={12} bottom={9.5} fill={SKIN_DK} rotate={p("armLL", 10)} jointR={11}>
-            <circle cy={10} r={13} fill={SKIN_DK} stroke={INK} strokeWidth={3} />
+          jointR={8} band={{ at: 0.86, color: GOLD_DK }}>
+          <Segment length={72} top={12} bottom={9.5} fill={SKIN_DK} rotate={p("armLL", 10)} jointR={6.5}>
+            <g transform="translate(0 6)"><Hand skin={SKIN_DK} open={0.25} scale={0.92} /></g>
           </Segment>
         </Segment>
       </g>
@@ -123,8 +124,8 @@ export const Mallanna: React.FC<{
       {/* ── LEGS ───────────────────────────────────────────────────────── */}
       {([["legR", 22], ["legL", -22]] as const).map(([key, dx]) => (
         <g key={key} transform={`translate(${dx} -74)`}>
-          <Segment length={74} top={17} bottom={13} fill={CLOTH} rotate={p(`${key}U`)} jointR={15}>
-            <Segment length={70} top={13} bottom={10} fill={SKIN} rotate={p(`${key}L`)} jointR={11}
+          <Segment length={74} top={17} bottom={13} fill={CLOTH} rotate={p(`${key}U`)} jointR={9}>
+            <Segment length={70} top={13} bottom={10} fill={SKIN} rotate={p(`${key}L`)} jointR={7}
               band={{ at: 0.92, color: GOLD }}>
               {/* foot */}
               <path d="M -11 0 L 13 0 L 26 18 L -13 18 Z" fill={SKIN_DK} stroke={INK} strokeWidth={3} strokeLinejoin="round" />
@@ -134,22 +135,30 @@ export const Mallanna: React.FC<{
       ))}
 
       {/* ── DHOTI ──────────────────────────────────────────────────────── */}
-      <path d="M -52 -86 L 52 -86 L 64 6 L -64 6 Z" fill={CLOTH} stroke={INK} strokeWidth={3.5} strokeLinejoin="round" />
-      {/* hem band */}
-      <path d="M -62 -6 L 62 -6" stroke={GOLD} strokeWidth={9} strokeLinecap="round" />
-      {/* pleat */}
-      <path d="M 4 -84 L -6 2" stroke={INK} strokeWidth={2.5} opacity={0.5} />
+      <path d="M -44 -88 L 44 -88 C 52 -56 60 -24 66 4
+               C 44 12 22 8 0 8 C -22 8 -44 12 -66 4
+               C -60 -24 -52 -56 -44 -88 Z"
+        fill={CLOTH} stroke={INK} strokeWidth={3.5} strokeLinejoin="round" />
+      {/* hem band, following the drape */}
+      <path d="M -64 0 C -42 8 -20 4 0 4 C 20 4 42 8 64 0" fill="none"
+        stroke={GOLD} strokeWidth={9} strokeLinecap="round" />
+      {/* two pleats, for weight */}
+      <path d="M 10 -86 C 8 -50 10 -20 14 2" stroke={INK} strokeWidth={2.5} fill="none" opacity={0.4} />
+      <path d="M -14 -86 C -14 -50 -16 -20 -20 2" stroke={INK} strokeWidth={2.5} fill="none" opacity={0.4} />
 
       {/* ── TORSO ──────────────────────────────────────────────────────── */}
       <g transform={`rotate(${p("chest")})`}>
-        <path d="M -50 -200 C -58 -156 -56 -118 -50 -86 L 50 -86 C 56 -118 58 -156 50 -200
-                 C 36 -212 -36 -212 -50 -200 Z"
+        {/* chest: broad at the shoulders, drawn in at the waist */}
+        <path d="M -56 -202 C -64 -176 -60 -140 -46 -104 C -40 -94 -36 -88 -34 -84
+                 L 34 -84 C 36 -88 40 -94 46 -104 C 60 -140 64 -176 56 -202
+                 C 40 -216 -40 -216 -56 -202 Z"
           fill={SKIN} stroke={INK} strokeWidth={3.5} strokeLinejoin="round" />
         {/* green chest ornament, as on the murti */}
-        <path d="M -34 -188 C -40 -152 -38 -124 -34 -104 L 34 -104 C 38 -124 40 -152 34 -188 Z"
+        <path d="M -36 -190 C -42 -156 -38 -126 -30 -100 L 30 -100 C 38 -126 42 -156 36 -190
+                 C 24 -200 -24 -200 -36 -190 Z"
           fill={CHEST} stroke={INK} strokeWidth={3} />
         {/* waist belt */}
-        <rect x={-54} y={-96} width={108} height={16} rx={6} fill={GOLD} stroke={INK} strokeWidth={3} />
+        <rect x={-42} y={-96} width={84} height={15} rx={6} fill={GOLD} stroke={INK} strokeWidth={3} />
         {/* necklace */}
         <path d="M -30 -192 C -14 -172 14 -172 30 -192" fill="none" stroke={GOLD} strokeWidth={7} strokeLinecap="round" />
 
@@ -165,21 +174,17 @@ export const Mallanna: React.FC<{
         {/* ── FRONT ARM (over the torso) ─────────────────────────────── */}
         <g transform={`translate(54 -196)`}>
           <Segment length={78} top={15} bottom={12} fill={SKIN} rotate={p("armRU", -8)}
-            jointR={14} band={{ at: 0.86, color: GOLD }}>
-            <Segment length={72} top={12} bottom={9.5} fill={SKIN} rotate={p("armRL", -10)} jointR={11}>
+            jointR={8} band={{ at: 0.86, color: GOLD }}>
+            <Segment length={72} top={12} bottom={9.5} fill={SKIN} rotate={p("armRL", -10)} jointR={6.5}>
               {/* hand */}
-              <g transform={`rotate(${p("handR")})`}>
-                <circle cy={10} r={13} fill={SKIN} stroke={INK} strokeWidth={3} />
-                {rightHand ? <g transform="translate(0 14)">{rightHand}</g> : null}
+              <g transform={`translate(0 6) rotate(${p("handR")})`}>
+                <Hand skin={SKIN} open={p("handOpen")} holding={rightHand} />
               </g>
             </Segment>
           </Segment>
         </g>
       </g>
 
-      {/* pivot marks that sit above everything, like the reference */}
-      <g transform="translate(54 -196)"><JointDisc r={14} /></g>
-      <g transform="translate(-54 -196)"><JointDisc r={14} gold={GOLD_DK} /></g>
     </g>
   );
 };
