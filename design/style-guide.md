@@ -80,3 +80,36 @@ reads the script.
    deity faces frontal, calm, symmetrical.
 4. **Iconography before beauty.** A gorgeous Mallanna without his dog is wrong.
 5. One shade step per fill. If a shot needs more, it needs better light, not more shades.
+
+---
+
+## Style frame v1 — 2026-11-22
+
+`design/style-frames/v1-ganga.png` (and `-mirrored`). Model **`gpt_image_2`**, 9:16, 1k,
+medium quality. **1.25 credits.** Tested on P2 §4, the hardest shot in the episode, on the
+principle that if the style can't carry Ganga it is the wrong style.
+
+**Landed as specified:** flat fills, thick even ink outlines, visible circular puppet
+joints at shoulder and elbow, the palette almost exactly, the cold-frame-with-one-warm-
+light rule, faceless spear silhouettes, black dog, no text anywhere.
+
+**Corrections for v2:**
+1. **The arm must be her right.** v1 gave the left. Mirroring fixes it for this frame, but
+   the prompt must say *"facing left, right arm extended"* or every generation will need
+   flipping. **This is the episode's emotional peak — the wrong arm is a real error.**
+2. **The dog is too domestic.** It reads as a calm pet with a visible eye. It should be
+   flatter, more abstract, more urgent — a shape in flight, not a sitting animal.
+3. Minor gradients crept inside the water and drapery. Acceptable here; watch it doesn't
+   grow.
+
+**The open question this raises:** v1 is **more ornate than the reference reel** — closer
+to Pattachitra and temple art than to the chunky, almost childlike flat style of
+`divinestoriesstudio`. My view is that this is better for *this* channel: more reverent,
+more distinctive in a feed, and it looks like it belongs to the tradition rather than
+commenting on it. But it is a real fork and Karunakar decides.
+
+### Reusable prompt skeleton
+
+Keep the rendering-rules, palette and no-text blocks **byte-identical** across every
+generation; change only the subject paragraph. That consistency is what makes the series
+look like one thing.
