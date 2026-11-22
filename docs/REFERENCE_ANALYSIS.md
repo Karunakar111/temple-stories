@@ -1,0 +1,96 @@
+# How the reference videos are built
+
+Three references, three different techniques. Written 2026-11-22.
+
+---
+
+## 1. `divinestoriesstudio` — Chhappan Bhog (Hindi)
+
+**Flat 2D illustration, animated with simple transforms.** Jointed paper-puppet
+characters with visible elbow and shoulder pivots, thick outlines, tight amber-and-purple
+palette. Labelled "AI content" by Instagram, so the stills are very likely generated and
+then animated with cut-out rigs. Big karaoke subtitles at the top.
+
+**What we took:** the complete-story structure (problem → action → consequence → a living
+ritual), and the discipline of one idea per episode.
+
+---
+
+## 2. `katha.chepthanu` — Sabarimala / Ayyappa Deeksha (Telugu)
+
+This is the one Karunakar pointed at hardest, so it's worth being precise about it.
+
+### What the footage shows
+
+- **Repeated identical low-poly human models.** The crowd climbing the steps is one
+  character duplicated many times — same silhouette, same clothing, same gait.
+- **Uniform, slightly stiff walk cycles**, all in step. That is stock motion-capture
+  retargeted onto a rig, not hand-keyed animation.
+- **Simple modelled environments**: a tiled-roof building, a pavilion, a gate, steps,
+  ground planes, scattered trees. Basic materials, one sun light, real shadows.
+- **A continuously moving camera.** `ffmpeg` scene detection found **zero hard cuts in
+  84 seconds** — scenes change by moving, not by cutting.
+- **A 3D infographic** built in the same space as the scene: the seven *dhatus* as
+  spheres on connectors, with a progress arc that builds up, over a banana leaf and food.
+- **Telugu headings and labels composited on top**, animating in.
+
+### Almost certainly
+
+**Blender** (Eevee, for render speed) + **Mixamo** rigged characters and stock walk
+animations + simple hand-modelled sets + Telugu type added in post. That is the standard,
+affordable pipeline for this look, and every signature above matches it.
+
+### Why I am not recommending we copy it
+
+Not because it's bad — it's effective. Because of what it would actually cost us:
+
+| | |
+|---|---|
+| **Different toolchain** | Blender, not Remotion. I can write Blender Python but cannot see the viewport — iteration would be slow and half-blind. |
+| **This machine** | macOS 12, Intel, ~2.7 GB free. Blender renders are slow and disk-hungry here, and we have already had to work around three macOS-15-only binaries. |
+| **Character animation is the hard part** | It is also the part that most often looks cheap. Stiff walk cycles are forgiving in a crowd and brutal in close-up — and this story needs close-ups. |
+| **It is a crowded look** | Low-poly 3D explainer is increasingly common. It would make us look like everyone else. |
+
+### The observation that decided it
+
+**That video's single most striking section is the dhatu diagram — and that is motion
+graphics, not character animation.** The arcs building, the labels landing, the counter
+climbing. Even the channel we are admiring does its best work with the technique we can
+do natively, for free, frame-exact.
+
+---
+
+## 3. `ultra.skills` — "30 Claude Animations"
+
+A catalogue of **code-generated** effects: Map Route, Headline, Teardown, Split Flap,
+Git City, Stat Chart, Globe Arcs, Agent Swarm, Before/After, Swiss Grid, Blueprint Draw,
+Paper Desk, Laptop Reveal, Notifications, Iso Flow.
+
+**This is Remotion's home ground**, and it is the direction Karunakar chose.
+
+### Mapped onto this series
+
+| Effect | Where it goes | Status |
+|---|---|---|
+| **Blueprint Draw** | The patnam drawing itself — the episode's climax | **built** |
+| **Map Route** | The open: Hyderabad → Siddipet → Komuravelli, distance counting | **built** |
+| **Globe Arcs** | Mallanna / Mailara / Khandoba across three states | future episode |
+| **Iso Flow** | The powder's journey: patnam → swept up → the fields | to do |
+| **Stat Chart** | The jatara in numbers — 50 yards, 41 rows, lakhs of Sundays | to do |
+| **Split Flap** | The brothers' condition landing: **పసుపు కొమ్ములు** | to do |
+| **Notifications** | Viewers' village tellings stacking up | future episode |
+
+---
+
+## The five lessons we are taking regardless of technique
+
+1. **Stop cutting.** Zero hard cuts in 84 seconds is the single biggest difference between
+   the reference and our first pass. Move the camera instead of changing the shot.
+2. **Something moves in every frame.** Not the frame zooming — something *in the world*.
+3. **Use depth and vary the angle.** Overhead, low, tracking. Not one flat plane.
+4. **Type is an actor.** Headings arrive with weight and leave; they do not cross-fade.
+5. **Build infographics progressively.** Never show a finished diagram — draw it.
+
+Real 3D is still available to us where it genuinely helps: `src/three/HillFlyover.tsx`
+proves a procedural low-poly hill with a flying camera and walking pilgrims renders fine
+here, with no models and no credits.
