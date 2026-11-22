@@ -440,3 +440,59 @@ rather than disappointing: **the story has no written text.** To get it properly
 - [Kurumas: Oggu Katha — kurumashistory.blogspot.com](http://kurumashistory.blogspot.com/2015/04/kurumas-oggu-katha.html)
 - [కొమురవెల్లి మల్లన్నకు కోటిదండాలు — Sakshi](https://www.sakshi.com/news/family/komuravelli-mallanna-196283)
 - [Temple Stories and History: Komaravelli Mallanna](http://templestoriesandhistory.blogspot.com/2014/01/komaravelli-mallanna.html)
+
+---
+
+# Fourth pass — the Bandari story, in full (2026-11-22)
+
+Looking for a *complete* narrative after Karunakar's reference reel. Found it. The full
+spine, from Telugu sources:
+
+1. Mallanna wants to marry **Medalamma**. Her **brothers set a condition**: bring the
+   **bandari** — **పసుపు కొమ్ములు**, turmeric roots or "horns".
+2. The bandari is held by **Haseen and Hussain**, **at Mecca Masjid**.
+3. The gods give Mallanna a **flying horse**. He flies there.
+4. He takes service as a **gardener**, under the assumed name **Malku Malloji**, and
+   waits — many days, some tellings say years — until he is completely trusted.
+5. The bandari is guarded by a **five-headed serpent**.
+6. He takes it. He is seen. He escapes **in the form of a black dog**, pursued.
+7. **Ganga loses her right hand** shielding him.
+8. He returns on the flying horse, gives a share to **Yellamma**, and marries Medalamma.
+9. **That bandari is the turmeric thrown by the fistful at the jatara.**
+
+## This is a complete story — and it is sensitive
+
+Dramatically it is excellent: a goal, an impossible condition, a long patient deception, a
+guarded prize, a theft, a chase, a sacrifice, a return, and a resolution into a ritual the
+viewer has performed with their own hands. Exactly the shape of the Chhappan Bhog reel.
+
+**And it is a Hindu god infiltrating a mosque in Mecca under an assumed name to take a
+sacred object, pursued by two Muslim figures.**
+
+That is genuinely how the tradition tells it. Note also that the assumed name **Malku
+Malloji** echoes **Mallu Khan / Malluka Pathan**, the names by which Muslims venerate this
+same god in Maharashtra (§5) — the entanglement runs in both directions, and the story is
+a product of a shared Deccan world, not a hostile one.
+
+But on a public channel in 2026, told cold to a new audience with no established context,
+it can be read as communal content regardless of intent — and amplified as such by people
+who want it to be.
+
+### Options for Episode 1
+
+| | Keeps | Risk |
+|---|---|---|
+| **A. Tell it in full** | Everything, including Mecca and the two names | Materially different risk category from the reference reel. Could define the channel's audience on day one, and poison the crowdsourced-comments plan |
+| **B. Tell it with the destination unnamed** | Quest, flying horse, the gardener's disguise and long wait, the five-headed serpent, the theft, the black dog, the chase, Ganga's hand, the turmeric | Loses the most distinctive element; a knowing viewer may note the omission |
+| **C. A different story for Episode 1** | Safety | No other complete narrative is sourced yet |
+
+**Recommendation: B for Episode 1.** Every dramatic beat survives — nothing invented,
+nothing contradicted, the ending still lands on the turmeric in the viewer's hand. The
+fuller telling deserves its own episode later, with room to frame the syncretism properly,
+once the channel has an audience that knows its register. **Karunakar's call, not mine.**
+
+**Sources**
+- [మల్లన్న సన్నిధిలో.. ఆధ్యాత్మిక మల్లయుద్ధం — V6 Velugu](https://www.v6velugu.com/several-stories-on-mallanna-life-history)
+- [కోరికలు తీర్చే కొమరువెల్లి మల్లన్న — TeluguOne](https://www.teluguone.com/devotional/amp/content/komaravelli-mallanna-charitra-840-35344.html)
+- [komuravelli mallanna story — marriage with medalamma](http://sunnydreamworld.blogspot.com/2011/07/komuravelli-mallanna-2.html)
+- [పసుపు కొమ్ముల మాల వెనుక పౌరాణిక గాథ — Bhakthi TV](https://www.bhakthitv.in/bhakthi-special-stories/the-mythological-story-behind-the-turmeric-horn-garland-is.html)
