@@ -6,6 +6,7 @@ import part2 from "./episodes/01-part2-timing.json";
 import { ProofShot } from "./three/ProofShot";
 import { PatnamDraw } from "./components/PatnamDraw";
 import { Sample } from "./three/Sample";
+import { Pilot } from "./pilot/Pilot";
 import { SampleScene } from "./puppet/SampleScene";
 import { CharacterStill, WalkTest } from "./three/CharacterTest";
 import { Ep01Open } from "./episodes/Ep01Open";
@@ -79,6 +80,8 @@ export const RemotionRoot: React.FC = () => {
         durationInFrames={60} fps={30} width={1080} height={1920} />
       <Composition id="PuppetSample" component={SampleScene}
         durationInFrames={240} fps={30} width={1080} height={1920} />
+      <Composition id="Pilot" component={Pilot}
+        durationInFrames={480} fps={30} width={1080} height={1920} />
     </>
   );
 };
