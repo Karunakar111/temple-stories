@@ -1,0 +1,55 @@
+{
+ "episode": "ep05-yadagirigutta",
+ "revision": 2,
+ "prepared": "2026-11-23",
+ "status_meanings": {
+  "approved-style": "EP01 art, style only",
+  "verified": "identity confirmed from a named source",
+  "lead": "identified source still to be chosen or confirmed",
+  "unresolved": "no usable reference",
+  "decision": "waiting on Karunakar's call (see weekly review page)"
+ },
+ "references": [
+  {
+   "id": "STYLE-DEITY",
+   "subject": "EP01 deity close-up (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot2-deity-close.png",
+   "use": "style input only; never an identity reference",
+   "rights": "own artwork"
+  },
+  {
+   "id": "STYLE-PATNAM",
+   "subject": "EP01 patnam close (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot3-patnam-v3-final.png",
+   "use": "style input only",
+   "rights": "own artwork"
+  },
+  {
+   "id": "Y-HILL",
+   "subject": "Yadagirigutta hill and the present temple (rebuilt in black stone, 2016-2022)",
+   "status": "lead",
+   "basis": "Wikipedia; Deccan Herald on the restored name",
+   "note": "photo to choose (routine)"
+  },
+  {
+   "id": "Y-FIGURES",
+   "subject": "Yada rishi, Anjaneya, the woman devotee",
+   "status": "verified",
+   "basis": "literary illustration; Anjaneya in standard iconography"
+  },
+  {
+   "id": "Y-DARSHAN",
+   "subject": "Lakshmi Narasimha at the first darshan",
+   "status": "decision",
+   "decision": "D1 deity depiction policy"
+  },
+  {
+   "id": "Y-FORMS",
+   "subject": "The five forms, named on screen",
+   "status": "verified",
+   "basis": "Y1-Y2; names only, no five statues together"
+  }
+ ]
+}

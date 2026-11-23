@@ -1,0 +1,187 @@
+"""Weekly batch: produce seven episodes in one run, release one per day.
+
+- One approval covers the week: every episode's script hash and creative-scope hash, the
+  provider caps for the week, and the release start date. Episodes that cannot be approved
+  (no script yet) are listed as not approved; the rest of the week still runs.
+- One production run per local day for the batch (ledger day lock), one runner at a time.
+- Each episode is run independently: a held episode (missing script, unresolved reference,
+  budget) never stops the others.
+- Narration first; clips wait for the take; the take retimes the episode within the approval.
+"""
+import csv
+import html
+import json
+import math
+import shutil
+import subprocess
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+from .episodes import Episode, load_json, request_key
+from .ledger import local_tz
+from .money import fmt, to_milli
+from .paths import EPISODES, REVIEW, ROOT, ensure_state
+from .runner import DONE, NAMES, RunnerLock, run_episode
+
+
+
+class Batch:
+    def __init__(self, batch_id, root=None):
+        self.root = root or EPISODES
+        self.id = batch_id
+        self.doc = load_json(self.root / "batches" / f"{batch_id}.json")
+        if self.doc is None:
+            raise SystemExit(f"no batch {batch_id}")
+        self.episodes = self.doc["episodes"]
+        self.approval = load_json(self.root / "batches" / f"{batch_id}.approval.json")
+
+    def cap(self, provider):
+        v = (self.approval or {}).get("caps", {}).get(provider)
+        return None if v is None else to_milli(v)
+
+    def release_dates(self):
+        start = (self.approval or {}).get("release_start")
+        if not start:
+            return {}
+        d0 = date.fromisoformat(start)
+        approved = [s for s in self.episodes if s in (self.approval or {}).get("episodes", {})]
+        return {s: (d0 + timedelta(days=i * self.doc["release"]["every_days"])).isoformat() for i, s in enumerate(approved)}
+
+    def episode(self, slug):
+        return Episode(slug, self.root, batch=self)
+
+
+# ---------------------------------------------------------------------------- approval
+def approve(batch, by, caps, release_start, reviewed):
+    if not reviewed:
+        raise SystemExit("needs --i-have-reviewed (scripts, visual approach and caps for the whole week)")
+    for k, v in caps.items():
+        to_milli(v)
+    rec = {"batch": batch.id, "approved_by": by, "approved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+           "covers": "scripts + visual approach (reference boards and shot lists, timing excluded) + provider caps",
+           "caps": caps, "release_start": release_start, "episodes": {}, "not_approved": {}}
+    for slug in batch.episodes:
+        ep = Episode(slug, batch.root)
+        if not ep.has_script() or ep.shots_doc is None:
+            rec["not_approved"][slug] = ep.meta.get("status") or "no script or shot list"
+            continue
+        rec["episodes"][slug] = {"script_sha256": ep.script_sha(), "look_sha256": ep.creative_sha()}
+    (batch.root / "batches" / f"{batch.id}.approval.json").write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return rec
+
+
+# ---------------------------------------------------------------------------- retiming
+def _probe_seconds(path):
+    for exe in (shutil.which("ffprobe"), str(ROOT / "node_modules/ffprobe-static/bin/darwin/x64/ffprobe")):
+        if exe and Path(exe).exists():
+            r = subprocess.run([exe, "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                               capture_output=True, text=True)
+            try:
+                return float(r.stdout.strip())
+            except ValueError:
+                return None
+    return None
+
+
+def retime(ep, ledger, audio_path):
+    """Size each clip from the real take. Within the approval as long as scope and caps hold."""
+    audio_s = _probe_seconds(audio_path)
+    est = ep.shots_doc.get("est_total_s")
+    scale = audio_s / est if (audio_s and est) else 1.0
+    by_id = {s["id"]: s for s in ep.shots_doc["shots"]}
+    clips = {}
+    for s in ep.shots_doc["shots"]:
+        for c in s["paid"]:
+            if c["asset_type"] != "clip":
+                continue
+            spans = [by_id[x].get("est_dur_s") for x in (s.get("clip_spans") or [s["id"]])]
+            if None in spans:  # no estimate for this shot: keep the approved length
+                d = c["settings"]["duration"]
+            else:
+                d = min(c.get("max_s", 5), max(3, math.ceil(sum(spans) * scale - 0.25)))
+            rate = to_milli(c["quote"]) / c["settings"]["duration"]
+            clips[s["id"]] = {"duration": d, "quote": fmt(round(d * rate))}
+    doc = {"source": "take" if audio_s else "take (mock audio: estimate timing kept)", "audio_s": audio_s,
+           "scale": round(scale, 3), "derived_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "clips": clips}
+    (ep.dir / "timing.json").write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+    return f"{doc['source']}; scale {scale:.2f}; {len(clips)} clips sized"
+
+
+# ---------------------------------------------------------------------------- run
+def run_batch(batch, ledger, cfg, providers, say=print):
+    from .review import export
+
+    day = datetime.now(local_tz(cfg)).date().isoformat()
+    results = {}
+    with RunnerLock(ensure_state()) as lock:
+        if lock is None:
+            say("LOCKED: another gudi runner is active; this launch exits without doing anything")
+            return {"_": "locked"}
+        got = ledger.take_day(day, f"batch:{batch.id}", "batch")
+        if got != "ok":
+            say(f"LOCKED: {got}")
+            return {"_": "locked"}
+        releases = batch.release_dates()
+        for slug in batch.episodes:
+            ep = batch.episode(slug)
+            say(f"\n[{slug}] release {releases.get(slug, 'not scheduled')}")
+            try:
+                code = run_episode(ep, ledger, cfg, providers, say=say, lock_held=True, retimer=retime)
+            except Exception as e:  # one episode's failure never stops the week
+                say(f"  ERROR {slug}: {e}; held, other episodes continue")
+                code = 2
+            results[slug] = NAMES.get(code, str(code))
+            if code == DONE:
+                export(ep, ledger, cfg, say=say, release=releases.get(slug))
+    say("\nBATCH SUMMARY " + batch.id)
+    for slug, r in results.items():
+        say(f"  {slug:22s} {r}")
+    return results
+
+
+# ---------------------------------------------------------------------------- quote
+def quote_rows(batch, ledger=None):
+    rows = []
+    for slug in batch.episodes:
+        ep = Episode(slug, batch.root)
+        if not ep.has_script() or ep.shots_doc is None:
+            rows.append({"episode": slug, "beat": "-", "asset": "-", "provider": "-", "model": "-", "seconds": "",
+                         "quote": "", "status": ep.meta.get("status", "no script"), "blocked_by": ""})
+            continue
+        for c in ep.paid_calls():
+            b = ep.blockers(c)
+            decision = [x for x in b if "decision" in x]
+            if decision:
+                status = "waits for your decision"
+            elif b:
+                status = "reference to confirm (routine)"
+            elif c["asset_type"] == "clip":
+                status = "ready after narration (timing-dependent)"
+            else:
+                status = "ready"
+            state = ""
+            if ledger is not None:
+                j = ledger.job(request_key(ep, c))
+                state = j["state"] if j else ""
+            rows.append({"episode": slug, "beat": c["beat"], "asset": c["asset_type"], "provider": c["provider"],
+                         "model": c.get("model", ""), "seconds": c.get("settings", {}).get("duration", "") or "",
+                         "quote": c["quote"], "status": state or status,
+                         "blocked_by": "; ".join(x.split(" (")[0] for x in b)})
+    return rows
+
+
+def write_quote_csv(rows, path):
+    with open(path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+
+
+def totals(rows):
+    t = {}
+    for r in rows:
+        if not r["quote"]:
+            continue
+        e = t.setdefault(r["episode"], {}).setdefault(r["provider"], 0)
+        t[r["episode"]][r["provider"]] = e + to_milli(r["quote"])
+    return t

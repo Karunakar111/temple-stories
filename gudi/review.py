@@ -9,7 +9,7 @@ from .money import fmt
 from .paths import REVIEW, ROOT
 
 
-def export(ep, ledger, cfg, say=print):
+def export(ep, ledger, cfg, say=print, release=None):
     day = datetime.now(local_tz(cfg)).date().isoformat()
     out = REVIEW / ep.slug / day
     out.mkdir(parents=True, exist_ok=True)
@@ -54,7 +54,7 @@ def export(ep, ledger, cfg, say=print):
     )
     manifest = {
         "episode": ep.slug, "revision": ep.revision(), "exported_local_day": day,
-        "approval": ep.approval, "cost": cost, "pending": pending,
+        "planned_release": release, "approval": ep.approval, "cost": cost, "pending": pending,
         "assets": [
             {"beat": j["beat"], "type": j["asset_type"], "provider": j["provider"], "state": j["state"],
              "request_key": j["request_key"], "provider_job_id": j["provider_job_id"], "path": j["local_path"],

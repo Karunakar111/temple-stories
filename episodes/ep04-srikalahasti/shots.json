@@ -1,0 +1,510 @@
+{
+ "episode": "ep04-srikalahasti",
+ "revision": 2,
+ "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
+ "est_total_s": 73.2,
+ "narration": [
+  {
+   "beat": "VO",
+   "provider": "elevenlabs",
+   "asset_type": "narration",
+   "model": "eleven_v4",
+   "quote": "1039",
+   "settings": {
+    "voice": "JWn8KOVJuYWznmih5YXL",
+    "takes": 1
+   },
+   "text_path": "episodes/ep04-srikalahasti/voice.te.txt",
+   "prompt": "voice.te.txt",
+   "references": [],
+   "needs": []
+  }
+ ],
+ "shots": [
+  {
+   "id": "C1",
+   "media_from": null,
+   "text": null,
+   "picture": "Sheet: elephant, cobra, spider in house style. Not on screen.",
+   "what_changes": "n/a",
+   "class": "paid still (reference)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Design sheet in the attached illustrated folk style: an Indian elephant, a cobra, and a small natural garden spider with its web, each drawn naturally, plain warm paper. No text."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": false,
+   "est_start_s": null,
+   "est_dur_s": 0
+  },
+  {
+   "id": "S01",
+   "media_from": null,
+   "text": "శ్రీకాళహస్తి కథలో ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?",
+   "picture": "Cold open in macro: silk releases, a gem rolls; tilt up the falling stream to the trunk. Title first frame.",
+   "what_changes": "Web tears; gem rolls; stream revealed.",
+   "class": "paid still + paid clip (protect the pour)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Macro: a stream of water falling onto a forest linga covered by a spider web with a red gem on top, the tip of an elephant trunk above, attached style. No text.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 6,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "9",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 6,
+      "start_image": "<S01:still>"
+     },
+     "references": [
+      "S01:still"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA"
+     ],
+     "after": [
+      "S01:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "Water pours from the elephant's trunk onto the linga; the spider web tears and the red gem rolls aside; the camera tilts up the stream to reveal the trunk. Direction of flow stays downward."
+    }
+   ],
+   "local": [
+    "title card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": [
+    "S01",
+    "S02"
+   ],
+   "on_screen": true,
+   "est_start_s": 0.0,
+   "est_dur_s": 4.02
+  },
+  {
+   "id": "S02",
+   "media_from": "S01",
+   "text": "లింగం మీదికి నీళ్ల ధార పడింది. పాము తెచ్చి పెట్టిన మణులు కూడా పక్కకు దొర్లిపోయాయి. ఆ నీళ్లు పోసింది ఏనుగే.",
+   "picture": "(clip continues)",
+   "what_changes": "",
+   "class": "covered by the S01 clip",
+   "paid": [],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 4.52,
+   "est_dur_s": 7.22
+  },
+  {
+   "id": "S03",
+   "media_from": null,
+   "text": "స్వర్ణముఖి ఒడ్డున ఉన్న శ్రీకాళహస్తి గురించి చెప్పుకునే కథల్లో ఇదొకటి.",
+   "picture": "River and the identified temple; dissolve into forest.",
+   "what_changes": "Water light; dissolve.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-EXTERIOR",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The Srikalahasti temple gopurams beside the Swarnamukhi river as in the chosen reference, morning, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "map card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 12.24,
+   "est_dur_s": 4.7
+  },
+  {
+   "id": "S04",
+   "media_from": null,
+   "text": "అడవిలో ఒక శివలింగం. ఎండ పడినా, వాన వచ్చినా లింగానికి అడ్డుగా ఉండాలని ఒక సాలెపురుగు దారం మీద దారం వేసి గూడు అల్లేది.",
+   "picture": "Forest linga; the spider spins between two anchors; light makes the shelter legible.",
+   "what_changes": "Web draws thread by thread.",
+   "class": "paid still + LOCAL web animation",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A stone linga in a quiet forest clearing between two branches, dappled light, no web yet, attached style. No text."
+    }
+   ],
+   "local": [
+    "procedural web drawn in code",
+    "small spider sprite"
+   ],
+   "note": "Web drawn in code instead of a paid clip",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 17.44,
+   "est_dur_s": 7.83
+  },
+  {
+   "id": "S05",
+   "media_from": null,
+   "text": "పాము నేల లోపలి నుంచి మణులు తెచ్చి అదే లింగాన్ని అలంకరించేది.",
+   "picture": "The same snake approaches; a jewel settles.",
+   "what_changes": "Snake glides in; gem placed.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "S04:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The same forest linga under its web; a cobra emerging from a hole in the ground with a glowing red gem, attached style. No text.",
+     "after": [
+      "S04:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "6",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 4,
+      "start_image": "<S05:still>"
+     },
+     "references": [
+      "S05:still"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA"
+     ],
+     "after": [
+      "S05:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The cobra glides to the linga and leaves the red gem at its base, then withdraws. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 25.27,
+   "est_dur_s": 4.09
+  },
+  {
+   "id": "S06",
+   "media_from": null,
+   "text": "ఏనుగు వంతు వచ్చేసరికి దాని తొండం నిండా నీళ్లు. అది లింగానికి అభిషేకం చేసేది. ఆ ధార తగిలితే గూడు నిలుస్తుందా? మణులు అక్కడే ఉంటాయా?",
+   "picture": "Continuous trunk lift and pour; why one offering displaces the others.",
+   "what_changes": "Trunk lifts, pours.",
+   "class": "paid still + paid clip (protect)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The elephant (C1) at the forest linga with its trunk raised, water about to pour, web and gem visible, attached style. No text.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S06:still>"
+     },
+     "references": [
+      "S06:still"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA"
+     ],
+     "after": [
+      "S06:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The elephant lifts its trunk in one continuous movement and pours water over the linga; the web sags and the gem washes aside. Trunk and stream stay continuous. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 29.86,
+   "est_dur_s": 8.79
+  },
+  {
+   "id": "S07",
+   "media_from": "S06",
+   "text": "తాను తెచ్చిన మణులు పక్కకు పోవడం చూసి పాముకి కోపం వచ్చింది. ఏనుగు తొండంలోకి దూరింది.",
+   "picture": "The snake approaches the trunk.",
+   "what_changes": "Snake rises.",
+   "class": "paid clip",
+   "paid": [
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S06:still>"
+     },
+     "references": [
+      "S06:still"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA"
+     ],
+     "after": [
+      "S06:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The cobra rises and slides toward the elephant's trunk. No bite or injury shown. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 39.15,
+   "est_dur_s": 5.65
+  },
+  {
+   "id": "S08",
+   "media_from": null,
+   "text": "ఊపిరాడక ఏనుగు చెట్టు బోదెకి గుద్దుకుంది. ఆ బోదె మీదే సాలెపురుగు కూడా ఉంది. ఈ కథనంలో మూడూ అక్కడే ప్రాణాలు విడిచాయి.",
+   "picture": "The tree shudders; the web falls still. The voice carries the deaths.",
+   "what_changes": "Shudder; stillness.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A large tree trunk in the forest with a spider web on its bark, leaves falling, no animals visible, attached style. No text."
+    }
+   ],
+   "local": [
+    "camera shake",
+    "falling leaves"
+   ],
+   "note": "No graphic injury",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 44.8,
+   "est_dur_s": 7.77
+  },
+  {
+   "id": "S09",
+   "media_from": null,
+   "text": "ఒకటి నీడ ఇచ్చింది. ఒకటి తనకి దొరికిన మణులు ఇచ్చింది. ఇంకొకటి నీళ్లు తెచ్చింది. మూడింటి భక్తికీ మెచ్చి శివుడు వాటికి ముక్తినిచ్చాడని చెబుతారు.",
+   "picture": "The three offerings together at the linga, lit.",
+   "what_changes": "Light blooms on each offering in turn.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "S-ANIMALS",
+      "S-FOREST-LINGA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The forest linga with all three offerings at once: a spider web above it, a red gem at its base, water glistening on it, warm light, attached style. No text."
+    }
+   ],
+   "local": [
+    "Bloom"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 53.07,
+   "est_dur_s": 9.6
+  },
+  {
+   "id": "S10",
+   "media_from": "S09",
+   "text": "ఆ మూడు ప్రాణుల్ని ఈ క్షేత్రం పేరులోనే గుర్తు చేసుకుంటారు. శ్రీ అంటే ఇక్కడ సాలెపురుగు. కాళం అంటే పాము. హస్తి అంటే ఏనుగు. కలిపి పలకండి… శ్రీకాళహస్తి.",
+   "picture": "One offering per spoken name; the Telugu name builds from typeset letters. Optional present linga per D1.",
+   "what_changes": "Name builds.",
+   "class": "reuse + local",
+   "paid": [],
+   "local": [
+    "typeset name build"
+   ],
+   "note": "If D1 = illustrate: one more still of the present linga with its marks (+2)",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 63.17,
+   "est_dur_s": 10.01
+  }
+ ]
+}

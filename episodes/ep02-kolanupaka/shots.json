@@ -1,8 +1,8 @@
 {
  "episode": "ep02-kolanupaka",
- "revision": 1,
- "timing_basis": "PROVISIONAL: EP01 measured 14.68 chars/s plus 0.5 s per paragraph break. Re-derived from the actual take after narration (production book step 4).",
- "est_total_s": 99.3,
+ "revision": 2,
+ "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
+ "est_total_s": 101.6,
  "narration": [
   {
    "beat": "VO",
@@ -15,7 +15,7 @@
     "takes": 1
    },
    "text_path": "episodes/ep02-kolanupaka/voice.te.txt",
-   "prompt": "voice.te.txt sha256 35da0719cb3aff55dd30090964e0d7351c8e6ad2ccd9416b3d3f9709d493c7fb",
+   "prompt": "voice.te.txt",
    "references": [],
    "needs": []
   }
@@ -23,11 +23,11 @@
  "shots": [
   {
    "id": "C1",
+   "media_from": null,
    "text": null,
-   "picture": "Character sheet: Renukacharya, front and three-quarter, staff and water pot. Not shown in the film.",
+   "picture": "Character sheet: Renukacharya. Not on screen.",
    "what_changes": "n/a",
    "class": "paid still (reference)",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -47,21 +47,24 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Character sheet of a Shaiva sage in the attached illustrated folk style: lean ascetic, sacred ash over the body, rudraksha strands at the neck, holding a wooden staff and a brass water pot; front and three-quarter views on a plain warm paper background. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Character sheet of a Shaiva sage in the attached illustrated folk style: lean ascetic, sacred ash over the body, rudraksha strands, wooden staff, brass water pot; front and three-quarter views, plain warm paper. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": false,
    "est_start_s": null,
    "est_dur_s": 0
   },
   {
    "id": "C2",
+   "media_from": null,
    "text": null,
-   "picture": "Character sheet: Agastya and Lopamudra. Not shown in the film.",
+   "picture": "Character sheet: Agastya and Lopamudra. Not on screen.",
    "what_changes": "n/a",
    "class": "paid still (reference)",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -81,25 +84,24 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Character sheet of the sage Agastya (short, bearded, water pot) and his wife Lopamudra in a simple sari, front and three-quarter views, attached illustrated folk style, plain warm paper background. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Character sheet: the sage Agastya (short, bearded, pot-bellied, matted hair, water pot in his left hand) and his wife Lopamudra in a simple sari; front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": false,
    "est_start_s": null,
    "est_dur_s": 0
   },
   {
    "id": "S01",
-   "text": "కొలనుపాక సోమేశ్వర లింగం నుంచి ఓ గురువు వచ్చాడట.",
-   "picture": "Sanctum of Someshwara: the linga in lamp light. Telugu title typeset on the first frame: 'కొలనుపాక సోమేశ్వరుడు'.",
-   "what_changes": "Lamps flicker; light gathers on the linga.",
+   "media_from": null,
+   "text": "కొలనుపాక సోమేశ్వర",
+   "picture": "Sanctum in lamp light; title 'కొలనుపాక సోమేశ్వరుడు' typeset on the FIRST frame.",
+   "what_changes": "Lamps flicker; light starts gathering at the linga.",
    "class": "paid still + local",
-   "local": [
-    "title card",
-    "LampGlow",
-    "Bloom"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -119,21 +121,28 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Interior of a stone Shiva sanctum at night, the swayambhu linga as in the attached linga reference, oil lamps, attached illustrated folk style, vertical frame. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Interior of a stone Shiva sanctum at night, the linga as decided in D1, oil lamps, attached illustrated folk style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
+   "local": [
+    "title card",
+    "LampGlow",
+    "Bloom"
+   ],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
    "est_start_s": 0.0,
-   "est_dur_s": 3.2
+   "est_dur_s": 1.16
   },
   {
    "id": "S02",
-   "text": "ఎవరాయన?",
-   "picture": "Reverse: the sage resolving out of the light at the linga; hold his face.",
-   "what_changes": "He emerges and settles into view.",
+   "media_from": null,
+   "text": "లింగం నుంచి ఓ గురువు వచ్చాడట. ఎవరాయన?",
+   "picture": "The emergence: a sage resolves out of the light at the linga; hold on his face after the question.",
+   "what_changes": "Light becomes a figure; settles; we hold his face.",
    "class": "paid still + paid clip (priority: emergence)",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -155,21 +164,22 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The same sanctum; a Shaiva sage (match character sheet C1) standing in soft golden light that rises from the linga, villagers' silhouettes in the foreground looking on, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The same sanctum; a Shaiva sage (character sheet C1) standing in soft golden light rising from the linga, villagers' silhouettes in the foreground, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still"
      ]
     },
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "7.5",
+     "quote": "6",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 5,
+      "duration": 4,
       "start_image": "<S02:still>"
      },
      "references": [
@@ -182,24 +192,25 @@
      "after": [
       "S02:still"
      ],
-     "prompt": "The golden light around the sage softens as he becomes solid and still; the villagers in the foreground lean back slightly. The linga and the sage's face, ash marks and rudraksha stay exactly the same. Camera almost still."
+     "timing_dependent": true,
+     "prompt": "The golden light around the sage softens as he becomes solid and still; the villagers lean back slightly. The linga and the sage's face, ash marks and rudraksha stay exactly the same. Camera almost still."
     }
    ],
-   "note": "Artistic depiction of a tradition, not a reconstruction",
+   "local": [],
+   "note": "Was 0.5 s of narration for a 5 s clip. Now spans the whole hook plus a 1.2 s breath; the clip is cut to fit.",
+   "hold_after_s": 1.2,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 3.2,
-   "est_dur_s": 0.5
+   "est_start_s": 1.16,
+   "est_dur_s": 3.72
   },
   {
    "id": "S03",
+   "media_from": null,
    "text": "ఊరి జనం కూడా ఆయన్ని చూసి అదే అడిగారు. వీరశైవుల గ్రంథం ‘సిద్ధాంత శిఖామణి’లో ఈ కథ ఇలా సాగుతుంది.",
-   "picture": "Villagers looking up at him; the source name typeset as an editorial card.",
-   "what_changes": "Lamps; card rises in on 'సిద్ధాంత శిఖామణి'.",
+   "picture": "Villagers looking up; source name typeset as an editorial card.",
+   "what_changes": "Card rises on 'సిద్ధాంత శిఖామణి'.",
    "class": "paid still + local",
-   "local": [
-    "source card",
-    "LampGlow"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -221,36 +232,41 @@
      "prompt": "Villagers of a Telangana village gathered at a temple doorway at night, looking in with wonder, lamp light on their faces, attached style. Respectful, no caricature. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
+   "local": [
+    "source card"
+   ],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 4.2,
+   "est_start_s": 5.38,
    "est_dur_s": 6.4
   },
   {
    "id": "S04",
+   "media_from": "S02",
    "text": "ఒంటినిండా విభూతి. మెడలో రుద్రాక్షలు. చేతిలో దండం, కమండలం.",
-   "picture": "Details from E1 at 2k: ash, rudraksha, staff, water pot; then the listeners.",
+   "picture": "Details from the S02 still at 2k: ash, rudraksha, staff, water pot.",
    "what_changes": "Camera moves detail to detail on each phrase.",
-   "class": "reuse (E1 crops) + local",
-   "local": [
-    "Stage camera moves"
-   ],
+   "class": "reuse + local",
    "paid": [],
-   "note": "Reuses the E1 still; no extra cost",
+   "local": [
+    "Stage camera"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 11.1,
-   "est_dur_s": 3.9
+   "est_start_s": 12.28,
+   "est_dur_s": 3.88
   },
   {
    "id": "S05",
+   "media_from": null,
    "text": "తన పేరు రేణుకసిద్ధుడని, శివుడి ఆజ్ఞతో ఇక్కడికి వచ్చానని ఆ యోగి చెప్పాడట. ఆయన్నే రేణుకాచార్యుడని పిలుస్తారు.",
-   "picture": "The sage addressing the villagers; name typeset 'రేణుకాచార్యుడు'.",
-   "what_changes": "Name card on 'రేణుకాచార్యుడని'.",
+   "picture": "The sage speaking to seated villagers; name typeset 'రేణుకాచార్యుడు'.",
+   "what_changes": "Name card on the name.",
    "class": "paid still + local",
-   "local": [
-    "name card",
-    "LampGlow"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -271,38 +287,41 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The Shaiva sage (character sheet C1) standing before the temple and speaking calmly to seated villagers, one hand raised in blessing, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The Shaiva sage (C1) standing before the temple, speaking calmly to seated villagers, one hand raised in blessing, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still"
      ]
     }
    ],
+   "local": [
+    "name card"
+   ],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 15.0,
-   "est_dur_s": 7.3
+   "est_start_s": 16.16,
+   "est_dur_s": 7.29
   },
   {
    "id": "S06",
+   "media_from": null,
    "text": "ఊరి వాళ్లు ఇంకా చూస్తుండగానే ఆయన ఆకాశమార్గాన మలయ పర్వతానికి వెళ్లాడు.",
-   "picture": "He rises upward out of frame; match cut to the sky over the mountain.",
-   "what_changes": "Upward departure; villagers' heads tilt up.",
+   "picture": "He rises out of frame; match cut to the mountain sky.",
+   "what_changes": "Upward departure; heads tilt up.",
    "class": "paid clip + local match cut",
-   "local": [
-    "match cut",
-    "Sky"
-   ],
    "paid": [
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "6",
+     "quote": "7.5",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 4,
+      "duration": 5,
       "start_image": "<S05:still>"
      },
      "references": [
@@ -314,25 +333,25 @@
      "after": [
       "S05:still"
      ],
-     "prompt": "The sage rises gently straight upward and out of the top of the frame; the villagers tilt their heads to follow him. Faces and dress stay the same. Camera still."
+     "timing_dependent": true,
+     "prompt": "The sage rises gently straight upward and out of the top of the frame; the villagers tilt their heads to follow. Faces and dress stay the same. Camera still."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 22.8,
+   "est_start_s": 23.95,
    "est_dur_s": 4.7
   },
   {
    "id": "S07",
+   "media_from": null,
    "text": "అక్కడ అగస్త్య మహర్షి ఆశ్రమం ఉంది.",
-   "picture": "Wooded mountain and the ashram, painted landscape.",
-   "what_changes": "Mist drifts, birds, lamps in the hut.",
+   "picture": "Wooded mountain and ashram.",
+   "what_changes": "Mist, birds, hut lamp.",
    "class": "paid still + local",
-   "local": [
-    "Stage parallax",
-    "Birds",
-    "LampGlow"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -352,21 +371,27 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "A wooded mountain ridge in the Western Ghats at dawn, a small thatched hermitage in a clearing with a sacred fire, attached illustrated folk style. No people. No text."
+     "prompt": "A wooded mountain ridge at dawn, a small thatched hermitage in a clearing with a sacred fire, attached illustrated folk style. No people. No text."
     }
    ],
+   "local": [
+    "Stage parallax",
+    "Birds"
+   ],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 27.5,
-   "est_dur_s": 2.2
+   "est_start_s": 28.65,
+   "est_dur_s": 2.25
   },
   {
    "id": "S08",
+   "media_from": null,
    "text": "రేణుకాచార్యుణ్ని చూడగానే అగస్త్యుడు కూర్చున్న చోటు నుంచి లేచాడు.",
-   "picture": "Agastya, seated, sees the visitor and rises.",
-   "what_changes": "Agastya stands up to receive him.",
+   "picture": "Agastya sees the visitor and rises.",
+   "what_changes": "Agastya stands to receive him.",
    "class": "paid still + paid clip",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -389,22 +414,23 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Agastya (character sheet C2) seated on a deer skin outside the hermitage, looking up as the Shaiva sage (C1) arrives at the clearing, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Agastya (C2) seated on a deer skin outside the hermitage, looking up as the Shaiva sage (C1) arrives, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still",
       "C2:still"
      ]
     },
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "6",
+     "quote": "7.5",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 4,
+      "duration": 5,
       "start_image": "<S08:still>"
      },
      "references": [
@@ -417,21 +443,25 @@
      "after": [
       "S08:still"
      ],
-     "prompt": "Agastya rises from his seat and steps forward with joined hands to receive the visitor. Both faces and dress stay the same; hands whole with five fingers. Camera still."
+     "timing_dependent": true,
+     "prompt": "Agastya rises from his seat and steps forward with joined hands to receive the visitor. Faces and dress stay the same; hands whole with five fingers. Camera still."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 29.7,
-   "est_dur_s": 4.4
+   "est_start_s": 30.9,
+   "est_dur_s": 4.36
   },
   {
    "id": "S09",
+   "media_from": null,
    "text": "లోపాముద్ర నీళ్లు తీసుకొచ్చింది.",
    "picture": "Lopamudra brings the vessel; Agastya receives it.",
-   "what_changes": "One readable hand-over of the water vessel.",
+   "what_changes": "One readable hand-over.",
    "class": "paid still + paid clip (priority: two-person welcome)",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -454,22 +484,23 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Lopamudra (C2) walking from the hut carrying a brass water vessel towards Agastya (C2), the visiting sage (C1) standing nearby, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Lopamudra (C2) walking from the hut with a brass water vessel towards Agastya (C2), the visiting sage (C1) standing nearby, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still",
       "C2:still"
      ]
     },
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "7.5",
+     "quote": "4.5",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 5,
+      "duration": 3,
       "start_image": "<S09:still>"
      },
      "references": [
@@ -481,21 +512,25 @@
      "after": [
       "S09:still"
      ],
+     "timing_dependent": true,
      "prompt": "Lopamudra walks to Agastya and hands him the water vessel; he takes it in both hands. Faces and dress stay the same; hands whole. Camera still."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.6,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 34.1,
-   "est_dur_s": 2.1
+   "est_start_s": 35.26,
+   "est_dur_s": 2.71
   },
   {
    "id": "S10",
+   "media_from": null,
    "text": "ఆ నీళ్లతో అగస్త్యుడు స్వయంగా అతిథి పాదాలు కడిగాడు.",
    "picture": "Closer: Agastya washes the visitor's feet.",
-   "what_changes": "Water pours over the feet; Agastya's hands wash them.",
+   "what_changes": "Water pours; hands wash.",
    "class": "paid still + paid clip (priority)",
-   "local": [],
    "paid": [
     {
      "provider": "higgsfield",
@@ -518,22 +553,23 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Close view: Agastya (C2) kneeling and pouring water from a brass vessel over the bare feet of the standing Shaiva sage (C1), attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Close view: Agastya (C2) kneeling, pouring water from a brass vessel over the bare feet of the standing Shaiva sage (C1), attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still",
       "C2:still"
      ]
     },
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "7.5",
+     "quote": "6",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 5,
+      "duration": 4,
       "start_image": "<S10:still>"
      },
      "references": [
@@ -546,23 +582,25 @@
      "after": [
       "S10:still"
      ],
+     "timing_dependent": true,
      "prompt": "Agastya pours water slowly over the visitor's feet and gently washes them with his other hand. Feet, hands and faces stay whole and the same. Camera still."
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 36.2,
-   "est_dur_s": 3.4
+   "est_start_s": 37.97,
+   "est_dur_s": 3.41
   },
   {
    "id": "S11",
+   "media_from": null,
    "text": "ఆ తర్వాత ఇద్దరూ కూర్చున్నారు. ఎన్నో ఆగమాలు విన్న అగస్త్యుడికే ఇంకా సందేహాలున్నాయట. శివతత్త్వాన్ని మీ నోట వినాలని అడిగాడు.",
-   "picture": "Both seated facing each other; Agastya asks (cut on the question).",
-   "what_changes": "Lamps; small settle.",
+   "picture": "Both seated; Agastya asks.",
+   "what_changes": "Cut on the question.",
    "class": "paid still + local",
-   "local": [
-    "LampGlow"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -585,28 +623,28 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Agastya (C2) and the Shaiva sage (C1) seated facing each other in the hermitage, Agastya asking with an open hand, the sage listening with eyes lowered, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Agastya (C2) and the Shaiva sage (C1) seated facing each other in the hermitage, Agastya asking with an open hand, the sage listening with lowered eyes, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "C1:still",
       "C2:still"
      ]
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 40.1,
-   "est_dur_s": 8.2
+   "est_start_s": 41.88,
+   "est_dur_s": 8.24
   },
   {
    "id": "S12",
+   "media_from": null,
    "text": "రేణుకాచార్యుడు ఒక్క క్షణం శివుణ్ని తలచుకుని చెప్పడం మొదలుపెట్టాడు.",
-   "picture": "Teacher pauses, then begins speaking; listening reaction on Agastya.",
-   "what_changes": "Pose change T1 -> T2 (key-pose cut, as in Experiment 01).",
+   "picture": "Teacher pauses, then begins; listening reaction.",
+   "what_changes": "Key-pose cut T1 -> T2 (Experiment 01).",
    "class": "paid still (second key pose) + local KeyPoseCut",
-   "local": [
-    "KeyPoseCut",
-    "crop on Agastya listening"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -618,7 +656,7 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "T1:still",
+      "S11:still",
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
@@ -628,41 +666,47 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "SAME composition and camera as the T1 still: now the Shaiva sage looks up and speaks with one hand raised in a teaching gesture while Agastya listens with joined hands, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "SAME composition and camera as the S11 still: now the Shaiva sage looks up and speaks with a raised teaching hand while Agastya listens with joined hands, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "T1:still"
+      "S11:still"
      ]
     }
    ],
-   "note": "Key poses must register; if T2 does not line up with T1, use a straight cut instead (no extra spend)",
+   "local": [
+    "KeyPoseCut"
+   ],
+   "note": "If the two key poses do not register, a straight cut (no extra spend).",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 48.3,
+   "est_start_s": 50.12,
    "est_dur_s": 4.5
   },
   {
    "id": "S13",
+   "media_from": "S12",
    "text": "భక్తుని ప్రయాణం ఎక్కడ మొదలవుతుంది? శివుడితో ఐక్యం కావడమంటే ఏంటి? ఆ గ్రంథం ముందుకు సాగేది ఇలాంటి ప్రశ్నలతోనే.",
-   "picture": "The two questions typeset over the dimmed T2 frame.",
-   "what_changes": "Each question appears on its phrase.",
+   "picture": "The two questions typeset over the dimmed S12 frame.",
+   "what_changes": "Each question on its phrase.",
    "class": "reuse + local",
+   "paid": [],
    "local": [
     "typeset questions"
    ],
-   "paid": [],
-   "note": "Questions are a thematic paraphrase (book K1 note)",
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 52.8,
-   "est_dur_s": 7.4
+   "est_start_s": 54.62,
+   "est_dur_s": 7.36
   },
   {
    "id": "S14",
+   "media_from": null,
    "text": "కథ చివర్లో రేణుకాచార్యుడు మళ్లీ కొలనుపాకకు వచ్చాడు. ఊరి జనం చూస్తుండగా సోమేశ్వరుడి ఎదుట నిలబడి ప్రార్థించాడు.",
-   "picture": "Return to the opening composition: the sage standing in prayer before the linga, villagers behind.",
+   "picture": "Return to the opening composition: the sage in prayer before the linga.",
    "what_changes": "Lamps; slow push.",
    "class": "paid still + local",
-   "local": [
-    "LampGlow"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -674,7 +718,7 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "L1:still",
+      "S01:still",
       "C1:still",
       "STYLE-DEITY",
       "STYLE-PATNAM"
@@ -685,30 +729,31 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The same sanctum as L1: the Shaiva sage (C1) standing before the linga with palms joined in prayer, villagers watching from the doorway, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The same sanctum as S01: the Shaiva sage (C1) standing before the linga with palms joined in prayer, villagers watching from the doorway, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "L1:still",
+      "S01:still",
       "C1:still"
      ]
     }
    ],
+   "local": [],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 60.7,
-   "est_dur_s": 7.4
+   "est_start_s": 62.48,
+   "est_dur_s": 7.43
   },
   {
    "id": "S15",
+   "media_from": null,
    "text": "లింగం నుంచి శివుడి పిలుపు వినిపించిందట. వచ్చిన దారినే, ఒక జ్యోతిలా, ఆయన అందులో ఐక్యమయ్యాడని ఈ సంప్రదాయం చెబుతుంది.",
-   "picture": "He resolves into light at the same linga; a witness lowers their hands. Stone stays intact.",
-   "what_changes": "Figure becomes light and merges into the linga.",
+   "picture": "He resolves into light at the same linga; a witness lowers his hands. Stone intact.",
+   "what_changes": "Figure becomes light and merges.",
    "class": "paid clip (priority: return into light) + local Bloom",
-   "local": [
-    "Bloom",
-    "Dust"
-   ],
    "paid": [
     {
+     "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
@@ -730,23 +775,43 @@
      "after": [
       "S14:still"
      ],
-     "prompt": "The sage slowly turns into soft golden light that flows into the linga and disappears; a villager in the doorway lowers his joined hands. The linga stays intact and unchanged. Camera still."
+     "timing_dependent": true,
+     "prompt": "The sage slowly turns into soft golden light that flows into the linga and disappears; a villager in the doorway lowers his joined hands. The linga stays intact. Camera still."
     }
    ],
+   "local": [],
    "note": "Artistic depiction of a tradition",
+   "hold_after_s": 0.6,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 68.1,
-   "est_dur_s": 7.8
+   "est_start_s": 69.91,
+   "est_dur_s": 8.37
   },
   {
-   "id": "S16",
-   "text": "ఇదే గుడి గురించి రాతి మీద మిగిలిన మాట కూడా ఒకటుంది. వెయ్యి అరవై ఏడో సంవత్సరపు శాసనంలో ఇక్కడి స్వయంభూ సోమేశ్వరుడి పూజలకు ఇచ్చిన దానం నమోదైంది. అంటే అప్పటికే ఇక్కడ పూజలు జరుగుతున్నాయని తెలుస్తోంది.",
-   "picture": "Museum context: a restrained, illustrated stone detail; typeset 'క్రీ.శ. 1067 · పూజలకు దానం'.",
-   "what_changes": "Light rakes across the stone; caption builds.",
-   "class": "paid still + local typography",
+   "id": "S16a",
+   "media_from": "S17",
+   "text": "ఇదే గుడి గురించి రాతి మీద మిగిలిన మాట కూడా ఒకటుంది.",
+   "picture": "Museum courtyard of the temple: carved stones along the ambulatory.",
+   "what_changes": "Slow lateral move past the stones.",
+   "class": "reuse (S17 exterior still) + local",
+   "paid": [],
    "local": [
-    "typeset date card"
+    "Stage camera"
    ],
+   "note": "Inscription beat split: was one 13.3 s hold on a single stone",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 78.78,
+   "est_dur_s": 3.47
+  },
+  {
+   "id": "S16b",
+   "media_from": null,
+   "text": "వెయ్యి అరవై ఏడో సంవత్సరపు శాసనంలో ఇక్కడి స్వయంభూ సోమేశ్వరుడి పూజలకు ఇచ్చిన దానం నమోదైంది.",
+   "picture": "Stone detail in raking light; typeset 'క్రీ.శ. 1067 · పూజలకు దానం' builds on the year.",
+   "what_changes": "Light rakes; caption builds.",
+   "class": "paid still + local",
    "paid": [
     {
      "provider": "higgsfield",
@@ -766,24 +831,45 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "A weathered grey stone slab with eroded, unreadable carved lines in a museum courtyard, raking evening light, attached illustrated style. No legible letters of any script."
+     "prompt": "A weathered grey stone slab with eroded, unreadable carved lines in a museum courtyard, raking evening light, attached style. No legible letters of any script."
     }
    ],
-   "note": "Not a specific inscription; no reconstruction",
+   "local": [
+    "date card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 76.4,
-   "est_dur_s": 13.3
+   "est_start_s": 82.25,
+   "est_dur_s": 6.06
+  },
+  {
+   "id": "S16c",
+   "media_from": "S01",
+   "text": "అంటే అప్పటికే ఇక్కడ పూజలు జరుగుతున్నాయని తెలుస్తోంది.",
+   "picture": "Consequence: worship continuing at the sanctum (reuse S01 with lamps and a priest's arati glow).",
+   "what_changes": "Lamps brighten; arati light circles.",
+   "class": "reuse + local",
+   "paid": [],
+   "local": [
+    "LampGlow",
+    "Bloom"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 88.31,
+   "est_dur_s": 3.61
   },
   {
    "id": "S17",
+   "media_from": null,
    "text": "కొలనుపాక వెళ్తే ఈ రెండు గుర్తుపెట్టుకోండి. లింగం దగ్గర రేణుకాచార్యుడి కథ. గుడి ఆవరణలోని శాసనంలో, ఆ పూజలు కొనసాగేందుకు ఎవరో ఇచ్చిన దానం.",
-   "picture": "Someshwara temple exterior; small map card; end on the two reminders typeset.",
+   "picture": "Someshwara exterior; map card; the two reminders typeset.",
    "what_changes": "Map pin; two lines appear.",
    "class": "paid still + local",
-   "local": [
-    "map card",
-    "typeset reminders"
-   ],
    "paid": [
     {
      "provider": "higgsfield",
@@ -803,12 +889,17 @@
       "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Exterior of the Someshwara Shiva temple at Kolanupaka as in the attached architecture reference (NOT the Jain temple), late afternoon, attached illustrated style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Exterior of the Someshwara Shiva temple at Kolanupaka as in the reference chosen in D2 (NOT the Jain temple), late afternoon, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
+   "local": [
+    "map card"
+   ],
    "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
    "on_screen": true,
-   "est_start_s": 90.1,
+   "est_start_s": 92.42,
    "est_dur_s": 9.2
   }
  ]

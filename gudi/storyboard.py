@@ -27,9 +27,10 @@ def render(slug):
 
     rows = ["# " + ep.meta["title_te"] + ": cost sheet (provisional, quotes only, nothing bought)", "",
             "Higgsfield quotes come from the connector's free estimate tools (2 credits per 2k still; "
-            "Kling 3.0 pro silent: 6 for 4 s, 7.5 for 5 s), fetched 23 Nov 2026. ElevenLabs cannot be quoted "
-            "through the connector on this account; the line uses EP01's logged rate of 1 credit per character "
-            "per take, one take.", "",
+            "Kling 3.0 pro silent: 6 for 4 s, 7.5 for 5 s), fetched 23 Nov 2026. ElevenLabs: verified with the connector's free estimate (EP02, one take = 1,430 "
+            "credits, 1 credit per character on eleven_v4). The connector defaults to two takes and charges per take; "
+            "the pipeline pins one take. Clip lengths are provisional until the take exists and may shrink or grow "
+            "within the approval.", "",
             "| Beat | Asset | Provider | Model / settings | Quote | Status |", "|---|---|---|---|---|---|"]
     tot, ready = {}, {}
     for c in ep.paid_calls():
@@ -42,7 +43,7 @@ def render(slug):
         model = c.get("model", "") + " " + ", ".join(f"{k}={v}" for k, v in c.get("settings", {}).items() if k != "start_image")
         rows.append(f"| {c['beat']} | {c['asset_type']} | {c['provider']} | {model} | {c['quote']} | {st} |")
     rows += ["", "## Totals by provider", "", "| Provider | Unit | Full plan | Of which unblocked today |", "|---|---|---|---|"]
-    units = {"higgsfield": "credits", "elevenlabs": "ElevenLabs credits (provisional)"}
+    units = {"higgsfield": "credits", "elevenlabs": "ElevenLabs credits (1 take)"}
     for p in sorted(tot):
         rows.append(f"| {p} | {units.get(p, 'credits')} | {fmt(tot[p])} | {fmt(ready.get(p, 0))} |")
     rows += ["", "Not included and not reserved: any repair of a still or clip (each needs your explicit retry "

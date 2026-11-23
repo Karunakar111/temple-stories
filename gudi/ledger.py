@@ -110,6 +110,12 @@ class Ledger:
             args.append(since)
         return self.db.execute(q, args).fetchone()[0]
 
+    def committed_for(self, provider, episodes):
+        total = 0
+        for ep in episodes:
+            total += self.committed(provider, episode=ep)
+        return total
+
     def headroom(self, provider, episode, episode_cap, daily_cap, monthly_cap, local_day):
         """Remaining spend under every limit; None means the limit is not configured (=> no spend)."""
         bal = self.last_balance(provider)

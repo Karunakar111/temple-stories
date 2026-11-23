@@ -1,0 +1,722 @@
+{
+ "episode": "ep03-vemulavada",
+ "revision": 2,
+ "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
+ "est_total_s": 88.9,
+ "narration": [
+  {
+   "beat": "VO",
+   "provider": "elevenlabs",
+   "asset_type": "narration",
+   "model": "eleven_v4",
+   "quote": "1249",
+   "settings": {
+    "voice": "JWn8KOVJuYWznmih5YXL",
+    "takes": 1
+   },
+   "text_path": "episodes/ep03-vemulavada/voice.te.txt",
+   "prompt": "voice.te.txt",
+   "references": [],
+   "needs": []
+  }
+ ],
+ "shots": [
+  {
+   "id": "C1",
+   "media_from": null,
+   "text": null,
+   "picture": "Sheets: devotee family and bull; King Narendra. Not on screen.",
+   "what_changes": "n/a",
+   "class": "paid still (reference)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-KODE",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Character sheet: a Telangana farming family (father, mother, son) in everyday clothes and a young white bull with a rope halter; front and side views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Character sheet: a king of legend in simple hunting dress with a bow, and an elderly rishi with a water pot; front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": false,
+   "est_start_s": null,
+   "est_dur_s": 0
+  },
+  {
+   "id": "S01",
+   "media_from": null,
+   "text": "వేములవాడ రాజన్నకు కోడెను ఎందుకు కడతారు?",
+   "picture": "Low beside walking feet and hooves; rise to reveal a devotee walking with the bull. Title on the first frame.",
+   "what_changes": "Walking gait; slack lead; rise.",
+   "class": "paid still + paid clip (protect the bull's gait)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-KODE",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Low angle on a temple courtyard: bare human feet walking beside the hooves of a young white bull on a slack rope, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 6,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "9",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 6,
+      "start_image": "<S01:still>"
+     },
+     "references": [
+      "S01:still"
+     ],
+     "needs": [
+      "V-KODE"
+     ],
+     "after": [
+      "S01:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The bull and the devotee walk forward together at a natural pace, the rope slack between them; the camera rises slowly to reveal the devotee. Natural gait, four legs moving correctly."
+    }
+   ],
+   "local": [
+    "title card"
+   ],
+   "note": null,
+   "hold_after_s": 0.8,
+   "clip_spans": [
+    "S01",
+    "S02"
+   ],
+   "on_screen": true,
+   "est_start_s": 0.0,
+   "est_dur_s": 3.46
+  },
+  {
+   "id": "S02",
+   "media_from": "S01",
+   "text": "భక్తుల అడుగుల పక్కనే కోడె గిట్టలు. తాడు పట్టుకుని దానితోపాటు నడుస్తున్న ఆ కుటుంబాన్ని చూడండి.",
+   "picture": "The family walking with the bull (clip continues).",
+   "what_changes": "Continues the walk.",
+   "class": "covered by the S01 clip",
+   "paid": [],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 3.96,
+   "est_dur_s": 6.34
+  },
+  {
+   "id": "S03",
+   "media_from": null,
+   "text": "ఇక్కడి శివుడి పేరు రాజరాజేశ్వరుడు. భక్తులు పిలిచేది మాత్రం రాజన్నా అని. ఇంటిల్లిపాదీ చల్లగా ఉండాలని కొందరు మొక్కుకుంటారు.",
+   "picture": "Temple exterior; name cards 'రాజరాజేశ్వరుడు' and 'రాజన్న'.",
+   "what_changes": "Cards on the names.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-EXTERIOR",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Exterior of the Sri Raja Rajeshwara temple at Vemulawada as in the chosen reference, morning, devotees in the courtyard, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "name cards"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 10.8,
+   "est_dur_s": 8.24
+  },
+  {
+   "id": "S04",
+   "media_from": null,
+   "text": "కోడెతో కలిసి ప్రదక్షిణ చేసి,",
+   "picture": "The same pair circles the shrine.",
+   "what_changes": "Pradakshina; tether close-up.",
+   "class": "paid still + 2 paid clips (protect the tethering)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-KODE",
+      "V-EXTERIOR",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The same family and bull walking clockwise around the shrine wall, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "4.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 3,
+      "start_image": "<S04:still>"
+     },
+     "references": [
+      "S04:still"
+     ],
+     "needs": [
+      "V-KODE"
+     ],
+     "after": [
+      "S04:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The family and the bull walk clockwise along the shrine wall and out of frame. Natural gait. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 19.04,
+   "est_dur_s": 1.91
+  },
+  {
+   "id": "S04b",
+   "media_from": null,
+   "text": "దాన్ని స్వామికి అర్పణగా కడతారు. అదే కోడె మొక్కు.",
+   "picture": "Tether close-up.",
+   "what_changes": "Hands knot the rope to a post.",
+   "class": "paid still + paid clip (protect the tethering)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-KODE",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Close view: a devotee's hands tying the bull's rope to a stone post, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "6",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 4,
+      "start_image": "<S04b:still>"
+     },
+     "references": [
+      "S04b:still"
+     ],
+     "needs": [
+      "V-KODE"
+     ],
+     "after": [
+      "S04b:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The hands loop and knot the rope around the post and let go; the bull stands calmly. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.4,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 20.95,
+   "est_dur_s": 3.67
+  },
+  {
+   "id": "S05",
+   "media_from": null,
+   "text": "అరవై ఏళ్ల కిందటి వేములవాడ గురించి చదివితే ఒక చిన్న వివరముంటుంది. గుడి తూర్పు ద్వారం ముందు రెండు స్తంభాలు. భక్తులు తెచ్చిన దూడల్ని, కోడెల్ని అక్కడ కట్టేవారని అప్పటి నమోదులో ఉంది.",
+   "picture": "A simple ink view: two uprights and a calf; 'ఆరవై ఏళ్ల క్రితం' card.",
+   "what_changes": "Ink draws on.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-1961",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A simple ink drawing on warm paper: two stone uprights at a temple entrance with a calf tied to one, sparse lines, attached style. No text."
+    }
+   ],
+   "local": [
+    "ink reveal"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 25.12,
+   "est_dur_s": 12.06
+  },
+  {
+   "id": "S06",
+   "media_from": null,
+   "text": "మరి ఆ రాజన్న ఈ ఊర్లో ఎలా వెలిశాడంటారు? దానికి ఇక్కడి స్థలపురాణం మనల్ని గుడి పక్కనున్న ధర్మగుండం దగ్గరికి తీసుకెళ్తుంది.",
+   "picture": "Match cut to the tank; light shifts into legend.",
+   "what_changes": "Water shimmer; light change.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-TANK",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The Dharma Gundam temple tank at Vemulawada as in the chosen reference, still water, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "water shimmer",
+    "TimeOfDay"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 37.68,
+   "est_dur_s": 8.11
+  },
+  {
+   "id": "S07",
+   "media_from": null,
+   "text": "నరేంద్రుడనే రాజు వేటకు వెళ్లాడట. నీళ్లు తెచ్చుకోవడానికి వచ్చిన ఒక ఋషికి పొరపాటున అతని బాణం తగిలింది. ఋషి చనిపోయాడు.",
+   "picture": "Forest stream: the rishi's vessel drops; the king reacts. No injury shown.",
+   "what_changes": "Vessel falls; king lowers the bow.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A forest stream: an elderly rishi kneeling to fill a water pot, the king (C1 sheet 2) half-hidden in the trees with a bow, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S07:still>"
+     },
+     "references": [
+      "S07:still"
+     ],
+     "needs": [
+      "NARENDRA"
+     ],
+     "after": [
+      "S07:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The water pot slips from the rishi's hands and rolls into the stream; the king lowers his bow in shock. No wound or blood shown. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 46.29,
+   "est_dur_s": 7.83
+  },
+  {
+   "id": "S08",
+   "media_from": null,
+   "text": "ఆ పాపం నుంచి బయటపడాలని రాజు ఎన్నో క్షేత్రాలు తిరిగాడు. చివరికి వేములవాడ చేరాడు.",
+   "picture": "The king through changing landscapes.",
+   "what_changes": "Days and seasons pass (local TimeOfDay).",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The king (C1 sheet 2) walking alone along a long road through hills, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    }
+   ],
+   "local": [
+    "TimeOfDay"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 54.12,
+   "est_dur_s": 5.38
+  },
+  {
+   "id": "S09",
+   "media_from": null,
+   "text": "ఇక్కడి ధర్మగుండంలోకి చెయ్యి చాపి మూడు దోసిళ్ల నీళ్లు తాగాడట. ఆ పాపం తొలగిందని కథ చెబుతుంది.",
+   "picture": "His cupped hands and the water.",
+   "what_changes": "Three handfuls.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Close view: the king's cupped hands lifting water from a stone tank, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S09:still>"
+     },
+     "references": [
+      "S09:still"
+     ],
+     "needs": [
+      "NARENDRA"
+     ],
+     "after": [
+      "S09:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The cupped hands lift water three times; drops fall back into the tank. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 60.0,
+   "est_dur_s": 6.2
+  },
+  {
+   "id": "S10",
+   "media_from": null,
+   "text": "ఆ రాత్రి శివుడు కలలో కనిపించి, గుండం అడుగున లింగం ఉందనీ, దాన్ని తీసి ఒడ్డున ప్రతిష్ఠించాలనీ చెప్పాడు.",
+   "picture": "The dream: the king asleep by the tank; a glow under the water.",
+   "what_changes": "Water sound fades; glow rises.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Night: the king asleep on the bank of the tank, a soft light glowing beneath the water, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    }
+   ],
+   "local": [
+    "Bloom"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 66.2,
+   "est_dur_s": 6.88
+  },
+  {
+   "id": "S11",
+   "media_from": null,
+   "text": "రాజు నీటిలో వెతికాడు. లింగం దొరికింది. దొరికిన గుండం ఒడ్డునే ప్రతిష్ఠించాడు. వేములవాడలో రాజేశ్వరుడి ఆవిర్భావాన్ని ఇలా చెప్పుకుంటారు.",
+   "picture": "He finds the linga in the tank; consecration on the bank.",
+   "what_changes": "Search, find, lift.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The king waist-deep in the tank lifting a small stone linga from the water, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S11:still>"
+     },
+     "references": [
+      "S11:still"
+     ],
+     "needs": [
+      "NARENDRA"
+     ],
+     "after": [
+      "S11:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The king's hands find the linga under the water and lift it carefully above the surface. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 73.58,
+   "est_dur_s": 8.99
+  },
+  {
+   "id": "S12",
+   "media_from": "S01",
+   "text": "మీ ఇంట్లో ఎవరైనా రాజన్నకి కోడె మొక్కు తీర్చారా? ఆ రోజు మీకు గుర్తున్నది ఏంటో చెప్పండి.",
+   "picture": "Back to the walking pair; comment card.",
+   "what_changes": "Walk continues; card.",
+   "class": "reuse S01 clip + local",
+   "paid": [],
+   "local": [
+    "comment card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 83.07,
+   "est_dur_s": 5.86
+  }
+ ]
+}

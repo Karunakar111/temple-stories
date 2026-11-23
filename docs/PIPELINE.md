@@ -150,3 +150,30 @@ Its output today is in `docs/PIPELINE-DRYRUN-OUTPUT.txt`. It ends with:
 - The scheduler is off. Enabling it means `schedule.enabled: true`, caps set, a manual
   `python3 -m gudi daily` first, then `schedule install --yes`. The Mac has to be awake,
   online and signed in at the set time.
+
+## Weekly batch (seven films produced in one run, released one a day)
+
+```
+python3 -m gudi batch plan week-1          # dry run: status, quote CSV and the weekly page
+python3 -m gudi batch approve week-1 --by Karunakar --cap higgsfield=300 --cap elevenlabs=6000 \
+    --release-start YYYY-MM-DD --i-have-reviewed
+python3 -m gudi batch run week-1 --live    # paid; only after you switch paid generation on
+python3 -m gudi.batch_demo                 # rehearsal with mock providers (docs/BATCH-DEMO-OUTPUT.txt)
+```
+
+- One approval covers scripts (hash), visual approach (board + shot list, timing excluded) and the week's caps.
+  Episodes without a script are listed as not approved; the rest of the week runs.
+- The config daily and monthly caps must also cover the week, because the batch spends it in one day.
+- Narration first, one take. The take writes `timing.json`; clips are sized from it within the approval.
+  No take yet means that episode's clips wait.
+- A held episode (missing script, unresolved reference, budget) never stops the others.
+- Same runner lock, ledger, reservations and reconciliation as the single-episode path. A restart the
+  same day resumes; nothing already submitted is sent again.
+
+## Technical preview renderer
+
+```
+python3 scripts/plan/preview_props.py ep02-kolanupaka > build/ep02-preview/props.json
+node scripts/render.mjs EpisodePreview --entry src/preview/index.ts --props build/ep02-preview/props.json   # Mac
+```
+Every picture in a preview is tagged TEMPORARY ART (an EP01 painting) or PLACEHOLDER (drawn in code).

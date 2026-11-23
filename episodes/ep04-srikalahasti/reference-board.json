@@ -1,0 +1,55 @@
+{
+ "episode": "ep04-srikalahasti",
+ "revision": 2,
+ "prepared": "2026-11-23",
+ "status_meanings": {
+  "approved-style": "EP01 art, style only",
+  "verified": "identity confirmed from a named source",
+  "lead": "identified source still to be chosen or confirmed",
+  "unresolved": "no usable reference",
+  "decision": "waiting on Karunakar's call (see weekly review page)"
+ },
+ "references": [
+  {
+   "id": "STYLE-DEITY",
+   "subject": "EP01 deity close-up (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot2-deity-close.png",
+   "use": "style input only; never an identity reference",
+   "rights": "own artwork"
+  },
+  {
+   "id": "STYLE-PATNAM",
+   "subject": "EP01 patnam close (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot3-patnam-v3-final.png",
+   "use": "style input only",
+   "rights": "own artwork"
+  },
+  {
+   "id": "S-ANIMALS",
+   "subject": "Spider, snake, elephant (natural, no giant fantasy spider)",
+   "status": "verified",
+   "basis": "Production book S1"
+  },
+  {
+   "id": "S-FOREST-LINGA",
+   "subject": "Linga in the forest (before any temple)",
+   "status": "verified",
+   "basis": "literary illustration of the legend"
+  },
+  {
+   "id": "S-TEMPLE-LINGA",
+   "subject": "Present Srikalahasti linga with the three marks",
+   "status": "decision",
+   "basis": "Incredible India: a spider, two elephant tusks and a five-headed serpent at the base; sanctum photography prohibited",
+   "decision": "D1 deity depiction policy"
+  },
+  {
+   "id": "S-EXTERIOR",
+   "subject": "Srikalahasti temple and the Swarnamukhi",
+   "status": "lead",
+   "note": "photo to choose in a browser session (routine)"
+  }
+ ]
+}

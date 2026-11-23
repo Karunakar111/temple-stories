@@ -1,21 +1,29 @@
 """Episodes, approvals and the planned paid calls derived from a shot list.
 
-Approval is a file written only by `gudi approve` (a human command). It pins:
+Approval pins three things, and nothing else:
   - the exact script text (sha256 of voice.te.txt),
-  - the look: sha256 of reference-board.json + shots.json,
-  - the voice settings,
-  - a per-provider spend cap for this episode.
-Change any of the pinned files and the approval is stale; the runner then holds.
+  - the CREATIVE scope: reference board + shot list with every timing field removed
+    (starts, durations, clip lengths and the quotes that follow from them),
+  - provider caps.
+So routine retiming after narration keeps the approval, while any change to a prompt,
+reference, shot, asset class or the script text makes it stale. Caps are enforced on
+every reservation, so a retime that would exceed them is held anyway.
+
+Approval comes from a weekly batch record (one act covering scripts, visual approach and
+caps for the week), or from an episode's own approval.json.
 """
+import copy
 import hashlib
 import json
 
 from .money import to_milli
 from .paths import EPISODES
 
+TIMING_KEYS = {"est_start_s", "est_dur_s", "est_total_s", "timing_basis", "duration", "quote", "start_image", "timing"}
 
-def sha256_file(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def sha256_bytes(b):
+    return hashlib.sha256(b).hexdigest()
 
 
 def load_json(path, default=None):
@@ -24,67 +32,93 @@ def load_json(path, default=None):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _strip_timing(obj):
+    if isinstance(obj, dict):
+        return {k: _strip_timing(v) for k, v in obj.items() if k not in TIMING_KEYS}
+    if isinstance(obj, list):
+        return [_strip_timing(v) for v in obj]
+    return obj
+
+
 class Episode:
-    def __init__(self, slug, root=None):
+    def __init__(self, slug, root=None, batch=None):
         self.slug = slug
-        self.dir = (root or EPISODES) / slug
+        self.root = root or EPISODES
+        self.dir = self.root / slug
         self.meta = load_json(self.dir / "episode.json", {})
         self.shots_doc = load_json(self.dir / "shots.json")
         self.board = load_json(self.dir / "reference-board.json")
+        self.timing = load_json(self.dir / "timing.json")
+        self.batch = batch
         self.approval = load_json(self.dir / "approval.json")
+        if batch is not None and batch.approval:
+            self.approval = batch.approval.get("episodes", {}).get(slug)
 
     # ------------------------------------------------------------ fingerprints
-    def script_sha(self):
-        return sha256_file(self.dir / "voice.te.txt")
+    def has_script(self):
+        return (self.dir / "voice.te.txt").exists()
 
-    def look_sha(self):
-        h = hashlib.sha256()
-        for name in ("reference-board.json", "shots.json"):
-            p = self.dir / name
-            h.update(p.read_bytes() if p.exists() else b"<missing>")
-        return h.hexdigest()
+    def script_sha(self):
+        p = self.dir / "voice.te.txt"
+        return sha256_bytes(p.read_bytes()) if p.exists() else None
+
+    def creative_sha(self):
+        doc = {"board": self.board, "shots": _strip_timing(copy.deepcopy(self.shots_doc))}
+        return sha256_bytes(json.dumps(doc, sort_keys=True, ensure_ascii=False).encode("utf-8"))
+
+    look_sha = creative_sha  # name used by earlier approvals
 
     def revision(self):
-        """Revision string used in request keys: script + look."""
-        return f"s{self.script_sha()[:12]}-l{self.look_sha()[:12]}"
+        return f"s{(self.script_sha() or 'none')[:12]}-c{self.creative_sha()[:12]}"
 
     # ------------------------------------------------------------ approval
     def approval_problems(self):
+        if not self.has_script():
+            return [self.meta.get("status") or "script not received"]
         if self.approval is None:
-            return ["script, look and budget not approved (run `gudi approve`)"]
+            return ["script, visual approach and caps not approved"]
         p = []
         if self.approval.get("script_sha256") != self.script_sha():
-            p.append("script changed since approval")
-        if self.approval.get("look_sha256") != self.look_sha():
-            p.append("reference board or shot list changed since approval")
-        caps = self.approval.get("caps", {})
-        for prov in self.providers():
-            if caps.get(prov) is None:
-                p.append(f"no episode spend cap approved for {prov}")
+            p.append("script text changed since approval")
+        if self.approval.get("look_sha256") != self.creative_sha():
+            p.append("creative scope (shots, prompts or references) changed since approval")
         return p
 
     def cap(self, provider):
-        v = (self.approval or {}).get("caps", {}).get(provider)
-        return None if v is None else to_milli(v)
+        """Episode-level cap if one was set; a batch approval caps the week instead."""
+        if self.approval is None:
+            return None
+        v = self.approval.get("caps", {}).get(provider)
+        if v is not None:
+            return to_milli(v)
+        if self.batch is not None and self.batch.cap(provider) is not None:
+            return self.batch.cap(provider)  # never tighter than the week; the week cap is checked separately
+        return None
 
     # ------------------------------------------------------------ plan
     def providers(self):
         return sorted({c["provider"] for c in self.paid_calls()})
 
     def paid_calls(self):
-        """Every paid request the shot list implies, in dependency order."""
         if not self.shots_doc:
             return []
         calls = []
         for c in self.shots_doc.get("narration", []):
-            calls.append(dict(c, beat=c.get("beat", "narration")))
+            calls.append(dict(c, beat=c.get("beat", "VO")))
         for shot in self.shots_doc["shots"]:
             for c in shot.get("paid", []):
-                calls.append(dict(c, beat=shot["id"]))
+                c = dict(c, beat=shot["id"])
+                t = (self.timing or {}).get("clips", {}).get(shot["id"])
+                if c["asset_type"] == "clip" and t:
+                    c["settings"] = dict(c["settings"], duration=t["duration"])
+                    c["quote"] = t["quote"]
+                calls.append(c)
         return calls
 
+    def narration_resolved(self):
+        return bool(self.timing and self.timing.get("source", "").startswith("take"))
+
     def blockers(self, call):
-        """Unresolved references that must be fixed before this call may be paid for."""
         if not self.board:
             return ["reference board missing"]
         items = {r["id"]: r for r in self.board["references"]}
@@ -101,7 +135,8 @@ class Episode:
 def request_key(episode, call):
     canonical = {
         "episode": episode.slug,
-        "revision": episode.revision(),
+        "script": episode.script_sha(),
+        "creative": episode.creative_sha(),
         "beat": call["beat"],
         "asset_type": call["asset_type"],
         "prompt": call.get("prompt", ""),

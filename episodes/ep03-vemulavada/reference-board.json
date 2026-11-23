@@ -1,0 +1,60 @@
+{
+ "episode": "ep03-vemulavada",
+ "revision": 2,
+ "prepared": "2026-11-23",
+ "status_meanings": {
+  "approved-style": "EP01 art, style only",
+  "verified": "identity confirmed from a named source",
+  "lead": "identified source still to be chosen or confirmed",
+  "unresolved": "no usable reference",
+  "decision": "waiting on Karunakar's call (see weekly review page)"
+ },
+ "references": [
+  {
+   "id": "STYLE-DEITY",
+   "subject": "EP01 deity close-up (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot2-deity-close.png",
+   "use": "style input only; never an identity reference",
+   "rights": "own artwork"
+  },
+  {
+   "id": "STYLE-PATNAM",
+   "subject": "EP01 patnam close (accepted B-derived frame)",
+   "status": "approved-style",
+   "path": "assets/pilot/shot3-patnam-v3-final.png",
+   "use": "style input only",
+   "rights": "own artwork"
+  },
+  {
+   "id": "V-KODE",
+   "subject": "Kode mokku: pradakshina with a bull, then tying it as an offering",
+   "status": "verified",
+   "basis": "Telangana Tourism 'The Abode of Vemulawada Rajanna'; Telangana Today report photos (reference only, not reproduced)"
+  },
+  {
+   "id": "V-EXTERIOR",
+   "subject": "Sri Raja Rajeshwara temple, Vemulawada",
+   "status": "lead",
+   "note": "Photo not chosen yet: Wikimedia Commons was unreachable from this workspace; pick in a browser session (routine)"
+  },
+  {
+   "id": "V-TANK",
+   "subject": "Dharma Gundam tank beside the temple",
+   "status": "lead",
+   "note": "as V-EXTERIOR"
+  },
+  {
+   "id": "V-1961",
+   "subject": "1961 record: two uprights at the east entrance where calves and bulls were tied",
+   "status": "verified",
+   "basis": "Production book V1 (Census 1961, Karimnagar). Drawn as a simple ink view, no reconstructed gateway"
+  },
+  {
+   "id": "NARENDRA",
+   "subject": "King Narendra, the rishi (sthala purana)",
+   "status": "verified",
+   "basis": "literary illustration"
+  }
+ ]
+}

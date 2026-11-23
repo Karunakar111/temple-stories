@@ -19,6 +19,9 @@
  *                       and visually identical once muxed to h264)
  *   --keep-frames       Do not delete the frame folder afterwards
  *   --crf <n>           x264 quality, lower = better (default 18, preview 24)
+ *   --entry <file>      Remotion entry point (default: the project's src/index.ts)
+ *   --props <file>      JSON input props passed to the composition
+ *   --browser-executable <path>  Chrome/Chromium to render with
  *
  * Deterministic: every frame is a pure function of the frame number, so the
  * same composition always produces the same frames.
@@ -77,15 +80,25 @@ const run = (cmd, args, label) => {
 rmSync(framesDir, { recursive: true, force: true });
 mkdirSync(framesDir, { recursive: true });
 
+const entryPoint = typeof flag("entry") === "string" ? flag("entry") : undefined;
+const propsFile = typeof flag("props") === "string" ? resolve(flag("props")) : undefined;
+const browserExe = typeof flag("browser-executable") === "string" ? flag("browser-executable") : undefined;
+const extraArgs = [
+  ...(propsFile ? [`--props=${propsFile}`] : []),
+  ...(browserExe ? [`--browser-executable=${browserExe}`] : []),
+];
+
 const renderArgs = [
   "remotion",
   "render",
+  ...(entryPoint ? [entryPoint] : []),
   compositionId,
   framesDir,
   "--sequence",
   `--image-format=${imageFormat}`,
   `--image-sequence-pattern=frame-[frame].${ext}`,
   "--license-key=free-license",
+  ...extraArgs,
 ];
 if (isPreview) {
   renderArgs.push("--scale=0.5", "--jpeg-quality=90", "--is-production=false");
@@ -114,7 +127,7 @@ let fps;
 if (typeof fpsOverride === "string") {
   fps = Number(fpsOverride);
 } else {
-  const compsRes = spawnSync("npx", ["remotion", "compositions"], { encoding: "utf8" });
+  const compsRes = spawnSync("npx", ["remotion", "compositions", ...(entryPoint ? [entryPoint] : []), ...extraArgs], { encoding: "utf8" });
   const stripAnsi = (s) => s.replace(/\u001b\[[0-9;]*m/g, "");
   const compLine = stripAnsi(compsRes.stdout ?? "")
     .split("\n")

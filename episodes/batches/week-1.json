@@ -1,0 +1,21 @@
+{
+  "id": "week-1",
+  "title": "Week 1: EP02 to EP08",
+  "episodes": [
+    "ep02-kolanupaka",
+    "ep03-vemulavada",
+    "ep04-srikalahasti",
+    "ep05-yadagirigutta",
+    "ep06-kanipakam",
+    "ep07-puri",
+    "ep08-bhadrachalam"
+  ],
+  "production": "all seven in one production run; one blocked episode never stops the others",
+  "release": {
+    "first_date": null,
+    "every_days": 1,
+    "local_time": "18:30",
+    "_note": "dates are set at approval; posting stays manual"
+  },
+  "status": "draft"
+}

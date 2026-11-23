@@ -1,0 +1,569 @@
+{
+ "episode": "ep06-kanipakam",
+ "revision": 2,
+ "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
+ "est_total_s": 76.3,
+ "narration": [
+  {
+   "beat": "VO",
+   "provider": "elevenlabs",
+   "asset_type": "narration",
+   "model": "eleven_v4",
+   "quote": "1091",
+   "settings": {
+    "voice": "JWn8KOVJuYWznmih5YXL",
+    "takes": 1
+   },
+   "text_path": "episodes/ep06-kanipakam/voice.te.txt",
+   "prompt": "voice.te.txt",
+   "references": [],
+   "needs": []
+  }
+ ],
+ "shots": [
+  {
+   "id": "C1",
+   "media_from": null,
+   "text": null,
+   "picture": "Sheet: three brothers. Not on screen.",
+   "what_changes": "n/a",
+   "class": "paid still (reference)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Character sheet: three farming brothers of different ages in simple dhotis, each with a distinct face; front and three-quarter views, attached style. Dignified, no caricature. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": false,
+   "est_start_s": null,
+   "est_dur_s": 0
+  },
+  {
+   "id": "S01",
+   "media_from": null,
+   "text": "కాణిపాకం వినాయకుడు బావిలో ఎందుకున్నాడు?",
+   "picture": "Water in a stone well; a ripple. Title first frame.",
+   "what_changes": "Ripple spreads (local).",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Looking down into a stone-lined well with still dark water, a single ripple, attached style. No text."
+    }
+   ],
+   "local": [
+    "title card",
+    "ripple"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 0.0,
+   "est_dur_s": 2.66
+  },
+  {
+   "id": "S02",
+   "media_from": null,
+   "text": "ఆ బావి నీళ్లతో ఒకప్పుడు ముగ్గురు అన్నదమ్ములు పొలం సాగు చేసుకునేవారని కథ.",
+   "picture": "Match cut: the ripple becomes an irrigation channel to a field.",
+   "what_changes": "Water runs along the channel (local).",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "An irrigation channel running from a village well to green paddy fields, morning, attached style. No people. No text."
+    }
+   ],
+   "local": [
+    "flowing water"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 3.16,
+   "est_dur_s": 4.9
+  },
+  {
+   "id": "S03",
+   "media_from": null,
+   "text": "చిత్తూరు జిల్లాలోని ఈ క్షేత్రం గురించి దేవస్థానం చెప్పే కథ ఇది.",
+   "picture": "Identified exterior.",
+   "what_changes": "Map card.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-EXTERIOR",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Exterior of the Kanipakam Varasiddhi Vinayaka temple as in the chosen reference, morning, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "map card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 8.56,
+   "est_dur_s": 4.29
+  },
+  {
+   "id": "S04",
+   "media_from": null,
+   "text": "ఒకరికి కంటిచూపు లేదు. ఒకరికి వినికిడి లేదు. ఇంకొకరికి మాట రాదు. ముగ్గురూ కలిసి బావి నుంచి నీళ్లు తోడి కాలువ ద్వారా పొలానికి మళ్లించేవాళ్లు.",
+   "picture": "The three brothers lifting water together; track the water to the field.",
+   "what_changes": "Bucket rises; water pours into the channel.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The three brothers (C1) working a rope-and-bucket lift at the well, water pouring into the channel, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S04:still>"
+     },
+     "references": [
+      "S04:still"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "C-WATER"
+     ],
+     "after": [
+      "S04:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The brothers pull the rope together; the bucket rises and tips water into the channel. Hands whole; faces the same. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 12.85,
+   "est_dur_s": 9.47
+  },
+  {
+   "id": "S05",
+   "media_from": null,
+   "text": "ఒక రోజు ఎంత తోడినా నీళ్లు రాలేదు. బావి ఇంకిపోయింది.",
+   "picture": "Same action, empty vessel.",
+   "what_changes": "Bucket comes up dry.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "S04:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The same brothers at the well; the bucket coming up empty, dry cracked mud below, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "S04:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "6",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 4,
+      "start_image": "<S05:still>"
+     },
+     "references": [
+      "S05:still"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "C-WATER"
+     ],
+     "after": [
+      "S05:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The bucket rises empty; the brothers look into it and then at each other. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 22.82,
+   "est_dur_s": 3.47
+  },
+  {
+   "id": "S06",
+   "media_from": null,
+   "text": "ఇంకా లోతు చేస్తే నీళ్లు పడతాయని ఒకరు బావిలోకి దిగారు. తవ్వుతుంటే పనిముట్టు గట్టి రాయికి తగిలింది.",
+   "picture": "A brother lowers himself; the tool strikes stone.",
+   "what_changes": "Climb down; strike (sound accent local).",
+   "class": "paid still + paid clip (protect the strike)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Inside the dry well: one brother (C1) digging the mud floor with a short iron tool, light from above, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S06:still>"
+     },
+     "references": [
+      "S06:still"
+     ],
+     "needs": [
+      "C-BROTHERS"
+     ],
+     "after": [
+      "S06:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The brother swings the tool down and it strikes a hard stone with a jolt; he stops. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 26.29,
+   "est_dur_s": 6.61
+  },
+  {
+   "id": "S07",
+   "media_from": null,
+   "text": "నీళ్లు ఊరతాయనుకున్న చోట, ఆ రాయి నుంచి రక్తం వచ్చిందట. బావి నీరు ఎర్రబడింది. ఆ క్షణంలో ఒకరికి చూపు, ఒకరికి వినికిడి, ఇంకొకరికి మాట వచ్చాయని స్థలపురాణం చెబుతుంది.",
+   "picture": "Restrained red tint spreading through rising water (code), then back to the brothers.",
+   "what_changes": "Tint spreads; faces lift.",
+   "class": "reuse + paid still",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "C1:still",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The three brothers at the well rim, one touching his eyes, one his ear, one his lips, in wonder, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "C1:still"
+     ]
+    }
+   ],
+   "local": [
+    "red tint in code"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 33.4,
+   "est_dur_s": 10.9
+  },
+  {
+   "id": "S08",
+   "media_from": null,
+   "text": "ఊరివాళ్లు అక్కడికి చేరారు. బావిలో కనిపించిన రూపం వినాయకుడిది. దాని అడుగు ఎక్కడుందో చూడాలని ఇంకాస్త తవ్వారు. ఎంత తవ్వినా అడుగు దొరకలేదట.",
+   "picture": "Villagers work around the discovery, framed from above the rim; the waterline hides any base.",
+   "what_changes": "Digging; water stays.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-BROTHERS",
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "From above the rim: villagers gathered around the well, water inside hiding everything below its surface, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S08:still>"
+     },
+     "references": [
+      "S08:still"
+     ],
+     "needs": [
+      "C-WATER"
+     ],
+     "after": [
+      "S08:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "Villagers lean over the rim and dig at the edges; the water surface stays unbroken. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 44.8,
+   "est_dur_s": 9.2
+  },
+  {
+   "id": "S09",
+   "media_from": null,
+   "text": "వినాయకుడు అక్కడే స్వయంగా వెలిశాడని నమ్మి జనం కొబ్బరికాయలు సమర్పించారు. ఆ కొబ్బరినీళ్లు కాలువలో పారాయని కూడా కథలో చెబుతారు.",
+   "picture": "Hands open a coconut; a narrow stream leads to the channel from the start.",
+   "what_changes": "Coconut cracks; stream joins channel.",
+   "class": "paid still + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "C-WATER",
+      "STYLE-DEITY",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Close view: hands breaking a coconut on a stone at the channel's edge, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S09:still>"
+     },
+     "references": [
+      "S09:still"
+     ],
+     "needs": [
+      "C-WATER"
+     ],
+     "after": [
+      "S09:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The coconut cracks open and its water runs in a thin stream into the irrigation channel. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 54.0,
+   "est_dur_s": 8.31
+  },
+  {
+   "id": "S10",
+   "media_from": "S01",
+   "text": "మొదట ఆ కాలువలో వాళ్లు ఎదురుచూసింది పొలానికి నీళ్లు. కథ చివరికి అదే కాలువలో పారింది స్వామికి సమర్పించిన కొబ్బరినీళ్లు. మరి ఆ బావి? కాణిపాకంలో ఈనాటికీ నీళ్ల మధ్యే వరసిద్ధి వినాయకుడిని దర్శించుకుంటారు.",
+   "picture": "Return to the opening water, now understood; exterior plus water detail.",
+   "what_changes": "Ripple; cut to exterior.",
+   "class": "reuse + local",
+   "paid": [],
+   "local": [
+    "ripple",
+    "end card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "est_start_s": 62.81,
+   "est_dur_s": 13.49
+  }
+ ]
+}

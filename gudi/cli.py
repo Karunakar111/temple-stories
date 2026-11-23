@@ -147,7 +147,9 @@ def cmd_run(a):
         assert "gudi.paid" not in sys.modules
         return 0
     cfg, ledger = _cfg(), _ledger()
-    return run_episode(Episode(a.episode), ledger, cfg, Providers(_mode_for_paid(), cfg))
+    from .batch import retime
+
+    return run_episode(Episode(a.episode), ledger, cfg, Providers(_mode_for_paid(), cfg), retimer=retime)
 
 
 def cmd_daily(a):
@@ -169,7 +171,9 @@ def cmd_daily(a):
         if problems:
             print(f"PENDING {slug}: " + "; ".join(problems) + ". Nothing spent.")
             return 0
-        code = run_episode(ep, ledger, cfg, Providers(_mode_for_paid(), cfg), daily=True)
+        from .batch import retime
+
+        code = run_episode(ep, ledger, cfg, Providers(_mode_for_paid(), cfg), daily=True, retimer=retime)
         if code == DONE:
             export(ep, ledger, cfg)
         return code
@@ -282,6 +286,56 @@ def cmd_import(a):
     return 0
 
 
+def cmd_batch(a):
+    from .batch import Batch, approve, quote_rows, run_batch, write_quote_csv
+
+    b = Batch(a.batch_id)
+    if a.action == "approve":
+        caps = dict(c.split("=", 1) for c in (a.cap or []))
+        rec = approve(b, a.by, caps, a.release_start, a.i_have_reviewed)
+        print(f"approved {b.id}: {len(rec['episodes'])} episodes, caps {caps}, release from {a.release_start}")
+        for s, why in rec["not_approved"].items():
+            print(f"  not approved: {s} ({why})")
+        return 0
+    if a.action in ("plan", "review"):
+        os.environ["GUDI_DRY_RUN"] = "1"
+        from .weekly import build
+
+        ledger = _ledger()
+        bal = {}
+        for prov in _cfg()["providers"]:
+            r = ledger.last_balance(prov)
+            bal[prov] = f"{fmt(r['amount_milli'])} as of {r['as_of'][:10]}" if r else "not recorded"
+        out = paths.REVIEW / b.id
+        preview = demo = None
+        if (out / "ep02-preview.mp4").exists():
+            preview = {"src": "ep02-preview.mp4", "notes": [
+                "Real: timing (estimated from the script, no narration yet), captions, title on the first frame, name and date typesetting, light effects.",
+                "Temporary: every picture. Orange tag = an EP01 painting standing in (not Kolanupaka); purple tag = a plate drawn in code.",
+                "Emergence fixed: the question now has 3.7 s on screen (was 0.5 s against a 5 s clip); the clip is 4 s.",
+                "Inscription: the 13.3 s hold is now three pictures (courtyard 3.5 s, stone and date card 6.1 s, worship continuing 3.6 s).",
+                "Music: EP01 bed at low level, so the cut can be judged for pace.",
+                "Orange bars on the strip show each paid clip's length against its shot."]}
+        demo_txt = paths.ROOT / "docs" / "BATCH-DEMO-OUTPUT.txt"
+        if demo_txt.exists():
+            demo = [("Rehearsal step", l.strip()[6:]) for l in demo_txt.read_text(encoding="utf-8").splitlines() if l.strip().startswith("PASS:")]
+            demo = [(f"{i + 1}", t) for i, (_, t) in enumerate(demo)]
+        page, rows, eps = build(b, out, bal, preview=preview, demo=demo)
+        write_quote_csv(rows, out / f"quote-{b.id}.csv")
+        print(f"gudi batch {a.action} {b.id}: DRY RUN")
+        for e in eps:
+            print(f"  {e['slot']}  {e['slug']:20s} hf {fmt(e['hf']) if e['hf'] else '-':>6s}  el {fmt(e['el']) if e['el'] else '-':>6s}  {e['status']}")
+        print(f"  page  {page}\n  quote {out / ('quote-' + b.id + '.csv')}")
+        assert "gudi.paid" not in sys.modules
+        return 0
+    if a.action == "run":
+        if not a.live:
+            raise SystemExit("batch run needs --live (paid). Use `gudi batch plan` for a dry run.")
+        res = run_batch(b, _ledger(), _cfg(), Providers(_mode_for_paid(), _cfg()))
+        return 4 if res.get("_") == "locked" else 0
+    raise SystemExit("unknown batch action")
+
+
 def cmd_demo(a):
     from .demo import main as demo
 
@@ -330,5 +384,14 @@ def main(argv=None):
     s.add_argument("--yes", action="store_true")
     s.set_defaults(f=cmd_schedule)
     sub.add_parser("demo").set_defaults(f=cmd_demo)
+    bt = sub.add_parser("batch")
+    bt.add_argument("action", choices=["plan", "review", "approve", "run"])
+    bt.add_argument("batch_id")
+    bt.add_argument("--by")
+    bt.add_argument("--cap", action="append")
+    bt.add_argument("--release-start")
+    bt.add_argument("--i-have-reviewed", action="store_true")
+    bt.add_argument("--live", action="store_true")
+    bt.set_defaults(f=cmd_batch)
     a = p.parse_args(argv)
     return a.f(a)
