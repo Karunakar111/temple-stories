@@ -1,6 +1,6 @@
 {
  "episode": "ep03-vemulavada",
- "revision": 2,
+ "revision": 3,
  "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
  "est_total_s": 88.9,
  "narration": [
@@ -22,12 +22,12 @@
  ],
  "shots": [
   {
-   "id": "C1",
+   "id": "CS-FAMILY",
    "media_from": null,
    "text": null,
-   "picture": "Sheets: devotee family and bull; King Narendra. Not on screen.",
+   "picture": "Character sheet: devotee family and bull. Not on screen.",
    "what_changes": "n/a",
-   "class": "paid still (reference)",
+   "class": "paid still (character sheet)",
    "paid": [
     {
      "provider": "higgsfield",
@@ -39,16 +39,32 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-KODE",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "Character sheet: a Telangana farming family (father, mother, son) in everyday clothes and a young white bull with a rope halter; front and side views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
-    },
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": false,
+   "cut_to": null,
+   "est_start_s": null,
+   "est_dur_s": 0
+  },
+  {
+   "id": "CS-NARENDRA",
+   "media_from": null,
+   "text": null,
+   "picture": "Character sheet: King Narendra and the rishi. Not on screen.",
+   "what_changes": "n/a",
+   "class": "paid still (character sheet)",
+   "paid": [
     {
      "provider": "higgsfield",
      "asset_type": "still",
@@ -59,12 +75,10 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "Character sheet: a king of legend in simple hunting dress with a bow, and an elderly rishi with a water pot; front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
@@ -75,6 +89,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": false,
+   "cut_to": null,
    "est_start_s": null,
    "est_dur_s": 0
   },
@@ -96,18 +111,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-FAMILY:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-KODE",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Low angle on a temple courtyard: bare human feet walking beside the hooves of a young white bull on a slack rope, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Low angle on a temple courtyard: bare human feet walking beside the hooves of a young white bull on a slack rope, the family and bull as in reference image 1, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-FAMILY:still"
      ]
     },
     {
@@ -146,6 +159,7 @@
     "S02"
    ],
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 0.0,
    "est_dur_s": 3.46
   },
@@ -162,6 +176,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 3.96,
    "est_dur_s": 6.34
   },
@@ -169,7 +184,7 @@
    "id": "S03",
    "media_from": null,
    "text": "ఇక్కడి శివుడి పేరు రాజరాజేశ్వరుడు. భక్తులు పిలిచేది మాత్రం రాజన్నా అని. ఇంటిల్లిపాదీ చల్లగా ఉండాలని కొందరు మొక్కుకుంటారు.",
-   "picture": "Temple exterior; name cards 'రాజరాజేశ్వరుడు' and 'రాజన్న'.",
+   "picture": "Identified temple exterior with families and bulls in the courtyard; name cards 'రాజరాజేశ్వరుడు' and 'రాజన్న'.",
    "what_changes": "Cards on the names.",
    "class": "paid still + local",
    "paid": [
@@ -183,15 +198,14 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
+      "V-EXTERIOR",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-EXTERIOR",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Exterior of the Sri Raja Rajeshwara temple at Vemulawada as in the chosen reference, morning, devotees in the courtyard, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Exterior of the Sri Raja Rajeshwara temple at Vemulawada exactly as in reference image 1, morning, families leading young bulls in the courtyard, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [
@@ -201,6 +215,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 10.8,
    "est_dur_s": 8.24
   },
@@ -209,8 +224,8 @@
    "media_from": null,
    "text": "కోడెతో కలిసి ప్రదక్షిణ చేసి,",
    "picture": "The same pair circles the shrine.",
-   "what_changes": "Pradakshina; tether close-up.",
-   "class": "paid still + 2 paid clips (protect the tethering)",
+   "what_changes": "Pradakshina.",
+   "class": "paid still + paid clip (protect the walk)",
    "paid": [
     {
      "provider": "higgsfield",
@@ -222,19 +237,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-FAMILY:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-KODE",
-      "V-EXTERIOR",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The same family and bull walking clockwise around the shrine wall, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The same family and bull (reference image 1) walking clockwise around a temple shrine wall, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-FAMILY:still"
      ]
     },
     {
@@ -268,6 +280,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 19.04,
    "est_dur_s": 1.91
   },
@@ -289,18 +302,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-FAMILY:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-KODE",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Close view: a devotee's hands tying the bull's rope to a stone post, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Close view: a devotee's hands tying the bull's rope to a stone post, the bull from reference image 1 standing calmly, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-FAMILY:still"
      ]
     },
     {
@@ -334,6 +345,7 @@
    "hold_after_s": 0.4,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 20.95,
    "est_dur_s": 3.67
   },
@@ -355,12 +367,10 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-1961",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "A simple ink drawing on warm paper: two stone uprights at a temple entrance with a calf tied to one, sparse lines, attached style. No text."
@@ -373,6 +383,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 25.12,
    "est_dur_s": 12.06
   },
@@ -380,7 +391,7 @@
    "id": "S06",
    "media_from": null,
    "text": "మరి ఆ రాజన్న ఈ ఊర్లో ఎలా వెలిశాడంటారు? దానికి ఇక్కడి స్థలపురాణం మనల్ని గుడి పక్కనున్న ధర్మగుండం దగ్గరికి తీసుకెళ్తుంది.",
-   "picture": "Match cut to the tank; light shifts into legend.",
+   "picture": "Match cut to the identified tank; light shifts into legend.",
    "what_changes": "Water shimmer; light change.",
    "class": "paid still + local",
    "paid": [
@@ -394,15 +405,14 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
+      "V-TANK",
       "STYLE-PATNAM"
      ],
      "needs": [
       "V-TANK",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The Dharma Gundam temple tank at Vemulawada as in the chosen reference, still water, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "The Dharma Gundam temple tank at Vemulawada exactly as in reference image 1, still water, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [
@@ -413,6 +423,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 37.68,
    "est_dur_s": 8.11
   },
@@ -420,9 +431,9 @@
    "id": "S07",
    "media_from": null,
    "text": "నరేంద్రుడనే రాజు వేటకు వెళ్లాడట. నీళ్లు తెచ్చుకోవడానికి వచ్చిన ఒక ఋషికి పొరపాటున అతని బాణం తగిలింది. ఋషి చనిపోయాడు.",
-   "picture": "Forest stream: the rishi's vessel drops; the king reacts. No injury shown.",
-   "what_changes": "Vessel falls; king lowers the bow.",
-   "class": "paid still + paid clip",
+   "picture": "Forest stream: the rishi's vessel lies in the stream; the king lowers his bow. No injury shown.",
+   "what_changes": "Local push; no paid motion (legend kept short).",
+   "class": "paid still + local",
    "paid": [
     {
      "provider": "higgsfield",
@@ -434,51 +445,27 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-NARENDRA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "A forest stream: an elderly rishi kneeling to fill a water pot, the king (C1 sheet 2) half-hidden in the trees with a bow, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "A forest stream: a fallen brass water pot in the shallows, the king (reference image 1) lowering his bow in shock among the trees, attached style. No wound or blood. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-NARENDRA:still"
      ]
-    },
-    {
-     "max_s": 5,
-     "provider": "higgsfield",
-     "asset_type": "clip",
-     "model": "kling3_0",
-     "quote": "7.5",
-     "settings": {
-      "mode": "pro",
-      "sound": "off",
-      "aspect_ratio": "9:16",
-      "duration": 5,
-      "start_image": "<S07:still>"
-     },
-     "references": [
-      "S07:still"
-     ],
-     "needs": [
-      "NARENDRA"
-     ],
-     "after": [
-      "S07:still"
-     ],
-     "timing_dependent": true,
-     "prompt": "The water pot slips from the rishi's hands and rolls into the stream; the king lowers his bow in shock. No wound or blood shown. Camera still."
     }
    ],
-   "local": [],
+   "local": [
+    "Stage camera"
+   ],
    "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 46.29,
    "est_dur_s": 7.83
   },
@@ -500,18 +487,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-NARENDRA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The king (C1 sheet 2) walking alone along a long road through hills, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The king (reference image 1) walking alone along a long road through hills, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-NARENDRA:still"
      ]
     }
    ],
@@ -522,6 +507,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 54.12,
    "est_dur_s": 5.38
   },
@@ -530,8 +516,8 @@
    "media_from": null,
    "text": "ఇక్కడి ధర్మగుండంలోకి చెయ్యి చాపి మూడు దోసిళ్ల నీళ్లు తాగాడట. ఆ పాపం తొలగిందని కథ చెబుతుంది.",
    "picture": "His cupped hands and the water.",
-   "what_changes": "Three handfuls.",
-   "class": "paid still + paid clip",
+   "what_changes": "Local ripples on three beats.",
+   "class": "paid still + local",
    "paid": [
     {
      "provider": "higgsfield",
@@ -543,51 +529,27 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-NARENDRA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "Close view: the king's cupped hands lifting water from a stone tank, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-NARENDRA:still"
      ]
-    },
-    {
-     "max_s": 5,
-     "provider": "higgsfield",
-     "asset_type": "clip",
-     "model": "kling3_0",
-     "quote": "7.5",
-     "settings": {
-      "mode": "pro",
-      "sound": "off",
-      "aspect_ratio": "9:16",
-      "duration": 5,
-      "start_image": "<S09:still>"
-     },
-     "references": [
-      "S09:still"
-     ],
-     "needs": [
-      "NARENDRA"
-     ],
-     "after": [
-      "S09:still"
-     ],
-     "timing_dependent": true,
-     "prompt": "The cupped hands lift water three times; drops fall back into the tank. Hands whole. Camera still."
     }
    ],
-   "local": [],
+   "local": [
+    "ripples x3"
+   ],
    "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 60.0,
    "est_dur_s": 6.2
   },
@@ -609,18 +571,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-NARENDRA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Night: the king asleep on the bank of the tank, a soft light glowing beneath the water, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Night: the king (reference image 1) asleep on the bank of the tank, a soft light glowing beneath the water, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-NARENDRA:still"
      ]
     }
    ],
@@ -631,6 +591,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 66.2,
    "est_dur_s": 6.88
   },
@@ -638,9 +599,9 @@
    "id": "S11",
    "media_from": null,
    "text": "రాజు నీటిలో వెతికాడు. లింగం దొరికింది. దొరికిన గుండం ఒడ్డునే ప్రతిష్ఠించాడు. వేములవాడలో రాజేశ్వరుడి ఆవిర్భావాన్ని ఇలా చెప్పుకుంటారు.",
-   "picture": "He finds the linga in the tank; consecration on the bank.",
-   "what_changes": "Search, find, lift.",
-   "class": "paid still + paid clip",
+   "picture": "The king waist-deep, his face lit from below by light in his hands; then the bank in lamp light.",
+   "what_changes": "Glow rises with his hands.",
+   "class": "paid still + local Bloom",
    "paid": [
     {
      "provider": "higgsfield",
@@ -652,51 +613,27 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-NARENDRA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "NARENDRA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The king waist-deep in the tank lifting a small stone linga from the water, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The king (reference image 1) waist-deep in the tank at dawn, lifting his cupped hands from the water, his face lit from below by a warm glow between his hands, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-NARENDRA:still"
      ]
-    },
-    {
-     "max_s": 5,
-     "provider": "higgsfield",
-     "asset_type": "clip",
-     "model": "kling3_0",
-     "quote": "7.5",
-     "settings": {
-      "mode": "pro",
-      "sound": "off",
-      "aspect_ratio": "9:16",
-      "duration": 5,
-      "start_image": "<S11:still>"
-     },
-     "references": [
-      "S11:still"
-     ],
-     "needs": [
-      "NARENDRA"
-     ],
-     "after": [
-      "S11:still"
-     ],
-     "timing_dependent": true,
-     "prompt": "The king's hands find the linga under the water and lift it carefully above the surface. Hands whole. Camera still."
     }
    ],
-   "local": [],
+   "local": [
+    "Bloom"
+   ],
    "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 73.58,
    "est_dur_s": 8.99
   },
@@ -715,6 +652,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 83.07,
    "est_dur_s": 5.86
   }

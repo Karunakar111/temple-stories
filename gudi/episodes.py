@@ -63,7 +63,16 @@ class Episode:
         return sha256_bytes(p.read_bytes()) if p.exists() else None
 
     def creative_sha(self):
-        doc = {"board": self.board, "shots": _strip_timing(copy.deepcopy(self.shots_doc))}
+        """Scope: what is drawn and from which identified sources. Excluded: timing (retimed from the
+        take) and which uploaded file carries an identified place (media id), so importing the
+        approved exterior photo does not void the approval. Depiction decisions stay in scope."""
+        board = copy.deepcopy(self.board) or {}
+        for r in board.get("references", []):
+            for k in ("media_id", "media_check", "photo", "note"):
+                r.pop(k, None)
+            if r.get("status") in ("needs photo", "verified"):
+                r["status"] = "identified"
+        doc = {"board": board, "shots": _strip_timing(copy.deepcopy(self.shots_doc))}
         return sha256_bytes(json.dumps(doc, sort_keys=True, ensure_ascii=False).encode("utf-8"))
 
     look_sha = creative_sha  # name used by earlier approvals
@@ -127,6 +136,8 @@ class Episode:
             r = items.get(ref)
             if r is None:
                 out.append(f"{ref}: not on the reference board")
+            elif r["status"] == "needs photo" and r.get("media_id"):
+                continue  # identified place, photo imported: usable
             elif r["status"] not in ("verified", "approved-style"):
                 out.append(f"{ref}: {r['status']} ({r['subject']})")
         return out

@@ -1,0 +1,472 @@
+{
+ "episode": "ep07-puri",
+ "revision": 3,
+ "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
+ "est_total_s": 70.0,
+ "narration": [
+  {
+   "beat": "VO",
+   "provider": "elevenlabs",
+   "asset_type": "narration",
+   "model": "eleven_v4",
+   "quote": "1012",
+   "settings": {
+    "voice": "JWn8KOVJuYWznmih5YXL",
+    "takes": 1
+   },
+   "text_path": "episodes/ep07-puri/voice.te.txt",
+   "prompt": "voice.te.txt",
+   "references": [],
+   "needs": []
+  }
+ ],
+ "shots": [
+  {
+   "id": "S01",
+   "media_from": null,
+   "text": "పూరీ జగన్నాథుడి రథం ఏ గుడికి వెళ్తుంది? గుండిచా గుడికి.",
+   "picture": "A huge painted chariot wheel turning on the sand-coloured road. Title 'పూరీ జగన్నాథుడు · ఒడిశా' on the first frame.",
+   "what_changes": "Wheel turns; question lands.",
+   "class": "paid still + paid clip (the opening motion)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-CHARIOTS",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Close view of one huge wooden temple-chariot wheel with painted spokes on a sand-coloured street, red and yellow canopy cloth just visible above, devotees' feet beside it, morning light, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "6",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 4,
+      "start_image": "<S01:still>"
+     },
+     "references": [
+      "S01:still"
+     ],
+     "needs": [
+      "P-CHARIOTS"
+     ],
+     "after": [
+      "S01:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The great wheel turns forward slowly as the chariot begins to move; dust lifts from the road. Spokes stay whole and evenly spaced. Camera still."
+    }
+   ],
+   "local": [
+    "title card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 0.0,
+   "est_dur_s": 3.75
+  },
+  {
+   "id": "S02",
+   "media_from": null,
+   "text": "కానీ జగన్నాథుడు ఈ ప్రయాణానికి ఒక్కడే బయల్దేరడు. అన్న బలభద్రుడు, చెల్లెలు సుభద్ర కూడా వస్తారు. ఒక్కొక్కరికీ ఒక్కో రథం.",
+   "picture": "Reveal: the three chariots in a row, each distinct; typeset names over each (జగన్నాథుడు, బలభద్రుడు, సుభద్ర).",
+   "what_changes": "Names on each spoken name.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "P-BADADANDA",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-CHARIOTS",
+      "P-BADADANDA",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Wide view down a broad street in Puri: three tall temple chariots in a row: the first with red and yellow canopy cloth on sixteen wheels, the second red and green on fourteen wheels, the third red and black on twelve wheels, huge crowds small in the distance, no figures visible on the chariot platforms, morning, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "three name cards"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 3.75,
+   "est_dur_s": 7.97
+  },
+  {
+   "id": "S03",
+   "media_from": null,
+   "text": "పూరీలో ఈ రథాల్ని ఏటా కొత్తగా చెక్కుతారు.",
+   "picture": "Craftsmen carving a new wheel from fresh timber.",
+   "what_changes": "Adze strikes; shavings fly (local).",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-CHARIOTS",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Temple carpenters in white dhotis carving a new chariot wheel from fresh logs in a yard, wood shavings, sunlight, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "Stage camera"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 12.22,
+   "est_dur_s": 2.72
+  },
+  {
+   "id": "S04",
+   "media_from": null,
+   "text": "యాత్ర రోజు సేవకులు ముగ్గురినీ ఆలయం నుంచి బయటికి తీసుకొస్తారు. తాళాలు, గంటలు మోగుతుంటే దేవతా మూర్తులు ఊగుతూ ముందుకు కదులుతాయి. ఈ ఊరేగింపునే పహండీ అంటారు.",
+   "picture": "Pahandi through the crowd: faces turned up to something passing just above frame; cymbals and bells raised; flower petals in the air. 'పహండీ' typeset.",
+   "what_changes": "Cymbals clash; the crowd sways with the rhythm.",
+   "class": "paid still + paid clip (the procession's rhythm)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-PAHANDI",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A packed temple lane in Puri: devotees with joined hands looking up at something passing just above the top of the frame, men raising brass cymbals and bells, flower petals in the air, bright sun, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S04:still>"
+     },
+     "references": [
+      "S04:still"
+     ],
+     "needs": [
+      "P-PAHANDI"
+     ],
+     "after": [
+      "S04:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The cymbals clash and the crowd sways forward together to the rhythm, petals drifting down. Nothing enters the top of the frame. Camera still."
+    }
+   ],
+   "local": [
+    "typeset పహండీ"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 14.94,
+   "est_dur_s": 10.35
+  },
+  {
+   "id": "S05",
+   "media_from": null,
+   "text": "రథాలు బయల్దేరే ముందు ఇంకో దృశ్యం కనిపిస్తుంది. పూరీ గజపతి రాజు చేతిలో బంగారు చీపురు. ఒక్కో రథం మీదికీ ఎక్కి ఊడుస్తాడు. రాజు కూడా జగన్నాథుడికి సేవకుడే అని చాటే ఆచారం ఇది.",
+   "picture": "On a chariot's wooden deck: a man in white seen from behind sweeps with a golden broom.",
+   "what_changes": "The broom sweeps in long strokes.",
+   "class": "paid still + paid clip (the sweeping gesture)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-GAJAPATI",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "On the wooden platform of a temple chariot, a man in a white dhoti and royal turban seen from behind, sweeping the deck with a golden broom, attendants around him, his face not visible, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "7.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "start_image": "<S05:still>"
+     },
+     "references": [
+      "S05:still"
+     ],
+     "needs": [
+      "P-GAJAPATI"
+     ],
+     "after": [
+      "S05:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "He sweeps the deck with the golden broom in slow long strokes, moving away from camera. His face is never seen. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 25.79,
+   "est_dur_s": 11.51
+  },
+  {
+   "id": "S06",
+   "media_from": null,
+   "text": "ఇప్పుడు తాళ్లు భక్తుల చేతుల్లోకి వస్తాయి. చక్రాలు తిరుగుతాయి.",
+   "picture": "Ropes pass into devotees' hands; they lean and pull; a wheel starts to turn.",
+   "what_changes": "The pull and the first turn of the wheel.",
+   "class": "paid still + paid clip (protect the pull)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-CHARIOTS",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "A thick rope stretched along the street, dozens of devotees' hands gripping it, bodies leaning to pull, a chariot wheel behind them, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    },
+    {
+     "max_s": 5,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "6",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 4,
+      "start_image": "<S06:still>"
+     },
+     "references": [
+      "S06:still"
+     ],
+     "needs": [
+      "P-CHARIOTS"
+     ],
+     "after": [
+      "S06:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The devotees lean back together and pull the rope; behind them the wheel begins to turn. Hands whole. Camera still."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 37.8,
+   "est_dur_s": 4.16
+  },
+  {
+   "id": "S07",
+   "media_from": "S02",
+   "text": "మూడు రథాలూ పూరీ ప్రధాన వీధి మీదుగా గుండిచా గుడికి వెళ్తాయి.",
+   "picture": "The three chariots roll down the broad road toward a distant temple; route map card.",
+   "what_changes": "Map line draws to Gundicha.",
+   "class": "reuse + local map",
+   "paid": [],
+   "local": [
+    "route map card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 41.96,
+   "est_dur_s": 4.02
+  },
+  {
+   "id": "S08",
+   "media_from": null,
+   "text": "ఆ గుడిని జగన్నాథుడి జన్మస్థలంగా భావించే సంప్రదాయం ఉంది. అందుకే ఈ యాత్రను ఆయన పుట్టిన చోటికి వెళ్లే ప్రయాణంగా కూడా చెప్పుకుంటారు.",
+   "picture": "The identified Gundicha temple exterior; card 'జన్మస్థలం అని భావించే సంప్రదాయం'.",
+   "what_changes": "Card builds.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "P-GUNDICHA",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-GUNDICHA",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Exterior of the Gundicha temple in Puri exactly as in reference image 1, garden walls, afternoon, devotees at the gate, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "attribution card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 45.98,
+   "est_dur_s": 8.72
+  },
+  {
+   "id": "S09",
+   "media_from": null,
+   "text": "కొన్ని రోజులు అక్కడ గడిపి తిరిగి అదే వీధి మీదుగా వస్తారు. తిరుగు ప్రయాణానికి కూడా ఓ పేరు ఉంది. బహుడా యాత్ర.",
+   "picture": "Evening: the three chariots facing back along the same road. 'బహుడా యాత్ర' typeset.",
+   "what_changes": "Light turns to evening; title builds.",
+   "class": "paid still + local",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "P-BADADANDA",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "P-CHARIOTS",
+      "P-BADADANDA",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Evening light on a broad street in Puri: three tall temple chariots in a row: the first with red and yellow canopy cloth on sixteen wheels, the second red and green on fourteen wheels, the third red and black on twelve wheels, now facing back the way they came, crowds with lamps, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "typeset బహుడా యాత్ర",
+    "TimeOfDay"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 55.2,
+   "est_dur_s": 7.29
+  },
+  {
+   "id": "S10",
+   "media_from": "S06",
+   "text": "మరుసటిసారి పూరీ రథం ఫొటో చూస్తే గమనించండి. తాళ్లు లాగేది భక్తులు. ఆ రథాల్లో ప్రయాణించేది ముగ్గురు తోబుట్టువులు.",
+   "picture": "Back to the hands on the rope, then the three chariots together.",
+   "what_changes": "Close on hands; release to the wide.",
+   "class": "reuse + local",
+   "paid": [],
+   "local": [
+    "end card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": [
+    "S02",
+    3.0
+   ],
+   "est_start_s": 62.49,
+   "est_dur_s": 7.56
+  }
+ ]
+}

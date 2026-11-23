@@ -108,7 +108,25 @@ def retime(ep, ledger, audio_path):
 
 
 # ---------------------------------------------------------------------------- run
+def _fault_for(slug):
+    """Rehearsal only: GUDI_RENDER_FAULT=<slug>:truncate damages that film's first export."""
+    import os
+
+    spec = os.environ.get("GUDI_RENDER_FAULT", "")
+    if not spec.startswith(slug + ":"):
+        return None
+
+    def truncate(mp4):
+        tmp = mp4.with_suffix(".cut.mp4")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-t", "20", "-c", "copy", str(tmp)], check=True)
+        tmp.replace(mp4)
+    return truncate
+
+
 def run_batch(batch, ledger, cfg, providers, say=print):
+    """Paid assets for every approved episode, then each finished episode is rendered and checked.
+    An episode that is held, waiting or failed never stops the others."""
+    from .render import render_and_verify
     from .review import export
 
     day = datetime.now(local_tz(cfg)).date().isoformat()
@@ -127,12 +145,16 @@ def run_batch(batch, ledger, cfg, providers, say=print):
             say(f"\n[{slug}] release {releases.get(slug, 'not scheduled')}")
             try:
                 code = run_episode(ep, ledger, cfg, providers, say=say, lock_held=True, retimer=retime)
+                if code == DONE:
+                    film = render_and_verify(ep, ledger, cfg, say=say, fault=_fault_for(slug))
+                    results[slug] = film
+                    if film == "ready for review":
+                        export(ep, ledger, cfg, say=say, release=releases.get(slug))
+                else:
+                    results[slug] = NAMES.get(code, str(code))
             except Exception as e:  # one episode's failure never stops the week
                 say(f"  ERROR {slug}: {e}; held, other episodes continue")
-                code = 2
-            results[slug] = NAMES.get(code, str(code))
-            if code == DONE:
-                export(ep, ledger, cfg, say=say, release=releases.get(slug))
+                results[slug] = "error"
     say("\nBATCH SUMMARY " + batch.id)
     for slug, r in results.items():
         say(f"  {slug:22s} {r}")
@@ -150,13 +172,12 @@ def quote_rows(batch, ledger=None):
             continue
         for c in ep.paid_calls():
             b = ep.blockers(c)
-            decision = [x for x in b if "decision" in x]
-            if decision:
-                status = "waits for your decision"
+            if any("needs photo" in x for x in b):
+                status = "waits for exterior photo (X1)"
             elif b:
-                status = "reference to confirm (routine)"
+                status = "blocked: " + "; ".join(b)
             elif c["asset_type"] == "clip":
-                status = "ready after narration (timing-dependent)"
+                status = "after narration (length from the take)"
             else:
                 status = "ready"
             state = ""

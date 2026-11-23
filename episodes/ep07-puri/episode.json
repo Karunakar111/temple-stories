@@ -1,16 +1,16 @@
 {
+  "id": "ep07-puri",
   "code": "EP07",
   "slot": 7,
   "title_te": "పూరీ జగన్నాథుడు",
-  "cover_te": "పూరీ జగన్నాథుడు · రథం ఏ గుడికి వెళ్తుంది?",
-  "status": "blocked: script not received (weekly kit not attached)",
-  "known": {
-    "opening_line_from_plan": "పూరీ జగన్నాథుడి రథం ఏ గుడికి వెళ్తుంది?",
-    "sources": [
-      "N1 Odisha Tourism Ratha Jatra",
-      "N2 Incredible India Rath Yatra"
-    ],
-    "verified_visual_facts": "Nandighosa (Jagannath) 16 wheels, red and yellow; Taladhwaja (Balabhadra) 14 wheels, red and green; Darpadalana (Subhadra) 12 wheels, red and black (Odisha Reference Annual; Orissa Review)"
+  "cover_te": "పూరీ జగన్నాథుడి రథం ఎక్కడికి వెళ్తుంది?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "955baa473cdd0c5d61afa990b343f8aeea6c9aca05dad30869c574a16d292850",
+    "characters": 1012,
+    "words": 138,
+    "imported_from": "weekly-kit/episodes/EP07.md",
+    "kit_sha256": "3f20371e34feb4767255ed8400a4ddc2647864b7be4b6e7d664a4a7807eb463d"
   },
-  "id": "ep07-puri"
+  "status": "draft: awaiting editorial approval"
 }

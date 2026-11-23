@@ -5,32 +5,29 @@ Higgsfield quotes come from the connector's free estimate tools (2 credits per 2
 | Beat | Asset | Provider | Model / settings | Quote | Status |
 |---|---|---|---|---|---|
 | VO | narration | elevenlabs | eleven_v4 voice=JWn8KOVJuYWznmih5YXL, takes=1 | 1249 | quotable now |
-| C1 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| C1 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
+| CS-FAMILY | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
+| CS-NARENDRA | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S01 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S01 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=6 | 9 | quotable now |
-| S03 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: V-EXTERIOR: lead |
-| S04 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: V-EXTERIOR: lead |
+| S03 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: V-EXTERIOR: needs photo |
+| S04 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S04 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=3 | 4.5 | quotable now |
 | S04b | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S04b | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=4 | 6 | quotable now |
 | S05 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S06 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: V-TANK: lead |
+| S06 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: V-TANK: needs photo |
 | S07 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S07 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S08 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S09 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S09 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S10 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S11 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S11 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 
 ## Totals by provider
 
 | Provider | Unit | Full plan | Of which unblocked today |
 |---|---|---|---|
 | elevenlabs | ElevenLabs credits (1 take) | 1249 | 1249 |
-| higgsfield | credits | 68 | 62 |
+| higgsfield | credits | 45.5 | 41.5 |
 
 Not included and not reserved: any repair of a still or clip (each needs your explicit retry approval), outsourced illustration (none planned), and the cover image (made locally from approved stills).
 

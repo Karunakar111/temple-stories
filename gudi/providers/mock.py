@@ -45,7 +45,7 @@ class MockProvider(Provider):
             print(f"   !! simulated crash {stage} #{n} (process killed)", flush=True)
             os._exit(137)
 
-    def submit(self, call, request_key):
+    def submit(self, call, request_key, payload=None):
         s = self._load()
         s["counter"] += 1
         s["submits"] += 1
@@ -56,8 +56,11 @@ class MockProvider(Provider):
             "created": time.time(),
             "state": "completed",
             "url": f"mock://{job_id}.bin",
+            "asset_type": call["asset_type"], "beat": call["beat"],
+            "duration": call.get("settings", {}).get("duration"), "text_path": call.get("text_path"),
         }
-        s["receipts"].append({"job_id": job_id, "credits": call["quote"], "beat": call["beat"]})
+        s["receipts"].append({"job_id": job_id, "credits": call["quote"], "beat": call["beat"],
+                              "asset_type": call["asset_type"], "payload": payload})
         self._save(s)
         if os.environ.get("GUDI_MOCK_SLOW"):
             time.sleep(float(os.environ["GUDI_MOCK_SLOW"]))
@@ -84,7 +87,12 @@ class MockProvider(Provider):
     def download(self, job_id, url, dest):
         dest = Path(dest)
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(f"{job_id}\n".encode())
+        j = self._load()["jobs"].get(job_id, {})
+        if os.environ.get("GUDI_MOCK_MEDIA") == "1" and j.get("asset_type"):
+            from .mock_media import make
+            make(j, job_id, dest)
+        else:
+            dest.write_bytes(f"{job_id}\n".encode())
         s = self._load()
         s["downloads"] += 1
         self._save(s)

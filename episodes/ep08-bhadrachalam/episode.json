@@ -1,14 +1,16 @@
 {
+  "id": "ep08-bhadrachalam",
   "code": "EP08",
   "slot": 8,
-  "title_te": "భద్రాచలం సీతారామచంద్రుడు",
-  "cover_te": "(from the weekly kit)",
-  "status": "blocked: script not received (weekly kit not attached)",
-  "known": {
-    "angle_from_plan": "Ramadasu's devotion and the making of the shrine; keep documented biography separate from divine-release tradition",
-    "sources": [
-      "S6 Bhadradri Kothagudem district history"
-    ]
+  "title_te": "భద్రాచలం రామదాసు",
+  "cover_te": "భద్రాచలం రామదాసు జైలుకెందుకు వెళ్లాడు?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "dddf076d206a24053b7f4ac6b796fdbdeb4e239ce88285e977ca2ae78f40080c",
+    "characters": 1125,
+    "words": 159,
+    "imported_from": "weekly-kit/episodes/EP08.md",
+    "kit_sha256": "b2dfd9fe46cc8b5dc52a5f57a295fa4bfcf66199793f0053d9152b2297752873"
   },
-  "id": "ep08-bhadrachalam"
+  "status": "draft: awaiting editorial approval"
 }

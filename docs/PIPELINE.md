@@ -177,3 +177,32 @@ python3 scripts/plan/preview_props.py ep02-kolanupaka > build/ep02-preview/props
 node scripts/render.mjs EpisodePreview --entry src/preview/index.ts --props build/ep02-preview/props.json   # Mac
 ```
 Every picture in a preview is tagged TEMPORARY ART (an EP01 painting) or PLACEHOLDER (drawn in code).
+
+## Week 1 with the real EP07/EP08 scripts (24 Nov 2026)
+
+```
+python3 -m gudi.kit_import <weekly-kit dir> EP07 EP08   # verbatim; a conflicting repo script gets a diff, not an overwrite
+python3 scripts/plan/shotlists.py                        # all seven shot lists; refuses shared file names and dangling references
+python3 -m gudi.payload_test                             # exact outgoing Higgsfield params (zero spend)
+python3 -m gudi batch review week-1                      # review page + itemised quote CSV
+python3 -m gudi film <episode>                           # render + export check for one episode
+python3 -m gudi.batch_demo                               # seven-film rehearsal with mock media and real renders (~25 min)
+```
+
+- References resolve to Higgsfield media ids before any reservation (`gudi/media.py`). Stills send
+  `medias[{value, role: image_references}]`, authority first and the style frame last; clips send one
+  `start_image`. A reference without an id holds that call only.
+- A film is ready for review only when `gudi/render.py` verify_film passes: episode tag and revision in
+  the MP4, H.264 at the expected size plus audio, a clean full decode, length within the take plus 3.5 s,
+  and the MP4's sound envelope following the take (correlation >= 0.85, sync within 60 ms). One free
+  re-render on failure, then an exception for that episode only.
+
+### Not connected yet
+- Mac render path: `scripts/render.mjs` cannot decode video on macOS 12, so films with clips need the
+  pre-extraction step in config/production.json before they render there. The cloud path renders them.
+- Live Higgsfield (`claude -p`) and ElevenLabs adapters: written to the verified shapes, never run with money.
+- Captions follow each shot's spoken span scaled to the take; phrase-level alignment is not built.
+- Sound bed: films carry the narration only; the synthesised bed is not mixed in yet.
+- Review export: no SRT, contact sheet or cover image yet (text drafts only).
+- Exterior photos: nine identified places wait for an approved import.
+- No LaunchAgent; nothing publishes.

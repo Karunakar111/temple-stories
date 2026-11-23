@@ -1,61 +1,48 @@
 {
  "episode": "ep02-kolanupaka",
- "revision": 2,
- "prepared": "2026-11-23",
+ "revision": 3,
+ "prepared": "2026-11-24",
  "status_meanings": {
   "approved-style": "EP01 art, style only",
   "verified": "identity confirmed from a named source",
-  "lead": "identified source still to be chosen or confirmed",
-  "unresolved": "no usable reference",
-  "decision": "waiting on Karunakar's call (see weekly review page)"
+  "needs photo": "identified place; a rights-cleared photo must be imported to Higgsfield before use",
+  "not depicted": "sacred imagery not drawn: light, lamps and reactions instead"
  },
  "references": [
-  {
-   "id": "STYLE-DEITY",
-   "subject": "EP01 deity close-up (accepted B-derived frame)",
-   "status": "approved-style",
-   "path": "assets/pilot/shot2-deity-close.png",
-   "use": "style input only; never an identity reference",
-   "rights": "own artwork"
-  },
   {
    "id": "STYLE-PATNAM",
    "subject": "EP01 patnam close (accepted B-derived frame)",
    "status": "approved-style",
    "path": "assets/pilot/shot3-patnam-v3-final.png",
    "use": "style input only",
-   "rights": "own artwork"
+   "rights": "own artwork",
+   "media_id": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+   "media_check": "2026-11-24: Higgsfield media 85b1b66a matches the repo file pixel for pixel (mean abs diff 0.0)"
   },
   {
    "id": "K-LINGA",
    "subject": "Swayambhu Someshwara linga, Kolanupaka",
-   "status": "decision",
-   "leads": [
-    "Deccan Chronicle 15 Jul 2018 describes the linga as cracked",
-    "temple.yatradham.org: photography not allowed inside"
-   ],
-   "use": "L1, E1, R1",
-   "decision": "D1 deity depiction policy"
+   "status": "not depicted",
+   "basis": "Reported cracked (Deccan Chronicle, 2018); photography not allowed inside. Your rule: light, lamps and reactions."
   },
   {
    "id": "K-RENUKA",
    "subject": "Renukacharya",
    "status": "verified",
-   "basis": "Production book: 'The sage is a literary illustration.' Designed from the script/K1 4.3-4: ash, rudraksha, staff, water pot. Character sheet C1 is reviewed before any animation."
+   "basis": "Production book: 'The sage is a literary illustration.' Ash, rudraksha, staff, water pot (K1 4.3-4)."
   },
   {
    "id": "K-AGASTYA",
    "subject": "Agastya and Lopamudra",
    "status": "verified",
-   "basis": "Agastya: bearded, pot-bellied, matted hair, water pot in the left hand (Asian Civilisations Museum record; V&A: rosary and water vessel). Lopamudra: literary illustration in a simple sari."
+   "basis": "Agastya: bearded, pot-bellied, matted hair, water pot in the left hand (Asian Civilisations Museum; V&A). Lopamudra: literary illustration."
   },
   {
+   "status": "needs photo",
+   "media_id": null,
+   "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "K-EXTERIOR",
-   "subject": "Someshwara temple exterior, Kolanupaka",
-   "status": "decision",
-   "url": "https://www.kaladarshana.com/sites/kolanupaka/IMG00002.html",
-   "use": "L2 and S16a",
-   "decision": "D2 Kolanupaka exterior reference"
+   "subject": "Someshwara temple exterior and museum courtyard, Kolanupaka (NOT the Jain Kulpakji temple)"
   },
   {
    "id": "K-INSCRIPTION-TEXT",

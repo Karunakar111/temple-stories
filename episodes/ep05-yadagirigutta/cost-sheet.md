@@ -5,28 +5,28 @@ Higgsfield quotes come from the connector's free estimate tools (2 credits per 2
 | Beat | Asset | Provider | Model / settings | Quote | Status |
 |---|---|---|---|---|---|
 | VO | narration | elevenlabs | eleven_v4 voice=JWn8KOVJuYWznmih5YXL, takes=1 | 1152 | quotable now |
-| C1 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| C1 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S01 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-HILL: lead |
-| S02 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-HILL: lead |
+| CS-YADA | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
+| CS-DEVOTEE | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
+| S01 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
+| S02 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-HILL: needs photo |
 | S03 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S03 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S04 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S04 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=3 | 4.5 | quotable now |
-| S05 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-DARSHAN: decision |
+| S05 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S06 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S06 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S07 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S07 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S08 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S09 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-HILL: lead |
+| S09 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: Y-HILL: needs photo |
 
 ## Totals by provider
 
 | Provider | Unit | Full plan | Of which unblocked today |
 |---|---|---|---|
 | elevenlabs | ElevenLabs credits (1 take) | 1152 | 1152 |
-| higgsfield | credits | 49 | 41 |
+| higgsfield | credits | 49 | 45 |
 
 Not included and not reserved: any repair of a still or clip (each needs your explicit retry approval), outsourced illustration (none planned), and the cover image (made locally from approved stills).
 

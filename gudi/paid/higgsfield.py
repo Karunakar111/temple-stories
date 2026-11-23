@@ -35,9 +35,11 @@ class HiggsfieldViaClaude(Provider):
     def quote_milli(self, call):
         return to_milli(call["quote"])
 
-    def submit(self, call, request_key):
+    def submit(self, call, request_key, payload=None):
         tool = "generate_video" if call["asset_type"] == "clip" else "generate_image"
-        params = dict(call["settings"], model=call["model"], prompt=call["prompt"])
+        if not payload or any(":" in m["value"] or m["value"].startswith(("<", "http")) for m in payload.get("medias", [])):
+            raise RuntimeError("refusing to submit: references not resolved to Higgsfield media ids")
+        params = payload  # built by gudi.media.resolve: exact ids, roles and settings
         prompt = (
             f"Call {tool} exactly once with params = {json.dumps(params, ensure_ascii=False)} "
             f"(all arguments nested inside params). Do not call anything else and do not retry. "

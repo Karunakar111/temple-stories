@@ -35,7 +35,7 @@ def _sandbox(caps=None, episodes=("demo-ep",)):
         meta["id"] = slug
         (d / "episode.json").write_text(json.dumps(meta, ensure_ascii=False))
         (d / "reference-board.json").write_text(json.dumps({"references": [
-            {"id": "STYLE", "subject": "style", "status": "approved-style"},
+            {"id": "STYLE", "subject": "style", "status": "approved-style", "media_id": "mock-media-style"},
             {"id": "REF", "subject": "verified demo reference", "status": "verified"}]}))
         still = lambda beat, q="2": {"provider": "higgsfield", "asset_type": "still", "model": "nano_banana_2",
                                      "quote": q, "settings": {"resolution": "2k"}, "references": ["STYLE"],

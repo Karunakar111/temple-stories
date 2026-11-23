@@ -146,11 +146,20 @@ def _run(ep, ledger, cfg, providers, run_id, daily, say, local_day, retimer):
             outcome = outcome or HOLD
             continue
         job = ledger.job(key)
+        payload = None
+        if job is None or job["state"] == "reserved":
+            from .media import resolve
+
+            payload, missing = resolve(ep, call, ledger)
+            if missing:
+                say(f"  hold   {tag:22s} reference media: {'; '.join(missing)}")
+                outcome = outcome or HOLD
+                continue
         if job is None:
             res = ledger.reserve(
                 {"request_key": key, "episode": ep.slug, "revision": ep.revision(), "beat": call["beat"],
                  "asset_type": call["asset_type"], "provider": call["provider"],
-                 "params_json": json.dumps(call, ensure_ascii=False, sort_keys=True),
+                 "params_json": json.dumps(dict(call, payload=payload), ensure_ascii=False, sort_keys=True),
                  "quoted_milli": r["quoted_milli"], "local_day": local_day},
                 limits(ep, ledger, cfg, call["provider"], local_day),
             )
@@ -180,7 +189,7 @@ def _run(ep, ledger, cfg, providers, run_id, daily, say, local_day, retimer):
                 continue
         if st == "reserved":
             ledger.set_state(key, "submitting")  # committed before the provider is called
-            jid = prov.submit(call, key)
+            jid = prov.submit(call, key, payload)
             ledger.set_state(key, "submitted", provider_job_id=jid)
             new_paid += 1
             say(f"  submit {tag:22s} job {jid}")
@@ -201,7 +210,8 @@ def _run(ep, ledger, cfg, providers, run_id, daily, say, local_day, retimer):
         if st == "succeeded":
             job = ledger.job(key)
             ext = {"still": "png", "clip": "mp4", "narration": "mp3"}.get(call["asset_type"], "bin")
-            dest = ep.dir / "assets" / f"{call['beat']}-{call['asset_type']}.{ext}"
+            # episode-prefixed and one beat per character sheet: no two assets can share a file name
+            dest = ep.dir / "assets" / f"{ep.slug.split('-')[0]}-{call['beat']}-{call['asset_type']}.{ext}"
             prov.download(job["provider_job_id"], job["result_url"], dest)
             ledger.set_state(key, "downloaded", local_path=str(dest), sha256=_sha(dest))
             downloaded.add(tag)

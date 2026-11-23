@@ -62,7 +62,7 @@ class ElevenLabsTTS(Provider):
             raise RuntimeError(f"{len(hits)} matching takes in Speech History; a person must pick one (gudi reconcile)")
         return hits[0]["history_item_id"] if hits else None
 
-    def submit(self, call, request_key):
+    def submit(self, call, request_key, payload=None):
         if call.get("settings", {}).get("takes", 1) != 1:
             raise RuntimeError("narration is pinned to one take")
         text = self._text(call)

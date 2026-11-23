@@ -1,20 +1,19 @@
-gudi batch rehearsal: sandbox <sandbox>
-Real EP02-06 scripts and shot lists; EP07 = MOCK STAND-IN (copy of EP06); EP08 = no script (blocked).
-Planned paid calls for the six runnable films: 103.
+gudi week rehearsal: sandbox <sandbox>
+Real EP02-08 scripts, shot lists and quotes. Mock media; quarter-size renders.
+Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export on purpose: ep04-srikalahasti.
 ------------------------------------------------------------------------------
 1. One approval for the week (scripts + visual approach + caps)
 
    $ gudi balance record higgsfield 1000 --source demo
-     recorded higgsfield balance 1000 as of 2026-11-23T18:33:58+00:00 (demo)
+     recorded higgsfield balance 1000 as of 2026-11-23T19:11:18+00:00 (demo)
      (exit 0)
    $ gudi balance record elevenlabs 20000 --source demo
-     recorded elevenlabs balance 20000 as of 2026-11-23T18:33:58+00:00 (demo)
+     recorded elevenlabs balance 20000 as of 2026-11-23T19:11:18+00:00 (demo)
      (exit 0)
-   $ gudi batch approve week-1 --by Karunakar (demo) --cap higgsfield=400 --cap elevenlabs=8000 --release-start 2026-11-26 --i-have-reviewed
-     approved week-1: 6 episodes, caps {'higgsfield': '400', 'elevenlabs': '8000'}, release from 2026-11-26
-       not approved: ep08-bhadrachalam (blocked: script not received (weekly kit not attached))
+   $ gudi batch approve week-1 --by Karunakar (demo) --cap higgsfield=500 --cap elevenlabs=9000 --release-start 2026-11-26 --i-have-reviewed
+     approved week-1: 7 episodes, caps {'higgsfield': '500', 'elevenlabs': '9000'}, release from 2026-11-26
      (exit 0)
-   PASS: six films approved in one step; EP08 listed as not approved (no script)
+   PASS: all seven real scripts approved in one step
 ------------------------------------------------------------------------------
 2. Duplicate launch, then the first run is killed mid-batch
 
@@ -22,126 +21,172 @@ Planned paid calls for the six runnable films: 103.
      LOCKED: another gudi runner is active; this launch exits without doing anything
      (exit 4)
    PASS: second launch refused while the first holds the runner lock
-   $ gudi batch run week-1 --live   [GUDI_MOCK_SLOW=0.15]
+   $ gudi batch run week-1 --live   [GUDI_MOCK_SLOW=0.1]
      
      [ep02-kolanupaka] release 2026-11-26
-       retime ep02-kolanupaka: take (mock audio: estimate timing kept); scale 1.00; 6 clips sized
+       retime ep02-kolanupaka: take; scale 0.98; 6 clips sized
        reserve S01:still             2 higgsfield
        submit S01:still              job mock-higgsfield-0003
-       saved  S01:still              -> assets/S01-still.png
-       ep02-kolanupaka: 22 new paid submission(s); done
-       review export -> <sandbox>/review/ep02-kolanupaka/2026-11-24
-     
-     [ep03-vemulavada] release 2026-11-27
-       retime ep03-vemulavada: take (mock audio: estimate timing kept); scale 1.00; 6 clips sized
-       reserve S01:still             2 higgsfield
-       submit S01:still              job mock-higgsfield-0024
-       saved  S01:still              -> assets/S01-still.png
-       reserve S01:clip              9 higgsfield
-       submit S01:clip               job mock-higgsfield-0025
-       saved  S01:clip               -> assets/S01-clip.mp4
+       saved  S01:still              -> assets/ep02-S01-still.png
      
         !! process killed (SIGKILL) mid-run
      (exit -9)
-   PASS: interrupted after 38 of 103 paid calls {'higgsfield': 118.0, 'elevenlabs': 2679.0}; no request submitted twice
+   PASS: interrupted after 14 paid calls {'higgsfield': 43.5, 'elevenlabs': 1430.0}; no request submitted twice
 ------------------------------------------------------------------------------
-3. Restart the same day
+3. Restart the same day: assets, renders and the export check
 
-   $ gudi batch run week-1 --live
+   $ gudi batch run week-1 --live   [GUDI_RENDER_FAULT=ep04-srikalahasti:truncate]
      
      [ep02-kolanupaka] release 2026-11-26
-       ep02-kolanupaka: 0 new paid submission(s); done
+       ep02-kolanupaka: 8 new paid submission(s); done
+       film   ep02-kolanupaka: READY FOR REVIEW  101.0 s vs take 100.02 s, decode ok, narration corr 1.0, sync 0 ms
        review export -> <sandbox>/review/ep02-kolanupaka/2026-11-24
      
      [ep03-vemulavada] release 2026-11-27
-       found  S09:still              reconciled job mock-higgsfield-0036 from provider history; not resubmitted
-       ep03-vemulavada: 4 new paid submission(s); done
+       retime ep03-vemulavada: take; scale 0.99; 3 clips sized
+       reserve S01:still             2 higgsfield
+       submit S01:still              job mock-higgsfield-0024
+       saved  S01:still              -> assets/ep03-S01-still.png
+       reserve S01:clip              9 higgsfield
+       submit S01:clip               job mock-higgsfield-0025
+       saved  S01:clip               -> assets/ep03-S01-clip.mp4
+       ep03-vemulavada: 17 new paid submission(s); done
+       film   ep03-vemulavada: READY FOR REVIEW  89.13 s vs take 88.06 s, decode ok, narration corr 1.0, sync 0 ms
        review export -> <sandbox>/review/ep03-vemulavada/2026-11-24
      
      [ep04-srikalahasti] release 2026-11-28
-       retime ep04-srikalahasti: take (mock audio: estimate timing kept); scale 1.00; 4 clips sized
+       retime ep04-srikalahasti: take; scale 1.00; 4 clips sized
        reserve S01:still             2 higgsfield
-       submit S01:still              job mock-higgsfield-0042
-       saved  S01:still              -> assets/S01-still.png
+       submit S01:still              job mock-higgsfield-0039
+       saved  S01:still              -> assets/ep04-S01-still.png
        reserve S01:clip              9 higgsfield
-       submit S01:clip               job mock-higgsfield-0043
-       saved  S01:clip               -> assets/S01-clip.mp4
+       submit S01:clip               job mock-higgsfield-0040
+       saved  S01:clip               -> assets/ep04-S01-clip.mp4
        ep04-srikalahasti: 13 new paid submission(s); done
+       film   ep04-srikalahasti: attempt 1 failed the check: length 20.07 s does not match the 73.38 s narration (allowed 73.38-76.88) -> free automatic re-render
+       film   ep04-srikalahasti: READY FOR REVIEW  74.33 s vs take 73.38 s, decode ok, narration corr 1.0, sync 0 ms
        review export -> <sandbox>/review/ep04-srikalahasti/2026-11-24
      
      [ep05-yadagirigutta] release 2026-11-29
-       retime ep05-yadagirigutta: take (mock audio: estimate timing kept); scale 1.00; 4 clips sized
+       retime ep05-yadagirigutta: take; scale 0.99; 4 clips sized
        reserve S01:still             2 higgsfield
-       submit S01:still              job mock-higgsfield-0055
-       saved  S01:still              -> assets/S01-still.png
-       ep05-yadagirigutta: 16 new paid submission(s); done
-       review export -> <sandbox>/review/ep05-yadagirigutta/2026-11-24
+       submit S01:still              job mock-higgsfield-0052
+       saved  S01:still              -> assets/ep05-S01-still.png
+       ep05-yadagirigutta: 14 new paid submission(s); held
      
      [ep06-kanipakam] release 2026-11-30
-       retime ep06-kanipakam: take (mock audio: estimate timing kept); scale 1.00; 5 clips sized
+       retime ep06-kanipakam: take; scale 1.00; 5 clips sized
        reserve S01:still             2 higgsfield
-       submit S01:still              job mock-higgsfield-0069
-       saved  S01:still              -> assets/S01-still.png
+       submit S01:still              job mock-higgsfield-0064
+       saved  S01:still              -> assets/ep06-S01-still.png
        ep06-kanipakam: 16 new paid submission(s); done
+       film   ep06-kanipakam: READY FOR REVIEW  77.53 s vs take 76.56 s, decode ok, narration corr 1.0, sync 0 ms
        review export -> <sandbox>/review/ep06-kanipakam/2026-11-24
      
      [ep07-puri] release 2026-12-01
-       retime ep07-puri: take (mock audio: estimate timing kept); scale 1.00; 5 clips sized
+       retime ep07-puri: take; scale 1.01; 4 clips sized
        reserve S01:still             2 higgsfield
-       submit S01:still              job mock-higgsfield-0084
-       saved  S01:still              -> assets/S01-still.png
-       ep07-puri: 16 new paid submission(s); done
+       submit S01:still              job mock-higgsfield-0078
+       saved  S01:still              -> assets/ep07-S01-still.png
+       reserve S01:clip              6 higgsfield
+       submit S01:clip               job mock-higgsfield-0079
+       saved  S01:clip               -> assets/ep07-S01-clip.mp4
+       ep07-puri: 13 new paid submission(s); done
+       film   ep07-puri: READY FOR REVIEW  71.5 s vs take 70.45 s, decode ok, narration corr 1.0, sync 0 ms
        review export -> <sandbox>/review/ep07-puri/2026-11-24
      
-     [ep08-bhadrachalam] release not scheduled
-     HOLD ep08-bhadrachalam: blocked: script not received (weekly kit not attached)
+     [ep08-bhadrachalam] release 2026-12-02
+       retime ep08-bhadrachalam: take; scale 1.00; 4 clips sized
+       reserve S01:still             2 higgsfield
+       submit S01:still              job mock-higgsfield-0092
+       saved  S01:still              -> assets/ep08-S01-still.png
+       ep08-bhadrachalam: 19 new paid submission(s); done
+       film   ep08-bhadrachalam: READY FOR REVIEW  79.9 s vs take 78.89 s, decode ok, narration corr 1.0, sync 0 ms
+       review export -> <sandbox>/review/ep08-bhadrachalam/2026-11-24
      
      BATCH SUMMARY week-1
-       ep02-kolanupaka        done
-       ep03-vemulavada        done
-       ep04-srikalahasti      done
-       ep05-yadagirigutta     done
-       ep06-kanipakam         done
-       ep07-puri              done
-       ep08-bhadrachalam      held
+       ep02-kolanupaka        ready for review
+       ep03-vemulavada        ready for review
+       ep04-srikalahasti      ready for review
+       ep05-yadagirigutta     held
+       ep06-kanipakam         ready for review
+       ep07-puri              ready for review
+       ep08-bhadrachalam      ready for review
      (exit 0)
-   PASS: all 103 planned calls charged exactly once {'higgsfield': 344.0, 'elevenlabs': 7052.0}; EP08 held, the other six finished
+   PASS: 114 paid calls, each charged once {'higgsfield': 359.5, 'elevenlabs': 8098.0}; six films ready, ep05-yadagirigutta not ready (waiting on Y-HILL)
+   PASS: ep04-srikalahasti's damaged first export failed the check and passed after one free re-render
 ------------------------------------------------------------------------------
-4. Run the whole week again
+4. What was actually sent: every image and clip request carries real media ids
+
+   sample clip payload: {"model": "kling3_0", "mode": "pro", "sound": "off", "aspect_ratio": "9:16", "duration": 4, "medias": [{"value": "mock-higgsfield-0004", "role": "start_image"}]}
+   PASS: 77 still and 30 clip requests; every reference sent as an id with its role 
+------------------------------------------------------------------------------
+5. Run the whole week again
 
    $ gudi batch run week-1 --live
-     [ep02-kolanupaka] release 2026-11-26
        ep02-kolanupaka: 0 new paid submission(s); done
-     [ep03-vemulavada] release 2026-11-27
+       film   ep02-kolanupaka: already verified (ep02-kolanupaka.mp4); not re-rendered
        ep03-vemulavada: 0 new paid submission(s); done
-     [ep04-srikalahasti] release 2026-11-28
+       film   ep03-vemulavada: already verified (ep03-vemulavada.mp4); not re-rendered
        ep04-srikalahasti: 0 new paid submission(s); done
-     [ep05-yadagirigutta] release 2026-11-29
-       ep05-yadagirigutta: 0 new paid submission(s); done
-     [ep06-kanipakam] release 2026-11-30
+       film   ep04-srikalahasti: already verified (ep04-srikalahasti.mp4); not re-rendered
+       ep05-yadagirigutta: 0 new paid submission(s); held
        ep06-kanipakam: 0 new paid submission(s); done
-     [ep07-puri] release 2026-12-01
+       film   ep06-kanipakam: already verified (ep06-kanipakam.mp4); not re-rendered
        ep07-puri: 0 new paid submission(s); done
-     [ep08-bhadrachalam] release not scheduled
-     HOLD ep08-bhadrachalam: blocked: script not received (weekly kit not attached)
+       film   ep07-puri: already verified (ep07-puri.mp4); not re-rendered
+       ep08-bhadrachalam: 0 new paid submission(s); done
+       film   ep08-bhadrachalam: already verified (ep08-bhadrachalam.mp4); not re-rendered
      BATCH SUMMARY week-1
-       ep02-kolanupaka        done
-       ep03-vemulavada        done
-       ep04-srikalahasti      done
-       ep05-yadagirigutta     done
-       ep06-kanipakam         done
-       ep07-puri              done
-       ep08-bhadrachalam      held
+       ep02-kolanupaka        ready for review
+       ep03-vemulavada        ready for review
+       ep04-srikalahasti      ready for review
+       ep05-yadagirigutta     held
+       ep06-kanipakam         ready for review
+       ep07-puri              ready for review
+       ep08-bhadrachalam      ready for review
      (exit 0)
-   PASS: 0 new charges; receipts unchanged at 103
+   PASS: 0 new charges; verified films not re-rendered
 ------------------------------------------------------------------------------
-5. What the restart did with clips and release dates
+6. The missing reference arrives for ep05-yadagirigutta (no new approval needed)
 
-   ep02-kolanupaka      timing from: take (mock audio: estimate timing kept); clips 6; release 2026-11-26
-   ep03-vemulavada      timing from: take (mock audio: estimate timing kept); clips 6; release 2026-11-27
-   ep04-srikalahasti    timing from: take (mock audio: estimate timing kept); clips 4; release 2026-11-28
-   ep05-yadagirigutta   timing from: take (mock audio: estimate timing kept); clips 4; release 2026-11-29
-   ep06-kanipakam       timing from: take (mock audio: estimate timing kept); clips 5; release 2026-11-30
-   ep07-puri            timing from: take (mock audio: estimate timing kept); clips 5; release 2026-12-01
+   $ gudi batch run week-1 --live
+       ep02-kolanupaka: 0 new paid submission(s); done
+       film   ep02-kolanupaka: already verified (ep02-kolanupaka.mp4); not re-rendered
+       ep03-vemulavada: 0 new paid submission(s); done
+       film   ep03-vemulavada: already verified (ep03-vemulavada.mp4); not re-rendered
+       ep04-srikalahasti: 0 new paid submission(s); done
+       film   ep04-srikalahasti: already verified (ep04-srikalahasti.mp4); not re-rendered
+       ep05-yadagirigutta: 2 new paid submission(s); done
+       film   ep05-yadagirigutta: READY FOR REVIEW  81.77 s vs take 80.72 s, decode ok, narration corr 1.0, sync 0 ms
+       ep06-kanipakam: 0 new paid submission(s); done
+       film   ep06-kanipakam: already verified (ep06-kanipakam.mp4); not re-rendered
+       ep07-puri: 0 new paid submission(s); done
+       film   ep07-puri: already verified (ep07-puri.mp4); not re-rendered
+       ep08-bhadrachalam: 0 new paid submission(s); done
+       film   ep08-bhadrachalam: already verified (ep08-bhadrachalam.mp4); not re-rendered
+     BATCH SUMMARY week-1
+       ep02-kolanupaka        ready for review
+       ep03-vemulavada        ready for review
+       ep04-srikalahasti      ready for review
+       ep05-yadagirigutta     ready for review
+       ep06-kanipakam         ready for review
+       ep07-puri              ready for review
+       ep08-bhadrachalam      ready for review
+     (exit 0)
+   PASS: ep05-yadagirigutta finished (2 new calls, all its own); seven films ready; no duplicates
 ------------------------------------------------------------------------------
-All batch scenarios passed.
+7. The seven films
+
+   ep02-kolanupaka      ready for review  101.0 s (take 100.02 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep03-vemulavada      ready for review  89.13 s (take 88.06 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep04-srikalahasti    ready for review  74.33 s (take 73.38 s)  decode True  corr 1.0  sync 0 ms  attempts 2
+   ep05-yadagirigutta   ready for review  81.77 s (take 80.72 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep06-kanipakam       ready for review  77.53 s (take 76.56 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep07-puri            ready for review  71.5 s (take 70.45 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep08-bhadrachalam    ready for review  79.9 s (take 78.89 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+
+   Machine wall time: 1398 s total; step 3 (assets + renders + checks) 1218 s.
+------------------------------------------------------------------------------
+All week scenarios passed.
+EXIT=0

@@ -1,6 +1,6 @@
 {
  "episode": "ep04-srikalahasti",
- "revision": 2,
+ "revision": 3,
  "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
  "est_total_s": 73.2,
  "narration": [
@@ -22,12 +22,12 @@
  ],
  "shots": [
   {
-   "id": "C1",
+   "id": "CS-ANIMALS",
    "media_from": null,
    "text": null,
-   "picture": "Sheet: elephant, cobra, spider in house style. Not on screen.",
+   "picture": "Design sheet: elephant, cobra, spider in house style. Not on screen.",
    "what_changes": "n/a",
-   "class": "paid still (reference)",
+   "class": "paid still (character sheet)",
    "paid": [
     {
      "provider": "higgsfield",
@@ -39,16 +39,13 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Design sheet in the attached illustrated folk style: an Indian elephant, a cobra, and a small natural garden spider with its web, each drawn naturally, plain warm paper. No text."
+     "prompt": "Design sheet in the attached illustrated folk style: an Indian elephant, a cobra, and a small natural garden spider with its web, each drawn naturally, plain warm paper. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [],
@@ -56,6 +53,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": false,
+   "cut_to": null,
    "est_start_s": null,
    "est_dur_s": 0
   },
@@ -77,19 +75,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-ANIMALS:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Macro: a stream of water falling onto a forest linga covered by a spider web with a red gem on top, the tip of an elephant trunk above, attached style. No text.",
+     "prompt": "Macro in a forest clearing: a stream of water falling from the tip of an elephant's trunk (reference image 1) through a spider web, a red gem on a flat rock below, the stone in the clearing kept as a small dark shape in shadow, its form not detailed, attached style. No text.",
      "after": [
-      "C1:still"
+      "CS-ANIMALS:still"
      ]
     },
     {
@@ -109,14 +104,13 @@
       "S01:still"
      ],
      "needs": [
-      "S-ANIMALS",
-      "S-FOREST-LINGA"
+      "S-ANIMALS"
      ],
      "after": [
       "S01:still"
      ],
      "timing_dependent": true,
-     "prompt": "Water pours from the elephant's trunk onto the linga; the spider web tears and the red gem rolls aside; the camera tilts up the stream to reveal the trunk. Direction of flow stays downward."
+     "prompt": "Water pours from the elephant's trunk; the spider web tears and the red gem rolls aside; the camera tilts up the stream to reveal the trunk. Direction of flow stays downward."
     }
    ],
    "local": [
@@ -129,6 +123,7 @@
     "S02"
    ],
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 0.0,
    "est_dur_s": 4.02
   },
@@ -145,6 +140,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 4.52,
    "est_dur_s": 7.22
   },
@@ -166,15 +162,14 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
+      "S-EXTERIOR",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-EXTERIOR",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The Srikalahasti temple gopurams beside the Swarnamukhi river as in the chosen reference, morning, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "The Srikalahasti temple gopurams beside the Swarnamukhi river exactly as in reference image 1, morning, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [
@@ -184,6 +179,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 12.24,
    "est_dur_s": 4.7
   },
@@ -191,7 +187,7 @@
    "id": "S04",
    "media_from": null,
    "text": "అడవిలో ఒక శివలింగం. ఎండ పడినా, వాన వచ్చినా లింగానికి అడ్డుగా ఉండాలని ఒక సాలెపురుగు దారం మీద దారం వేసి గూడు అల్లేది.",
-   "picture": "Forest linga; the spider spins between two anchors; light makes the shelter legible.",
+   "picture": "Forest clearing in dappled light; the spider spins a shelter between two branches; the stone stays in shadow.",
    "what_changes": "Web draws thread by thread.",
    "class": "paid still + LOCAL web animation",
    "paid": [
@@ -205,16 +201,13 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "A stone linga in a quiet forest clearing between two branches, dappled light, no web yet, attached style. No text."
+     "prompt": "A quiet forest clearing between two low branches, dappled light falling around the stone in the clearing kept as a small dark shape in shadow, its form not detailed, no web yet, attached style. No text."
     }
    ],
    "local": [
@@ -225,6 +218,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 17.44,
    "est_dur_s": 7.83
   },
@@ -232,7 +226,7 @@
    "id": "S05",
    "media_from": null,
    "text": "పాము నేల లోపలి నుంచి మణులు తెచ్చి అదే లింగాన్ని అలంకరించేది.",
-   "picture": "The same snake approaches; a jewel settles.",
+   "picture": "The same snake approaches; a jewel settles in the light.",
    "what_changes": "Snake glides in; gem placed.",
    "class": "paid still + paid clip",
    "paid": [
@@ -247,18 +241,17 @@
      },
      "references": [
       "S04:still",
-      "STYLE-DEITY",
+      "CS-ANIMALS:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The same forest linga under its web; a cobra emerging from a hole in the ground with a glowing red gem, attached style. No text.",
+     "prompt": "The same clearing as reference image 1 under its web; a cobra (reference image 2) emerging from a hole in the ground with a glowing red gem, the stone in the clearing kept as a small dark shape in shadow, its form not detailed, attached style. No text.",
      "after": [
-      "S04:still"
+      "S04:still",
+      "CS-ANIMALS:still"
      ]
     },
     {
@@ -278,14 +271,13 @@
       "S05:still"
      ],
      "needs": [
-      "S-ANIMALS",
-      "S-FOREST-LINGA"
+      "S-ANIMALS"
      ],
      "after": [
       "S05:still"
      ],
      "timing_dependent": true,
-     "prompt": "The cobra glides to the linga and leaves the red gem at its base, then withdraws. Camera still."
+     "prompt": "The cobra glides forward and leaves the red gem in a patch of light, then withdraws. Camera still."
     }
    ],
    "local": [],
@@ -293,6 +285,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 25.27,
    "est_dur_s": 4.09
   },
@@ -314,19 +307,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-ANIMALS:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The elephant (C1) at the forest linga with its trunk raised, water about to pour, web and gem visible, attached style. No text.",
+     "prompt": "The elephant (reference image 1) in the clearing with its trunk raised, water about to pour, web and gem visible, the stone in the clearing kept as a small dark shape in shadow, its form not detailed, attached style. No text.",
      "after": [
-      "C1:still"
+      "CS-ANIMALS:still"
      ]
     },
     {
@@ -346,14 +336,13 @@
       "S06:still"
      ],
      "needs": [
-      "S-ANIMALS",
-      "S-FOREST-LINGA"
+      "S-ANIMALS"
      ],
      "after": [
       "S06:still"
      ],
      "timing_dependent": true,
-     "prompt": "The elephant lifts its trunk in one continuous movement and pours water over the linga; the web sags and the gem washes aside. Trunk and stream stay continuous. Camera still."
+     "prompt": "The elephant lifts its trunk in one continuous movement and pours water downward; the web sags and the gem washes aside. Trunk and stream stay continuous. Camera still."
     }
    ],
    "local": [],
@@ -361,6 +350,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 29.86,
    "est_dur_s": 8.79
   },
@@ -389,8 +379,7 @@
       "S06:still"
      ],
      "needs": [
-      "S-ANIMALS",
-      "S-FOREST-LINGA"
+      "S-ANIMALS"
      ],
      "after": [
       "S06:still"
@@ -404,6 +393,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 39.15,
    "est_dur_s": 5.65
   },
@@ -425,13 +415,10 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "A large tree trunk in the forest with a spider web on its bark, leaves falling, no animals visible, attached style. No text."
@@ -445,6 +432,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 44.8,
    "est_dur_s": 7.77
   },
@@ -452,7 +440,7 @@
    "id": "S09",
    "media_from": null,
    "text": "ఒకటి నీడ ఇచ్చింది. ఒకటి తనకి దొరికిన మణులు ఇచ్చింది. ఇంకొకటి నీళ్లు తెచ్చింది. మూడింటి భక్తికీ మెచ్చి శివుడు వాటికి ముక్తినిచ్చాడని చెబుతారు.",
-   "picture": "The three offerings together at the linga, lit.",
+   "picture": "The three offerings together, lit.",
    "what_changes": "Light blooms on each offering in turn.",
    "class": "paid still + local",
    "paid": [
@@ -466,16 +454,13 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
-      "S-FOREST-LINGA",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The forest linga with all three offerings at once: a spider web above it, a red gem at its base, water glistening on it, warm light, attached style. No text."
+     "prompt": "The forest clearing with all three offerings at once: a spider web catching the light, a red gem on a rock, water glistening, warm light falling through the leaves, the stone in the clearing kept as a small dark shape in shadow, its form not detailed, attached style. No text."
     }
    ],
    "local": [
@@ -485,6 +470,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 53.07,
    "est_dur_s": 9.6
   },
@@ -492,17 +478,18 @@
    "id": "S10",
    "media_from": "S09",
    "text": "ఆ మూడు ప్రాణుల్ని ఈ క్షేత్రం పేరులోనే గుర్తు చేసుకుంటారు. శ్రీ అంటే ఇక్కడ సాలెపురుగు. కాళం అంటే పాము. హస్తి అంటే ఏనుగు. కలిపి పలకండి… శ్రీకాళహస్తి.",
-   "picture": "One offering per spoken name; the Telugu name builds from typeset letters. Optional present linga per D1.",
+   "picture": "One offering per spoken name; the Telugu name builds from typeset letters, then the identified exterior.",
    "what_changes": "Name builds.",
    "class": "reuse + local",
    "paid": [],
    "local": [
     "typeset name build"
    ],
-   "note": "If D1 = illustrate: one more still of the present linga with its marks (+2)",
+   "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 63.17,
    "est_dur_s": 10.01
   }

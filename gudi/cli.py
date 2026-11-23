@@ -17,6 +17,7 @@
 import argparse
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -307,24 +308,38 @@ def cmd_batch(a):
             r = ledger.last_balance(prov)
             bal[prov] = f"{fmt(r['amount_milli'])} as of {r['as_of'][:10]}" if r else "not recorded"
         out = paths.REVIEW / b.id
-        preview = demo = None
+        preview = demo = films = None
         if (out / "ep02-preview.mp4").exists():
             preview = {"src": "ep02-preview.mp4", "notes": [
-                "Real: timing (estimated from the script, no narration yet), captions, title on the first frame, name and date typesetting, light effects.",
-                "Temporary: every picture. Orange tag = an EP01 painting standing in (not Kolanupaka); purple tag = a plate drawn in code.",
-                "Emergence fixed: the question now has 3.7 s on screen (was 0.5 s against a 5 s clip); the clip is 4 s.",
-                "Inscription: the 13.3 s hold is now three pictures (courtyard 3.5 s, stone and date card 6.1 s, worship continuing 3.6 s).",
-                "Music: EP01 bed at low level, so the cut can be judged for pace.",
-                "Orange bars on the strip show each paid clip's length against its shot."]}
+                "Shot-list revision 2 timing with temporary art; the emergence and inscription fixes.",
+                "Revision 3 (this week) keeps those fixes and removes every depiction of the linga."]}
         demo_txt = paths.ROOT / "docs" / "BATCH-DEMO-OUTPUT.txt"
         if demo_txt.exists():
-            demo = [("Rehearsal step", l.strip()[6:]) for l in demo_txt.read_text(encoding="utf-8").splitlines() if l.strip().startswith("PASS:")]
-            demo = [(f"{i + 1}", t) for i, (_, t) in enumerate(demo)]
-        page, rows, eps = build(b, out, bal, preview=preview, demo=demo)
+            lines = demo_txt.read_text(encoding="utf-8").splitlines()
+            demo = [(str(i + 1), l.strip()[6:]) for i, l in enumerate(x for x in lines if x.strip().startswith("PASS:"))]
+            rows7 = []
+            for l in lines:
+                m = re.match(r"\s+(ep\d\d-\S+)\s+(ready for review|waiting|exception|held)\s+(\S+) s \(take (\S+) s\)\s+decode (\S+)\s+corr (\S+)\s+sync (\S+) ms\s+attempts (\d+)", l)
+                if m:
+                    rows7.append((m.group(1), m.group(2), m.group(3) + " s", m.group(4) + " s", "clean" if m.group(5) == "True" else m.group(5),
+                                  f"corr {m.group(6)}, sync {m.group(7)} ms", m.group(8)))
+            if rows7:
+                films = {"rows": rows7, "video": "rehearsal-ep07.mp4" if (out / "rehearsal-ep07.mp4").exists() else None,
+                         "caption": "EP07 as the rehearsal rendered it: real timing, captions and cuts from the shot list; every picture is a "
+                                    "MOCK stand-in and the sound is a synthetic take of the script's length. Quarter size. The rehearsal mix is narration only, "
+                                    "so the narration match is exact. With a sound bed mixed in, the 0.85 threshold is untested."}
+        payload = None
+        pt = paths.ROOT / "docs" / "PAYLOAD-TEST.md"
+        if pt.exists():
+            payload = [l[2:].replace("`", "") for l in pt.read_text(encoding="utf-8").splitlines() if l.startswith("- ")]
+            payload += [" | ".join(c.strip().replace("`", "") for c in l.strip("|").split("|")) for l in pt.read_text(encoding="utf-8").splitlines()
+                        if l.startswith("| S")]
+        page, rows, eps = build(b, out, bal, preview=preview, demo=demo, payload=payload, films=films)
         write_quote_csv(rows, out / f"quote-{b.id}.csv")
         print(f"gudi batch {a.action} {b.id}: DRY RUN")
         for e in eps:
-            print(f"  {e['slot']}  {e['slug']:20s} hf {fmt(e['hf']) if e['hf'] else '-':>6s}  el {fmt(e['el']) if e['el'] else '-':>6s}  {e['status']}")
+            print(f"  {e['slot']}  {e['slug']:20s} hf {fmt(e['hf']) if e['hf'] else '-':>6s}  el {fmt(e['el']) if e['el'] else '-':>6s}  "
+                  f"{e['calls']} calls, {e['waits']} waiting on an exterior photo")
         print(f"  page  {page}\n  quote {out / ('quote-' + b.id + '.csv')}")
         assert "gudi.paid" not in sys.modules
         return 0
@@ -334,6 +349,14 @@ def cmd_batch(a):
         res = run_batch(b, _ledger(), _cfg(), Providers(_mode_for_paid(), _cfg()))
         return 4 if res.get("_") == "locked" else 0
     raise SystemExit("unknown batch action")
+
+
+def cmd_film(a):
+    from .episodes import Episode
+    from .render import render_and_verify
+
+    r = render_and_verify(Episode(a.episode), _ledger(), _cfg())
+    return 0 if r == "ready for review" else 2
 
 
 def cmd_demo(a):
@@ -384,6 +407,9 @@ def main(argv=None):
     s.add_argument("--yes", action="store_true")
     s.set_defaults(f=cmd_schedule)
     sub.add_parser("demo").set_defaults(f=cmd_demo)
+    fm = sub.add_parser("film")
+    fm.add_argument("episode")
+    fm.set_defaults(f=cmd_film)
     bt = sub.add_parser("batch")
     bt.add_argument("action", choices=["plan", "review", "approve", "run"])
     bt.add_argument("batch_id")

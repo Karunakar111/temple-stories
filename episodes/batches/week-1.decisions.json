@@ -1,63 +1,22 @@
 {
   "batch": "week-1",
-  "_comment": "Only choices that need Karunakar's judgement. Routine reference picks (temple exterior photos) are not listed; they get confirmed in a browser session.",
-  "decisions": [
-    {
-      "id": "D1",
-      "title": "How do we show a deity or linga that has no usable photograph?",
-      "affects": ["EP02 Someshwara linga (S01, S02, S14, S15)", "EP04 present-day linga (optional closing still)", "EP05 Lakshmi Narasimha at the first darshan (S05)"],
-      "facts": [
-        "Kolanupaka: a 2018 Deccan Chronicle report describes the swayambhu linga as cracked; a temple listing says photography is not allowed inside.",
-        "Srikalahasti: published descriptions agree on a spider, two elephant tusks and a five-headed serpent at the base of the linga; sanctum photography is prohibited.",
-        "Kanipakam is already settled by the production book: water and the exterior, no invented full-body murti."
-      ],
-      "options": [
-        {"key": "A", "label": "Illustrate from published descriptions, small in frame, with an on-screen 'artistic depiction' note", "cost": "no change"},
-        {"key": "B", "label": "Never show the murti or linga itself: light, lamps, reactions and the exterior carry it", "cost": "no change; EP04 drops its optional extra still"}
-      ],
-      "recommendation": "B for this week. It removes the only identity risk we cannot check from here, and every affected shot still reads through light and reaction."
-    },
-    {
-      "id": "D2",
-      "title": "Kolanupaka exterior reference",
-      "affects": ["EP02 S17 and S16a"],
-      "facts": [
-        "The only identified photo set found is Kaladarshana's 'Someswara Temple' pages (copyright Amit Guha): reference only, never reproduced.",
-        "The district's general 'Kolanupaka temple' imagery mostly shows the Jain Kulpakji complex, which must not be used."
-      ],
-      "options": [
-        {"key": "A", "label": "Use the Kaladarshana pages as an architecture reference only (not uploaded to the generator, not shown)", "cost": "no change"},
-        {"key": "B", "label": "Draw a generic Kalyani Chalukya-style courtyard, captioned as an illustration, until we have our own photo", "cost": "no change"}
-      ],
-      "recommendation": "A, provided you are comfortable that a copyrighted photo guides the drawing without being uploaded or reproduced."
-    },
-    {
-      "id": "D3",
-      "title": "EP03 and the temple bulls",
-      "affects": ["EP03 Vemulawada (editorial)"],
-      "facts": [
-        "Telangana Today (June 2025) reported 27 bull deaths at the temple goshala; the temple planned a veterinary hospital.",
-        "The approved script presents the kode mokku as a devotional practice and does not mention the goshala."
-      ],
-      "options": [
-        {"key": "A", "label": "Keep the script as approved", "cost": "no change"},
-        {"key": "B", "label": "Hold EP03 until you decide whether a line about the animals' care belongs in it", "cost": "EP03 moves out of this week; the other six proceed"}
-      ],
-      "recommendation": "Your call. It is not a factual error in the script, but viewers may raise it in comments."
-    },
-    {
-      "id": "D4",
-      "title": "EP07 Puri and EP08 Bhadrachalam scripts",
-      "affects": ["EP07", "EP08"],
-      "facts": [
-        "The weekly kit with these two scripts was not attached. Only Puri's opening line and Bhadrachalam's research angle are in the 30-episode plan.",
-        "Puri's chariot facts are already verified for the visuals: Nandighosa 16 wheels (red, yellow), Taladhwaja 14 (red, green), Darpadalana 12 (red, black)."
-      ],
-      "options": [
-        {"key": "A", "label": "Attach the kit; both join this week's approval", "cost": "quoted once the scripts exist"},
-        {"key": "B", "label": "Run the week with five films and move EP07-08 to next week", "cost": "none"}
-      ],
-      "recommendation": "A if the kit is ready; the batch already treats them as held without stopping the others."
-    }
+  "resolved": [
+    {"id": "D1", "title": "Unverified sacred imagery", "answer": "Worshippers' reactions, light and identified exteriors. No deity figure, idol, murti or linga is drawn in any of the seven films.",
+     "applied": "EP02 sanctum, emergence and return shots; EP03 the dream and the find in the tank; EP04 the forest stone kept in shadow; EP05 the guide and the first darshan as light; EP06 water hides the form; EP07 Pahandi through the crowd, deities named in type only; EP08 the icons and the repayment carried by light and the witnesses' faces."},
+    {"id": "D3", "title": "Vemulawada", "answer": "Focused on the kode mokku; no goshala content.",
+     "applied": "Paid motion only on the bull, the walk and the tethering. The origin legend (approved voice) is carried by stills and local motion; three legend clips removed (68 to 45.5 credits)."},
+    {"id": "D4", "title": "Puri and Bhadrachalam scripts", "answer": "Imported verbatim from the weekly kit (EP07.md, EP08.md).",
+     "applied": "Shot lists, references and quotes built; both are new drafts, covered by the one approval above."}
+  ],
+  "open": [
+    {"id": "X1", "title": "Identified exterior photos (free)",
+     "detail": "Nine places need one rights-cleared photo each, imported to Higgsfield so the stills can reference it: Kolanupaka Someshwara, Vemulawada temple and Dharma Gundam, Srikalahasti, Yadagirigutta, Kanipakam, Gundicha and the Bada Danda (Puri), Bhadrachalam temple, Golconda fort. Each still that needs one is held until it exists; every other shot proceeds.",
+     "ask": "Approving lets me choose openly licensed photos (Wikimedia Commons or similar, credited in sources) and import them. No credits."},
+    {"id": "X2", "title": "Higgsfield balance is short",
+     "detail": "The seven-film quote is 363.5 credits; the balance read 356.05 on 24 Nov 2026.",
+     "ask": "Top up at least 10 credits, or accept a 356 cap: then the last episode that cannot fit whole is held, never part-bought."},
+    {"id": "X3", "title": "ElevenLabs balance not recorded",
+     "detail": "The runner will not reserve narration against an unknown balance.",
+     "ask": "Tell me the credits left (Subscription page) and I record them with the date."}
   ]
 }

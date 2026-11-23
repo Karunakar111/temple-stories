@@ -1,6 +1,6 @@
 {
  "episode": "ep05-yadagirigutta",
- "revision": 2,
+ "revision": 3,
  "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
  "est_total_s": 81.3,
  "narration": [
@@ -22,12 +22,12 @@
  ],
  "shots": [
   {
-   "id": "C1",
+   "id": "CS-YADA",
    "media_from": null,
    "text": null,
-   "picture": "Sheets: Yada rishi and Anjaneya; the woman devotee. Not on screen.",
+   "picture": "Character sheet: Yada rishi. Not on screen.",
    "what_changes": "n/a",
-   "class": "paid still (reference)",
+   "class": "paid still (character sheet)",
    "paid": [
     {
      "provider": "higgsfield",
@@ -39,16 +39,32 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Character sheet: an elderly rishi in penance (Yada) and Anjaneya in standard iconography; front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
-    },
+     "prompt": "Character sheet: an elderly rishi in simple saffron cloth with matted hair and a water pot, seated in penance and standing; front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": false,
+   "cut_to": null,
+   "est_start_s": null,
+   "est_dur_s": 0
+  },
+  {
+   "id": "CS-DEVOTEE",
+   "media_from": null,
+   "text": null,
+   "picture": "Character sheet: the woman devotee. Not on screen.",
+   "what_changes": "n/a",
+   "class": "paid still (character sheet)",
+   "paid": [
     {
      "provider": "higgsfield",
      "asset_type": "still",
@@ -59,12 +75,10 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "prompt": "Character sheet: a village woman devotee in a simple sari, front and three-quarter views, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
@@ -75,6 +89,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": false,
+   "cut_to": null,
    "est_start_s": null,
    "est_dur_s": 0
   },
@@ -96,15 +111,12 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
-      "Y-HILL",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Point of view looking into a rocky cave mouth on a hill at night, torch light, attached style. No people. No text."
+     "prompt": "Point of view looking into a rocky cave mouth on a hill at night, torch light, the inside lost in darkness, attached style. No people. No text. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions."
     }
    ],
    "local": [
@@ -115,6 +127,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 0.0,
    "est_dur_s": 3.75
   },
@@ -136,15 +149,14 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
+      "Y-HILL",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-HILL",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The rocky hill of Yadagirigutta in silhouette at dawn with forest at its foot, attached style. No text."
+     "prompt": "The rocky hill of Yadagirigutta as in reference image 1, seen in silhouette at dawn with forest at its foot, attached style. No text."
     }
    ],
    "local": [
@@ -154,6 +166,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 4.25,
    "est_dur_s": 7.7
   },
@@ -161,7 +174,7 @@
    "id": "S03",
    "media_from": null,
    "text": "యాద ఋషి తపస్సు చేశాడట. ఆయన తపస్సుకు మెచ్చిన నారాయణుడు ఆంజనేయుణ్ని పంపాడు.",
-   "picture": "Yada looks up from his penance.",
+   "picture": "Yada looks up from his penance toward a light.",
    "what_changes": "He opens his eyes and looks up.",
    "class": "paid still + paid clip",
    "paid": [
@@ -175,18 +188,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-YADA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The rishi (C1) seated in penance at the foot of the hill, eyes closed, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The rishi (reference image 1) seated in penance at the foot of the hill, eyes closed, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-YADA:still"
      ]
     },
     {
@@ -212,7 +223,7 @@
       "S03:still"
      ],
      "timing_dependent": true,
-     "prompt": "The rishi opens his eyes and slowly looks up toward a soft light. Face stays the same. Camera still."
+     "prompt": "The rishi opens his eyes and slowly looks up toward a soft warm light. Face stays the same. Camera still."
     }
    ],
    "local": [],
@@ -220,6 +231,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 12.45,
    "est_dur_s": 4.97
   },
@@ -227,8 +239,8 @@
    "id": "S04",
    "media_from": null,
    "text": "ఆంజనేయుడు ఋషికి దారి చూపాడు.",
-   "picture": "Anjaneya turns and guides him onward; geography readable.",
-   "what_changes": "Guiding gesture and walk.",
+   "picture": "A warm light moves ahead along the forest path; the rishi follows it. The guide himself is not drawn.",
+   "what_changes": "Light leads; he follows.",
    "class": "paid still + paid clip (protect the guidance)",
    "paid": [
     {
@@ -241,18 +253,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-YADA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Anjaneya (C1) standing beside the rishi on a forest path at the foot of the hill, about to point the way, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The rishi (reference image 1) standing on a forest path at the foot of the hill, turning toward a warm light further along the path, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-YADA:still"
      ]
     },
     {
@@ -278,7 +288,7 @@
       "S04:still"
      ],
      "timing_dependent": true,
-     "prompt": "Anjaneya turns, points along the path with his right hand and leads; the rishi follows. Hands whole; faces the same. Camera still."
+     "prompt": "The warm light moves along the path and the rishi follows it with joined hands. Face stays the same. Camera still."
     }
    ],
    "local": [],
@@ -286,6 +296,7 @@
    "hold_after_s": 0.8,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 17.42,
    "est_dur_s": 2.71
   },
@@ -293,7 +304,7 @@
    "id": "S05",
    "media_from": null,
    "text": "అక్కడ యాద ఋషికి లక్ష్మీ నరసింహస్వామి దర్శనమిచ్చాడు. ఈ కథలో ఆ మొదటి దర్శనం జరిగేది గుట్ట కింద. ఋషి అక్కడే ఉండి స్వామిని ఎన్నో ఏళ్లు పూజించాడు.",
-   "picture": "First darshan at the foot of the hill (per D1); years of worship pass.",
+   "picture": "First darshan carried by the rishi's face lit by radiance from beyond frame; years of worship pass.",
    "what_changes": "Light; seasons pass (local TimeOfDay).",
    "class": "paid still + local",
    "paid": [
@@ -307,19 +318,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-YADA:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "Y-DARSHAN",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "At the foot of the hill, the rishi with joined hands before a radiant presence (as decided in D1), attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "At the foot of the hill, the rishi (reference image 1) with joined hands and tears of joy, his face lit by a radiant golden light from beyond the frame, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-YADA:still"
      ]
     }
    ],
@@ -331,6 +339,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 20.13,
    "est_dur_s": 9.6
   },
@@ -338,7 +347,7 @@
    "id": "S06",
    "media_from": null,
    "text": "యాద ఋషి కాలం తర్వాత, స్వామి అక్కడ ఉన్నాడని విని ఆ చుట్టుపక్కల గిరిజనులు పూజకు వచ్చేవారట. కొంతకాలానికి స్వామి గుట్ట మీదకు వెళ్లిపోయాడని కథ చెబుతుంది. మరి ఎక్కడికి వెళ్లాడు? వాళ్లు ఎంత వెతికినా జాడ దొరకలేదు.",
-   "picture": "Local worshippers (change of light and cast); then the search in the hills.",
+   "picture": "Local worshippers bring flowers; then the search in the hills.",
    "what_changes": "Torches move across the hill.",
    "class": "paid still + paid clip",
    "paid": [
@@ -352,15 +361,13 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Villagers from the surrounding forest bringing flowers to the foot of the hill, respectful everyday dress, attached style. No caricature. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "Villagers from the surrounding forest bringing flowers to the foot of the hill, respectful everyday dress, attached style. No caricature. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     },
     {
      "max_s": 5,
@@ -393,6 +400,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 30.23,
    "est_dur_s": 13.96
   },
@@ -400,7 +408,7 @@
    "id": "S07",
    "media_from": null,
    "text": "ఒక రోజు వాళ్లలో ఒక భక్తురాలికి స్వామి కలలో కనిపించాడు. గుట్ట మీద ఓ పెద్ద గుహ ఉందని, తాను అక్కడ ఉన్నానని ఆమెకి తెలిపాడట. ఎన్నాళ్లుగానో వాళ్లు వెతుకుతున్న చోటు ఆ గుహ.",
-   "picture": "Eye level with her: face to the cave opening; the rocky outline carries into the waking shot.",
+   "picture": "Eye level with her: the soft light behind her forms a cave opening.",
    "what_changes": "Dream dissolve to cave.",
    "class": "paid still + paid clip (protect the dream reveal)",
    "paid": [
@@ -414,18 +422,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-DEVOTEE:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "Night: the woman devotee (C1 sheet 2) asleep on a mat, her face in soft light, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Night: the woman devotee (reference image 1) asleep on a mat, her face in soft light, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-DEVOTEE:still"
      ]
     },
     {
@@ -459,6 +465,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 44.69,
    "est_dur_s": 11.17
   },
@@ -466,7 +473,7 @@
    "id": "S08",
    "media_from": null,
    "text": "అక్కడ అందరికీ స్వామి ఐదు రూపాల్లో దర్శనమిచ్చాడని చెబుతారు. జ్వాల నరసింహుడు. యోగానంద నరసింహుడు. గండభేరుండ నరసింహుడు. ఉగ్ర నరసింహుడు. లక్ష్మీ నరసింహుడు. అందుకే యాదగిరిగుట్టను పంచ నరసింహ క్షేత్రం అని కూడా పిలుస్తారు.",
-   "picture": "The gathered worshippers at the cave; each form named on its own beat (typeset), no five statues.",
+   "picture": "The woman and villagers at the cave mouth, faces lit from inside; each form named on its own beat (typeset), no statues.",
    "what_changes": "Names appear one per beat.",
    "class": "paid still + local",
    "paid": [
@@ -480,18 +487,16 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "C1:still",
-      "STYLE-DEITY",
+      "CS-DEVOTEE:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-FIGURES",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The same woman (C1 sheet 2) and villagers gathered at the mouth of the cave with lamps, looking in, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "The woman devotee (reference image 1) and villagers gathered at the mouth of a cave with lamps, faces lit by golden light from inside the cave, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
-      "C1:still"
+      "CS-DEVOTEE:still"
      ]
     }
    ],
@@ -502,6 +507,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 56.36,
    "est_dur_s": 14.51
   },
@@ -509,7 +515,7 @@
    "id": "S09",
    "media_from": null,
    "text": "మొదట ఆంజనేయుడు ఒక ఋషికి దారి చూపాడు. తరవాత ఒక భక్తురాలికి వచ్చిన కలతో ఊరివాళ్లందరికీ దారి తెలిసింది. మీ ఇంట్లో యాదగిరిగుట్ట కథ ఎట్లా చెప్పేవాళ్లు?",
-   "picture": "Echo the guidance gesture (reuse S04); finish on the present hill exterior.",
+   "picture": "Echo the guiding light (reuse S04); finish on the identified present temple.",
    "what_changes": "Cut to today's temple.",
    "class": "reuse + paid still",
    "paid": [
@@ -523,15 +529,14 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "STYLE-DEITY",
+      "Y-HILL",
       "STYLE-PATNAM"
      ],
      "needs": [
       "Y-HILL",
-      "STYLE-DEITY",
       "STYLE-PATNAM"
      ],
-     "prompt": "The present black-stone Yadagirigutta temple on its hill as in the chosen reference, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "The present black-stone Yadagirigutta temple on its hill exactly as in reference image 1, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [
@@ -541,6 +546,7 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
+   "cut_to": null,
    "est_start_s": 71.37,
    "est_dur_s": 9.95
   }

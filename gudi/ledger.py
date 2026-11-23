@@ -35,6 +35,9 @@ CREATE TABLE IF NOT EXISTS jobs(
   sha256 TEXT, created_at TEXT NOT NULL, updated_at TEXT NOT NULL, local_day TEXT NOT NULL,
   note TEXT);
 CREATE INDEX IF NOT EXISTS jobs_ep ON jobs(episode);
+CREATE TABLE IF NOT EXISTS films(
+  episode TEXT PRIMARY KEY, revision TEXT, mp4 TEXT, sha256 TEXT, status TEXT, reason TEXT,
+  checks_json TEXT, attempts INTEGER DEFAULT 0, at TEXT);
 CREATE TABLE IF NOT EXISTS day_locks(
   local_day TEXT PRIMARY KEY, episode TEXT NOT NULL, run_id TEXT NOT NULL, at TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS events(
@@ -69,6 +72,19 @@ class Ledger:
             "INSERT INTO events(at, run_id, kind, detail) VALUES (?,?,?,?)",
             (now_utc(), run_id, kind, json.dumps(detail, ensure_ascii=False) if not isinstance(detail, str) else detail),
         )
+
+    def set_film(self, episode, **kw):
+        with self.tx():
+            row = self.db.execute("SELECT * FROM films WHERE episode=?", (episode,)).fetchone()
+            cols = dict(row) if row else {"episode": episode, "attempts": 0}
+            cols.update(kw, at=now_utc())
+            self.db.execute("INSERT OR REPLACE INTO films(episode, revision, mp4, sha256, status, reason, checks_json, attempts, at)"
+                            " VALUES (:episode, :revision, :mp4, :sha256, :status, :reason, :checks_json, :attempts, :at)",
+                            {k: cols.get(k) for k in ("episode", "revision", "mp4", "sha256", "status", "reason", "checks_json", "attempts", "at")})
+
+    def film(self, episode):
+        row = self.db.execute("SELECT * FROM films WHERE episode=?", (episode,)).fetchone()
+        return dict(row) if row else None
 
     def job(self, key):
         return self.db.execute("SELECT * FROM jobs WHERE request_key=?", (key,)).fetchone()

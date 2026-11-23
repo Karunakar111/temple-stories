@@ -10,3 +10,6 @@ build/
 state/
 review/
 __pycache__/
+public/render-stage/
+exports/films/
+exports/rehearsal/
