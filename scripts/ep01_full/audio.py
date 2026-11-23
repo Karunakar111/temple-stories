@@ -195,7 +195,9 @@ def sfx():
     tt = np.arange(n) / SR
     crowd = bandnoise(n, 250, 1800) * (0.6 + 0.4 * np.sin(2 * np.pi * 0.7 * tt) ** 2)
     crowd *= np.minimum(1, tt / 0.3) * np.minimum(1, (3.9 - tt) / 0.5)
-    add(s, 74.78, crowd, 0.35)
+    add(s, 0.0, crowd[: int(3.0 * SR)] * np.minimum(1, np.arange(int(3.0 * SR)) / (0.2 * SR)), 0.35)  # festival open
+    add(s, 96.69, crowd, 0.35)                                                                      # festival dates
+    add(s, 74.85, bell(587, 2.0, 3.0), 0.5)                                                         # today, at the shrine
     for t0 in (85.40, 86.12, 86.78):                              # each powder laid down
         add(s, t0, swell(0.6, 400, 5000, 0.03, 0.25), 0.35)
     add(s, 103.43, bell(1760, 0.15, 0.4), 0.5)                     # comment prompt pop

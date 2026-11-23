@@ -53,3 +53,18 @@ python3 scripts/ep01_full/render.py   # picture, frame-exact from scripts/ep01_f
 python3 scripts/ep01_full/audio.py    # music, effects, mix
 ffmpeg -i build/ep01-full/picture.mp4 -i build/ep01-full/mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest exports/komuravelli-ep01-full-firstcut.mp4
 ```
+
+## Publishing version (from existing assets, 0 credits)
+
+**File:** `publishing/ep01/komuravelli-mallanna-ep01.mp4`, 1080x1920, 30 fps, H.264 high + AAC 48 kHz, 1:48, -15 LUFS, peak -1.2 dBFS.
+**Cover:** `publishing/ep01/cover-1080x1920.jpg`, from the approved deity close-up; the title sits inside the 4:5 profile-grid crop.
+
+| Change | How |
+|---|---|
+| Open on the festival, not the turmeric plume | `B-kling-test` opens the film; `a2-throw` removed |
+| Gangamma's intervention made clear | Chase, then wide (she rises, right arm out), then the dog escaping past her hand on "ఆయన్ని కాపాడనీకి", then her arm and face on "చేయి అడ్డుపెట్టింది", then the reaction close-up (eyes closed, arm gone). All cut from the first 2.2 s of her clip, before it swaps arms. No slow motion now |
+| Geometric patnam replaced | `pilot-shot3` (approved illustrated patnam) wide on "పట్నం వేస్తరు", then a slow push into the same patnam for the powders line |
+| "Today" beat | Now the deity close-up in turmeric smoke; the festival crowd carries the dates card |
+| Mallanna on the flying horse | Checked: same blue skin, gold crown, upswept moustache, red garment, same horse and harness in departure and return. Only the crown's side wings are fuller on the return. No replacement needed |
+
+Remaining from the first cut: caption endings vs spoken endings, the blue dhoti at the wedding, the cylindrical drum, the white arm end, placeholder music. The festival clip now appears twice (opening and dates), in different framings.

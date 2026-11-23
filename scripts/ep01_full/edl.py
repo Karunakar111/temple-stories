@@ -14,7 +14,7 @@ DURATION = 107.84
 #     {"card": name}
 #   "overlay": card name drawn over the clip (RGBA frames)
 BEATS = [
-    (0.00, 3.04, {"clip": E + "a2-throw.mp4", "ss": 0.0}),
+    (0.00, 3.04, {"clip": "exports/B-kling-test.mp4", "ss": 0.0}),  # open on the festival
     (3.04, 5.16, {"clip": E + "a4-hand.mp4", "ss": 0.0}),
     (5.16, 7.98, {"card": "map"}),
     (7.98, 10.21, {"clip": E + "a3-hill.mp4", "ss": 0.0, "overlay": "hilltitle"}),
@@ -35,19 +35,23 @@ BEATS = [
     (50.19, 52.08, {"clip": N + "n06-spotted.mp4", "ss": 0.4}),
     (52.08, 54.46, {"clip": N + "n07-dog.mp4", "ss": 0.0}),
     (54.46, 58.11, {"clip": N + "n08-chase.mp4", "ss": 0.0}),
-    (58.11, 63.01, {"clip": N + "n09-gangamma.mp4", "ss": 0.0, "speed": 0.47}),  # right arm only; she swaps arms after 2.3 s
+    # Gangamma: wide, then coverage from the same 2.2 s (before the clip swaps her arm):
+    # "to save him" -> the dog escaping behind her; "put her hand across" -> her arm and face
+    (58.11, 60.27, {"clip": N + "n09-gangamma.mp4", "ss": 0.0}),
+    (60.27, 61.73, {"clip": N + "n09-gangamma.mp4", "ss": 0.7, "zoom": (2.3, 2.1, 0.14, 0.17, 0.0, 1.46)}),
+    (61.73, 63.01, {"clip": N + "n09-gangamma.mp4", "ss": 0.9, "zoom": (1.75, 1.95, 0.42, 0.30, 0.0, 1.28)}),
     (63.01, 65.98, {"clip": N + "n10-hand.mp4", "ss": 0.0, "decolor": (0, 600, 600, 1300)}),  # Kling added a red stump; shown as light
     (65.98, 68.66, {"clip": N + "n11-return.mp4", "ss": 0.0}),
     (68.66, 69.72, {"clip": E + "a3-hill.mp4", "ss": 2.0}),
     (69.72, 72.14, {"clip": N + "n12-share.mp4", "ss": 0.0}),
     (72.14, 74.78, {"clip": N + "n13-wedding.mp4", "ss": 0.0}),
-    (74.78, 78.68, {"clip": "exports/B-kling-test.mp4", "ss": 0.0}),
+    (74.78, 78.68, {"clip": "exports/pilot-shot2.mp4", "ss": 0.0}),  # today: the deity in turmeric
     (78.68, 81.91, {"clip": N + "n01-oggu.mp4", "ss": 4.8}),
     (81.91, 85.24, {"clip": "exports/pilot-shot3.mp4", "ss": 0.0}),
-    (85.24, 90.40, {"card": "patnam"}),
+    (85.24, 90.40, {"clip": "exports/pilot-shot3.mp4", "ss": 0.6, "speed": 0.86, "zoom": (1.15, 1.7, 0.5, 0.62, 0.0, 5.16)}),  # approved patnam, close
     (90.40, 93.12, {"clip": N + "n14-gather.mp4", "ss": 0.0}),
     (93.12, 96.69, {"clip": N + "n15-field.mp4", "ss": 0.0}),
-    (96.69, 100.56, {"clip": "exports/pilot-shot2.mp4", "ss": 0.0, "overlay": "datecard"}),
+    (96.69, 100.56, {"clip": "exports/B-kling-test.mp4", "ss": 1.1, "zoom": (1.0, 1.15, 0.5, 0.6, 0.0, 3.87), "overlay": "datecard"}),
     (100.56, 103.41, {"clip": E + "a4-hand.mp4", "ss": 2.1}),
     (103.41, 105.22, {"card": "comment"}),
     (105.22, 107.84, {"card": "end"}),
