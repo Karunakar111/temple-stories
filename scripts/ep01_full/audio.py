@@ -220,11 +220,13 @@ def main():
     write_wav(f"{ROOT}/music.wav", m)
     write_wav(f"{ROOT}/sfx.wav", e)
     # mix: narration on top, music ducked by the narration, effects underneath
+    # music and effects are summed into one bed, and the whole bed ducks under the voice
     fc = ("[0:a]aresample=48000,aformat=channel_layouts=stereo,volume=1.0,asplit=2[nar][key];"
           "[1:a]volume=0.42[mus];"
-          "[mus][key]sidechaincompress=threshold=0.03:ratio=6:attack=15:release=350[duck];"
           "[2:a]volume=0.32[fx];"
-          "[nar][duck][fx]amix=inputs=3:normalize=0:duration=first,"
+          "[mus][fx]amix=inputs=2:normalize=0[bed];"
+          "[bed][key]sidechaincompress=threshold=0.02:ratio=9:attack=8:release=300[duck];"
+          "[nar][duck]amix=inputs=2:normalize=0:duration=first,"
           "loudnorm=I=-14:TP=-1.5:LRA=9[out]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", AUDIO, "-i", f"{ROOT}/music.wav", "-i", f"{ROOT}/sfx.wav",
                     "-filter_complex", fc, "-map", "[out]", "-ar", "48000", f"{ROOT}/mix.wav"], check=True)

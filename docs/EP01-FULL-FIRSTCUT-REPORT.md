@@ -68,3 +68,11 @@ ffmpeg -i build/ep01-full/picture.mp4 -i build/ep01-full/mix.wav -map 0:v -map 1
 | Mallanna on the flying horse | Checked: same blue skin, gold crown, upswept moustache, red garment, same horse and harness in departure and return. Only the crown's side wings are fuller on the return. No replacement needed |
 
 Remaining from the first cut: caption endings vs spoken endings, the blue dhoti at the wedding, the cylindrical drum, the white arm end, placeholder music. The festival clip now appears twice (opening and dates), in different framings.
+
+## Final export (23 Nov, 0 credits)
+
+- **Captions now match the take word for word** (39 lines checked against the speech-to-text of `audio/01-mallanna-full.mp3`): వినిపిస్తాయి, మార్చుకున్నాడు, చెయ్యి, వేస్తారు, ఎట్లా చెప్తారు, and so on. Voice take unchanged.
+- **Music under narration:** the whole music and effects bed now ducks under the voice. Every spoken line sits at least 10.9 dB above it (median 18.5 dB); the music returns in the pauses. -15 LUFS, peak -1.2 dBFS.
+- **Oggu lead instrument:** documented practice is that the chief narrator plays the oggu, a small hourglass hand drum (damaru/jaggu), while narrating, wearing ankle bells, with dolu and brass cymbals in the ensemble. Ours matches the role, size, ankle bells, cymbals and dolu, but the lead's drum is a small laced barrel drum, not waisted. Not regenerated (no paid generations); listed as a defect.
+- **Cover** checked against Instagram's 3:4 profile-grid crop and the top and bottom 135 px of the 9:16 cover: title and tagline sit fully inside (`publishing/ep01/cover-instagram-preview.jpg`).
+- Files: `publishing/ep01/komuravelli-mallanna-ep01.mp4`, `cover-1080x1920.jpg`, `instagram-caption.txt`, `youtube-description.txt`.
