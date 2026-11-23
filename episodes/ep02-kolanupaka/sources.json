@@ -1,0 +1,20 @@
+{
+  "note": "K1 is the narrative spine, including the encounter, teaching and return. This episode follows the Kolanupaka–Agastya thread of the work. K2 independently identifies the local literary tradition. K3 is the historical coda. Confirm the exterior belongs to Someshwara before using it; the Jain complex is a separate site.",
+  "sources": [
+    {
+      "id": "K1",
+      "label": "Siddhanta Shikhamani, Sanskrit text, chapters 4, 5 and 21",
+      "url": "https://sanskritdocuments.org/~sanskrit/doc_trial/fortransfer/siddhAntashikhamaNi_sa.html"
+    },
+    {
+      "id": "K2",
+      "label": "Telangana Heritage, Kolanupaka Site Museum",
+      "url": "https://tgarch.telangana.gov.in/museium_info?ID=2&type=site"
+    },
+    {
+      "id": "K3",
+      "label": "Epigraphia Telanganica, vol. I, printed p.168, entry 147",
+      "url": "https://www.mcrhrdi.gov.in/images/epigraphia/Vol-I.pdf"
+    }
+  ]
+}

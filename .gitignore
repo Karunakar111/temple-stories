@@ -5,3 +5,8 @@ node_modules/
 dist/
 .next/
 build/
+
+# gudi runtime state (ledger, locks, mock receipts) and local review exports
+state/
+review/
+__pycache__/

@@ -1,0 +1,16 @@
+{
+  "id": "ep05-yadagirigutta",
+  "code": "EP05",
+  "slot": 5,
+  "title_te": "యాదగిరిగుట్ట నరసింహుడు",
+  "cover_te": "యాదగిరిగుట్ట · గుహ దారి ఎవరికి తెలిసింది?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "b7e4ad325a1a5bbdd432e0abc7608f031123b0a8b99fc74272e37ce5a2cc82a6",
+    "characters": 1152,
+    "words": 159,
+    "imported_from": "source-docs/Gudi_Kathalu_EP02-06_Production_Book.md",
+    "book_sha256": "f36e18877a9d44061260b481cb9492de60f67a3c0cedbdd20b785db9bae1a828"
+  },
+  "status": "draft: awaiting editorial approval"
+}

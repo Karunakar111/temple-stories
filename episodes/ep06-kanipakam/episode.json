@@ -1,0 +1,16 @@
+{
+  "id": "ep06-kanipakam",
+  "code": "EP06",
+  "slot": 6,
+  "title_te": "కాణిపాకం వరసిద్ధి వినాయకుడు",
+  "cover_te": "కాణిపాకం వినాయకుడు · బావిలో ఎందుకున్నాడు?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "82df3eb993c203d02b20facdf1694a2dd89d77adc778e0a6ad7f4ac9c1155a65",
+    "characters": 1091,
+    "words": 142,
+    "imported_from": "source-docs/Gudi_Kathalu_EP02-06_Production_Book.md",
+    "book_sha256": "f36e18877a9d44061260b481cb9492de60f67a3c0cedbdd20b785db9bae1a828"
+  },
+  "status": "draft: awaiting editorial approval"
+}

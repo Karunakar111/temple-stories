@@ -1,0 +1,16 @@
+{
+  "id": "ep04-srikalahasti",
+  "code": "EP04",
+  "slot": 4,
+  "title_te": "శ్రీకాళహస్తి",
+  "cover_te": "శ్రీకాళహస్తి · ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "8bfe42d699aed84279ba6fd0800a3fa6462226cb2758bf5d3991b5acf8f95930",
+    "characters": 1039,
+    "words": 146,
+    "imported_from": "source-docs/Gudi_Kathalu_EP02-06_Production_Book.md",
+    "book_sha256": "f36e18877a9d44061260b481cb9492de60f67a3c0cedbdd20b785db9bae1a828"
+  },
+  "status": "draft: awaiting editorial approval"
+}

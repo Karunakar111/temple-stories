@@ -1,0 +1,57 @@
+gudi queue: DRY RUN (this process cannot load paid adapters)
+  higgsfield balance 356.05 credits as of 2026-11-23T17:35:00+00:00 (Higgsfield connector balance(), read by Claude; not a user-supplied update); daily cap not set, monthly cap not set
+  elevenlabs balance not recorded; daily cap not set, monthly cap not set
+
+ep02-kolanupaka  (slot 2)  కొలనుపాక సోమేశ్వరుడు
+  script  183 words, sha256 35da0719cb3a  status: draft: awaiting editorial approval
+  elevenlabs  1 paid calls, quoted 1430 credits (1 per character per take on eleven_v4, as logged for EP01); 0 blocked by references
+  higgsfield 21 paid calls, quoted 72 credits; 18 blocked by references
+    VO    narration elevenlabs   1430  new
+    C1    still     higgsfield      2  BLOCKED K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    C2    still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra)
+    S01   still     higgsfield      2  BLOCKED K-LINGA: unresolved (Swayambhu Someshwara linga in the sanctum at Kolanupaka)
+    S02   still     higgsfield      2  BLOCKED K-LINGA: unresolved (Swayambhu Someshwara linga in the sanctum at Kolanupaka); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S02   clip      higgsfield    7.5  BLOCKED K-LINGA: unresolved (Swayambhu Someshwara linga in the sanctum at Kolanupaka); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S03   still     higgsfield      2  new
+    S05   still     higgsfield      2  BLOCKED K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S06   clip      higgsfield      6  BLOCKED K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S07   still     higgsfield      2  new
+    S08   still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S08   clip      higgsfield      6  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S09   still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S09   clip      higgsfield    7.5  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra)
+    S10   still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S10   clip      higgsfield    7.5  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S11   still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S12   still     higgsfield      2  BLOCKED K-AGASTYA: unresolved (Agastya and Lopamudra); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S14   still     higgsfield      2  BLOCKED K-LINGA: unresolved (Swayambhu Someshwara linga in the sanctum at Kolanupaka); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S15   clip      higgsfield    7.5  BLOCKED K-LINGA: unresolved (Swayambhu Someshwara linga in the sanctum at Kolanupaka); K-RENUKA: unresolved (Renukacharya (Renukasiddha): appearance and the emergence iconography)
+    S16   still     higgsfield      2  new
+    S17   still     higgsfield      2  BLOCKED K-EXTERIOR: lead (Someshwara temple exterior, Kolanupaka (not the Jain Kulpakji temple))
+  missing before any paid call:
+    - script, look and budget not approved (run `gudi approve`)
+    - elevenlabs: episode cap not set (needs 1430)
+    - elevenlabs: daily cap not set (needs 1430)
+    - elevenlabs: monthly cap not set (needs 1430)
+    - elevenlabs: recorded balance not set (needs 1430)
+    - higgsfield: episode cap not set (needs 6)
+    - higgsfield: daily cap not set (needs 6)
+    - higgsfield: monthly cap not set (needs 6)
+
+ep03-vemulavada  (slot 3)  వేములవాడ రాజన్న
+  script  162 words, sha256 949200ba5e85  status: draft: awaiting editorial approval
+  shot list: not prepared yet (prepared one episode at a time)
+
+ep04-srikalahasti  (slot 4)  శ్రీకాళహస్తి
+  script  146 words, sha256 8bfe42d699ae  status: draft: awaiting editorial approval
+  shot list: not prepared yet (prepared one episode at a time)
+
+ep05-yadagirigutta  (slot 5)  యాదగిరిగుట్ట నరసింహుడు
+  script  159 words, sha256 b7e4ad325a1a  status: draft: awaiting editorial approval
+  shot list: not prepared yet (prepared one episode at a time)
+
+ep06-kanipakam  (slot 6)  కాణిపాకం వరసిద్ధి వినాయకుడు
+  script  142 words, sha256 82df3eb993c2  status: draft: awaiting editorial approval
+  shot list: not prepared yet (prepared one episode at a time)
+
+NEXT: ep02-kolanupaka (not eligible yet; see 'missing' above). Exiting cleanly, nothing spent.

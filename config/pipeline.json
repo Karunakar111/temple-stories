@@ -1,0 +1,38 @@
+{
+  "_comment": "Spend and scheduling limits for gudi. A null cap means NO paid calls for that provider. Karunakar sets these; the runner never edits this file.",
+  "providers": {
+    "higgsfield": {
+      "unit": "credits",
+      "daily_cap": null,
+      "monthly_cap": null,
+      "mcp_server": "higgsfield",
+      "claude_bin": "claude",
+      "quote_source": "connector estimate_image_cost / estimate_video_cost (free, no job)"
+    },
+    "elevenlabs": {
+      "unit": "credits (1 per character per take on eleven_v4, as logged for EP01)",
+      "daily_cap": null,
+      "monthly_cap": null,
+      "takes_per_request": 1,
+      "quote_source": "character count x logged rate; the connector cannot quote or read the balance on this account"
+    }
+  },
+  "schedule": {
+    "enabled": false,
+    "local_time": "10:30",
+    "timezone": "Asia/Kolkata",
+    "utc_offset": "+05:30",
+    "python": "/usr/bin/python3"
+  },
+  "review_dir": "review",
+  "unattended": {
+    "entry_point": "python3 -m gudi daily",
+    "paid_path": "gudi.runner.run_episode only; dry-run commands cannot import gudi.paid",
+    "claude_allowed_tools": [
+      "mcp__higgsfield__generate_image",
+      "mcp__higgsfield__generate_video",
+      "mcp__higgsfield__show_generations"
+    ],
+    "never": ["publish", "edit approvals", "edit caps", "retry a failed or unknown paid request"]
+  }
+}

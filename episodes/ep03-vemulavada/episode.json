@@ -1,0 +1,16 @@
+{
+  "id": "ep03-vemulavada",
+  "code": "EP03",
+  "slot": 3,
+  "title_te": "వేములవాడ రాజన్న",
+  "cover_te": "వేములవాడ రాజన్న · కోడె మొక్కు ఎందుకు?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "949200ba5e859530b65232bf172bf0b605d8c8b9b454b14e9677f126b94363e2",
+    "characters": 1249,
+    "words": 162,
+    "imported_from": "source-docs/Gudi_Kathalu_EP02-06_Production_Book.md",
+    "book_sha256": "f36e18877a9d44061260b481cb9492de60f67a3c0cedbdd20b785db9bae1a828"
+  },
+  "status": "draft: awaiting editorial approval"
+}

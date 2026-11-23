@@ -1,0 +1,698 @@
+{
+ "items": [
+  [
+   "0d7a8977",
+   "design/style-frames/v1-ganga.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 flat-vector style frame"
+  ],
+  [
+   "c9fc7d7b",
+   "assets/characters/mallanna-v1.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 character sheet"
+  ],
+  [
+   "4f1f047a",
+   "(not kept)",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 Ganga attempt"
+  ],
+  [
+   "af5c477e",
+   "assets/scenes/p1-03-termite-mound.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "e28edf79",
+   "assets/scenes/p1-01-turmeric-hand.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "d185629e",
+   "assets/scenes/p1-04-brothers.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "0fa97af2",
+   "assets/scenes/p1-05-serpent-guard.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "fb740e80",
+   "assets/scenes/p1-06-horse-night.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "ffdf2b5d",
+   "assets/scenes/p1-07-gardener.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "8ec2bec7",
+   "assets/scenes/p1-08-the-theft.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "a27b11fd",
+   "assets/scenes/p2-02-black-dog.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "d0a63f30",
+   "assets/scenes/p2-03-chase.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "08ec6a05",
+   "assets/scenes/p2-04-ganga.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "72fac0a7",
+   "assets/scenes/p2-06-oggu-priest.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "15771125",
+   "assets/scenes/p2-06b-patnam.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "f77bd14d",
+   "assets/scenes/p2-07-field.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "746d829f",
+   "assets/scenes/p2-05-return-hill.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "6111a6b7",
+   "assets/scenes/p2-08-jatara-crowd.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "12de2ea1",
+   "assets/scenes/p1-02-hill-dawn.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "77c57c6e",
+   "assets/scenes/p2-04b-ganga-after.png",
+   "GPT Image 2.0 still",
+   1.25,
+   "experiment",
+   "v1 storyboard scene"
+  ],
+  [
+   "c85a8c08",
+   "design/directions/A-temple-icon.png",
+   "GPT Image 2.0 still",
+   3.5,
+   "experiment",
+   "style direction A, not chosen"
+  ],
+  [
+   "6523e375",
+   "design/directions/B-folk-narrative.png",
+   "GPT Image 2.0 still",
+   3.5,
+   "final",
+   "style direction B, chosen; start frame of the festival clip"
+  ],
+  [
+   "dbcf7e9c",
+   "design/directions/C-cheriyal-scroll.png",
+   "GPT Image 2.0 still",
+   3.5,
+   "experiment",
+   "style direction C, not chosen"
+  ],
+  [
+   "1afeee0c",
+   "design/directions/B-test-armdown.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "feasibility test 1 (image edit)"
+  ],
+  [
+   "2c1db376",
+   "design/directions/B-inpaint-test.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "feasibility test 2 (inpaint)"
+  ],
+  [
+   "4618b92b",
+   "exports/B-kling-test.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "festival clip: opening and date card"
+  ],
+  [
+   "c3761abe",
+   "assets/pilot/shot2-deity-close.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "deity close-up; start frame + cover"
+  ],
+  [
+   "a1b19672",
+   "assets/pilot/shot3-patnam.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "patnam v1 (wrong geometry)"
+  ],
+  [
+   "3694f6ae",
+   "exports/pilot-shot2.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "deity clip ('today' beat)"
+  ],
+  [
+   "3919dfa6",
+   "exports/pilot-shot3-OLD-mandala.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "experiment",
+   "patnam v1 clip, replaced"
+  ],
+  [
+   "4687bf49",
+   "assets/pilot/shot3-patnam-v2.png",
+   "Nano Banana 2 still (1k)",
+   1.5,
+   "experiment",
+   "patnam v2, rejected (resolution parameter error)"
+  ],
+  [
+   "e39bf8d3",
+   "assets/pilot/shot3-patnam-v3.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "patnam v3; start frame of final patnam clip"
+  ],
+  [
+   "41dd1341",
+   "exports/pilot-shot3.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "approved patnam clip"
+  ],
+  [
+   "13dc4bcc",
+   "assets/ep01/a3-hill.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a3 hill"
+  ],
+  [
+   "e8c553f2",
+   "assets/ep01/a2-throw.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "a2 throw, cut from final"
+  ],
+  [
+   "650d48ef",
+   "assets/ep01/a4-hand.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a4 hand"
+  ],
+  [
+   "d7bfc319",
+   "assets/ep01/a5-forest.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a5 forest"
+  ],
+  [
+   "7f622ebf",
+   "assets/ep01/a6-mound.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "a6 sleeping-snake mound, excluded"
+  ],
+  [
+   "56bcaaeb",
+   "assets/ep01/a7-medalamma.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a7 Medalamma"
+  ],
+  [
+   "a7740b19",
+   "assets/ep01/a8-serpent.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a8 serpent"
+  ],
+  [
+   "b5a0c43e",
+   "assets/ep01/a9-horse.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a9 horse"
+  ],
+  [
+   "e16c2fdc",
+   "assets/ep01/a10-garden.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a10 garden"
+  ],
+  [
+   "5da2cfbc",
+   "assets/ep01/a11-theft.png",
+   "Nano Banana 2 still",
+   2,
+   "experiment",
+   "a11 theft, cut from final"
+  ],
+  [
+   "c2094fb4",
+   "(failed)",
+   "Nano Banana 2 still",
+   0,
+   "experiment",
+   "a12 first try failed: 2 charged, 2 refunded"
+  ],
+  [
+   "57bc73dd",
+   "assets/ep01/a12-hishand.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "a12 his hand"
+  ],
+  [
+   "5bfcedd7",
+   "exports/ep01/a3-hill.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   ""
+  ],
+  [
+   "fb1ba9c4",
+   "exports/ep01/a2-throw.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "experiment",
+   "cut from final"
+  ],
+  [
+   "1a063b79",
+   "exports/ep01/a4-hand.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   ""
+  ],
+  [
+   "0d28634b",
+   "exports/ep01/a5-forest.mp4",
+   "Kling 3.0 clip 7 s",
+   10.5,
+   "final",
+   ""
+  ],
+  [
+   "7f5fc024",
+   "exports/ep01/a6-mound.mp4",
+   "Kling 3.0 clip 7 s",
+   10.5,
+   "experiment",
+   "sleeping-snake clip, excluded"
+  ],
+  [
+   "67ddb6b9",
+   "exports/ep01/a7-medalamma.mp4",
+   "Kling 3.0 clip 7 s",
+   10.5,
+   "final",
+   ""
+  ],
+  [
+   "a2860547",
+   "exports/ep01/a8-serpent.mp4",
+   "Kling 3.0 clip 7 s",
+   10.5,
+   "final",
+   ""
+  ],
+  [
+   "2ddce074",
+   "exports/ep01/a9-horse.mp4",
+   "Kling 3.0 clip 4 s",
+   6,
+   "final",
+   ""
+  ],
+  [
+   "34a580e9",
+   "exports/ep01/a10-garden.mp4",
+   "Kling 3.0 clip 8 s",
+   12,
+   "final",
+   ""
+  ],
+  [
+   "2bc9daf2",
+   "exports/ep01/a11-theft.mp4",
+   "Kling 3.0 clip 8 s",
+   12,
+   "experiment",
+   "cut from final"
+  ],
+  [
+   "c8098fac",
+   "exports/ep01/a12-hishand.mp4",
+   "Kling 3.0 clip 9 s",
+   13.5,
+   "final",
+   ""
+  ],
+  [
+   "476e01ce",
+   "assets/ep01-full/n01-oggu.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n01-oggu"
+  ],
+  [
+   "ae4011b9",
+   "assets/ep01-full/n02-mallanna-wish.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n02-mallanna-wish"
+  ],
+  [
+   "4396c4bb",
+   "assets/ep01-full/n03-bandari.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n03-bandari"
+  ],
+  [
+   "2dd3e236",
+   "assets/ep01-full/n04-yellamma.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n04-yellamma"
+  ],
+  [
+   "19752550",
+   "assets/ep01-full/n05-trust.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n05-trust"
+  ],
+  [
+   "37ba0912",
+   "assets/ep01-full/n06-spotted.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n06-spotted"
+  ],
+  [
+   "2d94d899",
+   "assets/ep01-full/n07-dog.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n07-dog"
+  ],
+  [
+   "b29b027c",
+   "assets/ep01-full/n08-chase.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n08-chase"
+  ],
+  [
+   "8ade4b04",
+   "assets/ep01-full/n09-gangamma.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n09-gangamma"
+  ],
+  [
+   "1099e897",
+   "assets/ep01-full/n10-hand.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n10-hand"
+  ],
+  [
+   "e4bde685",
+   "assets/ep01-full/n11-return.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n11-return"
+  ],
+  [
+   "fcf37237",
+   "assets/ep01-full/n12-share.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n12-share"
+  ],
+  [
+   "892ba536",
+   "assets/ep01-full/n13-wedding.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n13-wedding"
+  ],
+  [
+   "4767823a",
+   "assets/ep01-full/n14-gather.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n14-gather"
+  ],
+  [
+   "db9f05d2",
+   "assets/ep01-full/n15-field.png",
+   "Nano Banana 2 still",
+   2,
+   "final",
+   "n15-field"
+  ],
+  [
+   "f44c34ba",
+   "exports/ep01-full/n01-oggu.mp4",
+   "Kling 3.0 clip 8 s",
+   12.0,
+   "final",
+   "n01-oggu"
+  ],
+  [
+   "38bef407",
+   "exports/ep01-full/n02-mallanna-wish.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n02-mallanna-wish"
+  ],
+  [
+   "0d656e4e",
+   "exports/ep01-full/n03-bandari.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "n03-bandari"
+  ],
+  [
+   "7df61871",
+   "exports/ep01-full/n04-yellamma.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "n04-yellamma"
+  ],
+  [
+   "431bdbe8",
+   "exports/ep01-full/n05-trust.mp4",
+   "Kling 3.0 clip 4 s",
+   6.0,
+   "final",
+   "n05-trust"
+  ],
+  [
+   "f4a6fa8e",
+   "exports/ep01-full/n06-spotted.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n06-spotted"
+  ],
+  [
+   "6e3c4bfe",
+   "exports/ep01-full/n07-dog.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n07-dog"
+  ],
+  [
+   "06601582",
+   "exports/ep01-full/n08-chase.mp4",
+   "Kling 3.0 clip 4 s",
+   6.0,
+   "final",
+   "n08-chase"
+  ],
+  [
+   "3b5d6948",
+   "exports/ep01-full/n09-gangamma.mp4",
+   "Kling 3.0 clip 5 s",
+   7.5,
+   "final",
+   "n09-gangamma"
+  ],
+  [
+   "49834aa3",
+   "exports/ep01-full/n10-hand.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n10-hand"
+  ],
+  [
+   "d9e5d7c9",
+   "exports/ep01-full/n11-return.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n11-return"
+  ],
+  [
+   "2cba4781",
+   "exports/ep01-full/n12-share.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n12-share"
+  ],
+  [
+   "08e34e86",
+   "exports/ep01-full/n13-wedding.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n13-wedding"
+  ],
+  [
+   "ee161dc2",
+   "exports/ep01-full/n14-gather.mp4",
+   "Kling 3.0 clip 3 s",
+   4.5,
+   "final",
+   "n14-gather"
+  ],
+  [
+   "61c72de0",
+   "exports/ep01-full/n15-field.mp4",
+   "Kling 3.0 clip 4 s",
+   6.0,
+   "final",
+   "n15-field"
+  ]
+ ],
+ "other": [
+  [
+   "GPT Image 2.6 x4 (06:39, 07:18 UTC)",
+   3.0
+  ]
+ ]
+}

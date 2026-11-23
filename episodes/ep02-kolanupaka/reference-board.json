@@ -1,0 +1,103 @@
+{
+  "episode": "ep02-kolanupaka",
+  "revision": 1,
+  "prepared": "2026-11-23",
+  "status_meanings": {
+    "approved-style": "Approved EP01 artwork. Style only: line, palette, rendering. Never an identity reference for this temple, deity or saint.",
+    "verified": "Identity confirmed against a named source and approved for this use.",
+    "lead": "A plausible, identified source that still needs Karunakar's confirmation before paid art.",
+    "unresolved": "No identified, usable reference yet. Shots that need it are blocked."
+  },
+  "references": [
+    {
+      "id": "STYLE-DEITY",
+      "subject": "EP01 deity close-up (accepted B-derived frame)",
+      "status": "approved-style",
+      "path": "assets/pilot/shot2-deity-close.png",
+      "use": "style reference input for stills (uploadable; passed moderation in EP01)",
+      "rights": "own artwork"
+    },
+    {
+      "id": "STYLE-PATNAM",
+      "subject": "EP01 patnam close (accepted B-derived frame)",
+      "status": "approved-style",
+      "path": "assets/pilot/shot3-patnam-v3-final.png",
+      "use": "style reference input for stills",
+      "rights": "own artwork"
+    },
+    {
+      "id": "STYLE-B",
+      "subject": "EP01 style direction B",
+      "status": "approved-style",
+      "path": "design/directions/B-folk-narrative.png",
+      "use": "look benchmark by eye only. config/production.json records that Higgsfield's upload screen rejects it, so it is never an input",
+      "rights": "own artwork"
+    },
+    {
+      "id": "K-LINGA",
+      "subject": "Swayambhu Someshwara linga in the sanctum at Kolanupaka",
+      "status": "unresolved",
+      "url": null,
+      "leads": [
+        "Deccan Chronicle, 15 Jul 2018, 'Nyaya Lingam is a role model for harmony': describes the swayambhu linga as cracked. https://www.deccanchronicle.com/nation/current-affairs/150718/nyaya-lingam-is-a-role-model-for-harmony.html"
+      ],
+      "use": "shape, crack, pedestal and dressing of the linga in L1, E1 and R1",
+      "rights": "no image identified. One temple listing (temple.yatradham.org) says photography is not allowed inside",
+      "needed": "One identified photograph or temple-issued image of THIS linga, for reference only. Without it the linga must stay small, veiled by light, or out of frame."
+    },
+    {
+      "id": "K-EXTERIOR",
+      "subject": "Someshwara temple exterior, Kolanupaka (not the Jain Kulpakji temple)",
+      "status": "lead",
+      "url": "https://www.kaladarshana.com/sites/kolanupaka/IMG00002.html",
+      "leads": [
+        "Kaladarshana (photos and text (c) Amit Guha): page titled 'Someswara Temple', courtyard with ambulatory, kirtistambha and Nandi pavilion",
+        "Heritage Telangana site-museum page (K2): https://tgarch.telangana.gov.in/museium_info?ID=2&type=site (could not be fetched from this session; check in a browser)"
+      ],
+      "use": "architecture reference for L2 (exterior) and S17. Research and reference only: the photo is copyrighted and is never reproduced in the film",
+      "rights": "reference-only; reproduction would need Amit Guha's permission",
+      "needed": "Your confirmation that this page shows the Someshwara temple, ideally matched against the K2 museum page"
+    },
+    {
+      "id": "K-RENUKA",
+      "subject": "Renukacharya (Renukasiddha): appearance and the emergence iconography",
+      "status": "unresolved",
+      "url": null,
+      "leads": [
+        "Script and K1 Siddhanta Shikhamani 4.3-4: sacred ash over the body, rudraksha, staff (danda), water pot (kamandalu)",
+        "Panchacharya iconography is commonly described as a sage emerging from a Shivalinga (secondary sources; needs a primary or peetha-issued image)"
+      ],
+      "use": "character sheet C1, then E1, V1, V2, T1, T2, R1",
+      "rights": "n/a until a reference is chosen",
+      "needed": "One approved iconographic reference (for example a Veerashaiva peetha image) for face, hair, marks and dress. Also settle naming: some listings call the shrine 'Someshwara Revanasiddeshwara', and Revanasiddha is given as another name of Renukacharya. The script's own names are kept; this only checks that the figure drawn is the right one"
+    },
+    {
+      "id": "K-AGASTYA",
+      "subject": "Agastya and Lopamudra",
+      "status": "unresolved",
+      "url": null,
+      "leads": ["Common South Indian sculptural depiction of Agastya as a short, bearded sage with a water pot (general iconography; needs one identified image)"],
+      "use": "character sheet C2, then A1-A3, T1, T2",
+      "rights": "n/a until chosen",
+      "needed": "One identified sculptural or painted reference each for Agastya and Lopamudra, with dress you approve"
+    },
+    {
+      "id": "K-INSCRIPTION-TEXT",
+      "subject": "1067 endowment to Svayambhu Somesvara (Epigraphia Telanganica vol. I, printed p.168, no.147)",
+      "status": "verified",
+      "url": "https://www.mcrhrdi.gov.in/images/epigraphia/Vol-I.pdf",
+      "use": "the TYPESET caption 'క్రీ.శ. 1067 · పూజలకు దానం' only. The stone in S16 is an illustrated, generic stone with no readable script",
+      "rights": "text fact; no image used",
+      "note": "As cited in the Production Book (K3); not re-read in this session. The 30-episode plan notes entries 147-148 carry different April dates, so use the year only"
+    },
+    {
+      "id": "MALAYA-ASHRAM",
+      "subject": "Malaya mountain and Agastya's ashram",
+      "status": "verified",
+      "url": null,
+      "use": "painted landscape for L3. The book's direction: no claim of a mapped route",
+      "rights": "own artwork to be generated",
+      "note": "No identity constraint beyond EP01 style"
+    }
+  ]
+}

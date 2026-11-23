@@ -1,0 +1,13 @@
+{
+  "_comment": "Slate order. EP01 is published and locked; the runner never touches it.",
+  "locked": [
+    "ep01-komuravelli (approved export: publishing/ep01/)"
+  ],
+  "order": [
+    "ep02-kolanupaka",
+    "ep03-vemulavada",
+    "ep04-srikalahasti",
+    "ep05-yadagirigutta",
+    "ep06-kanipakam"
+  ]
+}

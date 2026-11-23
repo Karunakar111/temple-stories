@@ -1,0 +1,16 @@
+{
+  "id": "ep02-kolanupaka",
+  "code": "EP02",
+  "slot": 2,
+  "title_te": "కొలనుపాక సోమేశ్వరుడు",
+  "cover_te": "కొలనుపాక సోమేశ్వరుడు · లింగం నుంచి వచ్చిన గురువు ఎవరు?",
+  "script": {
+    "path": "voice.te.txt",
+    "sha256": "35da0719cb3aff55dd30090964e0d7351c8e6ad2ccd9416b3d3f9709d493c7fb",
+    "characters": 1430,
+    "words": 183,
+    "imported_from": "source-docs/Gudi_Kathalu_EP02-06_Production_Book.md",
+    "book_sha256": "f36e18877a9d44061260b481cb9492de60f67a3c0cedbdd20b785db9bae1a828"
+  },
+  "status": "draft: awaiting editorial approval"
+}
