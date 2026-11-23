@@ -1,0 +1,71 @@
+{
+ "episode": "01-mallanna-full",
+ "startBalance": 474.55,
+ "endBalance": 356.05,
+ "cap": 118.5,
+ "spent": 118.5,
+ "stills": {
+  "model": "nano_banana_2",
+  "resolution": "2k",
+  "count": 15,
+  "credits": 30.0,
+  "jobs": {
+   "n01-oggu": "476e01ce-1e86-4a0c-a4cd-b9fe763b4466",
+   "n02-mallanna-wish": "ae4011b9-dba9-4f57-980c-6b9a918efdc6",
+   "n03-bandari": "4396c4bb-95c3-4fa2-803b-30e89092b27f",
+   "n04-yellamma": "2dd3e236-b0a7-42ed-9760-73a6a27066cb",
+   "n05-trust": "19752550-dfb7-4654-b53c-9e5a71ba02f3",
+   "n06-spotted": "37ba0912-a489-4caa-b456-f1c005d54d5e",
+   "n07-dog": "2d94d899-7150-405b-a880-39756faefef2",
+   "n08-chase": "b29b027c-ab6f-4923-a9d7-dbd18f9444f6",
+   "n09-gangamma": "8ade4b04-9e0a-4f10-913e-c09337783aca",
+   "n10-hand": "1099e897-6408-4615-b78e-78b7c3198c08",
+   "n11-return": "e4bde685-7c74-4db0-8a8a-2d829de4b8b7",
+   "n12-share": "fcf37237-c054-4961-a20b-cdd723def4dc",
+   "n13-wedding": "892ba536-c7bb-4bff-967d-bdf24d513d77",
+   "n14-gather": "4767823a-1cc9-42b2-936e-88a5200f4b05",
+   "n15-field": "db9f05d2-873f-4858-91aa-bafeef507e56"
+  }
+ },
+ "startFrameMediaIds": {
+  "n01-oggu": "b23194fa-59e6-4cb8-8a2d-e190d7774d5e",
+  "n02-mallanna-wish": "2cb96b02-95d8-4af2-bc53-9e7bf2170dd1",
+  "n03-bandari": "a651d060-335d-446b-80aa-139d08c89605",
+  "n04-yellamma": "9e1f74f9-e970-4953-9362-479527ace307",
+  "n05-trust": "6d30d014-c7b3-4ae8-9813-499df862271b",
+  "n06-spotted": "694e2b2f-d37e-49f4-aa23-e6dfa7c751df",
+  "n07-dog": "6057550d-9752-40f1-b363-fbf99cb52408",
+  "n08-chase": "4c20bddd-e7dd-40c8-b965-172772cff290",
+  "n09-gangamma": "a265b9a9-d690-46ab-8692-83810eecc5fd",
+  "n10-hand": "a729414b-aec4-4dbe-b8f7-c9dcd3e341ed",
+  "n11-return": "782bbbbe-c592-48d8-9a2b-5242baef5cbb",
+  "n12-share": "9138dfdb-70c3-4348-9add-49696435e142",
+  "n13-wedding": "91ae5545-1efa-498a-82bd-0c0c35d775c9",
+  "n14-gather": "7d8302f1-9792-42a8-a626-a7476b6b7e7f",
+  "n15-field": "2238f145-28b9-4829-a6ad-6d6ca6bbe9c0"
+ },
+ "clips": {
+  "model": "kling3_0",
+  "mode": "pro",
+  "sound": "off",
+  "seconds": 59,
+  "credits": 88.5,
+  "jobs": {
+   "n01-oggu": "f44c34ba-03cb-4226-b2da-0ae3d9b179e7",
+   "n02-mallanna-wish": "38bef407-c376-465b-9114-ec4ac89a015c",
+   "n03-bandari": "0d656e4e-7069-400c-9d60-fdf04716b043",
+   "n04-yellamma": "7df61871-b792-4147-9e0c-fd52b4815a38",
+   "n05-trust": "431bdbe8-9870-4964-be54-d678ffe08b25",
+   "n06-spotted": "f4a6fa8e-abdb-45fc-ab36-66f62ed34a3c",
+   "n07-dog": "6e3c4bfe-e07e-4c61-abb4-34f94062caec",
+   "n08-chase": "06601582-9166-4179-9f1c-519acd385683",
+   "n09-gangamma": "3b5d6948-4c5b-4f27-95a5-f5c423864bc4",
+   "n10-hand": "49834aa3-ed51-4905-a9d5-54724e45764f",
+   "n11-return": "d9e5d7c9-2a0f-49cd-a258-98b76dcbe54e",
+   "n12-share": "2cba4781-76bc-408b-8ef1-8a3b175d2394",
+   "n13-wedding": "08e34e86-bedc-4ccb-8744-07cc5c4a96cc",
+   "n14-gather": "ee161dc2-05eb-4b92-b1e9-1b4e47a6600d",
+   "n15-field": "61c72de0-8637-4a74-b346-8104c9a80835"
+  }
+ }
+}
