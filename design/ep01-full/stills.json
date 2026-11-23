@@ -1,0 +1,262 @@
+[
+ {
+  "index": 1,
+  "key": "n01-oggu",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: night in a village courtyard lit by oil lamps. Three Oggu Katha storytellers perform. The lead storyteller stands in the centre mid-song, mouth open, one hand raised high, holding a small hourglass-shaped oggu drum in the other hand. Behind him, one companion plays a pair of brass cymbals and another beats a large cylindrical dolu drum slung at his waist. All three wear white dhotis and long white shirts, saffron and red sashes, red turbans, rows of small brass bells at the ankles. In the foreground, the heads and shoulders of a seated village audience in dark silhouette. Warm lamplight on the performers, deep blue night beyond.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 2,
+  "key": "n02-mallanna-wish",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "f30c0f5f-a824-4986-b018-8fe4f075a97c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: dusk on a rocky hillside. The god Mallanna exactly as in reference image 2: deep blue skin, enormous upswept black moustache, tall golden crown — stands in three-quarter view on the left, dressed in a red and gold dhoti and jewelled upper garments, holding a fresh marigold garland loosely in both hands at his chest. He looks thoughtfully out to the right, across the valley, toward a small village of mud houses where lamps are beginning to glow. Calm, longing. Warm orange sky going to violet. No other people anywhere in the image.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 3,
+  "key": "n03-bandari",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: deep composition. In the extreme foreground, filling the lower third, a cluster of fresh golden turmeric rhizomes, knobbly finger-like roots, resting on a folded red cloth on a flat rock and glowing softly warm. Behind them, far away beyond several layers of blue hills, small on the horizon, a high ochre walled garden enclosure with a parapet. Late afternoon haze between the layers so the distance reads. No people.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 4,
+  "key": "n04-yellamma",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "f30c0f5f-a824-4986-b018-8fe4f075a97c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: a small open stone shrine under a large neem tree at dusk. Seated on a low stone platform is the goddess Yellamma: a serene woman with warm brown skin, a gold crown, a large red kumkum mark on her forehead, wearing a deep green sari with a red border, a sprig of neem leaves at her waist. On the left, the god Mallanna exactly as in reference image 2: deep blue skin, enormous upswept black moustache, tall golden crown, in a red and gold dhoti, stands before her with his palms joined in respect and his head slightly bowed. Clay oil lamps burn at the shrine. Warm lamplight on both, blue evening sky behind the neem branches.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 5,
+  "key": "n05-trust",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "ebc00fc8-13d7-465e-883f-5eff2a1f4f94",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: the same walled garden as reference image 2, late golden afternoon. The gardener of reference image 2 (brown skin, large black moustache, off-white dhoti knotted at the knee, faded long shirt, twisted head cloth) stands on a garden path with a full basket of picked fruit on his hip. Facing him, the garden's keeper, an older man with a grey moustache in a white dhoti and a dark shawl, smiles and rests one hand on the gardener's shoulder in approval. Up on the wall behind, two armed guards stand at ease with their spears resting. Warm, settled, trusting.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 6,
+  "key": "n06-spotted",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "ebc00fc8-13d7-465e-883f-5eff2a1f4f94",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: night in the same walled garden as reference image 2. The gardener of reference image 2 (brown skin, large black moustache, off-white dhoti, faded long shirt, twisted head cloth) runs along a garden path toward the viewer, clutching a cloth bundle to his chest that glows golden from within, glancing back over his shoulder. Up on the wall behind him, two armed guards have seen him: one points straight down at him, the other raises a burning torch and shouts. Torchlight against deep blue night.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 7,
+  "key": "n07-dog",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: night, just outside the arched gate of a high ochre garden wall. A lean black dog bounds away from the gate toward the viewer at full stretch, a small cloth bundle glowing gold held in its jaws. Behind it, in the gateway, a drifting cloud of gold dust in the rough shape of a standing man is dissolving into the air where he stood. Moonlight, deep blue shadows.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 8,
+  "key": "n08-chase",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: a wide moonlit landscape. A black dog with a glowing gold bundle in its jaws runs flat out along a rocky ridge in the middle ground, heading toward a broad river that cuts across the lower part of the frame. Far behind it on the ridge, small figures of pursuers with burning torches and spears. Rolling hills, a full moon, deep blue night, silver light on the river.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 9,
+  "key": "n09-gangamma",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: night at a broad river. The river goddess Gangamma rises out of the water, waist-deep, tall and luminous: a woman with fair skin, a silver crown, long black hair, a white and pale-blue sari, water streaming from her shoulders. Her right arm is stretched straight out to her side as a barrier across the river. Beyond her, on the far bank, a black dog carrying a glowing gold bundle runs away into the dark hills. In the foreground on the near bank, the backs of a group of pursuers with torches and spears, halted at the water's edge. Moonlight on the water.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 10,
+  "key": "n10-hand",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: a close, still shot of the river goddess Gangamma standing waist-deep in a moonlit river: a woman with fair skin, a silver crown, long black hair, a white and pale-blue sari. Her face is calm and grave, eyes closed. Her right arm, held at her side, ends just below the elbow where it turns into a fine spray of bright water and white light that drifts away. There is no blood and no wound anywhere, only water and light. Ripples circle her waist; the moon behind her. Sorrowful, sacred, quiet.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 11,
+  "key": "n11-return",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "f30c0f5f-a824-4986-b018-8fe4f075a97c",
+     "role": "image_references"
+    },
+    {
+     "value": "06b01871-1f8c-48d2-a532-c97ddb21202b",
+     "role": "image_references"
+    },
+    {
+     "value": "df875dbe-7062-45f7-ab98-d5af3b70662e",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: dawn. The white winged horse of reference image 3, with its gold harness and red saddle cloth, glides down with wings spread wide toward the rocky hill with the small whitewashed shrine of reference image 4. On its back sits the god Mallanna exactly as in reference image 2: deep blue skin, enormous upswept black moustache, tall golden crown, holding a glowing gold cloth bundle against his chest. Orange dawn low on the horizon, long flat clouds, the hill catching the first light.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 13,
+  "key": "n13-wedding",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    },
+    {
+     "value": "823b8c69-f32e-4315-9f65-cd9a677e4e84",
+     "role": "image_references"
+    },
+    {
+     "value": "f30c0f5f-a824-4986-b018-8fe4f075a97c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: a village wedding at night under a pandal of mango leaves and marigold strings. The god Mallanna, exactly as in reference image 3 (deep blue skin, enormous upswept black moustache, tall golden crown), and Medalamma, exactly as in reference image 2 (a young woman in a deep red and gold sari with a green blouse, jasmine in her long braid), sit side by side on a low wooden seat, both wearing heavy marigold garlands. Behind them stand her three brothers from reference image 2, now smiling. Guests at the sides shower yellow turmeric rice over the couple. Brass lamps glow.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 14,
+  "key": "n14-gather",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: after the ritual, on a stone temple floor at night. The edge of a large square patnam, drawn exactly in the manner of reference image 1 with many closely spaced nested straight square borders, predominantly turmeric yellow and white with minimal red, its lines now scuffed and blurred at the edge. Two women devotees in plain cotton saris kneel beside it and carefully scoop the coloured powder into a knotted cloth with their hands. Clay oil lamps nearby. Warm lamplight.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ },
+ {
+  "index": 15,
+  "key": "n15-field",
+  "params": {
+   "model": "nano_banana_2",
+   "resolution": "2k",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "85b1b66a-3daa-4ab7-86e0-68bd5da05c9c",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Match the illustration style of reference image 1 exactly: hand-drawn Indian folk illustration, thick confident ink outlines, flat saturated colour with soft painterly shading, warm directional light against cool shadow, a faint paper grain. Vertical cinematic composition.\n\nSubject: early morning in a green Telangana field of young crops in neat rows. A farmer in a white dhoti, a white shirt and a head cloth walks along the raised earth bund at the edge of the field, scattering a handful of yellow powder from a cloth bundle over the crop; the powder drifts and glows in the low sun. Light mist over the field, distant palm trees.\n\nAll figures fully clothed. Hands drawn complete with five fingers. No text, no letters, no writing, no script of any kind anywhere in the image."
+  }
+ }
+]
