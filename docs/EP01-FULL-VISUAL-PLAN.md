@@ -1,70 +1,121 @@
-# Episode 1 (full) — timed visual plan against the candidate master
+# Episode 1 (full): timed visual plan, revision 2
 
-**Master audio: `audio/01-mallanna-full-paced.mp3` — 107.84 s, 3235 frames @ 30 fps.**
-Source take `audio/01-mallanna-full.mp3` (104.24 s) kept unedited.
-Beats: `src/episodes/01-full-timing.json`. Narration: `script/01-komuravelli-mallanna-narration.txt`.
+**Timing candidate: `audio/01-mallanna-full-paced.mp3`, 107.84 s, 3235 frames @ 30 fps.**
+No new take. Narration text: `script/01-komuravelli-mallanna-narration.txt`.
 
 **No paid image or video job has been run.**
 
-## Plan — 26 segments over 22 beats
+## 1. Verification of this audio
 
-| # | Time | Narration (beat) | Action | Visual change | Reusable asset | New asset |
-|---|---|---|---|---|---|---|
-| 1 | 0.00–2.94 | జాతరలో మీరు చల్లే పసుపు… | turmeric flung up | **open** on the object | `a2-throw` 3.04 | — |
-| 2 | 2.94–5.16 | …దాని వెనుక కథ తెలుసా? | hand lifts a fistful | tighter, to the hand | `a4-hand` 5.04 | — |
-| 3 | 5.16–10.21 | హైదరాబాద్ నుంచి… సిద్దిపేట | — | **place**: the hill + pin | `a3-hill` 5.04 | — |
-| 4 | 10.21–14.20 | మల్లన్న కథలు ఒగ్గు పాటల్లో… | artists singing | **who is telling this** | — | **oggu artists, 8 s** (also §20) |
-| 5 | 14.20–18.13 | …వేర్వేరు రూపాలున్నయ్. ఓ కథ ఇది. | priest mid-song | hold — the caveat | `pilot-shot3` 5.04 | — |
-| 6 | 18.13–24.61 | మల్లన్న మేడలమ్మను… షరతు పెట్టిండ్రు | brothers block | **story starts**: the condition | still `a7-medalamma.png` | **clip only, 7 s** |
-| 7 | 24.61–29.12 | బండారి… పసుపు కొమ్ములు… దూరంగ | — | **the object named** | — | **bandari horns, 5 s** |
-| 8 | 29.12–34.11 | బయల్దేరే ముందు… ఎల్లమ్మ… దారి చెప్పింది | Yellamma points the way | **new character** | — | **Yellamma giving the way, 5 s** |
-| 9 | 34.11–37.49 | దేవతలు ఎగిరే గుర్రం… బయల్దేరిండు | horse flies | **departure** — widest shot | `a9-horse` 4.04 | — |
-| 10 | 37.49–43.66 | అక్కడ తోటమాలిగ చేరిండు… నమ్మకం గెలుచుకున్నడు | watering, head down | **new place**: the garden | `a10-garden` 8.04 | — |
-| 11 | 43.66–47.90 | బండారి ఉన్న చోటు… ఐదు తలల పాము కాపలా | serpent watching | **the obstacle**, awake | `a8-serpent` 7.04 | — |
-| 12 | 47.90–52.24 | ఒక రోజు బండారి తీసుకొని… కనిపెట్టిండ్రు | he takes it | **the turn** — and he's seen | `a12-hishand` 9.04 | — |
-| 13 | 52.24–54.53 | నల్ల కుక్కగ మారి పారిపోయిండు | dog bolts | **transformation** | — | **black dog, 3 s** |
-| 14 | 54.53–58.37 | కొండలు దాటిండు… వాళ్లు వదల్లే | the chase | **landscape, speed** | — | **chase, 4 s** |
-| 15 | 58.37–63.24 | చివరికి గంగమ్మ… చేయి అడ్డుపెట్టింది | Ganga blocks | **intervention** | — | **Ganga rises, 5 s** |
-| 16 | 63.24–66.35 | ఆ దెబ్బకు ఆమె కుడి చేయి పోయింది | the cost | **the image of the film**, held | — | **her hand gone, 4 s** |
-| 17 | 66.35–69.95 | ఎగిరే గుర్రం మీద… ఈ కొండకే | horse lands | **return — same hill as §3** | — | **descent to the hill, 4 s** |
-| 18 | 69.95–74.69 | బండారిల కొంత ఎల్లమ్మకు… పెళ్లాడిండు | share, then marriage | **resolution** | — | **share + marriage, 5 s** |
-| 19 | 74.69–78.67 | ఇప్పటి మల్లన్న పూజల్లోనూ… ప్రత్యేక స్థానం | crowd throwing | **cut to today** | festival `B-kling-test` 5.04 | — |
-| 20 | 78.67–81.87 | ఒగ్గు కళాకారులు… పాడి వినిపిస్తరు | artists singing | back to the tellers | the §4 clip, later window | — |
-| 21 | 81.87–86.10 | ఒగ్గు పూజారులు… పట్నం వేస్తరు | hands laying powder | **separate act**: the patnam | — | **patnam being laid, 5 s** |
-| 22 | 86.10–90.35 | పసుపు, కుంకుమ, బియ్యప్పిండి… పూజా ముగ్గు | the square fills in | overhead reveal | — | **FREE — code-drawn** |
-| 23 | 90.35–96.65 | కొందరు భక్తులు… వాళ్ల నమ్మకం | gather powder → field | **belief, stated as belief** | — | **powder to the field, 7 s** |
-| 24 | 96.65–100.52 | సంక్రాంతి నుంచి ఉగాది దాకా… | — | **when to go** (card) | festival, later window | FREE card |
-| 25 | 100.52–105.21 | మీ ఊళ్ల… కింద చెప్పుండ్రి | turmeric falling | **back to the hand** | `a4-hand`, later window | — |
-| 26 | 105.21–107.84 | కొమురవెల్లి మల్లన్నకు — కోటి దండాలు! | — | black, chant alone | — | FREE |
+**It is the verified take plus pauses, nothing else.** Compared against the source take
+`audio/01-mallanna-full.mp3` (104.24 s) at 11 points across the film: correlation 1.000 at
+every point, with every offset matching the seven documented pause inserts (+3.60 s total).
+So the speech-to-text check done on that take applies word for word to this file.
 
-**9 clips reused.** Every segment is shorter than its clip — no frozen tails anywhere.
+**Contents against the final script:** 198 written words, 197 spoken. No sentence missing,
+nothing added, every beat present and in order. The single dropped word is a contraction
+(ఎల్లమ్మకు ఇచ్చిండు, spoken ఎల్లమ్మకిచ్చిండు).
 
-## Pacing edits (audio only, no regeneration)
+**Names:** మల్లన్న (9), మేడలమ్మ (2), బండారి (7), గంగమ్మ (1) all spoken correctly and evenly.
+ఎల్లమ్మ at 31.41 s is quick (0.30 s), with a 0.35 s pause added before it. Accepted as is.
 
-3.60 s of silence inserted at seven real pause midpoints:
+**Dialect, correcting the earlier note:** the -ిండు / -ిండ్రు forms stay Telangana
+(చేరిండు, కనిపెట్టిండ్రు, పోయిండు, బయలుదేరిండు). The -న్నడు forms come out standard
+(పెళ్లాడాలనుకున్నాడు, మార్చుకున్నాడు, గెలుచుకున్నాడు, తెలుసుకున్నాడు), as do the habitual
+endings (-తారు, -న్నాయి) and -గా, -లి. Captions should follow the script; the audio is accepted.
 
-| At | Added | Why |
-|---|---|---|
-| 33.76 | +0.35 | Yellamma's name was being swallowed |
-| 51.44 | +0.45 | he is spotted → the dog |
-| 53.38 | +0.35 | the dog bolts |
-| 56.72 | +0.50 | the chase → Ganga |
-| 60.99 | +0.60 | the arm goes across → the blow |
-| 63.20 | **+0.90** | her hand is gone — the longest hold in the film |
-| 66.35 | +0.45 | the return settles |
+**Timing method:** all 47 pauses in this file measured with FFmpeg silence detection. Every cut
+below sits inside a measured pause. The 20 name timestamps from the forced alignment, shifted
+by the pause inserts, each land inside the phrase assigned to them.
 
-Chase 3.34→**3.84 s**, Ganga 4.27→**4.87 s**, her hand 2.21→**3.11 s**, return 3.15→**3.60 s**.
+## 2. Beat plan
 
-## Revised cost — approval needed
+Times are cut points in the master. "Spoken" is what the voice actually says.
 
-| Item | Qty | Credits |
-|---|---|---|
-| New stills (`nano_banana_2`, 2k) | 11 | 22.0 |
-| New clips (`kling3_0`, pro) — 62 s at 1.5/s | 12 | 93.0 |
-| Reused clips | 9 | 0 |
-| Code-drawn patnam, cards, captions | — | 0 |
-| Narration + pacing edits | done | 0 |
-| **Total** | | **115.0 credits** |
+| # | Time | Spoken | Viewer sees | What changes | Asset |
+|---|---|---|---|---|---|
+| 1 | 0.00–3.04 | కొమురవెల్లి మల్లన్న జాతరలో మీరు చల్లే పసుపు | A hand flings turmeric into the dusk sky | Opens on the object of the story | Reuse `a2-throw` 0.0–3.04 |
+| 2 | 3.04–5.16 | దాని వెనుక కథ తెలుసా? | Close on a hand letting turmeric pour onto a heap | From the crowd's gesture to one devotee's hand | Reuse `a4-hand` 0.0–2.12 |
+| 3 | 5.16–7.98 | హైదరాబాద్ నుంచి ఎనభై ఐదు కిలోమీటర్లు | Map card: a line draws from Hyderabad toward Siddipet, "85 కి.మీ." counts up | Place begins: distance first | **New, free** (code-drawn map) |
+| 4 | 7.98–10.21 | సిద్దిపేట జిల్లా, కొమురవెల్లి | The rocky hill with the temple at dusk; name title fades in | Map gives way to the real place | Reuse `a3-hill` 0.0–2.23 + title |
+| 5 | 10.21–12.99 | మల్లన్న కథలు ఒగ్గు పాటల్లో వినిపిస్తాయి | Oggu artists singing with the drum, wide | Who keeps this story alive | **New: Oggu artists, 8 s** (window 0.0–2.78) |
+| 6 | 12.99–16.20 | బండారి కోసం వెళ్ళిన కథకు వేరు వేరు రూపాలున్నాయి | Same performance, pushed in to the lead singer's face and drum | Wide to close: from the group to one teller (one telling among many) | Same Oggu clip 2.8–6.0, code punch-in |
+| 7 | 16.20–18.13 | అందులో ఓ కథ ఇది | Hills at dusk, herders and sheep on the path | Present day ends; the story world opens | Reuse `a5-forest` 0.0–1.93 |
+| 8 | 18.13–20.95 | మల్లన్న మేడలమ్మను పెళ్లాడాలనుకున్నాడు | Mallanna, half-turned, watches Medalamma pass at a distance | Hero introduced, and his wish | **New: Mallanna sees Medalamma, 3 s** |
+| 9 | 20.95–22.66 | లింగ బలిజల బిడ్డ ఆమె | Medalamma walks out of her family's doorway | Cut to her, on screen while she is named | Reuse `a7-medalamma` 0.0–1.2, slowed 1.43× |
+| 10 | 22.66–24.69 | ఆమె అన్నలు ఒక షరతు పెట్టిండ్రు | Her three brothers, arms folded, a wall | She leaves frame; the obstacle remains | Reuse `a7-medalamma` 1.9–3.93 |
+| 11 | 24.69–27.23 | బండారి తీసుకురావాలి. పసుపు కొమ్ములు. | Glowing turmeric roots, close | The object named, shown exactly | **New: bandari pull-back, 5 s** (first half) |
+| 12 | 27.23–29.10 | అవి ఎక్కడో దూరంగా ఉన్నాయి | Camera pulls back past the roots to a walled garden far across the hills | Close object becomes a distant place | Same clip, second half |
+| 13 | 29.10–32.29 | బయలుదేరే ముందు మల్లన్న ఎల్లమ్మ దగ్గరికి పోయిండు | Mallanna arrives and bows before Yellamma | New character | **New: Yellamma gives the way, 5 s** (first half) |
+| 14 | 32.29–33.90 | దారి ఆమె చెప్పింది | Yellamma raises her arm and points the way | Action: the guidance itself | Same clip, second half |
+| 15 | 33.90–36.08 | దేవతలు ఎగిరే గుర్రం ఇచ్చిండ్రు | The winged white horse appears in a burst of light against the night sky | The gift arrives | Reuse `a9-horse` first frame held + code light reveal |
+| 16 | 36.08–37.50 | మల్లన్న బయలుదేరిండు | The horse beats its wings and flies with Mallanna | Still becomes flight: departure | Reuse `a9-horse` 0.0–1.42, in motion |
+| 17 | 37.50–40.51 | అక్కడ తోటమాలిగా చేరిండు. పేరు మార్చుకున్నాడు. | Mallanna in plain clothes watering the garden, guards on the wall behind | New place, hidden identity | Reuse `a10-garden` 0.0–3.01 |
+| 18 | 40.51–43.70 | కొంతకాలం అక్కడే ఉండి వాళ్ళ నమ్మకం గెలుచుకున్నాడు | The garden's keeper nods and hands him a key; seasons in the light | Time passes; trust is won | **New: trust, 4 s** (optional, see cost) |
+| 19 | 43.70–45.53 | బండారి ఉన్న చోటు తెలుసుకున్నాడు | Tight on the glowing bandari on its stone pedestal | He finds it | Reuse `a8-serpent`, code punch-in on the pedestal |
+| 20 | 45.53–47.70 | ఐదు తలల పాము దానికి కాపలా | Pull out: the five-headed serpent coiled around it, hoods raised | The guard revealed | Reuse `a8-serpent`, pull out to full frame |
+| 21 | 47.70–50.19 | ఒకరోజు బండారి తీసుకుని బయలుదేరిండు | His hand closes around the turmeric, he moves off | The theft | Reuse `a12-hishand` 4.5–6.99 (fist closes) |
+| 22 | 50.19–52.08 | కానీ వాళ్ళు కనిపెట్టిండ్రు | Guards on the wall spot him and point, shouting | He is seen | **New: guards spot him, 3 s** |
+| 23 | 52.08–54.46 | నల్ల కుక్కగా మారి పారిపోయిండు | Mallanna dissolves into a black dog that bolts | Transformation | **New: black dog, 3 s** |
+| 24 | 54.46–56.89 | కొండలు దాటిండు. నదులు దాటిండు. | The dog races over a ridge, then leaps a river | Landscape and speed | **New: chase, 4 s** (first part) |
+| 25 | 56.89–58.11 | వాళ్ళు వదల్లే | Pursuers crest the ridge behind | The threat stays on screen | Same chase clip, end |
+| 26 | 58.11–60.27 | చివరికి గంగమ్మ అడ్డొచ్చింది | Gangamma rises from the river between the dog and the pursuers | Intervention | **New: Gangamma, 5 s** (first half) |
+| 27 | 60.27–63.01 | ఆయన్ని కాపాడనీకి చెయ్యి అడ్డుపెట్టింది | She throws her right arm across to block the blow | Action: the shield | Same clip, second half |
+| 28 | 63.01–65.98 | ఆ దెబ్బకు ఆమె కుడిచెయ్యి పోయింది | The blow lands in a flash of water and light; her right arm is gone at the sleeve. Shown without gore. Held. | The cost. The longest hold in the film | **New: her hand gone, 3 s** |
+| 29 | 65.98–68.66 | ఎగిరే గుర్రం మీద ఆయన తిరిగి వచ్చిండు | The horse glides down at dawn, bandari in hand | The return; dawn against the night departure | **New: return flight, 3 s** |
+| 30 | 68.66–69.72 | ఈ కొండకే | The Komuravelli hill from beat 4 | Callback: the same hill | Reuse `a3-hill` 2.0–3.06 |
+| 31 | 69.72–72.14 | బండారిల కొంత ఎల్లమ్మకిచ్చిండు | Mallanna places a share of turmeric in Yellamma's hands | Resolution, part one | **New: share to Yellamma, 3 s** |
+| 32 | 72.14–74.78 | మిగతాది తీసుకుని మేడలమ్మను పెళ్లాడిండు | Wedding: garlands, turmeric, Medalamma beside him | Resolution, part two | **New: wedding, 3 s** |
+| 33 | 74.78–78.68 | ఇప్పటి మల్లన్న పూజల్లోనూ బండారికి ప్రత్యేక స్థానం ఉంది | Today: festival crowd throwing turmeric at the shrine | Cut from story to present | Reuse `B-kling-test` 0.0–3.9 |
+| 34 | 78.68–81.91 | ఒగ్గు కళాకారులు మల్లన్న కథను పాడి వినిపిస్తారు | The Oggu artists again, wide | Back to the tellers | Oggu clip 4.8–8.0 |
+| 35 | 81.91–85.24 | ఒగ్గు పూజారులు భక్తుల మొక్కుల కోసం పట్నం వేస్తారు | The priest at the corrected patnam, powder drifting | A separate act: the patnam | Reuse `pilot-shot3` 0.0–3.33 (frozen, approved) |
+| 36 | 85.24–90.40 | పసుపు, కుంకుమ, బియ్యప్పిండి వంటి రంగు పొడులతో తీర్చిదిద్దే పూజా ముగ్గు అది | Overhead: the square fills in colour by colour, yellow on పసుపు, red on కుంకుమ, white on బియ్యప్పిండి | Each powder appears as it is named | **New, free** (code-drawn) |
+| 37 | 90.40–93.12 | కొందరు భక్తులు పట్నం పొడిని సేకరించుకుంటారు | Devotees scoop patnam powder into a cloth | The act of collecting | **New: gathering powder, 3 s** |
+| 38 | 93.12–96.69 | పొలాల్లో చల్లితే పంటలు బాగా పండుతాయని వాళ్ళ నమ్మకం | A farmer scatters it over a green field | Belief, shown as a person's practice | **New: field, 4 s** |
+| 39 | 96.69–100.56 | సంక్రాంతి నుంచి ఉగాది దాకా, ప్రతి ఆదివారం జాతర | Mallanna's idol close, turmeric smoke; date card | When to go | Reuse `pilot-shot2` 0.0–3.87 + free card |
+| 40 | 100.56–103.41 | మీ ఊళ్ళో మల్లన్న బండారి కథ ఎట్లా చెప్తారు? | The turmeric hand from beat 2, later in the pour | Bookend to the opening | Reuse `a4-hand` 2.1–4.95 |
+| 41 | 103.41–105.22 | ఊరి పేరుతో కింద చెప్పుండ్రి | Comment-box graphic: "మీ ఊరు: ____" with an arrow down | Direct call to comment | **New, free** (code card) |
+| 42 | 105.22–107.84 | కొమురవెల్లి మల్లన్నకు, కోటి దండాలు! | Black, the chant in turmeric-gold text | The chant alone | **New, free** |
 
-Up 1.5 from the previous estimate: Ganga's-hand clip goes 3 s → 4 s to cover the longer
-hold. Balance **474.55** → about **360**. `std` would be 99.5.
+**42 beats.** No composition stays on screen across a change of event. Where one clip covers
+two beats (11–12, 13–14, 24–25, 26–27) the action itself changes on the cut point, and the
+prompt is written so it does.
+
+## 3. Changes from revision 1
+
+- **`a7-medalamma` was marked as a new 7 s clip. It already exists** (used in Part 1). Reused, saving 10.5 credits.
+- **"Patnam being laid" dropped as new.** The approved, frozen `pilot-shot3` covers it. Saves 9.5.
+- **Split into separate visuals:** Mallanna's wish vs. the brothers' condition; the theft vs. being spotted; the share with Yellamma vs. the wedding; collecting powder vs. the field; the map vs. the hill.
+- **Added:** Mallanna sees Medalamma, the trust beat, the guards spotting him.
+- `a11-theft` **not used.** The serpents look sleepy in it, which reads as the "snake closed its eyes" claim we removed. `a12-hishand` covers the theft instead.
+- `pilot-shot2` (deity close) now carries the festival dates, so `B-kling-test` is used once.
+
+## 4. Revised generation cost (approval needed)
+
+Rates from `config/production.json`: still 2 credits (`nano_banana_2`, 2k); clip 1.5 credits/s (`kling3_0` pro).
+
+| New asset | Still | Clip | Credits |
+|---|---|---|---|
+| Oggu artists | 1 | 8 s | 14.0 |
+| Mallanna sees Medalamma | 1 | 3 s | 6.5 |
+| Bandari pull-back | 1 | 5 s | 9.5 |
+| Yellamma gives the way | 1 | 5 s | 9.5 |
+| Trust (optional) | 1 | 4 s | 8.0 |
+| Guards spot him | 1 | 3 s | 6.5 |
+| Black dog | 1 | 3 s | 6.5 |
+| Chase | 1 | 4 s | 8.0 |
+| Gangamma | 1 | 5 s | 9.5 |
+| Her hand gone | 1 | 3 s | 6.5 |
+| Return flight | 1 | 3 s | 6.5 |
+| Share to Yellamma | 1 | 3 s | 6.5 |
+| Wedding | 1 | 3 s | 6.5 |
+| Gathering powder | 1 | 3 s | 6.5 |
+| Field | 1 | 4 s | 8.0 |
+| **Total** | **15 stills = 30.0** | **59 s = 88.5** | **118.5** |
+
+Map, patnam fill, date card, comment card, end card: code-drawn, 0 credits. 12 reused clips: 0.
+
+- Revision 1 was 115.0. This is **+3.5** for six more distinct visuals.
+- Without the optional trust beat (beat 18 holds `a10-garden` 3.0–6.19 with a light change instead): **110.5**.
+- Same plan in `std` mode: 30 + 73.75 = **103.75**.
+- Last recorded balance 474.55, so about **356** after the full plan.
