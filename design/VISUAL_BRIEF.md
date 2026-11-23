@@ -1,5 +1,9 @@
 # Visual brief — three directions for Mallanna
 
+> **Images generated with `gpt_image_2` (OpenAI) through the Higgsfield connector**,
+> 9:16, 1k, quality `high`. The three prompts below are reproduced verbatim and are
+> ready to paste into Higgsfield directly if you want to re-run or vary them.
+
 Prepared 2026-11-23. **No implementation.** These are image-generation briefs for
 three still compositions of the same story moment. One direction gets chosen before
 any reusable component is built.
@@ -15,18 +19,35 @@ parts*. These briefs reverse that order.
 
 ## The moment, identical in all three
 
+### Correction, 2026-11-23 — the previous moment was invented
+
+The earlier brief had **Mallanna throwing the turmeric**. Challenged on sourcing, and
+the challenge was right:
+
+- In the Oggu Katha (research §22) Mallanna **obtains** the bandari, escapes with it,
+  returns, and **gives a share to Yellamma**. He carries and he gives. **No source
+  consulted shows him scattering it.**
+- The documented scattering is done by **devotees** at the jatara (research §8, §15;
+  *Sakshi*; confirmed first-hand by Karunakar).
+- And the script line itself names the thrower: **"ఈ రోజు మీరు జాతరల చల్లే పసుపు"** —
+  *the turmeric **you** throw.* The invented image contradicted its own narration.
+
+**The moment is now the documented one**, and it also resolves the standing-Mallanna
+problem, because he stays installed in the shrine as the murti actually is.
+
+### The moment
+
 **Part 2, §6 of the locked script:**
 
 > **"ఆ బండారే — ఈ రోజు మీరు జాతరల చల్లే పసుపు."**
 > *That bandari — is the turmeric you throw at the jatara today.*
 
-Mallanna, on the hill at Komuravelli, releases the bandari. Turmeric leaves his hand
-and carries into the air. This is the episode's payoff and the hardest thing to draw,
-so it is the right test.
+**Devotees at the jatara scattering bandaram before the shrine, with Mallanna
+present inside the shrine recess.** The turmeric is in the air, thrown by the people,
+and the god is in his rock recess receiving it.
 
-Each direction must deliver: **the figure, the release, and the turmeric in the air.**
-
----
+Each direction must deliver: **the devotees throwing, the turmeric in the air, and
+Mallanna in the shrine.** Everything sourced; nothing invented.
 
 ## Locked iconography — preserve in all three
 
@@ -49,8 +70,8 @@ are how devotees recognise him; none is negotiable.
 
 | Item | Why |
 |---|---|
-| **Does Mallanna stand, or only sit?** | The murti is seated. Every direction below shows him standing to throw. **No source consulted shows a standing Mallanna.** Needs a devotee's or priest's confirmation that a standing depiction is acceptable. |
-| **Does he hold a sword while throwing?** | Sword is [A] as an attribute, but holding it mid-throw is our invention. |
+| ~~Does Mallanna stand, or only sit?~~ | **Resolved by the corrected moment.** He is now shown seated/installed in the shrine, as the murti is. No standing depiction is required. |
+| **Does he hold a sword in the shrine?** | Sword is [A] as an attribute. Whether the Komuravelli murti itself holds one is not readable in the photograph. |
 | **Clothing below the waist** | The murti's lower half is obscured by garlands and cloth in the photograph. Dhoti colour and drape are inferred. |
 | **Whether Cheriyal scrolls served Oggu Katha** | See Direction C. The documented client communities do **not** include Golla/Kuruma. Do not claim the link. |
 | **The two consorts' appearance** | Ketamma and Medalamma flank the murti but are not clearly readable in the photograph. Needed before they are drawn. |
@@ -162,9 +183,18 @@ it. The viewer is watching, not worshipping.
 # Direction C — "Cheriyal scroll"
 
 **The region's own narrative painting form.** Cheriyal scroll painting is Telangana's
-traditional storytelling art, GI-tagged in 2008, now made only in Cheriyal town —
-**and Komuravelli temple is in Cheriyal mandal.** The temple and the painting
-tradition come from the same few kilometres of Siddipet district.
+traditional storytelling art, a local development of **Nakashi** work, now made only
+in **Cheriyal town, Siddipet district**.
+
+**Corrections, 2026-11-23:**
+- **GI year is disputed.** Sources give 2007, 2008 (registration no. 190), and 2010.
+  **Do not state a year on screen** without checking the GI registry directly. Safe
+  wording: "GI-protected."
+- **Komuravelli is not in Cheriyal mandal.** It has its own **Komuravelli mandal**
+  within Siddipet district. Under the pre-2016 districting it did sit in Cheriyal
+  mandal of the old Warangal district, which is where the earlier claim came from.
+  The accurate statement is: **Komuravelli and Cheriyal are neighbouring mandals in
+  the same district.** Still a real and close connection — just not the same mandal.
 
 The form is built for exactly what we are doing: a vertical scroll of horizontal
 panels, unrolled by a bard as he narrates, one panel shown per beat of the story.
@@ -271,6 +301,11 @@ look mechanical.
 part list. **Ketamma and Medalamma need visual verification first** (see table above).
 
 ---
+
+## Status
+
+All three briefs generated 2026-11-23 with `gpt_image_2` via Higgsfield at quality
+`high`. Prompts are reproduced verbatim in each section above and can be re-run as-is.
 
 ## What I need from you
 
