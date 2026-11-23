@@ -1,0 +1,117 @@
+{
+  "_comment": "Working generation parameters for temple-stories. These are the values that have actually produced accepted output. Every one of them is here because getting it wrong cost something.",
+  "version": "1.0",
+  "updated": "2026-11-23",
+  "connector": "higgsfield",
+  "callConvention": {
+    "_comment": "The MCP bridge rejects top-level arguments. EVERYTHING goes inside `params`, including the model id and the prompt. Arrays passed as a bare top-level argument are stringified and rejected; nested inside `params` they work.",
+    "allArgumentsNestedIn": "params",
+    "imageReferenceShape": "[{ \"id\": \"<media_id>\" }]",
+    "startImageShape": "{ \"id\": \"<media_id>\" }",
+    "mediaUpload": "media_upload{filename:<abs path>} -> curl PUT to upload_url -> media_confirm{type,media_id}. Raw HTTPS URLs are not accepted as references; upload and use the media_id.",
+    "pollResults": "show_generations (no arguments). jobs_wait and show_generation_by_ids both require an array argument the bridge cannot pass."
+  },
+  "image": {
+    "model": "nano_banana_2",
+    "resolution": "2k",
+    "_resolutionNote": "CRITICAL. The parameter is `resolution`, NOT `quality`. Options are 1k | 2k | 4k, default 1k. Passing `quality` is silently ignored and you get 1k (768x1376), which is below the 1080x1920 frame. `2k` returns 1536x2752. This error cost 1.5 credits on 2026-11-23.",
+    "aspect_ratio": "9:16",
+    "creditsPerImage": 2,
+    "referenceStrategy": "Pass the authority for the thing being corrected FIRST, the style/character carrier second, and say in the prompt which reference governs what. To avoid a rejected element bleeding back in, crop it out of the reference before uploading.",
+    "moderation": "Uploads are moderation-screened. design/directions/B-folk-narrative.png is rejected as 'nsfw' (bare-chested devotees) and cannot be used as a reference. Use the accepted B-derived assets instead: assets/pilot/shot3-patnam-v3-final.png and assets/pilot/shot2-deity-close.png. Dress every figure in prompts; 'fully clothed' avoids rejections.",
+    "silentFailures": "A generation can be charged and never appear in show_generations. Re-running that one job is completing a failed job, not retrying a rejected one — record it as such."
+  },
+  "video": {
+    "model": "kling3_0",
+    "mode": "pro",
+    "sound": "off",
+    "aspect_ratio": "9:16",
+    "durationSeconds": {
+      "min": 3,
+      "max": 15,
+      "default": 5
+    },
+    "_durationNote": "Kling accepts 3-15 s. Match the clip length to the shot so the cut does not need a frozen tail.",
+    "creditsPerSecond": {
+      "pro": 1.5,
+      "std": 1.25
+    },
+    "_soundNote": "Always 'off'. The bed is synthesised in FFmpeg at no cost and stays under our control.",
+    "outputFormat": "1076x1928 @ 24 fps — always resample to 1080x1920 @ 30 on extraction"
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "JWn8KOVJuYWznmih5YXL",
+    "voiceName": "Karunakar Kadari (cloned)",
+    "model": "eleven_v4",
+    "language": "te",
+    "measuredRate": "2.0 Telugu words per second",
+    "retrieval": {
+      "status": "WORKING via Speech History — resolved 2026-11-23",
+      "command": "sh scripts/fetch-narration.sh              # list recent items\n           sh scripts/fetch-narration.sh <history_item_id> <out.mp3>   # download + verify",
+      "api": "GET /v1/history?page_size=N  then  GET /v1/history/{history_item_id}/audio",
+      "cli": "elevenlabs history list --page-size N --format json ; elevenlabs history get_audio --history-item-id <id> --format raw > out.mp3",
+      "flowsEndpointBlocked": {
+        "endpoint": "GET /v1/flows/text-to-speech/{generation_id}",
+        "cli": "elevenlabs flows text-to-speech get --generation-id <id>",
+        "result": "HTTP 402 payment_required / paid_plan_required — 'This endpoint requires a Pro plan or above.'",
+        "note": "NOT an auth or scope failure. The OAuth key carries the `flows` scope and authenticates fine; the account is on the Starter tier and every Flows endpoint (get and list alike) is gated above it. Speech History returns the same audio and is available on Starter."
+      },
+      "idMapping": "Flow generation_ids (e.g. PIGwTBig8ZhaioOMb1ra) are NOT history_item_ids. Match the history item by date_unix against the flow's created_at, and confirm by duration.",
+      "verified": "2026-11-23 — two existing takes of the corrected line retrieved: 11.96 s and 11.81 s, mp3 44.1 kHz mono, full decode clean. Saved as audio/01-line-corrected-take1.mp3 / take2.mp3. No new paid generation was made."
+    },
+    "auth": {
+      "method": "ElevenLabs CLI onboarding (OAuth PKCE) — `npx -y @elevenlabs/cli@latest onboard connect --wait --env-path .env.local`",
+      "storage": ".env.local (gitignored; the CLI confirms gitignored:true). Never open, print or cat it. `onboard check` verifies it.",
+      "keyRef": "ends f05c",
+      "accountTier": "starter"
+    }
+  },
+  "frame": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "extraction": {
+    "_comment": "Remotion cannot decode video on this machine (macOS 12 vs the compositor's macOS 15 requirement). Clips are pre-extracted to JPEG sequences by the project's own FFmpeg.",
+    "command": "ffmpeg -i <clip>.mp4 -vf \"fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920\" -q:v 2 public/frames/<shot>/f%04d.jpg"
+  },
+  "render": {
+    "command": "node scripts/render.mjs <CompositionId> --out <path> --audio <path>",
+    "_note": "`npx remotion render` does not work here. See docs/SETUP_NOTES.md."
+  },
+  "frozen": {
+    "_comment": "Settled decisions. Do not spend credits revisiting these.",
+    "shot-patnam": {
+      "asset": "assets/pilot/shot3-patnam-v3-final.png",
+      "clip": "exports/pilot-shot3.mp4",
+      "frozen": "2026-11-23",
+      "by": "Karunakar",
+      "note": "Geometry matched to design/references/patnam-pedda-patam-photo.jpg. The absence of red accents is accepted. No further generations for its colour details. FROZEN by Karunakar 2026-11-23: no further generations for its colour details."
+    }
+  },
+  "rules": [
+    "No AI-generated Telugu or Devanagari text inside images, ever. Captions are typeset in Remotion.",
+    "No automatic paid retries. If a generation misses, report it and stop.",
+    "Karunakar uploads. Nothing publishes without his full watch-through."
+  ],
+  "assembly": {
+    "_comment": "Forced by disk, now the standard pipeline. This machine ran to 836 MB free during episode 1.",
+    "pictureTrack": "Assemble all clips in ONE ffmpeg filter_complex pass (trim/setpts/fps/scale/crop/concat). Never extract a full episode to a frame sequence — 2030 frames of JPEG needs well over a gigabyte.",
+    "captions": "Remotion renders ONLY a transparent caption layer: npx remotion render <Comp> <dir> --sequence --image-format=png --image-sequence-pattern=cap-[frame].png --license-key=free-license",
+    "compositing": "Overlay the caption PNGs onto the picture track in chunks of ~400 frames, deleting each chunk's PNGs immediately, then concat the segments. Rendering all caption frames at once hit ENOSPC at frame 1896 of 2030.",
+    "soundBed": "Synthesised in Python to a WAV (air/noise + low drone + decaying bell partials), mixed under the narration at 0.34 through alimiter. Zero credits. ffmpeg-static here has NO drawtext filter."
+  },
+  "episodeEconomics": {
+    "measured_2026-11-23": {
+      "episode": "01 part 1",
+      "lengthSeconds": 67.68,
+      "stills": 12,
+      "clips": 11,
+      "videoSeconds": 67,
+      "credits": 128.5,
+      "handsOnMinutes": 135
+    },
+    "note": "The earlier '~20 credits per episode' figure came from a 16 s pilot and does not hold for a full episode."
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "episode": "01-mallanna-full",
+  "audio": "audio/01-mallanna-full-paced.mp3",
+  "durationSeconds": 107.84,
+  "fps": 30,
+  "durationInFrames": 3235,
+  "wordsPerSecond": 1.88,
+  "shots": [
+    {
+      "n": 1,
+      "startSec": 0.0,
+      "endSec": 5.16,
+      "startFrame": 0,
+      "endFrame": 155,
+      "durationInFrames": 155,
+      "words": 11,
+      "telugu": "కొమురవెల్లి మల్లన్న జాతరలో మీరు చల్లే పసుపు — దాని వెనుక కథ తెలుసా?"
+    },
+    {
+      "n": 2,
+      "startSec": 5.16,
+      "endSec": 10.21,
+      "startFrame": 155,
+      "endFrame": 306,
+      "durationInFrames": 151,
+      "words": 9,
+      "telugu": "హైదరాబాద్ నుంచి ఎనభై ఐదు కిలోమీటర్లు. సిద్దిపేట జిల్లా — కొమురవెల్లి."
+    },
+    {
+      "n": 3,
+      "startSec": 10.21,
+      "endSec": 18.13,
+      "startFrame": 306,
+      "endFrame": 544,
+      "durationInFrames": 238,
+      "words": 15,
+      "telugu": "మల్లన్న కథలు ఒగ్గు పాటల్లో వినిపిస్తయ్. బండారి కోసం వెళ్లిన కథకు వేర్వేరు రూపాలున్నయ్. అందులో ఓ కథ ఇది."
+    },
+    {
+      "n": 4,
+      "startSec": 18.13,
+      "endSec": 24.61,
+      "startFrame": 544,
+      "endFrame": 738,
+      "durationInFrames": 194,
+      "words": 12,
+      "telugu": "మల్లన్న మేడలమ్మను పెళ్లాడాలనుకున్నడు. లింగ బలిజల బిడ్డ ఆమె. ఆమె అన్నలు ఒక షరతు పెట్టిండ్రు."
+    },
+    {
+      "n": 5,
+      "startSec": 24.61,
+      "endSec": 29.12,
+      "startFrame": 738,
+      "endFrame": 874,
+      "durationInFrames": 136,
+      "words": 8,
+      "telugu": "బండారి తీసుకురావాలె. పసుపు కొమ్ములు. అవి ఎక్కడో దూరంగ ఉన్నయ్."
+    },
+    {
+      "n": 6,
+      "startSec": 29.12,
+      "endSec": 34.11,
+      "startFrame": 874,
+      "endFrame": 1023,
+      "durationInFrames": 149,
+      "words": 9,
+      "telugu": "బయల్దేరే ముందు మల్లన్న ఎల్లమ్మ దగ్గరికి పోయిండు. దారి ఆమె చెప్పింది."
+    },
+    {
+      "n": 7,
+      "startSec": 34.11,
+      "endSec": 37.49,
+      "startFrame": 1023,
+      "endFrame": 1125,
+      "durationInFrames": 102,
+      "words": 6,
+      "telugu": "దేవతలు ఎగిరే గుర్రం ఇచ్చిండ్రు. మల్లన్న బయల్దేరిండు."
+    },
+    {
+      "n": 8,
+      "startSec": 37.49,
+      "endSec": 43.66,
+      "startFrame": 1125,
+      "endFrame": 1310,
+      "durationInFrames": 185,
+      "words": 11,
+      "telugu": "అక్కడ తోటమాలిగ చేరిండు. పేరు మార్చుకున్నడు. కొంతకాలం అక్కడే ఉండి వాళ్ల నమ్మకం గెలుచుకున్నడు."
+    },
+    {
+      "n": 9,
+      "startSec": 43.66,
+      "endSec": 52.24,
+      "startFrame": 1310,
+      "endFrame": 1567,
+      "durationInFrames": 257,
+      "words": 17,
+      "telugu": "బండారి ఉన్న చోటు తెలుసుకున్నడు. ఐదు తలల పాము దానికి కాపలా. ఒక రోజు బండారి తీసుకొని బయల్దేరిండు. కానీ వాళ్లు కనిపెట్టిండ్రు."
+    },
+    {
+      "n": 10,
+      "startSec": 52.24,
+      "endSec": 54.53,
+      "startFrame": 1567,
+      "endFrame": 1636,
+      "durationInFrames": 69,
+      "words": 4,
+      "telugu": "నల్ల కుక్కగ మారి పారిపోయిండు."
+    },
+    {
+      "n": 11,
+      "startSec": 54.53,
+      "endSec": 58.37,
+      "startFrame": 1636,
+      "endFrame": 1751,
+      "durationInFrames": 115,
+      "words": 6,
+      "telugu": "కొండలు దాటిండు. నదులు దాటిండు. వాళ్లు వదల్లే."
+    },
+    {
+      "n": 12,
+      "startSec": 58.37,
+      "endSec": 63.24,
+      "startFrame": 1751,
+      "endFrame": 1897,
+      "durationInFrames": 146,
+      "words": 7,
+      "telugu": "చివరికి గంగమ్మ అడ్డొచ్చింది. ఆయన్ని కాపాడనీకి చేయి అడ్డుపెట్టింది."
+    },
+    {
+      "n": 13,
+      "startSec": 63.24,
+      "endSec": 66.35,
+      "startFrame": 1897,
+      "endFrame": 1990,
+      "durationInFrames": 93,
+      "words": 6,
+      "telugu": "ఆ దెబ్బకు ఆమె కుడి చేయి పోయింది."
+    },
+    {
+      "n": 14,
+      "startSec": 66.35,
+      "endSec": 69.95,
+      "startFrame": 1990,
+      "endFrame": 2098,
+      "durationInFrames": 108,
+      "words": 8,
+      "telugu": "ఎగిరే గుర్రం మీద ఆయన తిరిగొచ్చిండు — ఈ కొండకే."
+    },
+    {
+      "n": 15,
+      "startSec": 69.95,
+      "endSec": 74.69,
+      "startFrame": 2098,
+      "endFrame": 2241,
+      "durationInFrames": 143,
+      "words": 8,
+      "telugu": "బండారిల కొంత ఎల్లమ్మకు ఇచ్చిండు. మిగతది తీసుకొని మేడలమ్మను పెళ్లాడిండు."
+    },
+    {
+      "n": 16,
+      "startSec": 74.69,
+      "endSec": 78.67,
+      "startFrame": 2241,
+      "endFrame": 2360,
+      "durationInFrames": 119,
+      "words": 7,
+      "telugu": "ఇప్పటి మల్లన్న పూజల్లోనూ బండారికి ప్రత్యేక స్థానం ఉంది."
+    },
+    {
+      "n": 17,
+      "startSec": 78.67,
+      "endSec": 81.87,
+      "startFrame": 2360,
+      "endFrame": 2456,
+      "durationInFrames": 96,
+      "words": 6,
+      "telugu": "ఒగ్గు కళాకారులు మల్లన్న కథను పాడి వినిపిస్తరు."
+    },
+    {
+      "n": 18,
+      "startSec": 81.87,
+      "endSec": 90.35,
+      "startFrame": 2456,
+      "endFrame": 2710,
+      "durationInFrames": 254,
+      "words": 17,
+      "telugu": "ఒగ్గు పూజారులు భక్తుల మొక్కుల కోసం పట్నం వేస్తరు. పసుపు, కుంకుమ, బియ్యప్పిండి వంటి రంగు పొడులతో తీర్చిదిద్దే పూజా ముగ్గు అది."
+    },
+    {
+      "n": 19,
+      "startSec": 90.35,
+      "endSec": 96.65,
+      "startFrame": 2710,
+      "endFrame": 2900,
+      "durationInFrames": 190,
+      "words": 12,
+      "telugu": "కొందరు భక్తులు పట్నం పొడిని సేకరించుకుంటరు. పొలాల్లో చల్లితే పంటలు బాగా పండుతాయని వాళ్ల నమ్మకం."
+    },
+    {
+      "n": 20,
+      "startSec": 96.65,
+      "endSec": 100.52,
+      "startFrame": 2900,
+      "endFrame": 3016,
+      "durationInFrames": 116,
+      "words": 8,
+      "telugu": "సంక్రాంతి నుంచి ఉగాది దాకా — ప్రతి ఆదివారం జాతర."
+    },
+    {
+      "n": 21,
+      "startSec": 100.52,
+      "endSec": 105.21,
+      "startFrame": 3016,
+      "endFrame": 3156,
+      "durationInFrames": 140,
+      "words": 11,
+      "telugu": "మీ ఊళ్ల మల్లన్న బండారి కథ ఎట్ల చెప్తరు? ఊరి పేరుతో కింద చెప్పుండ్రి."
+    },
+    {
+      "n": 22,
+      "startSec": 105.21,
+      "endSec": 107.84,
+      "startFrame": 3156,
+      "endFrame": 3235,
+      "durationInFrames": 79,
+      "words": 5,
+      "telugu": "కొమురవెల్లి మల్లన్నకు — కోటి దండాలు!"
+    }
+  ],
+  "pacingEdits": [
+    {
+      "atSec": 33.76,
+      "addedSec": 0.35
+    },
+    {
+      "atSec": 51.44,
+      "addedSec": 0.45
+    },
+    {
+      "atSec": 53.38,
+      "addedSec": 0.35
+    },
+    {
+      "atSec": 56.72,
+      "addedSec": 0.5
+    },
+    {
+      "atSec": 60.99,
+      "addedSec": 0.6
+    },
+    {
+      "atSec": 63.2,
+      "addedSec": 0.9
+    },
+    {
+      "atSec": 66.35,
+      "addedSec": 0.45
+    }
+  ]
+}

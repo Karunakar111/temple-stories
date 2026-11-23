@@ -252,6 +252,33 @@ across, 41 rows**.
 **[A] Ritual objects** set before it: the **oragommu** (Mallanna's single-pronged trident)
 and the **damaru**.
 
+### What the patnam actually looks like **[A] — photograph**
+
+`design/references/patnam-pedda-patam-photo.jpg` — an overhead photograph of the
+Komuravelli **pedda patam**, captioned Shivaratri 2023. This is now the only visual
+authority we use for its geometry. What is *visible* in it, and nothing more:
+
+- One **square**, laid flat on the courtyard, the crowd standing packed on all four sides.
+- Built from **many thin concentric square borders** — straight lines throughout, corners
+  mitred so a clean diagonal seam runs out to each corner. The count is consistent with
+  the sourced **41 rows** above.
+- Each row is a narrow stripe of powder, finely stippled: **white, golden yellow, orange,
+  deep brick red**, repeating. The overall read is **yellow and white, not red**.
+- Towards the middle the bands widen and one carries a ring of **evenly spaced pale round
+  dabs** running right around the square.
+- At the exact centre, a **small square divided into four panels**, each holding one small
+  pale mark. The photograph does not resolve what those marks are, so **we do not say**.
+- The courtyard around it is stone **stained and streaked turmeric-yellow**, with loose
+  heaps of turmeric at the edge.
+
+**No circle anywhere. No mandala, no lotus rosette, no animal, no figure.**
+
+> **Correction.** Our first shot-3 artwork drew the patnam as a circular floral mandala
+> with a horse and a dog worked into it, and `docs/PILOT_REPORT.md` justified the horse as
+> "the drawing depicts the story being sung." That was an inference, not a source. §8 says
+> the priest *lays the patnam while telling the story* — it does not say the story is drawn
+> **figuratively**. The photograph shows it is not. Claim withdrawn.
+
 ### And then the powder goes into the fields **[B]**
 
 After the puja, the god's sacred animals cross the patnam, and devotees gather up the

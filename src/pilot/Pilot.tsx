@@ -6,10 +6,21 @@ import {
 import { PALETTE } from "../design/palette";
 
 /**
- * Komuravelli pilot — 16 s, three shots, cut to the real narration.
+ * Komuravelli pilot — 9.6 s, three shots, cut to the real narration.
  *
- * Shot boundaries come from the RMS gap map of audio/pilot-narration.mp3 (cut from
- * part 2 at 33.80 s), so every cut lands in a pause the voice already leaves.
+ * v2 (2026-11-23), two corrections:
+ *
+ * 1. The narration no longer claims "ఈ కథ ఏ పుస్తకంల లేదు" (this story is in no book).
+ *    It is not true — research §8 cites Sakshi and the folklore literature, and Oggu
+ *    Katha has been collected and published. The clause was excised from the audio
+ *    between its surrounding pauses; script v1.1 replaces it with
+ *    "ఈ కథ ఇప్పటికీ పాటల్లనే ఉంది".
+ *
+ * 2. No frozen tail. Every shot now runs entirely on live footage — the longest,
+ *    shot 3, uses 130 of its clip's 151 frames, so nothing is ever held.
+ *
+ * Captions are decoupled from shots: a sentence can span a cut, which is how speech
+ * actually behaves.
  *
  * The clips play as pre-extracted JPEG sequences rather than through Remotion's
  * <Video>: Remotion decodes video with its bundled compositor, which is the
@@ -17,28 +28,31 @@ import { PALETTE } from "../design/palette";
  * does the extraction instead.
  */
 
+export const PILOT_FRAMES = 288; // 9.60 s @ 30 fps
+
 export const SHOTS = [
-  { id: "shot1", from: 0, to: 123, clipFrames: 122, caption: "ఆ బండారే — ఈ రోజు మీరు జాతరల చల్లే పసుపు" },
-  { id: "shot2", from: 123, to: 193, clipFrames: 71, caption: "ఈ కథ ఏ పుస్తకంల లేదు" },
-  { id: "shot3", from: 193, to: 480, clipFrames: 151, caption: "ఒగ్గు పూజారి పాడతడు — పాడుకుంటనే నేల మీద గీస్తడు" },
+  { id: "shot1", from: 0, to: 88, clipFrames: 122 },
+  { id: "shot2", from: 88, to: 158, clipFrames: 71 },
+  { id: "shot3", from: 158, to: 288, clipFrames: 151 },
 ] as const;
 
-const Clip: React.FC<{ id: string; clipFrames: number; duration: number }> = ({
-  id, clipFrames, duration,
-}) => {
+// Cut points come from the RMS gap map of the corrected narration: 2.84–3.04 s and
+// 5.04–5.50 s. Every shot's length is <= its clip's length, so no frame is ever held.
+
+const CAPTIONS = [
+  { from: 0, to: 117, text: "ఆ బండారే — ఈ రోజు మీరు జాతరల చల్లే పసుపు" },
+  { from: 117, to: 288, text: "ఒగ్గు పూజారి పాడతడు — పాడుకుంటనే నేల మీద గీస్తడు" },
+] as const;
+
+const Clip: React.FC<{ id: string; clipFrames: number }> = ({ id, clipFrames }) => {
   const frame = useCurrentFrame();
   const idx = Math.min(clipFrames - 1, Math.max(0, frame));
-  const held = Math.max(0, frame - (clipFrames - 1));
-  // only the held tail gets a push, so live footage is never re-scaled
-  const scale = 1 + interpolate(held, [0, Math.max(1, duration - clipFrames)], [0, 0.06], {
-    extrapolateRight: "clamp",
-  });
   const n = String(idx + 1).padStart(4, "0");
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", overflow: "hidden" }}>
       <Img
         src={staticFile(`frames/${id}/f${n}.jpg`)}
-        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${scale})` }}
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
     </AbsoluteFill>
   );
@@ -82,16 +96,17 @@ export const Pilot: React.FC = () => {
       {getRemotionEnvironment().isRendering ? null : (
         <Audio src={staticFile("audio/pilot-narration.mp3")} />
       )}
-      {SHOTS.map((s) => {
-        const dur = s.to - s.from;
-        return (
-          <Sequence key={s.id} from={s.from} durationInFrames={dur} name={s.id}>
-            <Clip id={s.id} clipFrames={s.clipFrames} duration={dur} />
-            <Caption text={s.caption} duration={dur} />
-          </Sequence>
-        );
-      })}
+      {SHOTS.map((s) => (
+        <Sequence key={s.id} from={s.from} durationInFrames={s.to - s.from} name={s.id}>
+          <Clip id={s.id} clipFrames={s.clipFrames} />
+        </Sequence>
+      ))}
       <AbsoluteFill style={{ backgroundColor: "#000", opacity: dip * 0.85 }} />
+      {CAPTIONS.map((c, i) => (
+        <Sequence key={i} from={c.from} durationInFrames={c.to - c.from} name={`caption${i + 1}`}>
+          <Caption text={c.text} duration={c.to - c.from} />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
 };

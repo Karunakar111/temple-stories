@@ -35,7 +35,9 @@ Times are estimates for episode 1 and should fall sharply by episode 3.
       what is on screen | asset needed.
 - [ ] Write for the **ear**, not the page. Read it aloud, out loud, to a wall.
 - [ ] First 3 seconds must earn the next 10. No "Namaskaram, welcome to the channel."
-- [ ] Target word count ≈ **runtime in seconds × 2.0** for Telugu narration. **Measured**
+- [ ] **No target runtime and no target shot count.** Write the complete story first;
+      the length is whatever it turns out to be. Then **runtime ≈ word count ÷ 2.0**
+      for Telugu narration — a rate for predicting, not a budget to write into. **Measured**
       on episode 1: the cloned voice reads Telugu at **1.99–2.00 words/second** across both
       parts. (Earlier guesses of ÷2.5 and ×1.5 were both wrong — ÷2.5 would have produced a
       32-word script for 80 seconds, and ×1.5 over-ran by a third.) Silence over a good

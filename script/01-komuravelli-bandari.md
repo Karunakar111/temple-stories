@@ -3,10 +3,23 @@
 **Two parts** · Telugu narration, English subtitles · 1080×1920 · 2D illustration + parallax
 · voice `JWn8KOVJuYWznmih5YXL` (Karunakar, cloned) · follows `docs/SERIES_FORMAT.md`
 
-> **🔒 LOCKED v1.0 — 2026-11-22.** Story, structure and Telugu approved by Karunakar.
+> **⚠ SUPERSEDED 2026-11-23 by `01-komuravelli-mallanna-full.md` (v2.0).**
+> The two-part split and the "Part 2 — next Sunday" cliffhanger were removed at
+> Karunakar's instruction: the story is now told complete in one episode. Kept on disk
+> as the record of what was built (`exports/komuravelli-ep01-part1.mp4` was made from
+> Part 1 of this file). Do not build from it again.
+>
+> **🔒 LOCKED v1.1 — 2026-11-23.** Story, structure and Telugu approved by Karunakar.
 > Narration, assets and build proceed from this. Changes from here need a new version.
 >
 > Replaces the two earlier scripts. This one is a story, not a catalogue.
+>
+> **v1.1 — one factual correction.** Part 2 §6 said *"ఈ కథ ఏ పుస్తకంల లేదు"* — *this story
+> is in no book*. That is not true and our own research disproves it: §8 cites *Sakshi*
+> and the Telangana folklore literature, and Oggu Katha has been collected and published.
+> Replaced with **"ఈ కథ ఇప్పటికీ పాటల్లనే ఉంది"** — *this story still lives in the singing* —
+> which makes the same pivot to orality, is true, and sets up the Oggu priest in the very
+> next breath. **Karunakar should hear this line in the mouth before it is final.**
 
 ## The retell sentence
 
@@ -81,7 +94,7 @@ Each part keeps the series signature (object → story → object) on its own te
 | 3 | 0:18–0:30 | కొండలు దాటిండు. నదులు దాటిండు. వాళ్లు వదల్లే. | Over hills. Across rivers. They didn't let go. | **The parallax set-piece.** Dog in mid-ground, running right; hills, river, sky as separate layers at different speeds. Guards enter from left in silhouette every few seconds — always there. |
 | 4 | 0:30–0:50 | చివరికి గంగమ్మ అడ్డొచ్చింది. ఆయన్ని కాపాడనీకి చేయి అడ్డుపెట్టింది. ఆ దెబ్బకు — ఆమె కుడి చేయి పోయింది. అయినా మల్లన్నను వదల్లే. | At last Ganga stepped in. She put her arm across to shield him. The blow took her right hand. Even so — she didn't let go of Mallanna. | Ganga rises from the river between the dog and the guards. Arm out, flat, a gate. The strike lands — **cut to black for a full second** — then Ganga, standing, right arm ending at the wrist, the dog behind her. Hold. This is the shot the episode is for. |
 | 5 | 0:50–1:04 | ఎగిరే గుర్రం మీద ఆయన తిరిగొచ్చిండు — **ఈ కొండకే.** బండారిల కొంత ఎల్లమ్మకు ఇచ్చిండు. మిగతది తీసుకొని — మేడలమ్మను పెళ్లాడిండు. | On the flying horse he came back — **to this very hill.** He gave Yellamma a share of the bandari. With the rest — he married Medalamma. | The horse descends onto the hill from shot 2 of Part 1 — same hill, now recognised. Yellamma receives a handful. Medalamma, frame right as before, now turns to face him. The brothers step aside. |
-| 6 | 1:04–1:24 | ఆ బండారే — ఈ రోజు మీరు జాతరల చల్లే పసుపు. ఈ కథ ఏ పుస్తకంల లేదు. ఒగ్గు పూజారి పాడతడు. పాడుకుంటనే — అదే పసుపుతో నేల మీద గీస్తడు. అదే పట్నం. మీరు ముగ్గు అనుకున్నది — ఈ కథే. | That bandari — is the turmeric you throw at the jatara. This story is in no book. The Oggu priest sings it. And as he sings — he draws it on the ground, in that same turmeric. That is the patnam. What you took for a rangoli — is this story. | His hand full of turmeric **dissolves into the viewer's hand from Part 1, shot 1**. Then: the Oggu priest — knee-tied pant, head cloth, cowrie chain, dolu at his hip — singing. Below him, hands laying turmeric lines on stone. **The lines resolve into a horse. A dog. A five-headed serpent.** The story we just watched, in powder. |
+| 6 | 1:04–1:24 | ఆ బండారే — ఈ రోజు మీరు జాతరల చల్లే పసుపు. ఈ కథ ఇప్పటికీ పాటల్లనే ఉంది. ఒగ్గు పూజారి పాడతడు. పాడుకుంటనే — అదే పసుపుతో నేల మీద గీస్తడు. అదే పట్నం. మీరు ముగ్గు అనుకున్నది — ఈ కథే. | That bandari — is the turmeric you throw at the jatara. This story still lives in the singing. The Oggu priest sings it. And as he sings — he draws it on the ground, in that same turmeric. That is the patnam. What you took for a rangoli — is this story. | His hand full of turmeric **dissolves into the viewer's hand from Part 1, shot 1**. Then: the Oggu priest — knee-tied pant, head cloth, cowrie chain, dolu at his hip — singing. Below him, hands laying turmeric lines on stone. **The lines resolve into a square of many thin nested borders, turmeric yellow and white** — the pedda patam as photographed (research §8). The patnam is *not* figurative: no horse, no dog, no serpent is drawn in it. What carries the story is the singing over it. |
 | 7 | 1:24–1:38 | పూజ అయ్యాక ఆ పొడిని జనం పొలాల్లకు తీసుకెళ్తరు. పంట పండాలని. సంక్రాంతి నుంచి ఉగాది దాకా — ప్రతి ఆదివారం. మీరు చల్లే ప్రతి పిడికెడు — గంగమ్మ చేయి. మల్లన్న ఓపిక. | When the puja ends, people carry that powder home to their fields. For the harvest. Sankranti to Ugadi — every Sunday. Every fistful you throw — is Ganga's hand. And Mallanna's patience. | Hands sweeping the finished patnam into a cloth. A field at first light; a hand scattering yellow into the furrows. **CARD:** సంక్రాంతి → ఉగాది · ప్రతి ఆదివారం. Pull back: the jatara on the hill, turmeric in the air like weather. |
 | 8 | 1:38–1:50 | మీ ఊళ్ల ఈ కథ ఎట్ల చెప్తరు? గంగమ్మ చేయి పోయిందా — లేక వేరే కథ ఉందా? కింద చెప్పుండ్రి, ఊరి పేరుతో. ... **కొమురవెల్లి మల్లన్నకు — కోటి దండాలు.** | How is this told in your village? Did Ganga lose her hand — or is there another telling? Tell us below, with your village's name. ... Komuravelli Mallanna — a crore of salutations. | Back to the single hand, turmeric falling from it, slow. On the chant the screen goes to black and the words stand alone — **కోటి దండాలు** — so it is the last thing read and the easiest thing to copy into a comment. |
 
@@ -95,7 +108,7 @@ Written as spoken storytelling, not prose. Short sentences. The pauses are in th
 
 **Telangana dialect — decided yes, and applied.** The narration above is Telangana Telugu,
 not standard: `-ిండు / -ిండ్రు` past tense (బయల్దేరిండు, చేసిండు, ఆగిండు, పెట్టిండ్రు, చూసిండ్రు),
-Telangana locatives (చేతిల, ఊళ్ల, జాతరల, క్షణంల, పుస్తకంల), and the regional words that
+Telangana locatives (చేతిల, ఊళ్ల, జాతరల, క్షణంల, పాటల్ల), and the regional words that
 actually carry the accent — అడివి, ఇగ, ఎట్ల, పోలే, వదల్లే, పాడుకుంటనే, చెప్పుండ్రి, కాపాడనీకి.
 
 **ఆగిండు kept over ఓపిక పట్టిండు.** One verb carrying the whole con is stronger than three

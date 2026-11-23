@@ -55,13 +55,21 @@ Built on the short-form evidence: hook inside 3 seconds, minimum context, a beat
 every 5–10 seconds so the middle never goes flat, and an **open loop** — a promise in the
 hook that isn't paid off until the end. Open loops measurably raise completion.
 
-| Beat | Time | Job |
+> **There is no target runtime, and no target shot count.** (Removed 2026-11-23 at
+> Karunakar's instruction; the old skeleton fixed the episode at 1:30 and the build at a
+> set number of shots.) **The story decides the length and the narration decides the
+> clock.** Tell the whole thing, then measure what you wrote. Two or three minutes is
+> fine. A beat gets a new visual when the story actually advances — a new action, a
+> revelation, or a change of place — and important moments are given room rather than
+> trimmed to fit a slot.
+
+| Beat | Share of the episode | Job |
 |---|---|---|
-| **1. The object + the pin** | 0:00–0:05 | Open on a physical thing the viewer has touched or seen at this temple. The **location pin** appears over it. Ask the open-loop question. |
-| **2. Minimum context** | 0:05–0:15 | Who this god is, in two lines. Not a biography. |
-| **3. The story** | 0:15–1:05 | One complete narrative. A new beat every 5–10 s. |
-| **4. The payoff** | 1:05–1:20 | Return to the object from beat 1 and close the loop. |
-| **5. The question** | 1:20–1:30 | How is it told in *your* village? Plus when to go. |
+| **1. The object + the pin** | the opening | Open on a physical thing the viewer has touched or seen at this temple. The **location pin** appears over it. Ask the open-loop question. |
+| **2. Minimum context** | short | Who this god is, in two lines. Not a biography. Name the telling you are using. |
+| **3. The story** | the bulk of it | One complete narrative, beginning to end. Setup, motivation, the events that matter, resolution. A new visual whenever the story moves. |
+| **4. The payoff** | near the end | Return to the object from beat 1 and close the loop. Connect it to what people actually do at the temple now. |
+| **5. The question** | the close | How is it told in *your* village? Plus when to go. |
 
 **Beats 1 and 4 are the signature: object → story → same object.** Start on something in
 the viewer's hand, explain it with a story, put it back in their hand changed. That is the
