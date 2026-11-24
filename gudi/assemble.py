@@ -62,7 +62,11 @@ def _remotion(comp, out_dir, props, scale, frames_n):
     chrome = shutil.which("google-chrome")
     if chrome and sys.platform != "darwin":
         cmd.append(f"--browser-executable={chrome}")
-    r = subprocess.run(cmd, cwd=str(CODE), capture_output=True, text=True)
+    try:
+        r = subprocess.run(cmd, cwd=str(CODE), capture_output=True, text=True, timeout=600)
+    except subprocess.TimeoutExpired:
+        free = shutil.disk_usage(str(out_dir)).free / 1e9
+        raise RuntimeError(f"remotion text layers did not finish in 10 minutes ({free:.1f} GB free on disk)")
     if r.returncode != 0:
         raise RuntimeError("remotion: " + (r.stdout + r.stderr).strip()[-400:])
     pngs = sorted(Path(out_dir).glob(f"{comp}-*.png"))

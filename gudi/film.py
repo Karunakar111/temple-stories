@@ -43,6 +43,11 @@ def make_film(spec, say=print):
     work.mkdir(parents=True, exist_ok=True)
     slug, total = spec["slug"], spec["total_s"]
     report = {"slug": slug, "steps": {}}
+    free_gb = shutil.disk_usage(str(out)).free / 1e9
+    need_gb = 1.5 * scale * scale + 0.3
+    if free_gb < need_gb:
+        shutil.rmtree(work, ignore_errors=True)
+        return None, report, [f"disk: {free_gb:.1f} GB free, a film at this size needs about {need_gb:.1f} GB while it builds"]
     try:
         # 1. the narration stem, before anything is mixed
         stem, problems = audio_mix.verify_stem(spec["narration"], spec.get("script_text"))
@@ -63,6 +68,8 @@ def make_film(spec, say=print):
             raise ValueError(f"segments end at {prev / fps:.2f} s, film is {total:.2f} s")
         t = time.monotonic()
         picture = assemble.build_picture(segs, work / "picture.mp4", size, fps)
+        if shutil.disk_usage(str(out)).free / 1e9 < 0.5:
+            return None, report, [f"disk: under 0.5 GB free after the picture pass ({picture.stat().st_size / 1e6:.0f} MB); free space and rerun"]
         report["steps"]["picture_s"] = round(time.monotonic() - t, 1)
         say(f"  picture {slug}: {len(segs)} segments, {prev} frames in {report['steps']['picture_s']} s")
 
