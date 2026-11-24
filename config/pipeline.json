@@ -45,5 +45,10 @@
     "label": null,
     "_note": "One film at a time. A film is ready for review only after gudi/render.py verify_film passes."
   },
-  "_caps_note": "Set 24 Nov 2026 for EP02 only, as approved by Karunakar (69 Higgsfield / 1,430 ElevenLabs, one take)."
+  "_caps_note": "Set 24 Nov 2026 for EP02 only, as approved by Karunakar (69 Higgsfield / 1,430 ElevenLabs, one take).",
+  "publishing": {
+    "release_time": "18:00",
+    "timezone": "Asia/Kolkata",
+    "_note": "Karunakar, 24 Nov 2026: every future Gudi Kathalu Reel and Short is scheduled for 6:00 PM IST. Posting still needs his approval per episode."
+  }
 }
