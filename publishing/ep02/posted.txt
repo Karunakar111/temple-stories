@@ -1,0 +1,9 @@
+EP02 · కొలనుపాక సోమేశ్వరుడు · posted 24 Nov 2026 via Zoho Social (approved by Karunakar, 16:04 IST)
+
+Instagram Reel, @gudikathalu, 16:26 IST: https://www.instagram.com/reel/DgHyZDMItDj/
+  Zoho post type REELS, added to feed; cover: approved EP02 cover; caption = instagram-caption.txt (verified character for character before posting).
+YouTube Short, @gudikathalutelugu (Gudi Kathalu | గుడి కథలు), 16:24 IST: https://www.youtube.com/shorts/Nnf0QcFlVxA
+  Public, not unlisted, playability OK, 107 s; title and description = youtube-description.txt (description SHA-256 matched before posting).
+  Zoho offers no custom thumbnail for YouTube Shorts; YouTube chose the frame.
+Video: kolanupaka-someshwara-ep02.mp4 (final edit; checked in Zoho's preview at 1:44: stone, "క్రీ.శ. 1067 · పూజలకు దానం", ప్రతీకాత్మక చిత్రం).
+One attempt per platform; no retries were needed.
