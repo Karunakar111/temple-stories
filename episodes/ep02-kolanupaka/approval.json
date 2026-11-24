@@ -1,0 +1,12 @@
+{
+  "episode": "ep02-kolanupaka",
+  "script_sha256": "35da0719cb3aff55dd30090964e0d7351c8e6ad2ccd9416b3d3f9709d493c7fb",
+  "look_sha256": "8cdededda2b8c3446983c987714784ba3ec175f73e0a0d5546132124ff9ec496",
+  "voice": "JWn8KOVJuYWznmih5YXL",
+  "caps": {
+    "higgsfield": "69",
+    "elevenlabs": "1430"
+  },
+  "approved_by": "Karunakar",
+  "approved_at": "2026-11-24T07:10:05+00:00"
+}

@@ -1,0 +1,37 @@
+  ??     VO:narration           may exist at provider; held for `gudi reconcile` (never resent)
+  saved  CS-RENUKA:still        -> assets/ep02-CS-RENUKA-still.png
+  saved  CS-AGASTYA:still       -> assets/ep02-CS-AGASTYA-still.png
+  saved  S01:still              -> assets/ep02-S01-still.png
+  reserve S02:still             2 higgsfield
+  submit S02:still              job 03b4f7e3-f338-4cba-bb08-efaaef9b65e5
+  pending S02:still             job 03b4f7e3-f338-4cba-bb08-efaaef9b65e5; next run resumes by polling
+  hold   S02:clip               timing-dependent; narration take not resolved yet
+  saved  S03:still              -> assets/ep02-S03-still.png
+  reserve S05:still             2 higgsfield
+  submit S05:still              job 59993c62-7436-45bd-900e-b2e24f8ea39b
+  pending S05:still             job 59993c62-7436-45bd-900e-b2e24f8ea39b; next run resumes by polling
+  hold   S06:clip               timing-dependent; narration take not resolved yet
+  saved  S07:still              -> assets/ep02-S07-still.png
+  reserve S08:still             2 higgsfield
+  submit S08:still              job c8dec4f2-c790-4686-8894-f20718d64d26
+  pending S08:still             job c8dec4f2-c790-4686-8894-f20718d64d26; next run resumes by polling
+  hold   S08:clip               timing-dependent; narration take not resolved yet
+  reserve S09:still             2 higgsfield
+  submit S09:still              job fef6a614-9c39-42d2-b8f1-09fd409c01cf
+  pending S09:still             job fef6a614-9c39-42d2-b8f1-09fd409c01cf; next run resumes by polling
+  hold   S09:clip               timing-dependent; narration take not resolved yet
+  reserve S10:still             2 higgsfield
+  submit S10:still              job 156f44df-a08c-4067-bc8a-a9d7f15e3a82
+  pending S10:still             job 156f44df-a08c-4067-bc8a-a9d7f15e3a82; next run resumes by polling
+  hold   S10:clip               timing-dependent; narration take not resolved yet
+  reserve S11:still             2 higgsfield
+  submit S11:still              job 0cd63b22-5cbe-48b0-9cc2-45703f727c19
+  pending S11:still             job 0cd63b22-5cbe-48b0-9cc2-45703f727c19; next run resumes by polling
+  wait   S12:still              needs S11:still downloaded first
+  reserve S14:still             2 higgsfield
+  submit S14:still              job be4f5b1d-271f-4bf2-ab7a-9fc3586588e5
+  pending S14:still             job be4f5b1d-271f-4bf2-ab7a-9fc3586588e5; next run resumes by polling
+  hold   S15:clip               timing-dependent; narration take not resolved yet
+  saved  S16b:still             -> assets/ep02-S16b-still.png
+  ep02-kolanupaka: 7 new paid submission(s); needs reconcile
+EXIT=5

@@ -1,0 +1,12 @@
+  ??     VO:narration           may exist at provider; held for `gudi reconcile` (never resent)
+  hold   S02:clip               timing-dependent; narration take not resolved yet
+  stop   S05:still              failed; a new attempt needs explicit approval
+  hold   S06:clip               timing-dependent; narration take not resolved yet
+  hold   S08:clip               timing-dependent; narration take not resolved yet
+  hold   S09:clip               timing-dependent; narration take not resolved yet
+  FAILED S10:still              job 156f44df-a08c-4067-bc8a-a9d7f15e3a82; not retried
+  hold   S10:clip               timing-dependent; narration take not resolved yet
+  saved  S12:still              -> assets/ep02-S12-still.png
+  hold   S15:clip               timing-dependent; narration take not resolved yet
+  ep02-kolanupaka: 0 new paid submission(s); needs reconcile
+EXIT=5

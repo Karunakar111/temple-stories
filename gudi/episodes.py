@@ -115,6 +115,8 @@ class Episode:
         if not self.shots_doc:
             return []
         calls = []
+        am = load_json(self.dir / "amendments.json", {}) or {}
+        skip, attempts = set(am.get("skip", [])), am.get("attempts", {})
         for c in self.shots_doc.get("narration", []):
             calls.append(dict(c, beat=c.get("beat", "VO")))
         for shot in self.shots_doc["shots"]:
@@ -124,6 +126,11 @@ class Episode:
                 if c["asset_type"] == "clip" and t:
                     c["settings"] = dict(c["settings"], duration=t["duration"])
                     c["quote"] = t["quote"]
+                tag = f"{shot['id']}:{c['asset_type']}"
+                if tag in skip:
+                    continue  # replaced by an approved amendment; never generated
+                if tag in attempts:  # an approved new attempt: a new request key for this call only
+                    c["settings"] = dict(c["settings"], attempt=attempts[tag])
                 calls.append(c)
         return calls
 

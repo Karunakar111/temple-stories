@@ -1,0 +1,6 @@
+  ??     VO:narration           may exist at provider; held for `gudi reconcile` (never resent)
+  hold   S02:clip               timing-dependent; narration take not resolved yet
+  hold   S06:clip               timing-dependent; narration take not resolved yet
+  hold   S08:clip               timing-dependent; narration take not resolved yet
+  hold   S09:clip               timing-dependent; narration take not resolved yet
+  reserve S10:still             2 higgsfield

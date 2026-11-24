@@ -41,7 +41,10 @@ def _asset(ep, ledger, beat, asset_type):
 
 
 def _picture(ep, ledger, shot_id, by_id):
-    """A shot's own clip, else its own still, else the shot it reuses."""
+    """An approved amendment's picture, else the shot's own clip, else its own still, else the shot it reuses."""
+    swap = (load_json(ep.dir / "amendments.json", {}) or {}).get("picture", {})
+    if shot_id in swap:
+        return _picture(ep, ledger, swap[shot_id], by_id)
     s = by_id[shot_id]
     for at in ("clip", "still"):
         if any(c["asset_type"] == at for c in s["paid"]):

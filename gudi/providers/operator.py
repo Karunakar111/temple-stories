@@ -34,11 +34,12 @@ def box(name):
 
 def _wait(path, seconds):
     end = time.monotonic() + seconds
-    while time.monotonic() < end:
+    while True:  # always look at least once, even with a zero wait
         if path.exists():
             return json.loads(path.read_text(encoding="utf-8"))
+        if time.monotonic() >= end:
+            return None
         time.sleep(2)
-    return None
 
 
 class OperatorProvider(Provider):

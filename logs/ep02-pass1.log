@@ -1,0 +1,36 @@
+  reserve VO:narration          1430 elevenlabs
+  later  VO:narration           waiting for the operator; resumes from the inbox on the next run
+  reserve CS-RENUKA:still       2 higgsfield
+  submit CS-RENUKA:still        job ce1f8f35-3499-4aa4-a96f-e6fb8160db72
+  pending CS-RENUKA:still       job ce1f8f35-3499-4aa4-a96f-e6fb8160db72; next run resumes by polling
+  reserve CS-AGASTYA:still      2 higgsfield
+  submit CS-AGASTYA:still       job 935aaa3e-71ed-48df-bc51-cac7bfe86745
+  pending CS-AGASTYA:still      job 935aaa3e-71ed-48df-bc51-cac7bfe86745; next run resumes by polling
+  reserve S01:still             2 higgsfield
+  submit S01:still              job c5d0a30a-39f5-43e2-8002-581c73006e99
+  pending S01:still             job c5d0a30a-39f5-43e2-8002-581c73006e99; next run resumes by polling
+  wait   S02:still              needs CS-RENUKA:still downloaded first
+  hold   S02:clip               timing-dependent; narration take not resolved yet
+  reserve S03:still             2 higgsfield
+  submit S03:still              job 30526131-22c1-4c5a-8b0a-a88697454e26
+  pending S03:still             job 30526131-22c1-4c5a-8b0a-a88697454e26; next run resumes by polling
+  wait   S05:still              needs CS-RENUKA:still downloaded first
+  hold   S06:clip               timing-dependent; narration take not resolved yet
+  reserve S07:still             2 higgsfield
+  submit S07:still              job 4c837a0b-19c4-47f0-8151-6302bf7f69d3
+  pending S07:still             job 4c837a0b-19c4-47f0-8151-6302bf7f69d3; next run resumes by polling
+  wait   S08:still              needs CS-RENUKA:still, CS-AGASTYA:still downloaded first
+  hold   S08:clip               timing-dependent; narration take not resolved yet
+  wait   S09:still              needs CS-RENUKA:still, CS-AGASTYA:still downloaded first
+  hold   S09:clip               timing-dependent; narration take not resolved yet
+  wait   S10:still              needs CS-RENUKA:still, CS-AGASTYA:still downloaded first
+  hold   S10:clip               timing-dependent; narration take not resolved yet
+  wait   S11:still              needs CS-RENUKA:still, CS-AGASTYA:still downloaded first
+  wait   S12:still              needs S11:still downloaded first
+  wait   S14:still              needs S01:still, CS-RENUKA:still downloaded first
+  hold   S15:clip               timing-dependent; narration take not resolved yet
+  reserve S16b:still            2 higgsfield
+  submit S16b:still             job 1c4f74d2-d4a0-4b59-8595-f444b0fb41e3
+  pending S16b:still            job 1c4f74d2-d4a0-4b59-8595-f444b0fb41e3; next run resumes by polling
+  ep02-kolanupaka: 6 new paid submission(s); held
+EXIT=2
