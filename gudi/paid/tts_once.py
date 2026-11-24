@@ -43,7 +43,7 @@ def main(text_path, out):
         _out(result="reused local take", path=str(dest), bytes=dest.stat().st_size, alignment=side.exists(), credits_spent=0)
         return 0
     p = ElevenLabsTTS({})
-    text = (ROOT / text_path).read_text(encoding="utf-8")
+    text = (ROOT / text_path).read_text(encoding="utf-8").strip()  # no trailing newline: 1,430 characters, as quoted
     try:
         hid = p._lookup(text, 0)
     except RuntimeError as e:  # several matching takes: a person picks one

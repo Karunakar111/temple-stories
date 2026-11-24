@@ -12,8 +12,10 @@
 
 NOT YET EXERCISED LIVE. The key is read from .env.local (gitignored) and never printed.
 """
+import base64
 import json
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime
@@ -52,7 +54,7 @@ class ElevenLabsTTS(Provider):
         return to_milli(call["quote"])
 
     def _text(self, call):
-        return (ROOT / call["text_path"]).read_text(encoding="utf-8")
+        return (ROOT / call["text_path"]).read_text(encoding="utf-8").strip()
 
     def _lookup(self, text, since_unix):
         """Newest Speech History item with this voice, model and exact text, made after since_unix."""
@@ -73,8 +75,6 @@ class ElevenLabsTTS(Provider):
             data=body, method="POST",
             headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "application/json"},
         )
-        import base64
-        import urllib.error
         try:
             with urllib.request.urlopen(req, timeout=600) as r:
                 resp = json.loads(r.read())
