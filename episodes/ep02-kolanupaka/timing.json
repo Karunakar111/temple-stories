@@ -1,0 +1,38 @@
+{
+  "source": "take (character timestamps)",
+  "audio_s": 105.795918,
+  "scale": 1.041,
+  "derived_at": "2026-11-24T08:24:13+00:00",
+  "clips": {
+    "S02": {
+      "duration": 4,
+      "quote": "6",
+      "spoken_s": 3.52
+    },
+    "S06": {
+      "duration": 5,
+      "quote": "7.5",
+      "spoken_s": 5.09
+    },
+    "S08": {
+      "duration": 4,
+      "quote": "6",
+      "spoken_s": 3.92
+    },
+    "S09": {
+      "duration": 3,
+      "quote": "4.5",
+      "spoken_s": 2.08
+    },
+    "S10": {
+      "duration": 4,
+      "quote": "6",
+      "spoken_s": 3.76
+    },
+    "S15": {
+      "duration": 5,
+      "quote": "7.5",
+      "spoken_s": 8.35
+    }
+  }
+}

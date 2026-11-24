@@ -1,9 +1,21 @@
 {
-  "_comment": "Decisions made during the approved EP02 run. Kept apart from shots.json so the request keys of work already paid for never change.",
-  "approved_by": "Karunakar",
-  "approved_at": "2026-11-24T13:02+05:30",
-  "words": "Choose A for S05. Use the villagers and name card for the introduction, and close on S14. I approve one 2-credit retry of the S10 still. If it fails again, flag that shot and continue. Keep EP02 within 69 Higgsfield credits.",
-  "skip": ["S05:still"],
-  "attempts": {"S10:still": 2},
-  "picture": {"S05": "S03", "S17": "S14"}
+ "_comment": "Decisions made during the approved EP02 run. Kept apart from shots.json so the request keys of work already paid for never change.",
+ "approved_by": "Karunakar",
+ "approved_at": "2026-11-24T13:02+05:30",
+ "words": "Choose A for S05. Use the villagers and name card for the introduction, and close on S14. I approve one 2-credit retry of the S10 still. If it fails again, flag that shot and continue. Keep EP02 within 69 Higgsfield credits.",
+ "skip": [
+  "S05:still",
+  "S06:clip"
+ ],
+ "attempts": {
+  "S10:still": 2
+ },
+ "picture": {
+  "S05": "S03",
+  "S17": "S14",
+  "S06": "S03"
+ },
+ "flags": {
+  "S06": "Clip planned from the S05 still, which was refused. Zero-spend fallback: S03 villagers still with a push, by Claude, pending Karunakar's review. Option: one 7.5-credit clip from S03 (villagers tilt heads up)."
+ }
 }
