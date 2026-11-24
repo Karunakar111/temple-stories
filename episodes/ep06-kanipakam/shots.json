@@ -418,7 +418,7 @@
    "id": "S08",
    "media_from": null,
    "text": "ఊరివాళ్లు అక్కడికి చేరారు. బావిలో కనిపించిన రూపం వినాయకుడిది. దాని అడుగు ఎక్కడుందో చూడాలని ఇంకాస్త తవ్వారు. ఎంత తవ్వినా అడుగు దొరకలేదట.",
-   "picture": "Villagers work around the discovery, framed from above the rim; the waterline hides everything below.",
+   "picture": "The discovery shown through the villagers at the well: faces in wonder over the rim, joined hands; the waterline hides everything below.",
    "what_changes": "Digging; water stays.",
    "class": "paid still + paid clip",
    "paid": [
@@ -439,7 +439,7 @@
       "C-WATER",
       "STYLE-PATNAM"
      ],
-     "prompt": "From above the rim: villagers gathered around the well, their faces in wonder, the water inside hiding everything below its surface, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "From just above the rim: villagers crowding around the well, leaning over it with joined hands and faces in wonder, a soft glow from the water lighting their faces, the water hiding everything below its surface, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     },
     {
      "max_s": 5,

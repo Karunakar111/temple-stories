@@ -31,7 +31,12 @@ def _save_history(hid, dest):
     return len(data)
 
 
+LAST = {}
+
+
 def _out(**kw):
+    LAST.clear()
+    LAST.update(kw)
     print(json.dumps(kw, ensure_ascii=False))
 
 

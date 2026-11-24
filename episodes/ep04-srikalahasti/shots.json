@@ -401,7 +401,7 @@
    "id": "S08",
    "media_from": null,
    "text": "ఊపిరాడక ఏనుగు చెట్టు బోదెకి గుద్దుకుంది. ఆ బోదె మీదే సాలెపురుగు కూడా ఉంది. ఈ కథనంలో మూడూ అక్కడే ప్రాణాలు విడిచాయి.",
-   "picture": "The tree shudders; the web falls still. The voice carries the deaths.",
+   "picture": "The elephant is seen against the tree first; then the tree shudders and the web falls still. The voice carries the deaths.",
    "what_changes": "Shudder; stillness.",
    "class": "paid still + local",
    "paid": [
@@ -415,13 +415,17 @@
       "aspect_ratio": "9:16"
      },
      "references": [
+      "CS-ANIMALS:still",
       "STYLE-PATNAM"
      ],
      "needs": [
       "S-ANIMALS",
       "STYLE-PATNAM"
      ],
-     "prompt": "A large tree trunk in the forest with a spider web on its bark, leaves falling, no animals visible, attached style. No text."
+     "prompt": "The elephant (reference image 1) pressing its head against a large forest tree trunk, eyes shut, trunk curled; a spider web on the bark just above it; leaves falling; no injury or blood shown, attached style. No text.",
+     "after": [
+      "CS-ANIMALS:still"
+     ]
     }
    ],
    "local": [
