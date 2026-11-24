@@ -58,9 +58,9 @@ class ElevenLabsTTS(Provider):
         """Newest Speech History item with this voice, model and exact text, made after since_unix."""
         items = _get("/history", {"page_size": 50, "voice_id": self.voice["voiceId"]}).get("history", [])
         hits = [h for h in items
-                if h.get("text", "").strip() == text.strip()
+                if (h.get("text") or "").strip() == text.strip()
                 and h.get("model_id") in (None, self.voice["model"])
-                and int(h.get("date_unix", 0)) >= since_unix - 5]
+                and int(h.get("date_unix") or 0) >= since_unix - 5]
         if len(hits) > 1:
             raise RuntimeError(f"{len(hits)} matching takes in Speech History; a person must pick one (gudi reconcile)")
         return hits[0]["history_item_id"] if hits else None
