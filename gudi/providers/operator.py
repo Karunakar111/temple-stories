@@ -45,6 +45,8 @@ class OperatorProvider(Provider):
     def __init__(self, name):
         self.name = name
         self.wait_s = float(os.environ.get("GUDI_OPERATOR_WAIT", "1800"))
+        self.status_wait_s = float(os.environ.get("GUDI_OPERATOR_STATUS_WAIT", str(self.wait_s)))
+        self.only = os.environ.get("GUDI_OPERATOR_ONLY")  # e.g. "higgsfield": other providers wait without blocking
 
     def quote_milli(self, call):
         return to_milli(call["quote"])
@@ -54,13 +56,14 @@ class OperatorProvider(Provider):
                  "quote": call["quote"], "payload": payload, "text_path": call.get("text_path"),
                  "written": datetime.now(timezone.utc).isoformat(timespec="seconds")}
         (box("outbox") / f"{request_key}.json").write_text(json.dumps(entry, ensure_ascii=False, indent=1), encoding="utf-8")
-        got = _wait(box("inbox") / f"{request_key}.json", self.wait_s)
+        wait = 0 if (self.only and self.only != self.name) else self.wait_s
+        got = _wait(box("inbox") / f"{request_key}.json", wait)
         if not got:
             raise TimeoutError(f"no submission recorded for {call['beat']} {call['asset_type']}; the request stays unsent or unknown, never resent")
         return got["job_id"]
 
     def status(self, job_id):
-        got = _wait(box("done") / f"{job_id}.json", self.wait_s)
+        got = _wait(box("done") / f"{job_id}.json", self.status_wait_s)
         if not got:
             return {"state": "pending", "url": None, "charged_milli": None}
         return {"state": got.get("state", "completed"), "url": got.get("url"),

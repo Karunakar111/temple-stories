@@ -65,11 +65,8 @@ class ElevenLabsTTS(Provider):
             raise RuntimeError(f"{len(hits)} matching takes in Speech History; a person must pick one (gudi reconcile)")
         return hits[0]["history_item_id"] if hits else None
 
-    def submit(self, call, request_key, payload=None):
-        if call.get("settings", {}).get("takes", 1) != 1:
-            raise RuntimeError("narration is pinned to one take")
-        text = self._text(call)
-        since = int(time.time())
+    def generate(self, text):
+        """One take. Returns (audio bytes, alignment or None). Never retried."""
         body = json.dumps({"text": text, "model_id": self.voice["model"]}).encode("utf-8")
         req = urllib.request.Request(
             f"{API}/text-to-speech/{self.voice['voiceId']}/with-timestamps?output_format=mp3_44100_128",
@@ -81,8 +78,7 @@ class ElevenLabsTTS(Provider):
         try:
             with urllib.request.urlopen(req, timeout=600) as r:
                 resp = json.loads(r.read())
-            audio = base64.b64decode(resp["audio_base64"])
-            self._alignment = resp.get("alignment")
+            return base64.b64decode(resp["audio_base64"]), resp.get("alignment")
         except urllib.error.HTTPError as e:
             if not (400 <= e.code < 500) or e.code in (401, 402, 429):
                 raise  # not a validation refusal: stop, never resend blindly
@@ -91,8 +87,14 @@ class ElevenLabsTTS(Provider):
                 f"{API}/text-to-speech/{self.voice['voiceId']}?output_format=mp3_44100_128", data=body, method="POST",
                 headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "audio/mpeg"})
             with urllib.request.urlopen(plain, timeout=600) as r:
-                audio = r.read()
-            self._alignment = None
+                return r.read(), None
+
+    def submit(self, call, request_key, payload=None):
+        if call.get("settings", {}).get("takes", 1) != 1:
+            raise RuntimeError("narration is pinned to one take")
+        text = self._text(call)
+        since = int(time.time())
+        audio, self._alignment = self.generate(text)
         for _ in range(6):  # history can lag the response by a few seconds
             hid = self._lookup(text, since)
             if hid:

@@ -189,7 +189,13 @@ def _run(ep, ledger, cfg, providers, run_id, daily, say, local_day, retimer):
                 continue
         if st == "reserved":
             ledger.set_state(key, "submitting")  # committed before the provider is called
-            jid = prov.submit(call, key, payload)
+            try:
+                jid = prov.submit(call, key, payload)
+            except TimeoutError as e:  # operator mode: not submitted yet; the reservation stays, nothing is resent
+                ledger.set_state(key, "unknown", note=str(e))
+                say(f"  later  {tag:22s} waiting for the operator; resumes from the inbox on the next run")
+                outcome = outcome or HOLD
+                continue
             ledger.set_state(key, "submitted", provider_job_id=jid)
             new_paid += 1
             say(f"  submit {tag:22s} job {jid}")

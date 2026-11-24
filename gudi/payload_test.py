@@ -21,7 +21,8 @@ STAND_IN = {
     "CS-RENUKA:still": ("a729414b-aec4-4dbe-b8f7-c9dcd3e341ed", "EP01 n10-hand start frame"),
     "S02:still": ("b23194fa-59e6-4cb8-8a2d-e190d7774d5e", "EP01 n01-oggu start frame"),
 }
-PICK = [("S02", "still"), ("S02", "clip"), ("S17", "still")]
+PICK = [("S02", "still"), ("S02", "clip")]
+HELD = ("ep03-vemulavada", "S03", "still")  # an identified exterior with no photo yet
 
 
 def main():
@@ -41,6 +42,10 @@ def main():
             c = next(c for c in ep.paid_calls() if c["beat"] == beat and c["asset_type"] == at)
             params, problems = resolve(ep, c, ledger)
             out.append({"call": f"{beat}:{at}", "references": c["references"], "params": params, "held": problems})
+        e3 = Episode(HELD[0])
+        c = next(c for c in e3.paid_calls() if c["beat"] == HELD[1] and c["asset_type"] == HELD[2])
+        params, problems = resolve(e3, c, ledger)
+        out.append({"call": f"{HELD[0]} {HELD[1]}:{HELD[2]}", "references": c["references"], "params": params, "held": problems})
     print(json.dumps({"stand_ins": STAND_IN, "payloads": out}, ensure_ascii=False, indent=1))
     assert "gudi.paid" not in sys.modules
 
