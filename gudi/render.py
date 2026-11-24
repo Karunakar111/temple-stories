@@ -44,7 +44,11 @@ def _picture(ep, ledger, shot_id, by_id):
     """An approved amendment's picture, else the shot's own clip, else its own still, else the shot it reuses."""
     swap = (load_json(ep.dir / "amendments.json", {}) or {}).get("picture", {})
     if shot_id in swap:
-        return _picture(ep, ledger, swap[shot_id], by_id)
+        to = swap[shot_id]
+        if to.endswith(":still"):  # "S04:still" forces that shot's still even when it has a clip
+            p = _asset(ep, ledger, to.split(":")[0], "still")
+            return (p, "still") if p else (None, None)
+        return _picture(ep, ledger, to, by_id)
     s = by_id[shot_id]
     for at in ("clip", "still"):
         if any(c["asset_type"] == at for c in s["paid"]):
@@ -131,11 +135,11 @@ def film_spec(ep, ledger, cfg, out_dir):
     # amendments.json "focus": {shot: {"from": [cx, cy, z], "to": [...]}} reframes a still at no cost
     am_focus = (load_json(ep.dir / "amendments.json", {}) or {}).get("focus", {})
     for sid, fz in am_focus.items():
-        if sid in shot_win:
-            a0, b0 = shot_win[sid]
-            for sg in segs:
-                if sg["kind"] == "still" and a0 - 1e-6 <= sg["start"] < b0:
-                    sg["focus"] = fz
+        # keyed by the picture, so the reframing follows the still (and its own clip) wherever it is reused
+        srcs = {str(x) for x in (_asset(ep, ledger, sid, "still"), _asset(ep, ledger, sid, "clip")) if x}
+        for sg in segs:
+            if sg["src"] in srcs:
+                sg["focus"] = fz
     notes += _finish_actions(segs)
     phrases = from_alignment(voice, al, ranges)
     ov = load_json(ep.dir / "overlays.json", {}) or {}

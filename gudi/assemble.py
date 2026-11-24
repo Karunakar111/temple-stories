@@ -37,7 +37,12 @@ def build_picture(segments, out, size, fps=30):
             sp = s.get("speed", 1.0)
             lead = float(s.get("lead", 0.0))  # hold the first frame this long before the clip moves
             head = f"tpad=start_mode=clone:start_duration={lead:.3f}," if lead > 0 else ""
-            chains.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{sp},fps={fps},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,"
+            fc = ""
+            if s.get("focus"):  # a clip keeps the still's reframing: static crop at the "from" framing
+                cx, cy, z = s["focus"]["from"]
+                fc = (f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{cx}-iw/{z}/2))':"
+                      f"'max(0,min(ih-ih/{z},ih*{cy}-ih/{z}/2))',")
+            chains.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{sp},fps={fps},{fc}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,"
                           f"{head}tpad=stop_mode=clone:stop_duration={dur + 1:.3f},trim=end_frame={n},setpts=PTS-STARTPTS[v{i}]")
         else:
             args += ["-loop", "1", "-framerate", str(fps), "-t", f"{dur + 0.5:.3f}", "-i", str(s["src"])]

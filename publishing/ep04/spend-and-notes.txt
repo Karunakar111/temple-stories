@@ -1,0 +1,16 @@
+EP04 · శ్రీకాళహస్తి · review export (24 Nov 2026)
+
+Actual spend
+- Higgsfield: 25 credits (stills 16, clip 9; S05, S06, S07 clips 21 not made).
+- ElevenLabs: 1,039 credits, one narration take.
+- Approved quote: 46 Higgsfield / 1,039 ElevenLabs.
+
+Film: 76.28 s, 1080x1920, verified by the pipeline (decode, loudness, sync 0 ms, SRT, cover).
+
+Notes
+- INTERIM CUT, not for posting. The animal sheet drew the cobra in a jacket with human hands and the elephant in a shirt. S05 (snake brings gems) shows the empty clearing, S06 (the pour) holds on the S01 pour still, S07 (snake enters the trunk) holds on the S08 elephant still.
+- Fix: corrected animal sheet + S05 + S06 stills (6 credits) and the three quoted clips (21).
+- Check: the spider weaving (S04) has no web on screen; the planned code-drawn web is not built yet. Zero-cost option: build it before the final cut.
+- Check: in S09 and S10 the stone is a large solid black shape; it reads as a hole. Zero-cost option: reframe tighter on the three offerings.
+
+Posting is left to Karunakar after a full watch-through.

@@ -1,0 +1,13 @@
+{
+ "picture": {
+  "S05": "S04:still",
+  "S06": "S01:still",
+  "S07": "S08:still"
+ },
+ "notes": {
+  "S05": "HOLD: the cobra was drawn in a jacket and headscarf, holding the gem in human hands. Review export shows the empty clearing (S04) instead.",
+  "S06": "HOLD: the elephant was drawn in a shirt and loincloth. Review export holds on the S01 pour still instead.",
+  "S07": "Its clip starts from the held S06 still, so it is not made. Review export holds on the S08 still.",
+  "fix": "Corrected animal sheet plus S05 and S06 stills: 6 credits; then the S05, S06 and S07 clips already quoted (21)."
+ }
+}

@@ -15,6 +15,10 @@
  },
  "notes": {
   "S09": "Reframed on the king's hands so the rishi in the background (who has just died in the story) stays out of frame. No cost.",
-  "S01": "HOLD: the tether post reads as a Shiva linga (rounded top, round base, kumkum, lamps). Not used; S04b (reuse) held too. Corrected still needs Karunakar's OK (2 credits)."
+  "S01": "HOLD: the tether post reads as a Shiva linga (rounded top, round base, kumkum, lamps). Not used. Review export opens on the S03 temple exterior instead and S04b holds on the S04 still; both revert once a corrected tether still (2 credits) is approved."
+ },
+ "picture": {
+  "S01": "S03:still",
+  "S04b": "S04:still"
  }
 }

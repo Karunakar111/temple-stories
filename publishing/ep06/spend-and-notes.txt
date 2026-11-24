@@ -1,0 +1,14 @@
+EP06 · కాణిపాకం వరసిద్ధి వినాయకుడు · review export (24 Nov 2026)
+
+Actual spend
+- Higgsfield: 56 credits (stills 20, clips 36).
+- ElevenLabs: 1,091 credits, one narration take.
+- Approved quote: 56 Higgsfield / 1,091 ElevenLabs.
+
+Film: 84.13 s, 1080x1920, verified by the pipeline (decode, loudness, sync 0 ms, SRT, cover).
+
+Notes
+- S03 exterior reframed on the gopuram everywhere it appears (including the closing card and the cover): the generated still added a painted shrine with deity figures.
+- The discovery (S08) is carried by the villagers at the rim; nothing below the water is shown.
+
+Posting is left to Karunakar after a full watch-through.
