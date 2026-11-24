@@ -1,0 +1,15 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S04",
+   "phrase": "సేవకులు ముగ్గురినీ",
+   "severity": "check",
+   "note": "The action is servitors carrying the three out of the temple; the planned crowd looks up at something above frame, so the carriers are never seen.",
+   "fix": "Revise the S04 prompt before generation to show the servitors from behind (shoulders, arms, ropes) without drawing the deities. Same still, no extra cost.",
+   "quote": 0
+  }
+ ]
+}

@@ -212,30 +212,40 @@ def verify_outputs(mp4, narration, tag, size, srt=None, cover=None):
     return checks, problems
 
 
-def render_and_verify(ep, ledger, cfg, say=print, fault=None):
-    """Make this episode's film one at a time; mark it ready only if verify_outputs passes."""
+def render_and_verify(ep, ledger, cfg, say=print, fault=None, edit=None):
+    """Make this episode's film one at a time; mark it ready only if verify_outputs passes.
+
+    edit: name of episodes/<slug>/edits/<name>.json; rendered beside the automatic cut, which is left untouched."""
     from .film import make_film
 
     rc = cfg.get("render", {})
     scale = float(rc.get("scale", 1.0))
     size = (round(1080 * scale) // 2 * 2, round(1920 * scale) // 2 * 2)
-    out_dir = ROOT / "exports" / "films" / ep.slug
+    key = f"{ep.slug}-{edit}" if edit else ep.slug
+    out_dir = ROOT / "exports" / "films" / key
     mp4 = out_dir / f"{ep.slug}.mp4"
-    prev = ledger.film(ep.slug)
-    if prev and prev["status"] == "ready for review" and prev["revision"] == ep.revision() and mp4.exists() \
+    rev = ep.revision()
+    if edit:
+        rev += ":" + hashlib.sha256((ep.dir / "edits" / f"{edit}.json").read_bytes()).hexdigest()[:8]
+    prev = ledger.film(key)
+    if prev and prev["status"] == "ready for review" and prev["revision"] == rev and mp4.exists() \
             and hashlib.sha256(mp4.read_bytes()).hexdigest() == prev["sha256"]:
-        say(f"  film   {ep.slug}: already verified ({mp4.name}); not re-rendered")
+        say(f"  film   {key}: already verified ({mp4.name}); not re-rendered")
         return "ready for review"
     out_dir.mkdir(parents=True, exist_ok=True)
     free_gb = shutil.disk_usage(str(out_dir)).free / 1e9
     if free_gb < MIN_FREE_GB:
-        ledger.set_film(ep.slug, revision=ep.revision(), status="held", reason=f"disk: {free_gb:.1f} GB free")
-        say(f"  film   {ep.slug}: held, only {free_gb:.1f} GB free")
+        ledger.set_film(key, revision=rev, status="held", reason=f"disk: {free_gb:.1f} GB free")
+        say(f"  film   {key}: held, only {free_gb:.1f} GB free")
         return "held"
-    spec, missing = film_spec(ep, ledger, cfg, out_dir)
+    if edit:
+        from .edit import edit_spec
+        spec, missing = edit_spec(ep, ledger, cfg, out_dir, edit)
+    else:
+        spec, missing = film_spec(ep, ledger, cfg, out_dir)
     if missing:
-        ledger.set_film(ep.slug, revision=ep.revision(), status="waiting", reason="; ".join(missing))
-        say(f"  film   {ep.slug}: waiting for {', '.join(missing)}")
+        ledger.set_film(key, revision=rev, status="waiting", reason="; ".join(missing))
+        say(f"  film   {key}: waiting for {', '.join(missing)}")
         return "waiting"
     lock_f = open(ensure_state() / "render.lock", "w")
     fcntl.flock(lock_f, fcntl.LOCK_EX)  # one film at a time
@@ -254,17 +264,17 @@ def render_and_verify(ep, ledger, cfg, say=print, fault=None):
                 checks["mix"] = report["steps"]["mix"]["checks"]
                 checks["notes"] = spec.get("notes", [])
             if made and not problems:
-                ledger.set_film(ep.slug, revision=ep.revision(), mp4=str(made), sha256=hashlib.sha256(made.read_bytes()).hexdigest(),
+                ledger.set_film(key, revision=rev, mp4=str(made), sha256=hashlib.sha256(made.read_bytes()).hexdigest(),
                                 status="ready for review", reason=None, checks_json=json.dumps(checks, ensure_ascii=False), attempts=attempts)
-                say(f"  film   {ep.slug}: READY FOR REVIEW  {checks['duration_s']} s vs take {checks['narration_s']} s, decode ok, "
+                say(f"  film   {key}: READY FOR REVIEW  {checks['duration_s']} s vs take {checks['narration_s']} s, decode ok, "
                     f"{checks.get('loudness_lufs')} LUFS, TP {checks.get('true_peak_dbtp')}, narration corr {checks.get('narration_corr')}, "
                     f"sync {checks.get('sync_offset_ms')} ms, SRT {checks.get('srt')}, cover {checks.get('cover')}")
                 return "ready for review"
-            say(f"  film   {ep.slug}: attempt {attempt} failed the check: {'; '.join(problems)}"
+            say(f"  film   {key}: attempt {attempt} failed the check: {'; '.join(problems)}"
                 + (" -> free automatic re-render" if attempt == 1 else ""))
             if problems and problems[0].startswith("narration stem"):
                 break  # a bad take is not fixed by re-rendering
-        ledger.set_film(ep.slug, revision=ep.revision(), mp4=str(mp4), status="exception", reason="; ".join(problems),
+        ledger.set_film(key, revision=rev, mp4=str(mp4), status="exception", reason="; ".join(problems),
                         checks_json=json.dumps(checks, ensure_ascii=False), attempts=attempts)
         return "exception"
     finally:

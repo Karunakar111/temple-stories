@@ -1,0 +1,13 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S08",
+   "phrase": "ఊపిరాడక ఏనుగు",
+   "severity": "check",
+   "note": "The elephant striking the tree is carried only by a shudder on an empty trunk (deliberate restraint), while the voice names the action. Decide if the shudder is enough."
+  }
+ ]
+}

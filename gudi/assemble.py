@@ -35,10 +35,23 @@ def build_picture(segments, out, size, fps=30):
         if s["kind"] == "clip":
             args += ["-ss", f"{s.get('ss', 0.0):.3f}", "-i", str(s["src"])]
             sp = s.get("speed", 1.0)
+            lead = float(s.get("lead", 0.0))  # hold the first frame this long before the clip moves
+            head = f"tpad=start_mode=clone:start_duration={lead:.3f}," if lead > 0 else ""
             chains.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{sp},fps={fps},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,"
-                          f"tpad=stop_mode=clone:stop_duration={dur + 1:.3f},trim=end_frame={n},setpts=PTS-STARTPTS[v{i}]")
+                          f"{head}tpad=stop_mode=clone:stop_duration={dur + 1:.3f},trim=end_frame={n},setpts=PTS-STARTPTS[v{i}]")
         else:
             args += ["-loop", "1", "-framerate", str(fps), "-t", f"{dur + 0.5:.3f}", "-i", str(s["src"])]
+            if s.get("focus"):  # move from one framing to another: [cx, cy, zoom], cx/cy as fractions of the image
+                (x0, y0, z0), (x1, y1, z1) = s["focus"]["from"], s["focus"]["to"]
+                W3, H3 = W * 2, H * 2  # work at 2x so slow moves stay smooth
+                m = max(n - 1, 1)
+                zf = f"({z0}+({z1}-{z0})*on/{m})"
+                xf = f"min(max(({x0}+({x1}-{x0})*on/{m})*iw-iw/zoom/2,0),iw-iw/zoom)"
+                yf = f"min(max(({y0}+({y1}-{y0})*on/{m})*ih-ih/zoom/2,0),ih-ih/zoom)"
+                chains.append(f"[{i}:v]scale={W3}:{H3}:force_original_aspect_ratio=increase,crop={W3}:{H3},"
+                              f"zoompan=z='{zf}':x='{xf}':y='{yf}':d=1:s={W}x{H}:fps={fps},"
+                              f"setsar=1,trim=end_frame={n},setpts=PTS-STARTPTS[v{i}]")
+                continue
             z = s.get("push", 0.05)
             chains.append(f"[{i}:v]scale={W2}:{H2}:force_original_aspect_ratio=increase,crop={W2}:{H2},"
                           f"zoompan=z='1.0+{z}*on/{max(n, 1)}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={fps},"
@@ -99,7 +112,8 @@ def mux(picture, overlays, mix_wav, out, total_s, fps, tag):
         ln = max(0.2, b - a)
         args += ["-loop", "1", "-framerate", str(fps), "-t", f"{ln:.3f}", "-i", str(png)]
         idx = k + 2
-        chains.append(f"[{idx}:v]format=rgba,fade=t=in:st=0:d=0.12:alpha=1,fade=t=out:st={max(0, ln - 0.12):.3f}:d=0.12:alpha=1,"
+        fin = "fade=t=in:st=0:d=0.12:alpha=1," if a > 0.01 else ""  # text on the first frame is fully visible on frame one
+        chains.append(f"[{idx}:v]format=rgba,{fin}fade=t=out:st={max(0, ln - 0.12):.3f}:d=0.12:alpha=1,"
                       f"setpts=PTS-STARTPTS+{a:.3f}/TB[o{k}]")
         chains.append(f"[{last}][o{k}]overlay=0:0:eof_action=pass:repeatlast=0[b{k}]")
         last = f"b{k}"

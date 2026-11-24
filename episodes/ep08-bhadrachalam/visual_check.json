@@ -1,0 +1,39 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S02",
+   "phrase": "రాముడి గుడి ఉంది",
+   "severity": "missing",
+   "note": "Voice: 'on one side, Rama's temple'. The plan says 'temple on its hill by the river' but reuses S01, a close view of worn steps with no people. The temple itself is never shown in EP08.",
+   "fix": "Add one still of the Bhadrachalam temple on its hill above the Godavari from a verified exterior reference; use it here and in S09.",
+   "quote": 2
+  },
+  {
+   "shot": "S09",
+   "phrase": "గుడి పని జరిగింది",
+   "severity": "missing",
+   "note": "'The temple work was done' is shown as the S01 steps again.",
+   "fix": "Reuse the new temple still from S02.",
+   "quote": 0
+  },
+  {
+   "shot": "S04",
+   "phrase": "ధమ్మక్క అనే",
+   "severity": "check",
+   "note": "Dammakka is introduced by name over a sleeping figure.",
+   "fix": "Typeset name card 'ధమ్మక్క' (local).",
+   "quote": 0
+  },
+  {
+   "shot": "S05",
+   "phrase": "చిన్న మండపంలో",
+   "severity": "check",
+   "note": "The clip clears earth and light rises; the voice moves on to worship in a small mandapam, which this clip cannot show.",
+   "fix": "Cut early to the S06 still (Gopanna before the small mandapam) on 'ఒక చిన్న మండపంలో'.",
+   "quote": 0
+  }
+ ]
+}

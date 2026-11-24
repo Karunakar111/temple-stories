@@ -1,0 +1,21 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S04",
+   "phrase": "కంటిచూపు లేదు",
+   "severity": "check",
+   "note": "Three conditions are named one by one over one picture of the brothers lifting water.",
+   "fix": "Local push to each brother on his line.",
+   "quote": 0
+  },
+  {
+   "shot": "S08",
+   "phrase": "రూపం వినాయకుడిది",
+   "severity": "check",
+   "note": "The voice names Vinayaka; by design the screen shows only villagers above the rim. Confirm this witness treatment."
+  }
+ ]
+}

@@ -91,6 +91,9 @@ def build(batch, out_dir, balances, preview=None, demo=None, payload=None, films
              "Clip lengths are provisional until each take exists. For scale: EP01's assets in the final film cost 242.5; this week averages "
              f"about {fmt(round(hf_total / 7 / 1000) * 1000)} per film because most shots are stills with local motion.</p>")
 
+    # ---------------------------------------------------------------- phrase-to-visual check
+    h.append(_visual_check_section(batch))
+
     # ---------------------------------------------------------------- itemised quote
     h.append(f"<h2>Itemised quote</h2><p class='sub'>Every paid call ({len(rows)}). Also in <code>quote-{_e(batch.id)}.csv</code>.</p>")
     for e in eps:
@@ -139,3 +142,39 @@ def build(batch, out_dir, balances, preview=None, demo=None, payload=None, films
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text("\n".join(h), encoding="utf-8")
     return out_dir / "index.html", rows, eps
+
+
+def _visual_check_section(batch):
+    """Every narration phrase against the picture planned for it, before credits or renders."""
+    from .visual_check import rows, summary
+
+    out = ["<h2>Phrase-to-visual check</h2><p class='sub'>Every narration phrase against the picture planned for that moment. "
+           "<b class='hold'>Missing</b> means the voice brings in a person, action or idea that nothing on screen shows; each has the "
+           "fix and its quoted cost. <b>Check</b> items are judgement calls or zero-cost fixes. Run before generation; nothing here is spent.</p>"]
+    out.append("<div class='scroll'><table><tr><th>Episode</th><th class='n'>Phrases</th><th class='n'>Missing</th><th class='n'>Checks</th>"
+               "<th class='n'>Cost to fix missing</th></tr>")
+    detail, tot = [], 0.0
+    for slug in batch.episodes:
+        ep = Episode(slug, batch.root)
+        if not (ep.dir / "shots.json").exists():
+            continue
+        sm = summary(ep)
+        tot += sm["quote_if_fixed"]
+        out.append(f"<tr><td>{_e(slug)}</td><td class='n'>{sm['phrases']}</td>"
+                   f"<td class='n'>{'<b class=hold>%d</b>' % len(sm['missing']) if sm['missing'] else '0'}</td>"
+                   f"<td class='n'>{sm['checks']}</td><td class='n'>{fmt(round(sm['quote_if_fixed'] * 1000))}</td></tr>")
+        r, _ = rows(ep)
+        flagged = [x for x in r if x["flags"]]
+        if not flagged:
+            continue
+        d = [f"<details{' open' if sm['missing'] else ''}><summary><b>{_e(slug)}</b>: {len(sm['missing'])} missing, {sm['checks']} to check</summary>"
+             "<div class='scroll'><table><tr><th class='n'>Time</th><th>Shot</th><th>Narration</th><th>Planned picture</th><th>Flag</th></tr>"]
+        for x in flagged:
+            fl = "<br>".join(f"<b class='{'hold' if sev == 'missing' else 'wait'}'>{_e(sev)}</b> {_e(msg)}" for sev, msg in x["flags"])
+            d.append(f"<tr><td class='n'>~{x['t']:.0f} s</td><td>{_e(x['asset'])}</td><td>{_e(x['words'])}</td>"
+                     f"<td>{_e(x['picture'][:160])}</td><td>{fl}</td></tr>")
+        d.append("</table></div></details>")
+        detail.append("".join(d))
+    out.append(f"<tr><td><b>Week</b></td><td></td><td></td><td></td><td class='n'><b>{fmt(round(tot * 1000))}</b></td></tr></table></div>")
+    out.extend(detail)
+    return "\n".join(out)

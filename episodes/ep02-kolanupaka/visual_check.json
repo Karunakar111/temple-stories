@@ -1,0 +1,31 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "the finished EP02 cut (take timing) and the v2 re-edit",
+ "notes": [
+  {
+   "shot": "S06",
+   "phrase": "ఆకాశమార్గాన",
+   "severity": "missing",
+   "note": "Voice: he leaves through the sky for the Malaya mountain. Screen: the villagers still tilting up to the bright doorway; the departure is not shown (the S05 still it was planned from was refused).",
+   "fix": "One 5 s clip from the S03 villagers still: heads tilt up as a light rises out of the top of frame. Or a new still of the sage rising above the villagers plus a clip (2 + 7.5).",
+   "quote": 7.5
+  },
+  {
+   "shot": "S14",
+   "phrase": "ప్రార్థించాడు",
+   "severity": "check",
+   "note": "Voice: he stood before Someshwara and prayed. Screen: he walks toward the sanctum between villagers; the prayer itself is not shown.",
+   "fix": "A still of the sage standing at the sanctum doorway, palms joined, seen from behind (no linga drawn).",
+   "quote": 2
+  },
+  {
+   "shot": "S17",
+   "phrase": "శాసనంలో",
+   "severity": "check",
+   "note": "Second reminder (the inscription) plays over the closing S14 hall, as approved.",
+   "fix": "Cut back to the S16b inscription for the second reminder (no cost); this would change the agreed S14 close.",
+   "quote": 0
+  }
+ ]
+}

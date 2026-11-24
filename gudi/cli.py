@@ -390,7 +390,7 @@ def cmd_film(a):
     from .episodes import Episode
     from .render import render_and_verify
 
-    r = render_and_verify(Episode(a.episode), _ledger(), _cfg())
+    r = render_and_verify(Episode(a.episode), _ledger(), _cfg(), edit=getattr(a, "edit", None))
     return 0 if r == "ready for review" else 2
 
 
@@ -450,6 +450,7 @@ def main(argv=None):
     op.set_defaults(f=cmd_operator)
     fm = sub.add_parser("film")
     fm.add_argument("episode")
+    fm.add_argument("--edit", help="render episodes/<slug>/edits/<name>.json beside the automatic cut")
     fm.set_defaults(f=cmd_film)
     bt = sub.add_parser("batch")
     bt.add_argument("action", choices=["plan", "review", "approve", "run"])

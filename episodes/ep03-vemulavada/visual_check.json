@@ -1,0 +1,23 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S07",
+   "phrase": "నరేంద్రుడనే రాజు",
+   "severity": "missing",
+   "note": "Voice introduces King Narendra on a hunt and his arrow striking the rishi. The one planned still opens on the aftermath (pot in the stream, bow lowered), so the hunt and the shot are never seen.",
+   "fix": "Add a still of the king drawing his bow among the trees, no target in frame, for the first two phrases; keep the aftermath still from 'ఋషి చనిపోయాడు'.",
+   "quote": 2
+  },
+  {
+   "shot": "S11",
+   "phrase": "ఒడ్డునే ప్రతిష్ఠించాడు",
+   "severity": "missing",
+   "note": "One still (the king waist-deep, light in his hands) covers the search, the find and the installation. 'Then the bank in lamp light' has no asset.",
+   "fix": "Add a still of the lamp-lit bank: the king kneeling before a small lamp-lit shrine, seen from behind, no linga drawn; cut to it on 'ఒడ్డునే'.",
+   "quote": 2
+  }
+ ]
+}

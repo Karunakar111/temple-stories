@@ -1,0 +1,29 @@
+{
+ "reviewed_by": "Claude",
+ "reviewed_at": "2026-11-24",
+ "basis": "shots.json revision 3, before generation",
+ "notes": [
+  {
+   "shot": "S02",
+   "phrase": "భక్తురాలికి కలలో",
+   "severity": "check",
+   "note": "Introduces the woman devotee and the rishi over an empty hill. Both appear later, so this works as a setup line."
+  },
+  {
+   "shot": "S06",
+   "phrase": "ఎంత వెతికినా",
+   "severity": "missing",
+   "note": "The clip is asked for a torch search among the rocks but starts from the still of villagers bringing flowers to the foot of the hill; the search will not come out of that picture.",
+   "fix": "Add a still of the torch party among the rocks at night as the clip's start image; the flowers still stays for the opening phrases.",
+   "quote": 2
+  },
+  {
+   "shot": "S09",
+   "phrase": "భక్తురాలికి వచ్చిన",
+   "severity": "check",
+   "note": "Voice recalls the woman's dream while the screen shows the reused guiding light.",
+   "fix": "Reuse the S07 dream picture for this phrase.",
+   "quote": 0
+  }
+ ]
+}
