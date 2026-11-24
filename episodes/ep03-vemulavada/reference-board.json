@@ -27,10 +27,14 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "e583b56a-82d0-4ad2-9039-2c830c9be0df",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "V-EXTERIOR",
-   "subject": "Sri Raja Rajeshwara temple, Vemulawada"
+   "subject": "Sri Raja Rajeshwara temple, Vemulawada",
+   "photo": "Sri Raja Rajeshwara temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "credit": "Reference photo: Thistheyear2023, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Raja_Rajeshwara_temple.jpg"
   },
   {
    "id": "V-TANK",

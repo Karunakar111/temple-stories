@@ -45,17 +45,25 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "7c07cbe2-ac61-443c-9ca4-8d1d8bbfa032",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "P-GUNDICHA",
-   "subject": "Gundicha temple exterior, Puri"
+   "subject": "Gundicha temple exterior, Puri",
+   "photo": "Gundicha Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "credit": "Reference photo: Aliva Sahoo, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gundicha_Temple.jpg"
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "ace57cf1-3d85-4e34-88d1-93019c338246",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "P-BADADANDA",
-   "subject": "Bada Danda (Grand Road), Puri, with the chariots"
+   "subject": "Bada Danda (Grand Road), Puri, with the chariots",
+   "photo": "All three chariots at Badadanda, Puri during 2022 Ratha Jatra.jpg",
+   "licence": "CC BY 4.0",
+   "credit": "Reference photo: Government of Odisha, Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:All_three_chariots_at_Badadanda,_Puri_during_2022_Ratha_Jatra.jpg"
   }
  ]
 }

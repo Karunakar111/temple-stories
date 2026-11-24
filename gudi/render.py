@@ -128,6 +128,14 @@ def film_spec(ep, ledger, cfg, out_dir):
             segs.append({"kind": kind, "src": str(path), "start": start, "end": end, "own": not s.get("media_from")})
     if missing:
         return None, missing
+    # amendments.json "focus": {shot: {"from": [cx, cy, z], "to": [...]}} reframes a still at no cost
+    am_focus = (load_json(ep.dir / "amendments.json", {}) or {}).get("focus", {})
+    for sid, fz in am_focus.items():
+        if sid in shot_win:
+            a0, b0 = shot_win[sid]
+            for sg in segs:
+                if sg["kind"] == "still" and a0 - 1e-6 <= sg["start"] < b0:
+                    sg["focus"] = fz
     notes += _finish_actions(segs)
     phrases = from_alignment(voice, al, ranges)
     ov = load_json(ep.dir / "overlays.json", {}) or {}
@@ -178,6 +186,15 @@ def film_spec(ep, ledger, cfg, out_dir):
     if cbg and cbg.suffix == ".mp4":
         still = Path(out_dir) / "cover-bg.jpg"
         subprocess.run([audio_mix.ff("ffmpeg"), "-v", "error", "-y", "-ss", "0.5", "-i", str(cbg), "-frames:v", "1", str(still)], check=True)
+        cbg = still
+    elif cbg and cover_shot in am_focus:
+        # the cover keeps the same reframing as the film ("from" framing)
+        cx, cy, z = am_focus[cover_shot]["from"]
+        still = Path(out_dir) / "cover-bg.jpg"
+        Path(out_dir).mkdir(parents=True, exist_ok=True)
+        crop = (f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{cx}-iw/{z}/2))':"
+                f"'max(0,min(ih-ih/{z},ih*{cy}-ih/{z}/2))'")
+        subprocess.run([audio_mix.ff("ffmpeg"), "-v", "error", "-y", "-i", str(cbg), "-vf", crop, "-q:v", "2", str(still)], check=True)
         cbg = still
     title = ep.meta.get("title_te", "").split(" ", 1)
     spec = {"slug": ep.slug, "tag": f"gudi:{ep.slug}:{ep.revision()}", "fps": 30, "scale": float(rc.get("scale", 1.0)),

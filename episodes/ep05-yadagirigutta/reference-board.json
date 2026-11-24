@@ -21,10 +21,14 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "d4aec73d-7b2c-4140-ac83-f995a060c8ee",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "Y-HILL",
-   "subject": "Yadagirigutta hill and the present black-stone temple (rebuilt 2016-2022)"
+   "subject": "Yadagirigutta hill and the present black-stone temple (rebuilt 2016-2022)",
+   "photo": "Sri Lakshminarasimha Swamy Temple Yadagirigutta Yadadri Telangana 07.jpg",
+   "licence": "CC BY 4.0",
+   "credit": "Reference photo: Ravindraoudeptling, Wikimedia Commons, CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Lakshminarasimha_Swamy_Temple_Yadagirigutta_Yadadri_Telangana_07.jpg"
   },
   {
    "id": "Y-FIGURES",

@@ -39,10 +39,14 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "5e3aa08e-a783-4107-b012-bb46dbaa39b0",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "S-EXTERIOR",
-   "subject": "Srikalahasti temple gopurams and the Swarnamukhi"
+   "subject": "Srikalahasti temple gopurams and the Swarnamukhi",
+   "photo": "Srikalahasti temple and Hill.jpg",
+   "licence": "CC BY-SA 4.0",
+   "credit": "Reference photo: iMahesh, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Srikalahasti_temple_and_Hill.jpg"
   }
  ]
 }

@@ -46,9 +46,14 @@ def S(i, text, picture, change, cls, paid=(), local=(), note=None, hold=0.0, cli
             "clip_spans": clip_spans, "on_screen": text is not None, "cut_to": cut_to}
 
 
-def sheet(i, desc, prompt, needs):
+ANIMAL = ("Real animals in their natural form: no clothing, no human hands, arms, faces or poses; "
+          "the elephant wears only a plain cloth caparison and anklets like a temple elephant; the cobra and spider wear nothing. "
+          "No text, letters or script anywhere in the image.")
+
+
+def sheet(i, desc, prompt, needs, suffix=DRESS):
     """A character sheet: its own beat id, so its file and every reference to it are unambiguous."""
-    return S(i, None, desc + " Not on screen.", "n/a", "paid still (character sheet)", [still(prompt + " " + DRESS, needs)])
+    return S(i, None, desc + " Not on screen.", "n/a", "paid still (character sheet)", [still(prompt + " " + suffix, needs)])
 
 
 def sentences(voice):
@@ -130,7 +135,17 @@ EXT = {"status": "needs photo", "media_id": None,
        "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held."}
 
 
+def _photos():
+    p = ROOT / "episodes" / "batches" / "week-1.references.json"
+    return {r["id"]: r for r in json.loads(p.read_text(encoding="utf-8"))["references"]} if p.exists() else {}
+
+
 def board(slug, refs):
+    photos = _photos()
+    for r in refs:  # rights-cleared photos chosen and imported for identified exteriors
+        ph = photos.get(r["id"])
+        if ph and r.get("status") == "needs photo":
+            r.update(media_id=ph["media_id"], photo=ph["file"], licence=ph["licence"], credit=ph["credit"], url=ph["url"])
     return {"episode": slug, "revision": 3, "prepared": "2026-11-24",
             "status_meanings": {"approved-style": "EP01 art, style only", "verified": "identity confirmed from a named source",
                                 "needs photo": "identified place; a rights-cleared photo must be imported to Higgsfield before use",
@@ -313,7 +328,7 @@ def ep04():
     AN = "CS-ANIMALS:still"
     shots = [
         sheet("CS-ANIMALS", "Design sheet: elephant, cobra, spider in house style.",
-              "Design sheet in the attached illustrated folk style: an Indian elephant, a cobra, and a small natural garden spider with its web, each drawn naturally, plain warm paper.", N),
+              "Design sheet in the attached illustrated folk style: an Indian elephant, a cobra, and a small natural garden spider with its web, each drawn naturally, plain warm paper.", N, ANIMAL),
         S("S01", "శ్రీకాళహస్తి కథలో ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?", "Cold open in macro: silk releases, a gem rolls; tilt up the falling stream to the trunk. Title first frame.",
           "Web tears; gem rolls; stream revealed.", "paid still + paid clip (protect the pour)",
           [still(f"Macro in a forest clearing: a stream of water falling from the tip of an elephant's trunk (reference image 1) through a spider web, a red gem on a flat rock below, {STONE}, attached style. No text.", N, [AN], [AN]),
@@ -327,11 +342,11 @@ def ep04():
           "paid still + LOCAL web animation", [still(f"A quiet forest clearing between two low branches, dappled light falling around {STONE}, no web yet, attached style. No text.", N)],
           ["procedural web drawn in code", "small spider sprite"], note="Web drawn in code instead of a paid clip"),
         S("S05", "పాము నేల లోపలి నుంచి మణులు తెచ్చి అదే లింగాన్ని అలంకరించేది.", "The same snake approaches; a jewel settles in the light.", "Snake glides in; gem placed.",
-          "paid still + paid clip", [still(f"The same clearing as reference image 1 under its web; a cobra (reference image 2) emerging from a hole in the ground with a glowing red gem, {STONE}, attached style. No text.", N, ["S04:still", AN], ["S04:still", AN]),
+          "paid still + paid clip", [still(f"The same clearing as reference image 1 under its web; a real cobra (reference image 2) emerging from a hole in the ground, pushing a glowing red gem with its snout, no clothing or hands, {STONE}, attached style. No text.", N, ["S04:still", AN], ["S04:still", AN]),
                                      clip("The cobra glides forward and leaves the red gem in a patch of light, then withdraws. Camera still.", N, "S05:still")]),
         S("S06", "ఏనుగు వంతు వచ్చేసరికి దాని తొండం నిండా నీళ్లు. అది లింగానికి అభిషేకం చేసేది. ఆ ధార తగిలితే గూడు నిలుస్తుందా? మణులు అక్కడే ఉంటాయా?",
           "Continuous trunk lift and pour; why one offering displaces the others.", "Trunk lifts, pours.", "paid still + paid clip (protect)",
-          [still(f"The elephant (reference image 1) in the clearing with its trunk raised, water about to pour, web and gem visible, {STONE}, attached style. No text.", N, [AN], [AN]),
+          [still(f"The elephant (reference image 1), a real animal with only a plain caparison and anklets, no clothing, in the clearing with its trunk raised, water about to pour, web and gem visible, {STONE}, attached style. No text.", N, [AN], [AN]),
            clip("The elephant lifts its trunk in one continuous movement and pours water downward; the web sags and the gem washes aside. Trunk and stream stay continuous. Camera still.", N, "S06:still")]),
         S("S07", "తాను తెచ్చిన మణులు పక్కకు పోవడం చూసి పాముకి కోపం వచ్చింది. ఏనుగు తొండంలోకి దూరింది.", "The snake approaches the trunk.", "Snake rises.",
           "paid clip", [clip("The cobra rises and slides toward the elephant's trunk. No bite or injury shown. Camera still.", N, "S06:still")], media_from="S06"),

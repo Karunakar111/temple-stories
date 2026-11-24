@@ -32,10 +32,14 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "f6a4bf70-4040-4422-a85d-e8f39b0309f7",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "C-EXTERIOR",
-   "subject": "Kanipakam Varasiddhi Vinayaka temple exterior (sanctum photography prohibited; no invented murti)"
+   "subject": "Kanipakam Varasiddhi Vinayaka temple exterior (sanctum photography prohibited; no invented murti)",
+   "photo": "Kanipakam Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "credit": "Reference photo: Vin09, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kanipakam_Temple.jpg"
   }
  ]
 }

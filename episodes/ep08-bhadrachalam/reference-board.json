@@ -39,17 +39,25 @@
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "23fab45a-a5e6-4cea-93df-6bb8cdd236fa",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "B-TEMPLE",
-   "subject": "Bhadrachalam Sita Ramachandra temple and its steps"
+   "subject": "Bhadrachalam Sita Ramachandra temple and its steps",
+   "photo": "BCM Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "credit": "Reference photo: Ranadheerreddy51, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:BCM_Temple.jpg"
   },
   {
    "status": "needs photo",
-   "media_id": null,
+   "media_id": "ce0679a0-0272-465e-9a7a-277e6653d6d9",
    "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "G-FORT",
-   "subject": "Golconda fort, Hyderabad"
+   "subject": "Golconda fort, Hyderabad",
+   "photo": "Golconda Fort 013.jpg",
+   "licence": "CC BY-SA 3.0",
+   "credit": "Reference photo: Bernard Gagnon, Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_013.jpg"
   }
  ]
 }
