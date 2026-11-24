@@ -50,16 +50,16 @@ def build(batch_id, slugs):
         h.append(f"<tr><td>{_e(r['episode'][:4].upper())}</td><td><b>{_e(r['id'])}</b><br><span class='sub'>{_e(r['subject'])}</span></td>"
                  f"<td>{_e(r['used'])}</td><td>{cand}</td><td>{_e(r['licence'])}</td></tr>")
     h.append("</table></div></li>")
-    h.append(f"<li><b>Four new stills for missing scenes: {fmt(round(hf_add * 1000))} Higgsfield credits.</b>"
+    h.append(f"<li><b>Four new stills for missing scenes: {fmt(round(hf_add * 1000))} Higgsfield credits, already inside the quote below.</b>"
              "<div class='scroll'><table><tr><th>Episode</th><th>Shot</th><th>Missing scene it fills</th><th class='n'>Credits</th></tr>")
     for n in pf["new_stills"]:
         h.append(f"<tr><td>{_e(n['episode'][:4].upper())}</td><td>{_e(n['shot'])}</td><td>{_e(n['what'])}</td><td class='n'>{n['quote']}</td></tr>")
     h.append("</table></div></li>")
     h.append("<li><b>Two judgement calls.</b><ul>" + "".join(
         f"<li>{_e(j['episode'][:4].upper())} {_e(j['shot'])}: {_e(j['question'])}</li>" for j in pf["judgement"]) + "</ul></li>")
-    short = hf_now + hf_add - 300.05
-    h.append(f"<li><b>Revised cost for EP03 to EP08:</b> Higgsfield {fmt(round(hf_now * 1000))} + {fmt(round(hf_add * 1000))} = "
-             f"<b>{fmt(round((hf_now + hf_add) * 1000))}</b>; ElevenLabs <b>{fmt(round(el_now * 1000))}</b>, one take each. "
+    short = hf_now - float(pf["balances"]["higgsfield"].split()[0])
+    h.append(f"<li><b>Revised cost for EP03 to EP08:</b> Higgsfield "
+             f"<b>{fmt(round(hf_now * 1000))}</b>; ElevenLabs <b>{fmt(round(el_now * 1000))}</b>, one take each. "
              f"Higgsfield balance {_e(pf['balances']['higgsfield'])}"
              + (f": <b class='hold'>{fmt(round(short * 1000))} short</b>, so a top-up is needed before the last episode." if short > 0 else ".")
              + f" ElevenLabs: {_e(pf['balances']['elevenlabs'])}. Clip lengths are re-sized to each real take and never exceed the quote "

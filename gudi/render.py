@@ -106,7 +106,15 @@ def film_spec(ep, ledger, cfg, out_dir):
                     missing.append(f"picture for {cid}")
                     bad = True
                     break
-                t = start if off <= 0 else round(min(end - 0.5, start + off * scale_t), 3)
+                if isinstance(off, str):  # anchor on words in this shot's text, timed by the real take
+                    i_w = voice.find(off, ranges[i][0])
+                    if i_w < 0 or al is None:
+                        missing.append(f"cut anchor {off!r} in {s['id']}")
+                        bad = True
+                        break
+                    t = round(min(end - 0.5, max(start, al["character_start_times_seconds"][i_w] - 0.12)), 3)
+                else:
+                    t = start if off <= 0 else round(min(end - 0.5, start + off * scale_t), 3)
                 if t <= pts[-1][0]:
                     pts[-1] = (pts[-1][0], cp, ck)
                 else:
@@ -114,24 +122,51 @@ def film_spec(ep, ledger, cfg, out_dir):
             if bad:
                 continue
             for k, (t, cp, ck) in enumerate(pts):
-                segs.append({"kind": ck, "src": str(cp), "start": t, "end": pts[k + 1][0] if k + 1 < len(pts) else end})
+                segs.append({"kind": ck, "src": str(cp), "start": t, "end": pts[k + 1][0] if k + 1 < len(pts) else end,
+                             "own": cp == path and k == 0 and not s.get("media_from")})
         else:
-            segs.append({"kind": kind, "src": str(path), "start": start, "end": end})
+            segs.append({"kind": kind, "src": str(path), "start": start, "end": end, "own": not s.get("media_from")})
     if missing:
         return None, missing
+    notes += _finish_actions(segs)
     phrases = from_alignment(voice, al, ranges)
     ov = load_json(ep.dir / "overlays.json", {}) or {}
     starts = shot_win
     overlays, no_caption = [], []
+    sh_rng = {s["id"]: r for s, r in zip(on, ranges)}
+
+    def _at(o, key, default):
+        words = o.get(key + "_words")
+        if words and al is not None:
+            i_w = voice.find(words, sh_rng[o["shot"]][0])
+            if i_w < 0:
+                raise ValueError(f"overlay anchor {words!r} not found in {o['shot']}")
+            return round(max(0.0, al["character_start_times_seconds"][i_w] - 0.05), 3)
+        return default
+
     for o in ov.get("items", []):
         a, b = starts[o["shot"]]
-        item = {k: v for k, v in o.items() if k not in ("shot", "at", "for")}
-        item["start"] = round(a + o.get("at", 0.0) * scale_t, 3)
-        item["end"] = round(min(b, item["start"] + o["for"]) if o.get("for") else b, 3) - 0.04
+        item = {k: v for k, v in o.items() if k not in ("shot", "at", "for", "at_words", "until_words", "until_shot")}
+        item["start"] = _at(o, "at", round(a + o.get("at", 0.0) * scale_t, 3))
+        end = b if not o.get("until_shot") else starts[o["until_shot"]][1]
+        item["end"] = round(_at(o, "until", min(end, item["start"] + o["for"]) if o.get("for") else end), 3) - 0.04
         overlays.append(item)
         if o["kind"] == "title":
-            no_caption.append((a, b))
+            no_caption.append((item["start"], item["end"] + 0.04))
+    # a hook that starts under the title still gets its caption once the title fades (muted viewers need the question)
+    for p in phrases:
+        for a, b in no_caption:
+            if a <= p["start"] < b and p["end"] - b >= 1.2:
+                p["start"] = round(b + 0.05, 3)
     phrases = [p for p in phrases if not any(a <= p["start"] < b for a, b in no_caption)]
+    # one readable text block at a time (EP02 rule): no caption under a card; a caption running into one stops short
+    blocks = [o for o in overlays if o["kind"] != "mark"]
+    phrases = [p for p in phrases if not any(o["start"] - 0.05 <= p["start"] < o["end"] for o in blocks)]
+    for p in phrases:
+        nxt = [o["start"] for o in blocks if o["start"] > p["start"]]
+        if nxt and p["end"] + 0.30 > nxt[0] - 0.06:
+            p["end"] = round(nxt[0] - 0.40, 3)
+    phrases = [p for p in phrases if p["end"] > p["start"] + 0.3]
     # a card that already shows the spoken words replaces their caption (EP01 rule)
     def shown(p):
         words = p["text"].rstrip("?!").strip()
@@ -291,3 +326,41 @@ def render_and_verify(ep, ledger, cfg, say=print, fault=None, edit=None):
     finally:
         fcntl.flock(lock_f, fcntl.LOCK_UN)
         lock_f.close()
+
+
+def _finish_actions(segs, keep=1.5, reach=1.6, tail=0.6):
+    """EP02 lesson (the water hand-over was cut before Lopamudra let go): a shot's own clip plays to its end.
+    The missing time comes from the next picture if it is a still, otherwise from the previous still, each
+    keeping at least `keep` seconds and moving at most `reach` seconds. Returns notes for any clip that still
+    cannot finish."""
+    notes = []
+    for k, sg in enumerate(segs):
+        if sg["kind"] != "clip" or not sg.get("own"):
+            continue
+        need = round(audio_mix.duration(sg["src"]) - (sg["end"] - sg["start"]) - 0.05, 3)
+        if need <= 0:
+            continue
+        nxt = segs[k + 1] if k + 1 < len(segs) else None
+        if nxt and nxt["kind"] == "still":
+            d = max(0.0, min(need, reach, nxt["end"] - nxt["start"] - keep))
+            sg["end"] = nxt["start"] = round(sg["end"] + d, 3)
+            need -= d
+        prv = segs[k - 1] if k else None
+        if need > 0.05 and prv and prv["kind"] == "still":
+            d = max(0.0, min(need, reach, prv["end"] - prv["start"] - keep))
+            sg["start"] = prv["end"] = round(sg["start"] - d, 3)
+            need -= d
+        # then the settled tail of a neighbouring clip (EP02 v2 took 0.5 s from Agastya rising)
+        for nb, side in ((prv, "prev"), (nxt, "next")):
+            if need > 0.05 and nb and nb["kind"] == "clip":
+                d = max(0.0, min(need, tail, nb["end"] - nb["start"] - 2.0))
+                if side == "prev":
+                    sg["start"] = nb["end"] = round(sg["start"] - d, 3)
+                else:
+                    sg["end"] = nb["start"] = round(sg["end"] + d, 3)
+                need -= d
+        if need > 0.05:
+            notes.append(f"clip {Path(sg['src']).name} is cut {need:.1f} s before its end")
+    for sg in segs:
+        sg.pop("own", None)
+    return notes

@@ -130,7 +130,7 @@
    "on_screen": true,
    "cut_to": [
     "S01G",
-    1.4
+    "జైలుకెందుకు"
    ],
    "est_start_s": 0.0,
    "est_dur_s": 2.59
@@ -198,12 +198,32 @@
   },
   {
    "id": "S02",
-   "media_from": "S01",
+   "media_from": null,
    "text": "ఆ కథలో ఒక వైపు రాముడి గుడి ఉంది. ఇంకో వైపు ఖజానాకు చేరాల్సిన డబ్బు ఉంది.",
-   "picture": "The temple on its hill by the river; then a treasury chest of coins and a ledger.",
+   "picture": "The Bhadrachalam temple on its hill above the Godavari; then a treasury chest of coins and a ledger.",
    "what_changes": "Cut on 'ఇంకో వైపు'.",
-   "class": "reuse + paid still",
-   "paid": [],
+   "class": "paid still (extra still, approved list) + paid still",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "B-TEMPLE",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "B-TEMPLE",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "The Bhadrachalam Sita Ramachandra temple on its hill above the Godavari river exactly as in reference image 1, gopuram and steps, morning, attached style. No people in the foreground. No text."
+    }
+   ],
    "local": [
     "split cut"
    ],
@@ -213,7 +233,7 @@
    "on_screen": true,
    "cut_to": [
     "S02M",
-    2.2
+    "ఇంకో వైపు"
    ],
    "est_start_s": 2.59,
    "est_dur_s": 4.9
@@ -403,7 +423,7 @@
    "on_screen": true,
    "cut_to": [
     "S06",
-    3.7
+    "ఒక చిన్న మండపంలో"
    ],
    "est_start_s": 25.11,
    "est_dur_s": 5.99
@@ -582,10 +602,10 @@
   },
   {
    "id": "S09",
-   "media_from": "S01",
+   "media_from": "S02",
    "text": "గుడి పని జరిగింది. ఖజానాకు చేరాల్సిన డబ్బు చేరలేదు.",
-   "picture": "The finished temple (reuse S01 steps); the empty treasury chest (reuse S02M).",
-   "what_changes": "Cut to the empty chest.",
+   "picture": "The finished temple (reuse the S02 temple on its hill); the empty treasury chest (reuse S02M).",
+   "what_changes": "Cut to the empty chest on 'ఖజానాకు'.",
    "class": "reuse + local",
    "paid": [],
    "local": [
@@ -597,7 +617,7 @@
    "on_screen": true,
    "cut_to": [
     "S02M",
-    1.6
+    "ఖజానాకు"
    ],
    "est_start_s": 49.89,
    "est_dur_s": 3.47

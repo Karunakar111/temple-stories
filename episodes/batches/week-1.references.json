@@ -1,0 +1,119 @@
+{
+ "_comment": "Rights-cleared reference photos for identified exteriors, checked on Wikimedia Commons 24 Nov 2026. Imported to Higgsfield as reference images only (the films never show the photos); each episode's description carries the credit line.",
+ "references": [
+  {
+   "episode": "ep03-vemulavada",
+   "id": "V-EXTERIOR",
+   "file": "Sri Raja Rajeshwara temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Raja_Rajeshwara_temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "author": "Thistheyear2023",
+   "date": "2023-01-13",
+   "size": "680x382",
+   "shows": "Temple frontage with bulls in the courtyard; low resolution but clearly identifying",
+   "credit": "Reference photo: Thistheyear2023, Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+   "episode": "ep04-srikalahasti",
+   "id": "S-EXTERIOR",
+   "file": "Srikalahasti temple and Hill.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Srikalahasti_temple_and_Hill.jpg",
+   "licence": "CC BY-SA 4.0",
+   "author": "iMahesh",
+   "date": "2024-12-07",
+   "size": "6000x3000",
+   "shows": "Gopuram and hill reflected in the Swarnamukhi",
+   "credit": "Reference photo: iMahesh, Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+   "episode": "ep05-yadagirigutta",
+   "id": "Y-HILL",
+   "file": "Sri Lakshminarasimha Swamy Temple Yadagirigutta Yadadri Telangana 07.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Lakshminarasimha_Swamy_Temple_Yadagirigutta_Yadadri_Telangana_07.jpg",
+   "licence": "CC BY 4.0",
+   "author": "Ravindraoudeptling",
+   "date": "2024-01-21",
+   "size": "4160x3120",
+   "shows": "The rebuilt black-stone temple (after 2022), gopuram and mandapas",
+   "credit": "Reference photo: Ravindraoudeptling, Wikimedia Commons, CC BY 4.0"
+  },
+  {
+   "episode": "ep06-kanipakam",
+   "id": "C-EXTERIOR",
+   "file": "Kanipakam Temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Kanipakam_Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "author": "Vin09",
+   "date": "2017-06-17",
+   "size": "1872x1404",
+   "shows": "Temple front with the entrance gopuram",
+   "credit": "Reference photo: Vin09, Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+   "episode": "ep07-puri",
+   "id": "P-GUNDICHA",
+   "file": "Gundicha Temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Gundicha_Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "author": "Aliva Sahoo",
+   "date": "2024-09-28",
+   "size": "4096x2304",
+   "shows": "Gundicha temple gateway",
+   "credit": "Reference photo: Aliva Sahoo, Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+   "episode": "ep07-puri",
+   "id": "P-BADADANDA",
+   "file": "All three chariots at Badadanda, Puri during 2022 Ratha Jatra.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:All_three_chariots_at_Badadanda,_Puri_during_2022_Ratha_Jatra.jpg",
+   "licence": "CC BY 4.0",
+   "author": "Government of Odisha",
+   "date": "2022-06-30",
+   "size": "1086x724",
+   "shows": "The three chariots on the Bada Danda",
+   "credit": "Reference photo: Government of Odisha, Wikimedia Commons, CC BY 4.0"
+  },
+  {
+   "episode": "ep08-bhadrachalam",
+   "id": "B-TEMPLE",
+   "file": "BCM Temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:BCM_Temple.jpg",
+   "licence": "CC BY-SA 4.0",
+   "author": "Ranadheerreddy51",
+   "date": "2020-07-16",
+   "size": "4000x3000",
+   "shows": "Bhadrachalam temple complex on its rise",
+   "credit": "Reference photo: Ranadheerreddy51, Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+   "episode": "ep08-bhadrachalam",
+   "id": "G-FORT",
+   "file": "Golconda Fort 013.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_013.jpg",
+   "licence": "CC BY-SA 3.0",
+   "author": "Bernard Gagnon",
+   "date": "2013-12-06",
+   "size": "3809x2629",
+   "shows": "Golconda fort with the citadel on its hill",
+   "credit": "Reference photo: Bernard Gagnon, Wikimedia Commons, CC BY-SA 3.0"
+  }
+ ],
+ "not_found": [
+  {
+   "episode": "ep03-vemulavada",
+   "id": "V-TANK",
+   "fallback": "Illustrated tank marked ప్రతీకాత్మక చిత్రం (agreed)"
+  }
+ ],
+ "optional": [
+  {
+   "episode": "ep08-bhadrachalam",
+   "id": "G-CELL",
+   "file": "Ramadas Prison.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Ramadas_Prison.jpg",
+   "licence": "CC0",
+   "author": "Adbh266",
+   "note": "The cell at Golconda associated with Ramadas; could guide the prison gate still at no cost."
+  }
+ ]
+}

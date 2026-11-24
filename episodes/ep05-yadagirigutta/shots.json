@@ -2,7 +2,7 @@
  "episode": "ep05-yadagirigutta",
  "revision": 3,
  "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
- "est_total_s": 81.3,
+ "est_total_s": 81.2,
  "narration": [
   {
    "beat": "VO",
@@ -346,10 +346,10 @@
   {
    "id": "S06",
    "media_from": null,
-   "text": "యాద ఋషి కాలం తర్వాత, స్వామి అక్కడ ఉన్నాడని విని ఆ చుట్టుపక్కల గిరిజనులు పూజకు వచ్చేవారట. కొంతకాలానికి స్వామి గుట్ట మీదకు వెళ్లిపోయాడని కథ చెబుతుంది. మరి ఎక్కడికి వెళ్లాడు? వాళ్లు ఎంత వెతికినా జాడ దొరకలేదు.",
-   "picture": "Local worshippers bring flowers; then the search in the hills.",
-   "what_changes": "Torches move across the hill.",
-   "class": "paid still + paid clip",
+   "text": "యాద ఋషి కాలం తర్వాత, స్వామి అక్కడ ఉన్నాడని విని ఆ చుట్టుపక్కల గిరిజనులు పూజకు వచ్చేవారట. కొంతకాలానికి స్వామి గుట్ట మీదకు వెళ్లిపోయాడని కథ చెబుతుంది.",
+   "picture": "Local worshippers bring flowers to the foot of the hill.",
+   "what_changes": "Local push up the hill.",
+   "class": "paid still + local",
    "paid": [
     {
      "provider": "higgsfield",
@@ -368,31 +368,69 @@
       "STYLE-PATNAM"
      ],
      "prompt": "Villagers from the surrounding forest bringing flowers to the foot of the hill, respectful everyday dress, attached style. No caricature. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+    }
+   ],
+   "local": [
+    "push up the hill"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 30.23,
+   "est_dur_s": 10.08
+  },
+  {
+   "id": "S06b",
+   "media_from": null,
+   "text": "మరి ఎక్కడికి వెళ్లాడు? వాళ్లు ఎంత వెతికినా జాడ దొరకలేదు.",
+   "picture": "Night: a small torch party searching among the rocks of the hill.",
+   "what_changes": "Torches move across the hill.",
+   "class": "paid still (extra still, approved list) + paid clip",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "Y-FIGURES",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Night on a rocky hillside: a small group of villagers with burning torches searching among the boulders, respectful everyday dress, attached style. No caricature. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     },
     {
      "max_s": 5,
      "provider": "higgsfield",
      "asset_type": "clip",
      "model": "kling3_0",
-     "quote": "7.5",
+     "quote": "6",
      "settings": {
       "mode": "pro",
       "sound": "off",
       "aspect_ratio": "9:16",
-      "duration": 5,
-      "start_image": "<S06:still>"
+      "duration": 4,
+      "start_image": "<S06b:still>"
      },
      "references": [
-      "S06:still"
+      "S06b:still"
      ],
      "needs": [
       "Y-FIGURES"
      ],
      "after": [
-      "S06:still"
+      "S06b:still"
      ],
      "timing_dependent": true,
-     "prompt": "A small group with torches climbs among the rocks searching, moving left to right. Camera still."
+     "prompt": "The small group with torches climbs among the rocks searching, moving left to right; torch light flickers on the boulders. Camera still."
     }
    ],
    "local": [],
@@ -401,8 +439,8 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 30.23,
-   "est_dur_s": 13.96
+   "est_start_s": 40.31,
+   "est_dur_s": 3.81
   },
   {
    "id": "S07",
@@ -466,7 +504,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 44.69,
+   "est_start_s": 44.62,
    "est_dur_s": 11.17
   },
   {
@@ -508,7 +546,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 56.36,
+   "est_start_s": 56.29,
    "est_dur_s": 14.51
   },
   {
@@ -560,7 +598,7 @@
      6.8
     ]
    ],
-   "est_start_s": 71.37,
+   "est_start_s": 71.3,
    "est_dur_s": 9.95
   }
  ]

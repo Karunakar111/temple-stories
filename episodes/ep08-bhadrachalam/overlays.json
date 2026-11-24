@@ -1,0 +1,68 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "భద్రాచలం",
+  "రామదాసు",
+  "గోపన్న",
+  "ధమ్మక్క",
+  "గోల్కొండ",
+  "రాము"
+ ],
+ "cover_shot": "S02",
+ "cover_line": "రామదాసు జైలుకెందుకు వెళ్లాడు?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "భద్రాచలం",
+    "సీతారామచంద్ర ఆలయం"
+   ],
+   "until_words": "జైలుకెందుకు"
+  },
+  {
+   "shot": "S03",
+   "kind": "name",
+   "lines": [
+    "కంచర్ల గోపన్న"
+   ],
+   "at_words": "కంచర్ల గోపన్న",
+   "until_words": "పదిహేడో"
+  },
+  {
+   "shot": "S03",
+   "kind": "card",
+   "lines": [
+    "తహసీల్దారు",
+    "17వ శతాబ్దం"
+   ],
+   "at_words": "పదిహేడో",
+   "until_words": "పన్నులు"
+  },
+  {
+   "shot": "S04",
+   "kind": "name",
+   "lines": [
+    "ధమ్మక్క"
+   ],
+   "at_words": "ధమ్మక్క అనే"
+  },
+  {
+   "shot": "S11",
+   "kind": "mark",
+   "lines": [
+    "భక్తుల కథ ప్రకారం"
+   ],
+   "at_words": "భక్తులు చెప్పుకునే"
+  },
+  {
+   "shot": "S12",
+   "kind": "date",
+   "lines": [
+    "భద్రాచల",
+    "రామదాసు"
+   ],
+   "at_words": "భద్రాచల రామదాసు"
+  }
+ ]
+}

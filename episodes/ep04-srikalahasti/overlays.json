@@ -1,0 +1,65 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "శ్రీకాళహస్తి",
+  "స్వర్ణముఖి",
+  "శివ"
+ ],
+ "cover_shot": "S06",
+ "cover_line": "ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "శ్రీకాళహస్తీశ్వర ఆలయం"
+   ],
+   "until_words": "ఏనుగు పూజ"
+  },
+  {
+   "shot": "S03",
+   "kind": "card",
+   "lines": [
+    "స్వర్ణముఖి ఒడ్డున",
+    "శ్రీకాళహస్తి · ఆంధ్రప్రదేశ్"
+   ]
+  },
+  {
+   "shot": "S10",
+   "kind": "card",
+   "lines": [
+    "శ్రీ · సాలెపురుగు"
+   ],
+   "at_words": "శ్రీ అంటే",
+   "until_words": "కాళం అంటే"
+  },
+  {
+   "shot": "S10",
+   "kind": "card",
+   "lines": [
+    "కాళం · పాము"
+   ],
+   "at_words": "కాళం అంటే",
+   "until_words": "హస్తి అంటే"
+  },
+  {
+   "shot": "S10",
+   "kind": "card",
+   "lines": [
+    "హస్తి · ఏనుగు"
+   ],
+   "at_words": "హస్తి అంటే",
+   "until_words": "కలిపి పలకండి"
+  },
+  {
+   "shot": "S10",
+   "kind": "date",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "శ్రీ + కాళం + హస్తి"
+   ],
+   "at_words": "కలిపి పలకండి"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
  "episode": "ep03-vemulavada",
  "revision": 3,
  "timing_basis": "PROVISIONAL until the take: EP01's 14.68 chars/s, +0.5 s per paragraph, + planned breaths.",
- "est_total_s": 88.9,
+ "est_total_s": 88.0,
  "narration": [
   {
    "beat": "VO",
@@ -97,7 +97,74 @@
    "id": "S01",
    "media_from": null,
    "text": "వేములవాడ రాజన్నకు కోడెను ఎందుకు కడతారు?",
-   "picture": "Low beside walking feet and hooves; rise to reveal a devotee walking with the bull. Title on the first frame.",
+   "picture": "The tether on frame one: hands knotting the bull's rope to a stone post, the bull beside. Title on the first frame.",
+   "what_changes": "Hands loop and knot the rope; the bull stands calmly.",
+   "class": "paid still + paid clip (protect the tethering; plays to the knot)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "CS-FAMILY:still",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "V-KODE",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Close view in a temple courtyard: a devotee's hands tying a young white bull's rope to a worn stone post, the rope already looped once, the bull from reference image 1 standing calmly beside the post, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "CS-FAMILY:still"
+     ]
+    },
+    {
+     "max_s": 4,
+     "provider": "higgsfield",
+     "asset_type": "clip",
+     "model": "kling3_0",
+     "quote": "4.5",
+     "settings": {
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "9:16",
+      "duration": 3,
+      "start_image": "<S01:still>"
+     },
+     "references": [
+      "S01:still"
+     ],
+     "needs": [
+      "V-KODE"
+     ],
+     "after": [
+      "S01:still"
+     ],
+     "timing_dependent": true,
+     "prompt": "The hands pull the loop tight, knot the rope around the post and let go; the bull stands calmly. Hands whole. Camera still."
+    }
+   ],
+   "local": [
+    "title card"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 0.0,
+   "est_dur_s": 2.66
+  },
+  {
+   "id": "S02",
+   "media_from": null,
+   "text": "భక్తుల అడుగుల పక్కనే కోడె గిట్టలు. తాడు పట్టుకుని దానితోపాటు నడుస్తున్న ఆ కుటుంబాన్ని చూడండి.",
+   "picture": "Low beside walking feet and hooves; rise to reveal the family walking with the bull.",
    "what_changes": "Walking gait; slack lead; rise.",
    "class": "paid still + paid clip (protect the bull's gait)",
    "paid": [
@@ -134,50 +201,28 @@
       "sound": "off",
       "aspect_ratio": "9:16",
       "duration": 6,
-      "start_image": "<S01:still>"
+      "start_image": "<S02:still>"
      },
      "references": [
-      "S01:still"
+      "S02:still"
      ],
      "needs": [
       "V-KODE"
      ],
      "after": [
-      "S01:still"
+      "S02:still"
      ],
      "timing_dependent": true,
-     "prompt": "The bull and the devotee walk forward together at a natural pace, the rope slack between them; the camera rises slowly to reveal the devotee. Natural gait, four legs moving correctly."
+     "prompt": "The bull and the devotee walk forward together at a natural pace, the rope slack between them; the camera rises slowly to reveal the family. Natural gait, four legs moving correctly."
     }
    ],
-   "local": [
-    "title card"
-   ],
-   "note": null,
-   "hold_after_s": 0.8,
-   "clip_spans": [
-    "S01",
-    "S02"
-   ],
-   "on_screen": true,
-   "cut_to": null,
-   "est_start_s": 0.0,
-   "est_dur_s": 3.46
-  },
-  {
-   "id": "S02",
-   "media_from": "S01",
-   "text": "భక్తుల అడుగుల పక్కనే కోడె గిట్టలు. తాడు పట్టుకుని దానితోపాటు నడుస్తున్న ఆ కుటుంబాన్ని చూడండి.",
-   "picture": "The family walking with the bull (clip continues).",
-   "what_changes": "Continues the walk.",
-   "class": "covered by the S01 clip",
-   "paid": [],
    "local": [],
    "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 3.96,
+   "est_start_s": 3.16,
    "est_dur_s": 6.34
   },
   {
@@ -216,7 +261,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 10.8,
+   "est_start_s": 10.0,
    "est_dur_s": 8.24
   },
   {
@@ -281,72 +326,26 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 19.04,
+   "est_start_s": 18.24,
    "est_dur_s": 1.91
   },
   {
    "id": "S04b",
-   "media_from": null,
+   "media_from": "S01",
    "text": "దాన్ని స్వామికి అర్పణగా కడతారు. అదే కోడె మొక్కు.",
-   "picture": "Tether close-up.",
-   "what_changes": "Hands knot the rope to a post.",
-   "class": "paid still + paid clip (protect the tethering)",
-   "paid": [
-    {
-     "provider": "higgsfield",
-     "asset_type": "still",
-     "model": "nano_banana_2",
-     "quote": "2",
-     "settings": {
-      "resolution": "2k",
-      "aspect_ratio": "9:16"
-     },
-     "references": [
-      "CS-FAMILY:still",
-      "STYLE-PATNAM"
-     ],
-     "needs": [
-      "V-KODE",
-      "STYLE-PATNAM"
-     ],
-     "prompt": "Close view: a devotee's hands tying the bull's rope to a stone post, the bull from reference image 1 standing calmly, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
-     "after": [
-      "CS-FAMILY:still"
-     ]
-    },
-    {
-     "max_s": 5,
-     "provider": "higgsfield",
-     "asset_type": "clip",
-     "model": "kling3_0",
-     "quote": "6",
-     "settings": {
-      "mode": "pro",
-      "sound": "off",
-      "aspect_ratio": "9:16",
-      "duration": 4,
-      "start_image": "<S04b:still>"
-     },
-     "references": [
-      "S04b:still"
-     ],
-     "needs": [
-      "V-KODE"
-     ],
-     "after": [
-      "S04b:still"
-     ],
-     "timing_dependent": true,
-     "prompt": "The hands loop and knot the rope around the post and let go; the bull stands calmly. Hands whole. Camera still."
-    }
+   "picture": "The tether again: the knotted rope and the bull standing at the post (S01's picture, pulled back).",
+   "what_changes": "Slow pull back from the knot to the bull.",
+   "class": "reuse S01 (no new asset)",
+   "paid": [],
+   "local": [
+    "pull back"
    ],
-   "local": [],
    "note": null,
    "hold_after_s": 0.4,
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 20.95,
+   "est_start_s": 20.15,
    "est_dur_s": 3.67
   },
   {
@@ -384,14 +383,14 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 25.12,
+   "est_start_s": 24.32,
    "est_dur_s": 12.06
   },
   {
    "id": "S06",
    "media_from": null,
    "text": "మరి ఆ రాజన్న ఈ ఊర్లో ఎలా వెలిశాడంటారు? దానికి ఇక్కడి స్థలపురాణం మనల్ని గుడి పక్కనున్న ధర్మగుండం దగ్గరికి తీసుకెళ్తుంది.",
-   "picture": "Match cut to the identified tank; light shifts into legend.",
+   "picture": "An illustrated temple tank (marked ప్రతీకాత్మక చిత్రం); light shifts into legend.",
    "what_changes": "Water shimmer; light change.",
    "class": "paid still + local",
    "paid": [
@@ -405,32 +404,74 @@
       "aspect_ratio": "9:16"
      },
      "references": [
-      "V-TANK",
       "STYLE-PATNAM"
      ],
      "needs": [
-      "V-TANK",
+      "V-KODE",
       "STYLE-PATNAM"
      ],
-     "prompt": "The Dharma Gundam temple tank at Vemulawada exactly as in reference image 1, still water, evening, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "A stepped stone temple tank beside an old temple, still water, evening light, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     }
    ],
    "local": [
     "water shimmer",
-    "TimeOfDay"
+    "TimeOfDay",
+    "mark ప్రతీకాత్మక చిత్రం"
+   ],
+   "note": "No rights-cleared photo of the Dharma Gundam was found; the agreed fallback is an illustrated tank marked ప్రతీకాత్మక చిత్రం.",
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 36.88,
+   "est_dur_s": 8.11
+  },
+  {
+   "id": "S07",
+   "media_from": null,
+   "text": "నరేంద్రుడనే రాజు వేటకు వెళ్లాడట.",
+   "picture": "The king drawing his bow among the trees, no target in frame.",
+   "what_changes": "Local push.",
+   "class": "paid still + local (extra still, approved list)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "CS-NARENDRA:still",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "King Narendra (reference image 1) in simple hunting dress drawing his bow among forest trees, aiming off frame, no target visible, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "CS-NARENDRA:still"
+     ]
+    }
+   ],
+   "local": [
+    "Stage camera"
    ],
    "note": null,
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 37.68,
-   "est_dur_s": 8.11
+   "est_start_s": 45.49,
+   "est_dur_s": 2.18
   },
   {
-   "id": "S07",
+   "id": "S07b",
    "media_from": null,
-   "text": "నరేంద్రుడనే రాజు వేటకు వెళ్లాడట. నీళ్లు తెచ్చుకోవడానికి వచ్చిన ఒక ఋషికి పొరపాటున అతని బాణం తగిలింది. ఋషి చనిపోయాడు.",
+   "text": "నీళ్లు తెచ్చుకోవడానికి వచ్చిన ఒక ఋషికి పొరపాటున అతని బాణం తగిలింది. ఋషి చనిపోయాడు.",
    "picture": "Forest stream: the rishi's vessel lies in the stream; the king lowers his bow. No injury shown.",
    "what_changes": "Local push; no paid motion (legend kept short).",
    "class": "paid still + local",
@@ -466,8 +507,8 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 46.29,
-   "est_dur_s": 7.83
+   "est_start_s": 47.67,
+   "est_dur_s": 5.59
   },
   {
    "id": "S08",
@@ -508,7 +549,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 54.12,
+   "est_start_s": 53.26,
    "est_dur_s": 5.38
   },
   {
@@ -550,7 +591,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 60.0,
+   "est_start_s": 59.14,
    "est_dur_s": 6.2
   },
   {
@@ -592,14 +633,14 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 66.2,
+   "est_start_s": 65.34,
    "est_dur_s": 6.88
   },
   {
    "id": "S11",
    "media_from": null,
-   "text": "రాజు నీటిలో వెతికాడు. లింగం దొరికింది. దొరికిన గుండం ఒడ్డునే ప్రతిష్ఠించాడు. వేములవాడలో రాజేశ్వరుడి ఆవిర్భావాన్ని ఇలా చెప్పుకుంటారు.",
-   "picture": "The king waist-deep, his face lit from below by light in his hands; then the bank in lamp light.",
+   "text": "రాజు నీటిలో వెతికాడు. లింగం దొరికింది.",
+   "picture": "The king waist-deep, his face lit from below by light in his hands.",
    "what_changes": "Glow rises with his hands.",
    "class": "paid still + local Bloom",
    "paid": [
@@ -634,16 +675,58 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 73.58,
-   "est_dur_s": 8.99
+   "est_start_s": 72.72,
+   "est_dur_s": 2.59
+  },
+  {
+   "id": "S11b",
+   "media_from": null,
+   "text": "దొరికిన గుండం ఒడ్డునే ప్రతిష్ఠించాడు. వేములవాడలో రాజేశ్వరుడి ఆవిర్భావాన్ని ఇలా చెప్పుకుంటారు.",
+   "picture": "The lamp-lit bank: the king kneeling before a small lamp-lit shrine, seen from behind.",
+   "what_changes": "Lamps flicker (local).",
+   "class": "paid still + local (extra still, approved list)",
+   "paid": [
+    {
+     "provider": "higgsfield",
+     "asset_type": "still",
+     "model": "nano_banana_2",
+     "quote": "2",
+     "settings": {
+      "resolution": "2k",
+      "aspect_ratio": "9:16"
+     },
+     "references": [
+      "CS-NARENDRA:still",
+      "STYLE-PATNAM"
+     ],
+     "needs": [
+      "NARENDRA",
+      "STYLE-PATNAM"
+     ],
+     "prompt": "Dawn on the bank of the tank: the king (reference image 1) seen from behind, kneeling with joined hands before a small stone shrine ringed with oil lamps, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "after": [
+      "CS-NARENDRA:still"
+     ]
+    }
+   ],
+   "local": [
+    "lamp flicker"
+   ],
+   "note": null,
+   "hold_after_s": 0.0,
+   "clip_spans": null,
+   "on_screen": true,
+   "cut_to": null,
+   "est_start_s": 75.31,
+   "est_dur_s": 6.34
   },
   {
    "id": "S12",
-   "media_from": "S01",
+   "media_from": "S02",
    "text": "మీ ఇంట్లో ఎవరైనా రాజన్నకి కోడె మొక్కు తీర్చారా? ఆ రోజు మీకు గుర్తున్నది ఏంటో చెప్పండి.",
    "picture": "Back to the walking pair; comment card.",
    "what_changes": "Walk continues; card.",
-   "class": "reuse S01 clip + local",
+   "class": "reuse S02 clip + local",
    "paid": [],
    "local": [
     "comment card"
@@ -653,7 +736,7 @@
    "clip_spans": null,
    "on_screen": true,
    "cut_to": null,
-   "est_start_s": 83.07,
+   "est_start_s": 82.15,
    "est_dur_s": 5.86
   }
  ]

@@ -1,0 +1,39 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "కాణిపాకం",
+  "వరసిద్ధి",
+  "వినాయక",
+  "చిత్తూరు"
+ ],
+ "cover_shot": "S03",
+ "cover_line": "వినాయకుడు బావిలో ఎందుకున్నాడు?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "కాణిపాకం",
+    "వరసిద్ధి వినాయక ఆలయం"
+   ],
+   "until_words": "బావిలో"
+  },
+  {
+   "shot": "S03",
+   "kind": "card",
+   "lines": [
+    "కాణిపాకం",
+    "చిత్తూరు జిల్లా · ఆంధ్రప్రదేశ్"
+   ]
+  },
+  {
+   "shot": "S10",
+   "kind": "card",
+   "lines": [
+    "నీళ్ల మధ్యే దర్శనం",
+    "కాణిపాకం వరసిద్ధి వినాయకుడు"
+   ],
+   "at_words": "కాణిపాకంలో ఈనాటికీ"
+  }
+ ]
+}

@@ -33,11 +33,10 @@
    "subject": "Sri Raja Rajeshwara temple, Vemulawada"
   },
   {
-   "status": "needs photo",
-   "media_id": null,
-   "note": "Identified exterior. Needs one rights-cleared photo (e.g. Wikimedia Commons, CC licence) imported to Higgsfield; until then the stills that use it are held.",
    "id": "V-TANK",
-   "subject": "Dharma Gundam tank beside the temple"
+   "subject": "Dharma Gundam tank beside the temple",
+   "status": "not depicted",
+   "note": "No rights-cleared photo found on Wikimedia Commons (24 Nov 2026). Agreed fallback: an illustrated tank marked ప్రతీకాత్మక చిత్రం."
   },
   {
    "id": "V-1961",

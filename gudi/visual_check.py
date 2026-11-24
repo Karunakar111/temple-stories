@@ -72,9 +72,10 @@ def rows(ep):
             if src and not own_still and not own_clip:
                 asset, pic = src, f"(reuses {src}) " + by[src].get("picture", "")
             for cid, off in ([cut] if cut and not isinstance(cut[0], (list, tuple)) else (cut or [])):
-                if a / n >= min(1.0, off / max(dur, 0.1)) and cid != s["id"]:
+                frac = (max(0, text.find(off)) / n) if isinstance(off, str) else min(1.0, off / max(dur, 0.1))
+                if a / n + 1e-6 >= frac and cid != s["id"]:
                     asset, pic = cid, f"(cut to {cid}) " + by[cid].get("picture", "")
-                elif a / n >= min(1.0, off / max(dur, 0.1)):
+                elif a / n + 1e-6 >= frac:
                     asset, pic = s["id"], s.get("picture", "")
             flags = [(sev, msg) for sev, msg in auto] if k == 0 else []
             for nt in notes:

@@ -1,0 +1,84 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "యాదగిరిగుట్ట",
+  "యాద",
+  "నరసింహ",
+  "ఆంజనేయ"
+ ],
+ "cover_shot": "S09",
+ "cover_line": "గుహ దారి ఎవరికి తెలిసింది?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "యాదగిరిగుట్ట",
+    "లక్ష్మీ నరసింహ ఆలయం"
+   ],
+   "until_words": "ఏ గుహలో"
+  },
+  {
+   "shot": "S08",
+   "kind": "card",
+   "lines": [
+    "జ్వాల నరసింహుడు"
+   ],
+   "at_words": "జ్వాల నరసింహుడు",
+   "until_words": "యోగానంద"
+  },
+  {
+   "shot": "S08",
+   "kind": "card",
+   "lines": [
+    "యోగానంద నరసింహుడు"
+   ],
+   "at_words": "యోగానంద",
+   "until_words": "గండభేరుండ"
+  },
+  {
+   "shot": "S08",
+   "kind": "card",
+   "lines": [
+    "గండభేరుండ నరసింహుడు"
+   ],
+   "at_words": "గండభేరుండ",
+   "until_words": "ఉగ్ర నరసింహుడు"
+  },
+  {
+   "shot": "S08",
+   "kind": "card",
+   "lines": [
+    "ఉగ్ర నరసింహుడు"
+   ],
+   "at_words": "ఉగ్ర నరసింహుడు",
+   "until_words": "లక్ష్మీ నరసింహుడు"
+  },
+  {
+   "shot": "S08",
+   "kind": "card",
+   "lines": [
+    "లక్ష్మీ నరసింహుడు"
+   ],
+   "at_words": "లక్ష్మీ నరసింహుడు",
+   "until_words": "అందుకే యాదగిరిగుట్టను"
+  },
+  {
+   "shot": "S08",
+   "kind": "date",
+   "lines": [
+    "పంచ నరసింహ",
+    "క్షేత్రం"
+   ],
+   "at_words": "పంచ నరసింహ"
+  },
+  {
+   "shot": "S09",
+   "kind": "questions",
+   "lines": [
+    "మీ ఇంట్లో యాదగిరిగుట్ట కథ ఎట్లా చెప్పేవాళ్లు?"
+   ],
+   "at_words": "మీ ఇంట్లో"
+  }
+ ]
+}

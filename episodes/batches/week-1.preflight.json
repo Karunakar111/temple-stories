@@ -2,8 +2,8 @@
  "batch": "week-1",
  "prepared": "2026-11-24",
  "balances": {
-  "higgsfield": "300.05 (checked 24 Nov, after EP02)",
-  "elevenlabs": "about 8,986 (your 10,416 less EP02's 1,430; confirm)"
+  "higgsfield": "284.3 (live, 24 Nov 19:50 IST)",
+  "elevenlabs": "9,553 of 40,000 left (live)"
  },
  "new_stills": [
   {
@@ -35,84 +35,84 @@
   {
    "episode": "ep03-vemulavada",
    "id": "V-EXTERIOR",
-   "subject": "Sri Raja Rajeshwara temple, Vemulawada",
-   "used": "S03",
-   "candidate": "Sri Raja Rajeshwara temple.jpg (13 Jan 2023, own work)",
+   "subject": "Temple frontage with bulls in the courtyard; low resolution but clearly identifying",
+   "used": "",
+   "candidate": "Sri Raja Rajeshwara temple.jpg",
    "url": "https://commons.wikimedia.org/wiki/File:Sri_Raja_Rajeshwara_temple.jpg",
-   "licence": "confirm on the file page"
+   "licence": "CC BY-SA 4.0, Thistheyear2023; checked"
   },
   {
    "episode": "ep03-vemulavada",
    "id": "V-TANK",
-   "subject": "Dharma Gundam tank beside the temple",
+   "subject": "Dharma Gundam tank",
    "used": "S06",
    "candidate": "No Commons photo found",
    "url": "",
    "licence": "",
-   "fallback": "Supply your own photo, or draw a generic stepped tank marked ప్రతీకాత్మక చిత్రం (no extra cost)"
+   "fallback": "Using the agreed illustrated tank, marked ప్రతీకాత్మక చిత్రం"
   },
   {
    "episode": "ep04-srikalahasti",
    "id": "S-EXTERIOR",
-   "subject": "Srikalahasti gopurams and the Swarnamukhi",
-   "used": "S03",
-   "candidate": "Srikalahasti temple and Hill.jpg: river, gopuram and ghat in one view (Dec 2024)",
+   "subject": "Gopuram and hill reflected in the Swarnamukhi",
+   "used": "",
+   "candidate": "Srikalahasti temple and Hill.jpg",
    "url": "https://commons.wikimedia.org/wiki/File:Srikalahasti_temple_and_Hill.jpg",
-   "licence": "CC BY-SA 4.0 (iMahesh); credit in the description"
+   "licence": "CC BY-SA 4.0, iMahesh; checked"
   },
   {
    "episode": "ep05-yadagirigutta",
    "id": "Y-HILL",
-   "subject": "Yadagirigutta hill and the present black-stone temple",
-   "used": "S02, S09",
-   "candidate": "Category: Sri Lakshmi Narasimha Swamy Temple, Yadadri. Pick a photo of the rebuilt temple; the 2009 photos show the old one",
-   "url": "https://commons.wikimedia.org/wiki/Category:Sri_Lakshmi_Narasimha_Swamy_Temple,_Yadadri",
-   "licence": "confirm on the file page"
+   "subject": "The rebuilt black-stone temple (after 2022), gopuram and mandapas",
+   "used": "",
+   "candidate": "Sri Lakshminarasimha Swamy Temple Yadagirigutta Yadadri Telangana 07.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Lakshminarasimha_Swamy_Temple_Yadagirigutta_Yadadri_Telangana_07.jpg",
+   "licence": "CC BY 4.0, Ravindraoudeptling; checked"
   },
   {
    "episode": "ep06-kanipakam",
    "id": "C-EXTERIOR",
-   "subject": "Kanipakam Varasiddhi Vinayaka temple exterior",
-   "used": "S03",
-   "candidate": "Sri Varasidhi Vinayaka Temple, Kanipakam … Front view 2023.jpg",
-   "url": "https://commons.wikimedia.org/wiki/Category:Vinayaka_Temple,_Kanipakam",
-   "licence": "confirm on the file page"
+   "subject": "Temple front with the entrance gopuram",
+   "used": "",
+   "candidate": "Kanipakam Temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Kanipakam_Temple.jpg",
+   "licence": "CC BY-SA 4.0, Vin09; checked"
   },
   {
    "episode": "ep07-puri",
    "id": "P-GUNDICHA",
-   "subject": "Gundicha temple exterior, Puri",
-   "used": "S08",
-   "candidate": "Gundicha Temple.jpg (Sept 2024)",
+   "subject": "Gundicha temple gateway",
+   "used": "",
+   "candidate": "Gundicha Temple.jpg",
    "url": "https://commons.wikimedia.org/wiki/File:Gundicha_Temple.jpg",
-   "licence": "confirm on the file page"
+   "licence": "CC BY-SA 4.0, Aliva Sahoo; checked"
   },
   {
    "episode": "ep07-puri",
    "id": "P-BADADANDA",
-   "subject": "Bada Danda with the three chariots",
-   "used": "S02, S09",
-   "candidate": "Rathas on Badadanda, Puri during Ratha Jatra 2019.jpg",
-   "url": "https://commons.wikimedia.org/wiki/Category:Bada_Danda_(Grand_Road),_Puri",
-   "licence": "confirm on the file page"
+   "subject": "The three chariots on the Bada Danda",
+   "used": "",
+   "candidate": "All three chariots at Badadanda, Puri during 2022 Ratha Jatra.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:All_three_chariots_at_Badadanda,_Puri_during_2022_Ratha_Jatra.jpg",
+   "licence": "CC BY 4.0, Government of Odisha; checked"
   },
   {
    "episode": "ep08-bhadrachalam",
    "id": "B-TEMPLE",
-   "subject": "Bhadrachalam temple, its steps and the Godavari",
-   "used": "S01, and the new S02/S09 still",
-   "candidate": "Sri sita rama temple bhadrachalam temple from ghat.jpg",
-   "url": "https://commons.wikimedia.org/wiki/Category:Bhadrachalam",
-   "licence": "confirm on the file page"
+   "subject": "Bhadrachalam temple complex on its rise",
+   "used": "",
+   "candidate": "BCM Temple.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:BCM_Temple.jpg",
+   "licence": "CC BY-SA 4.0, Ranadheerreddy51; checked"
   },
   {
    "episode": "ep08-bhadrachalam",
    "id": "G-FORT",
-   "subject": "Golconda fort",
-   "used": "S10",
-   "candidate": "Golconda Fort - Bala Hissar Gate - 01.jpg. The same Commons category also has 'Ramadas Prison.jpg', the cell itself, if you want it for the jail beat",
-   "url": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_-_Bala_Hissar_Gate_-_01.jpg",
-   "licence": "confirm on the file page"
+   "subject": "Golconda fort with the citadel on its hill",
+   "used": "",
+   "candidate": "Golconda Fort 013.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_013.jpg",
+   "licence": "CC BY-SA 3.0, Bernard Gagnon; checked"
   }
  ],
  "judgement": [
@@ -129,7 +129,7 @@
  ],
  "episodes": {
   "ep03-vemulavada": {
-   "hook_seen": "Low beside bare feet and a young bull's hooves on a slack rope; rise to the devotee. Title on frame one.",
+   "hook_seen": "Frame one: hands knotting the bull's rope to a stone post as the hook asks why it is tied; the walk with the family follows. Title on frame one, the question as a caption as soon as it fades.",
    "identity": "S03: the temple exterior with families and bulls, cards రాజరాజేశ్వరుడు and రాజన్న (V-EXTERIOR). S06: the Dharma Gundam tank (V-TANK).",
    "hardest": "A devotee and a young bull walking on a slack rope, circling the shrine, then tying the bull (S01, S04, S04b). Animal gait is where clips break most often.",
    "plan": "Three short Kling clips from stills; prompts hold the gait and the slack rope. If a gait breaks, the still holds with a slow push; no retry without approval."
@@ -160,7 +160,7 @@
   },
   "ep08-bhadrachalam": {
    "hook_seen": "Worn temple steps with a lamp, then a prison gate shutting on 'జైలుకెందుకు'. Title on frame one.",
-   "identity": "S01: the temple steps (B-TEMPLE). Missing until approved: the temple itself on its hill (new still for S02 and S09). S10: Golconda fort (G-FORT).",
+   "identity": "S01: the temple steps; S02 and S09: the temple on its hill (new still), both from B-TEMPLE. S10: Golconda fort (G-FORT).",
    "hardest": "Rama paying Gopanna's debt, never showing Rama (S11).",
    "plan": "Officials in a lamplit treasury turn toward a doorway full of light, coins on the table; card 'భక్తుల కథ ప్రకారం'."
   }

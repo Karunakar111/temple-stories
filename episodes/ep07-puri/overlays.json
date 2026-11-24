@@ -1,0 +1,92 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "పూరీ",
+  "జగన్నాథ",
+  "బలభద్ర",
+  "సుభద్ర",
+  "గుండిచా",
+  "పహండీ",
+  "బహుడా"
+ ],
+ "cover_shot": "S02",
+ "cover_line": "జగన్నాథుడి రథం ఎక్కడికి వెళ్తుంది?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "పూరీ జగన్నాథుడు",
+    "ఒడిశా"
+   ],
+   "until_words": "ఏ గుడికి"
+  },
+  {
+   "shot": "S02",
+   "kind": "name",
+   "lines": [
+    "బలభద్రుడు"
+   ],
+   "at_words": "అన్న బలభద్రుడు",
+   "until_words": "చెల్లెలు సుభద్ర"
+  },
+  {
+   "shot": "S02",
+   "kind": "name",
+   "lines": [
+    "సుభద్ర"
+   ],
+   "at_words": "చెల్లెలు సుభద్ర",
+   "until_words": "ఒక్కొక్కరికీ"
+  },
+  {
+   "shot": "S04",
+   "kind": "card",
+   "lines": [
+    "పహండీ"
+   ],
+   "at_words": "ఈ ఊరేగింపునే"
+  },
+  {
+   "shot": "S07",
+   "kind": "card",
+   "lines": [
+    "జగన్నాథ ఆలయం → గుండిచా గుడి",
+    "బడ దండ · ప్రధాన వీధి"
+   ]
+  },
+  {
+   "shot": "S08",
+   "kind": "mark",
+   "lines": [
+    "సంప్రదాయం ప్రకారం"
+   ],
+   "at_words": "జన్మస్థలంగా"
+  },
+  {
+   "shot": "S09",
+   "kind": "card",
+   "lines": [
+    "బహుడా యాత్ర"
+   ],
+   "at_words": "బహుడా యాత్ర"
+  },
+  {
+   "shot": "S10",
+   "kind": "reminders",
+   "lines": [
+    "తాళ్లు లాగేది భక్తులు"
+   ],
+   "at_words": "తాళ్లు లాగేది",
+   "until_words": "ఆ రథాల్లో"
+  },
+  {
+   "shot": "S10",
+   "kind": "reminders",
+   "lines": [
+    "రథాల్లో ముగ్గురు తోబుట్టువులు"
+   ],
+   "at_words": "ఆ రథాల్లో"
+  }
+ ]
+}

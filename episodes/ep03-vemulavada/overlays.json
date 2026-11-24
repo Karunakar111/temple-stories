@@ -1,0 +1,68 @@
+{
+ "_comment": "Typeset text drawn by Remotion as transparent PNGs. at_words/until_words anchor on the spoken words in the real take; one text block at a time (a 'mark' is a small disclosure and does not hide captions).",
+ "names": [
+  "వేములవాడ",
+  "రాజన్న",
+  "రాజరాజేశ్వర",
+  "నరేంద్ర",
+  "ధర్మగుండం",
+  "శివ"
+ ],
+ "cover_shot": "S03",
+ "cover_line": "రాజన్నకు కోడెను ఎందుకు కడతారు?",
+ "items": [
+  {
+   "shot": "S01",
+   "kind": "title",
+   "lines": [
+    "వేములవాడ",
+    "రాజరాజేశ్వర ఆలయం"
+   ],
+   "until_words": "ఎందుకు కడతారు"
+  },
+  {
+   "shot": "S03",
+   "kind": "name",
+   "lines": [
+    "రాజరాజేశ్వరుడు"
+   ],
+   "at_words": "రాజరాజేశ్వరుడు",
+   "until_words": "భక్తులు పిలిచేది"
+  },
+  {
+   "shot": "S03",
+   "kind": "name",
+   "lines": [
+    "రాజన్న"
+   ],
+   "at_words": "రాజన్నా అని",
+   "until_words": "ఇంటిల్లిపాదీ"
+  },
+  {
+   "shot": "S05",
+   "kind": "card",
+   "lines": [
+    "అరవై ఏళ్ల కిందట",
+    "1961 జనగణన నమోదు"
+   ],
+   "at_words": "అరవై ఏళ్ల",
+   "until_words": "గుడి తూర్పు"
+  },
+  {
+   "shot": "S06",
+   "kind": "mark",
+   "lines": [
+    "ప్రతీకాత్మక చిత్రం"
+   ]
+  },
+  {
+   "shot": "S12",
+   "kind": "questions",
+   "lines": [
+    "మీ ఇంట్లో ఎవరైనా రాజన్నకి కోడె మొక్కు తీర్చారా?",
+    "ఆ రోజు మీకు గుర్తున్నది ఏంటో చెప్పండి."
+   ],
+   "at_words": "మీ ఇంట్లో"
+  }
+ ]
+}

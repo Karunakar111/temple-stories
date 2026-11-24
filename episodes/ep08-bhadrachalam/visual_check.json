@@ -6,17 +6,15 @@
   {
    "shot": "S02",
    "phrase": "రాముడి గుడి ఉంది",
-   "severity": "missing",
-   "note": "Voice: 'on one side, Rama's temple'. The plan says 'temple on its hill by the river' but reuses S01, a close view of worn steps with no people. The temple itself is never shown in EP08.",
-   "fix": "Add one still of the Bhadrachalam temple on its hill above the Godavari from a verified exterior reference; use it here and in S09.",
+   "severity": "resolved",
+   "note": "Resolved with the approved extra still: S02 shows the temple on its hill above the Godavari (B-TEMPLE).",
    "quote": 2
   },
   {
    "shot": "S09",
    "phrase": "గుడి పని జరిగింది",
-   "severity": "missing",
-   "note": "'The temple work was done' is shown as the S01 steps again.",
-   "fix": "Reuse the new temple still from S02.",
+   "severity": "resolved",
+   "note": "Resolved at no extra cost: S09 reuses the S02 temple still.",
    "quote": 0
   },
   {

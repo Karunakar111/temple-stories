@@ -6,18 +6,30 @@
   {
    "shot": "S07",
    "phrase": "నరేంద్రుడనే రాజు",
-   "severity": "missing",
-   "note": "Voice introduces King Narendra on a hunt and his arrow striking the rishi. The one planned still opens on the aftermath (pot in the stream, bow lowered), so the hunt and the shot are never seen.",
-   "fix": "Add a still of the king drawing his bow among the trees, no target in frame, for the first two phrases; keep the aftermath still from 'ఋషి చనిపోయాడు'.",
+   "severity": "resolved",
+   "note": "Resolved with the approved extra still: the king drawing his bow opens S07; the aftermath (S07b) comes in on the rishi's line.",
    "quote": 2
   },
   {
-   "shot": "S11",
+   "shot": "S11b",
    "phrase": "ఒడ్డునే ప్రతిష్ఠించాడు",
-   "severity": "missing",
-   "note": "One still (the king waist-deep, light in his hands) covers the search, the find and the installation. 'Then the bank in lamp light' has no asset.",
-   "fix": "Add a still of the lamp-lit bank: the king kneeling before a small lamp-lit shrine, seen from behind, no linga drawn; cut to it on 'ఒడ్డునే'.",
+   "severity": "resolved",
+   "note": "Resolved with the approved extra still: S11b shows the king kneeling at the lamp-lit shrine on the bank.",
    "quote": 2
+  },
+  {
+   "shot": "S01",
+   "phrase": "కోడెను ఎందుకు కడతారు",
+   "severity": "resolved",
+   "note": "The tether is on frame one: hands knot the bull's rope to the post while the hook asks why it is tied; the walk follows in S02.",
+   "quote": 0
+  },
+  {
+   "shot": "S06",
+   "phrase": "ధర్మగుండం",
+   "severity": "resolved",
+   "note": "No rights-cleared photo of the Dharma Gundam was found; the tank is illustrated and marked ప్రతీకాత్మక చిత్రం on screen.",
+   "quote": 0
   }
  ]
 }
