@@ -71,8 +71,11 @@ def rows(ep):
             asset = s["id"]
             if src and not own_still and not own_clip:
                 asset, pic = src, f"(reuses {src}) " + by[src].get("picture", "")
-            if cut and a / n >= min(1.0, cut[1] / max(dur, 0.1)):
-                asset, pic = cut[0], f"(cut to {cut[0]}) " + by[cut[0]].get("picture", "")
+            for cid, off in ([cut] if cut and not isinstance(cut[0], (list, tuple)) else (cut or [])):
+                if a / n >= min(1.0, off / max(dur, 0.1)) and cid != s["id"]:
+                    asset, pic = cid, f"(cut to {cid}) " + by[cid].get("picture", "")
+                elif a / n >= min(1.0, off / max(dur, 0.1)):
+                    asset, pic = s["id"], s.get("picture", "")
             flags = [(sev, msg) for sev, msg in auto] if k == 0 else []
             for nt in notes:
                 if nt["shot"] == s["id"] and nt["phrase"] in words:

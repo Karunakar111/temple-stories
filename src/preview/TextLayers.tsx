@@ -52,6 +52,15 @@ const Block: React.FC<{ it: Item }> = ({ it }) => {
       </div>
     );
   }
+  if (it.kind === "mark") {
+    // small disclosure on an illustrated stand-in for a real object, e.g. ప్రతీకాత్మక చిత్రం
+    return (
+      <div style={{ position: "absolute", right: 36, top: 150, padding: "8px 18px", borderRadius: 10, background: "rgba(20,10,14,0.62)",
+        color: CREAM, fontFamily: F, fontSize: 36, fontWeight: 700 }}>
+        {lines[0]}
+      </div>
+    );
+  }
   const boxed = it.kind === "questions" || it.kind === "reminders" || it.kind === "comment";
   const size = it.kind === "name" ? 92 : it.kind === "card" ? 72 : 54;
   const top = boxed ? 700 : 820;

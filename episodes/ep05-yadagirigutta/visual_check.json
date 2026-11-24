@@ -20,9 +20,8 @@
   {
    "shot": "S09",
    "phrase": "భక్తురాలికి వచ్చిన",
-   "severity": "check",
-   "note": "Voice recalls the woman's dream while the screen shows the reused guiding light.",
-   "fix": "Reuse the S07 dream picture for this phrase.",
+   "severity": "resolved",
+   "note": "Resolved at no cost: S09 now cuts to the S07 dream on this line, then to today's temple.",
    "quote": 0
   }
  ]

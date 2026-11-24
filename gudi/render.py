@@ -95,15 +95,26 @@ def film_spec(ep, ledger, cfg, out_dir):
         if not path:
             missing.append(f"picture for {s['id']}")
             continue
-        cut = s.get("cut_to")
-        if cut:
-            cp, ck = _picture(ep, ledger, cut[0], by_id)
-            if not cp:
-                missing.append(f"picture for {cut[0]}")
+        cuts = s.get("cut_to")
+        if cuts:
+            cuts = [cuts] if not isinstance(cuts[0], (list, tuple)) else cuts
+            pts = [(start, path, kind)]
+            bad = False
+            for cid, off in cuts:
+                cp, ck = _picture(ep, ledger, cid, by_id)
+                if not cp:
+                    missing.append(f"picture for {cid}")
+                    bad = True
+                    break
+                t = start if off <= 0 else round(min(end - 0.5, start + off * scale_t), 3)
+                if t <= pts[-1][0]:
+                    pts[-1] = (pts[-1][0], cp, ck)
+                else:
+                    pts.append((t, cp, ck))
+            if bad:
                 continue
-            mid = round(min(end - 0.5, start + cut[1] * scale_t), 3)
-            segs.append({"kind": kind, "src": str(path), "start": start, "end": mid})
-            segs.append({"kind": ck, "src": str(cp), "start": mid, "end": end})
+            for k, (t, cp, ck) in enumerate(pts):
+                segs.append({"kind": ck, "src": str(cp), "start": t, "end": pts[k + 1][0] if k + 1 < len(pts) else end})
         else:
             segs.append({"kind": kind, "src": str(path), "start": start, "end": end})
     if missing:

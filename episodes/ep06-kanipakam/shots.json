@@ -177,8 +177,8 @@
    "id": "S04",
    "media_from": null,
    "text": "ఒకరికి కంటిచూపు లేదు. ఒకరికి వినికిడి లేదు. ఇంకొకరికి మాట రాదు. ముగ్గురూ కలిసి బావి నుంచి నీళ్లు తోడి కాలువ ద్వారా పొలానికి మళ్లించేవాళ్లు.",
-   "picture": "The three brothers lifting water together; track the water to the field.",
-   "what_changes": "Bucket rises; water pours into the channel.",
+   "picture": "The three brothers lifting water together; push to each brother on his own line, then track the water to the field.",
+   "what_changes": "Push to each brother; bucket rises; water pours into the channel.",
    "class": "paid still + paid clip",
    "paid": [
     {

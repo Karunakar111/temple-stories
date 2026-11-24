@@ -166,7 +166,7 @@
    "id": "S04",
    "media_from": null,
    "text": "యాత్ర రోజు సేవకులు ముగ్గురినీ ఆలయం నుంచి బయటికి తీసుకొస్తారు. తాళాలు, గంటలు మోగుతుంటే దేవతా మూర్తులు ఊగుతూ ముందుకు కదులుతాయి. ఈ ఊరేగింపునే పహండీ అంటారు.",
-   "picture": "Pahandi through the crowd: faces turned up to something passing just above frame; cymbals and bells raised; flower petals in the air. 'పహండీ' typeset.",
+   "picture": "Pahandi through the crowd: servitors from behind carry something on ropes just above frame; faces turned up; cymbals and bells raised; flower petals in the air. 'పహండీ' typeset.",
    "what_changes": "Cymbals clash; the crowd sways with the rhythm.",
    "class": "paid still + paid clip (the procession's rhythm)",
    "paid": [
@@ -186,7 +186,7 @@
       "P-PAHANDI",
       "STYLE-PATNAM"
      ],
-     "prompt": "A packed temple lane in Puri: devotees with joined hands looking up at something passing just above the top of the frame, men raising brass cymbals and bells, flower petals in the air, bright sun, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
+     "prompt": "A packed temple lane in Puri: temple servitors seen from behind, bare shoulders straining, carrying something heavy on thick ropes that rise past the top of the frame, devotees with joined hands looking up, men raising brass cymbals and bells, flower petals in the air, bright sun, attached style. No deity figure, idol, murti or linga is visible; the sacred presence is carried only by light, lamps and the worshippers' reactions. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
     },
     {
      "max_s": 5,

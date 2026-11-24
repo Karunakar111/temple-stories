@@ -515,8 +515,8 @@
    "id": "S09",
    "media_from": null,
    "text": "మొదట ఆంజనేయుడు ఒక ఋషికి దారి చూపాడు. తరవాత ఒక భక్తురాలికి వచ్చిన కలతో ఊరివాళ్లందరికీ దారి తెలిసింది. మీ ఇంట్లో యాదగిరిగుట్ట కథ ఎట్లా చెప్పేవాళ్లు?",
-   "picture": "Echo the guiding light (reuse S04); finish on the identified present temple.",
-   "what_changes": "Cut to today's temple.",
+   "picture": "Echo the guiding light (reuse S04); the woman's dream (reuse S07) on her line; finish on the identified present temple.",
+   "what_changes": "Cut to S07 on 'భక్తురాలికి', then to today's temple.",
    "class": "reuse + paid still",
    "paid": [
     {
@@ -546,7 +546,20 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
-   "cut_to": null,
+   "cut_to": [
+    [
+     "S04",
+     0.0
+    ],
+    [
+     "S07",
+     2.6
+    ],
+    [
+     "S09",
+     6.8
+    ]
+   ],
    "est_start_s": 71.37,
    "est_dur_s": 9.95
   }

@@ -91,10 +91,11 @@ def edit_spec(ep, ledger, cfg, out_dir, name):
 
     # one text block at a time: drop captions under a card, cut short any caption that runs into one
     phrases = []
-    for p in base["phrases_all"] if "phrases_all" in base else from_alignment(voice, al, _ranges(ep, voice)):
-        if any(o["start"] - 0.05 <= p["start"] < o["end"] for o in overlays):
+    blocks = [o for o in overlays if o["kind"] != "mark"]  # a small disclosure mark is not a text block
+    for p in from_alignment(voice, al, _ranges(ep, voice)):
+        if any(o["start"] - 0.05 <= p["start"] < o["end"] for o in blocks):
             continue
-        nxt = [o["start"] for o in overlays if o["start"] > p["start"]]
+        nxt = [o["start"] for o in blocks if o["start"] > p["start"]]
         q = dict(p)
         if nxt and q["end"] + 0.30 > nxt[0] - 0.06:
             q["end"] = round(nxt[0] - 0.40, 3)

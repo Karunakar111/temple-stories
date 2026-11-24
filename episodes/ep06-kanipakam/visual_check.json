@@ -6,9 +6,8 @@
   {
    "shot": "S04",
    "phrase": "కంటిచూపు లేదు",
-   "severity": "check",
-   "note": "Three conditions are named one by one over one picture of the brothers lifting water.",
-   "fix": "Local push to each brother on his line.",
+   "severity": "resolved",
+   "note": "Resolved at no cost: push to each brother on his own line (local move in the edit).",
    "quote": 0
   },
   {

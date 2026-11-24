@@ -1,0 +1,168 @@
+{
+ "batch": "week-1",
+ "prepared": "2026-11-24",
+ "balances": {
+  "higgsfield": "300.05 (checked 24 Nov, after EP02)",
+  "elevenlabs": "about 8,986 (your 10,416 less EP02's 1,430; confirm)"
+ },
+ "new_stills": [
+  {
+   "episode": "ep03-vemulavada",
+   "shot": "S07",
+   "what": "The king drawing his bow among the trees, no target in frame, before the aftermath still",
+   "quote": 2
+  },
+  {
+   "episode": "ep03-vemulavada",
+   "shot": "S11",
+   "what": "The lamp-lit bank: the king kneeling before a small lamp-lit shrine, seen from behind, no linga drawn",
+   "quote": 2
+  },
+  {
+   "episode": "ep05-yadagirigutta",
+   "shot": "S06",
+   "what": "The torch party among the rocks at night, as the start image for the search clip",
+   "quote": 2
+  },
+  {
+   "episode": "ep08-bhadrachalam",
+   "shot": "S02, S09",
+   "what": "The Bhadrachalam temple on its hill above the Godavari (needs B-TEMPLE), used twice",
+   "quote": 2
+  }
+ ],
+ "references": [
+  {
+   "episode": "ep03-vemulavada",
+   "id": "V-EXTERIOR",
+   "subject": "Sri Raja Rajeshwara temple, Vemulawada",
+   "used": "S03",
+   "candidate": "Sri Raja Rajeshwara temple.jpg (13 Jan 2023, own work)",
+   "url": "https://commons.wikimedia.org/wiki/File:Sri_Raja_Rajeshwara_temple.jpg",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep03-vemulavada",
+   "id": "V-TANK",
+   "subject": "Dharma Gundam tank beside the temple",
+   "used": "S06",
+   "candidate": "No Commons photo found",
+   "url": "",
+   "licence": "",
+   "fallback": "Supply your own photo, or draw a generic stepped tank marked ప్రతీకాత్మక చిత్రం (no extra cost)"
+  },
+  {
+   "episode": "ep04-srikalahasti",
+   "id": "S-EXTERIOR",
+   "subject": "Srikalahasti gopurams and the Swarnamukhi",
+   "used": "S03",
+   "candidate": "Srikalahasti temple and Hill.jpg: river, gopuram and ghat in one view (Dec 2024)",
+   "url": "https://commons.wikimedia.org/wiki/File:Srikalahasti_temple_and_Hill.jpg",
+   "licence": "CC BY-SA 4.0 (iMahesh); credit in the description"
+  },
+  {
+   "episode": "ep05-yadagirigutta",
+   "id": "Y-HILL",
+   "subject": "Yadagirigutta hill and the present black-stone temple",
+   "used": "S02, S09",
+   "candidate": "Category: Sri Lakshmi Narasimha Swamy Temple, Yadadri. Pick a photo of the rebuilt temple; the 2009 photos show the old one",
+   "url": "https://commons.wikimedia.org/wiki/Category:Sri_Lakshmi_Narasimha_Swamy_Temple,_Yadadri",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep06-kanipakam",
+   "id": "C-EXTERIOR",
+   "subject": "Kanipakam Varasiddhi Vinayaka temple exterior",
+   "used": "S03",
+   "candidate": "Sri Varasidhi Vinayaka Temple, Kanipakam … Front view 2023.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Category:Vinayaka_Temple,_Kanipakam",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep07-puri",
+   "id": "P-GUNDICHA",
+   "subject": "Gundicha temple exterior, Puri",
+   "used": "S08",
+   "candidate": "Gundicha Temple.jpg (Sept 2024)",
+   "url": "https://commons.wikimedia.org/wiki/File:Gundicha_Temple.jpg",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep07-puri",
+   "id": "P-BADADANDA",
+   "subject": "Bada Danda with the three chariots",
+   "used": "S02, S09",
+   "candidate": "Rathas on Badadanda, Puri during Ratha Jatra 2019.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Category:Bada_Danda_(Grand_Road),_Puri",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep08-bhadrachalam",
+   "id": "B-TEMPLE",
+   "subject": "Bhadrachalam temple, its steps and the Godavari",
+   "used": "S01, and the new S02/S09 still",
+   "candidate": "Sri sita rama temple bhadrachalam temple from ghat.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Category:Bhadrachalam",
+   "licence": "confirm on the file page"
+  },
+  {
+   "episode": "ep08-bhadrachalam",
+   "id": "G-FORT",
+   "subject": "Golconda fort",
+   "used": "S10",
+   "candidate": "Golconda Fort - Bala Hissar Gate - 01.jpg. The same Commons category also has 'Ramadas Prison.jpg', the cell itself, if you want it for the jail beat",
+   "url": "https://commons.wikimedia.org/wiki/File:Golconda_Fort_-_Bala_Hissar_Gate_-_01.jpg",
+   "licence": "confirm on the file page"
+  }
+ ],
+ "judgement": [
+  {
+   "episode": "ep04-srikalahasti",
+   "shot": "S08",
+   "question": "The elephant striking the tree is carried by a shudder on an empty trunk. Keep the restraint, or show the elephant (one more still, 2)?"
+  },
+  {
+   "episode": "ep06-kanipakam",
+   "shot": "S08",
+   "question": "The voice names Vinayaka; the screen shows only villagers above the well's rim. Keep this witness treatment?"
+  }
+ ],
+ "episodes": {
+  "ep03-vemulavada": {
+   "hook_seen": "Low beside bare feet and a young bull's hooves on a slack rope; rise to the devotee. Title on frame one.",
+   "identity": "S03: the temple exterior with families and bulls, cards రాజరాజేశ్వరుడు and రాజన్న (V-EXTERIOR). S06: the Dharma Gundam tank (V-TANK).",
+   "hardest": "A devotee and a young bull walking on a slack rope, circling the shrine, then tying the bull (S01, S04, S04b). Animal gait is where clips break most often.",
+   "plan": "Three short Kling clips from stills; prompts hold the gait and the slack rope. If a gait breaks, the still holds with a slow push; no retry without approval."
+  },
+  "ep04-srikalahasti": {
+   "hook_seen": "Macro: water from a trunk tears the web and a gem rolls; tilt up to the trunk. Title on frame one.",
+   "identity": "S03: the Swarnamukhi and the temple gopurams (S-EXTERIOR), dissolving into the forest.",
+   "hardest": "The snake entering the elephant's trunk and the three deaths (S07, S08).",
+   "plan": "S07 shows the snake rising toward the trunk; the entry and the deaths are carried by the voice; S08 is the tree shuddering, then stillness. Nothing graphic is generated."
+  },
+  "ep05-yadagirigutta": {
+   "hook_seen": "The cave mouth from the woman's point of view, torch light flickering; cut before the reveal. Title on frame one.",
+   "identity": "S02: the hill silhouette; S09: today's black-stone temple on the hill (Y-HILL).",
+   "hardest": "The five forms of Narasimha at the cave, revealed without drawing any murti (S08, about 15 s).",
+   "plan": "Villagers' faces lit from inside the cave; each form's name typeset on its own beat. Local animation only."
+  },
+  "ep06-kanipakam": {
+   "hook_seen": "Water in a stone well; one ripple. Title on frame one.",
+   "identity": "S03: the identified temple exterior with a map card (C-EXTERIOR). No sanctum, no invented murti.",
+   "hardest": "Blood from the stone and the brothers healed (S06, S07).",
+   "plan": "The tool strikes stone (clip); a restrained red tint spreads in code, not generated blood; then the brothers' faces lift (still)."
+  },
+  "ep07-puri": {
+   "hook_seen": "A huge painted chariot wheel turning on the road. Title 'పూరీ జగన్నాథుడు · ఒడిశా' on frame one.",
+   "identity": "S02/S09: the three chariots on the Bada Danda (P-BADADANDA); S08: the Gundicha temple (P-GUNDICHA).",
+   "hardest": "Pahandi: the three carried out of the temple, swaying, without drawing the deities (S04).",
+   "plan": "Revised today: servitors seen from behind, ropes rising out of frame, the crowd looking up, cymbals; nothing enters the top of the frame."
+  },
+  "ep08-bhadrachalam": {
+   "hook_seen": "Worn temple steps with a lamp, then a prison gate shutting on 'జైలుకెందుకు'. Title on frame one.",
+   "identity": "S01: the temple steps (B-TEMPLE). Missing until approved: the temple itself on its hill (new still for S02 and S09). S10: Golconda fort (G-FORT).",
+   "hardest": "Rama paying Gopanna's debt, never showing Rama (S11).",
+   "plan": "Officials in a lamplit treasury turn toward a doorway full of light, coins on the table; card 'భక్తుల కథ ప్రకారం'."
+  }
+ }
+}

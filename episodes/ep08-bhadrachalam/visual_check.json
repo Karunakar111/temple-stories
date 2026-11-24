@@ -22,17 +22,15 @@
   {
    "shot": "S04",
    "phrase": "ధమ్మక్క అనే",
-   "severity": "check",
-   "note": "Dammakka is introduced by name over a sleeping figure.",
-   "fix": "Typeset name card 'ధమ్మక్క' (local).",
+   "severity": "resolved",
+   "note": "Resolved at no cost: name card 'ధమ్మక్క' added.",
    "quote": 0
   },
   {
    "shot": "S05",
    "phrase": "చిన్న మండపంలో",
-   "severity": "check",
-   "note": "The clip clears earth and light rises; the voice moves on to worship in a small mandapam, which this clip cannot show.",
-   "fix": "Cut early to the S06 still (Gopanna before the small mandapam) on 'ఒక చిన్న మండపంలో'.",
+   "severity": "resolved",
+   "note": "Resolved at no cost: S05 cuts to the S06 mandapam still on 'ఒక చిన్న మండపంలో'.",
    "quote": 0
   }
  ]

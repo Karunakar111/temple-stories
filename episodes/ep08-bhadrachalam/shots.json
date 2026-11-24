@@ -301,8 +301,8 @@
    "id": "S04",
    "media_from": null,
    "text": "గోపన్న కంటే ముందే అక్కడ రాముడికి పూజలు జరిగేవని ఒక కథ ఉంది. ధమ్మక్క అనే భక్తురాలికి కలలో స్వామి జాడ తెలిసిందట.",
-   "picture": "Dammakka asleep; a soft light in her dream.",
-   "what_changes": "Light rises (local Bloom).",
+   "picture": "Dammakka asleep; a soft light in her dream. Name typeset 'ధమ్మక్క'.",
+   "what_changes": "Light rises (local Bloom); name card.",
    "class": "paid still + local",
    "paid": [
     {
@@ -329,7 +329,8 @@
     }
    ],
    "local": [
-    "Bloom"
+    "Bloom",
+    "name card 'ధమ్మక్క'"
    ],
    "note": null,
    "hold_after_s": 0.0,
@@ -400,7 +401,10 @@
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
-   "cut_to": null,
+   "cut_to": [
+    "S06",
+    3.7
+   ],
    "est_start_s": 25.11,
    "est_dur_s": 5.99
   },

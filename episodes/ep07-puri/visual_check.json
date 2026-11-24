@@ -6,9 +6,8 @@
   {
    "shot": "S04",
    "phrase": "సేవకులు ముగ్గురినీ",
-   "severity": "check",
-   "note": "The action is servitors carrying the three out of the temple; the planned crowd looks up at something above frame, so the carriers are never seen.",
-   "fix": "Revise the S04 prompt before generation to show the servitors from behind (shoulders, arms, ropes) without drawing the deities. Same still, no extra cost.",
+   "severity": "resolved",
+   "note": "Resolved at no cost: the S04 prompt now shows the servitors from behind carrying on ropes; the deities are still never drawn. Same still, same price.",
    "quote": 0
   }
  ]

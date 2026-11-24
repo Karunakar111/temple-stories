@@ -114,8 +114,10 @@ def _validate(slug, shots, board):
                     raise SystemExit(f"{slug} {s['id']}: reference {r} is not on the board")
         if s.get("media_from") and s["media_from"] not in stills:
             raise SystemExit(f"{slug} {s['id']}: reuses {s['media_from']}, which has no still")
-        if s.get("cut_to") and s["cut_to"][0] not in stills:
-            raise SystemExit(f"{slug} {s['id']}: cuts to {s['cut_to'][0]}, which has no still")
+        cuts = s.get("cut_to") or []
+        for cid, _ in ([cuts] if cuts and not isinstance(cuts[0], (list, tuple)) else cuts):
+            if cid not in stills:
+                raise SystemExit(f"{slug} {s['id']}: cuts to {cid}, which has no still")
 
 
 STYLE_REFS = [
@@ -384,8 +386,9 @@ def ep05():
           "The woman and villagers at the cave mouth, faces lit from inside; each form named on its own beat (typeset), no statues.", "Names appear one per beat.", "paid still + local",
           [still("The woman devotee (reference image 1) and villagers gathered at the mouth of a cave with lamps, faces lit by golden light from inside the cave, attached style. " + SACRED + " " + DRESS, F, [DS], [DS])], ["typeset five names"]),
         S("S09", "మొదట ఆంజనేయుడు ఒక ఋషికి దారి చూపాడు. తరవాత ఒక భక్తురాలికి వచ్చిన కలతో ఊరివాళ్లందరికీ దారి తెలిసింది. మీ ఇంట్లో యాదగిరిగుట్ట కథ ఎట్లా చెప్పేవాళ్లు?",
-          "Echo the guiding light (reuse S04); finish on the identified present temple.", "Cut to today's temple.", "reuse + paid still",
-          [still("The present black-stone Yadagirigutta temple on its hill exactly as in reference image 1, evening, attached style. " + DRESS, ["Y-HILL"], refs=["Y-HILL"])], ["comment card"]),
+          "Echo the guiding light (reuse S04); the woman's dream (reuse S07) on her line; finish on the identified present temple.", "Cut to S07 on 'భక్తురాలికి', then to today's temple.", "reuse + paid still",
+          [still("The present black-stone Yadagirigutta temple on its hill exactly as in reference image 1, evening, attached style. " + DRESS, ["Y-HILL"], refs=["Y-HILL"])], ["comment card"],
+          cut_to=[("S04", 0.0), ("S07", 2.6), ("S09", 6.8)]),
     ]
     return build("ep05-yadagirigutta", shots, board("ep05-yadagirigutta", refs))
 
@@ -410,7 +413,7 @@ def ep06():
         S("S03", "చిత్తూరు జిల్లాలోని ఈ క్షేత్రం గురించి దేవస్థానం చెప్పే కథ ఇది.", "Identified exterior.", "Map card.", "paid still + local",
           [still("Exterior of the Kanipakam Varasiddhi Vinayaka temple exactly as in reference image 1, morning, devotees at the entrance, attached style. " + DRESS, ["C-EXTERIOR"], refs=["C-EXTERIOR"])], ["map card"]),
         S("S04", "ఒకరికి కంటిచూపు లేదు. ఒకరికి వినికిడి లేదు. ఇంకొకరికి మాట రాదు. ముగ్గురూ కలిసి బావి నుంచి నీళ్లు తోడి కాలువ ద్వారా పొలానికి మళ్లించేవాళ్లు.",
-          "The three brothers lifting water together; track the water to the field.", "Bucket rises; water pours into the channel.",
+          "The three brothers lifting water together; push to each brother on his own line, then track the water to the field.", "Push to each brother; bucket rises; water pours into the channel.",
           "paid still + paid clip", [still("The three brothers (reference image 1) working a rope-and-bucket lift at the well, water pouring into the channel, attached style. " + DRESS, B + W, [BS], [BS]),
                                      clip("The brothers pull the rope together; the bucket rises and tips water into the channel. Hands whole; faces the same. Camera still.", B + W, "S04:still")]),
         S("S05", "ఒక రోజు ఎంత తోడినా నీళ్లు రాలేదు. బావి ఇంకిపోయింది.", "Same action, empty vessel.", "Bucket comes up dry.", "paid still + paid clip",
@@ -468,9 +471,9 @@ def ep07():
           ["three name cards"]),
         S("S03", (5, 5), "Craftsmen carving a new wheel from fresh timber.", "Adze strikes; shavings fly (local).", "paid still + local",
           [still("Temple carpenters in white dhotis carving a new chariot wheel from fresh logs in a yard, wood shavings, sunlight, attached style. " + DRESS, C)], ["Stage camera"]),
-        S("S04", (6, 8), "Pahandi through the crowd: faces turned up to something passing just above frame; cymbals and bells raised; flower petals in the air. 'పహండీ' typeset.",
+        S("S04", (6, 8), "Pahandi through the crowd: servitors from behind carry something on ropes just above frame; faces turned up; cymbals and bells raised; flower petals in the air. 'పహండీ' typeset.",
           "Cymbals clash; the crowd sways with the rhythm.", "paid still + paid clip (the procession's rhythm)",
-          [still("A packed temple lane in Puri: devotees with joined hands looking up at something passing just above the top of the frame, men raising brass cymbals and bells, flower petals in the air, bright sun, attached style. " + SACRED + " " + DRESS, ["P-PAHANDI"]),
+          [still("A packed temple lane in Puri: temple servitors seen from behind, bare shoulders straining, carrying something heavy on thick ropes that rise past the top of the frame, devotees with joined hands looking up, men raising brass cymbals and bells, flower petals in the air, bright sun, attached style. " + SACRED + " " + DRESS, ["P-PAHANDI"]),
            clip("The cymbals clash and the crowd sways forward together to the rhythm, petals drifting down. Nothing enters the top of the frame. Camera still.", ["P-PAHANDI"], "S04:still")],
           ["typeset పహండీ"]),
         S("S05", (9, 12), "On a chariot's wooden deck: a man in white seen from behind sweeps with a golden broom.", "The broom sweeps in long strokes.",
@@ -525,12 +528,13 @@ def ep08():
           [still("A wooden treasury chest of silver coins and a cloth-bound ledger on a low table, lamplight, attached style. No people. No legible writing.", G)]),
         S("S03", (3, 5), "Gopanna at work: villagers bringing taxes; he enters them in a ledger. Name typeset 'కంచర్ల గోపన్న'.", "Name card; coins counted.", "paid still + local",
           [still("The revenue official (reference image 1) seated at a low desk under a veranda, villagers bringing grain and coins, he writes in a ledger, attached style. No legible writing. " + DRESS, G, [GS], [GS])], ["name card", "tahsildar card"]),
-        S("S04", (6, 7), "Dammakka asleep; a soft light in her dream.", "Light rises (local Bloom).", "paid still + local",
-          [still("Night: the woman devotee (reference image 1) asleep on a mat in a hut, her face in soft golden light, attached style. " + SACRED + " " + DRESS, D, [DS], [DS])], ["Bloom"]),
+        S("S04", (6, 7), "Dammakka asleep; a soft light in her dream. Name typeset 'ధమ్మక్క'.", "Light rises (local Bloom); name card.", "paid still + local",
+          [still("Night: the woman devotee (reference image 1) asleep on a mat in a hut, her face in soft golden light, attached style. " + SACRED + " " + DRESS, D, [DS], [DS])], ["Bloom", "name card 'ధమ్మక్క'"]),
         S("S05", (8, 8), "Dammakka and villagers clearing earth with their hands; light rises from the ground; then a small lamp-lit mandapam. The icons are never drawn.",
           "Hands clear earth; light rises.", "paid still + paid clip (protect the uncovering)",
           [still("Dammakka (reference image 1) and village women kneeling, clearing earth with their hands, warm light rising from the ground in front of them and lighting their amazed faces, attached style. " + SACRED + " " + DRESS, D, [DS], [DS]),
-           clip("Their hands brush away the earth and the light grows brighter on their faces; they sit back with joined hands. Hands whole. Nothing in the ground becomes visible. Camera still.", D, "S05:still")]),
+           clip("Their hands brush away the earth and the light grows brighter on their faces; they sit back with joined hands. Hands whole. Nothing in the ground becomes visible. Camera still.", D, "S05:still")],
+          cut_to=("S06", 3.7)),
         S("S06", (9, 9), "Gopanna before the small mandapam, imagining a great temple.", "Light sweeps (local).", "paid still + local",
           [still("The official (reference image 1) standing before a small lamp-lit thatched mandapam on a hill by a river, looking up thoughtfully, attached style. " + SACRED + " " + DRESS, G, [GS], [GS])]),
         S("S07", (10, 11), "Villagers give what they can; stone steps are laid up the hill.", "Stones set one by one.", "paid still + paid clip (protect the building)",

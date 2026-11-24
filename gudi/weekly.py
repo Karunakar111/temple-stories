@@ -170,7 +170,7 @@ def _visual_check_section(batch):
         d = [f"<details{' open' if sm['missing'] else ''}><summary><b>{_e(slug)}</b>: {len(sm['missing'])} missing, {sm['checks']} to check</summary>"
              "<div class='scroll'><table><tr><th class='n'>Time</th><th>Shot</th><th>Narration</th><th>Planned picture</th><th>Flag</th></tr>"]
         for x in flagged:
-            fl = "<br>".join(f"<b class='{'hold' if sev == 'missing' else 'wait'}'>{_e(sev)}</b> {_e(msg)}" for sev, msg in x["flags"])
+            fl = "<br>".join(f"<b class='{ {'missing': 'hold', 'resolved': 'ok'}.get(sev, 'wait') }'>{_e(sev)}</b> {_e(msg)}" for sev, msg in x["flags"])
             d.append(f"<tr><td class='n'>~{x['t']:.0f} s</td><td>{_e(x['asset'])}</td><td>{_e(x['words'])}</td>"
                      f"<td>{_e(x['picture'][:160])}</td><td>{fl}</td></tr>")
         d.append("</table></div></details>")
