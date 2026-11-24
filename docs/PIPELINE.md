@@ -198,11 +198,19 @@ python3 -m gudi.batch_demo                               # seven-film rehearsal 
   re-render on failure, then an exception for that episode only.
 
 ### Not connected yet
-- Mac render path: `scripts/render.mjs` cannot decode video on macOS 12, so films with clips need the
-  pre-extraction step in config/production.json before they render there. The cloud path renders them.
+- Mac render path: replaced by the FFmpeg assembly (24 Nov); first run on the Mac still pending (Mac offline).
 - Live Higgsfield (`claude -p`) and ElevenLabs adapters: written to the verified shapes, never run with money.
-- Captions follow each shot's spoken span scaled to the take; phrase-level alignment is not built.
-- Sound bed: films carry the narration only; the synthesised bed is not mixed in yet.
-- Review export: no SRT, contact sheet or cover image yet (text drafts only).
+- Phrase captions, SRT, cover and the sound mix: built 24 Nov (see below). Contact sheet: not yet.
 - Exterior photos: nine identified places wait for an approved import.
 - No LaunchAgent; nothing publishes.
+
+## Film assembly, captions, sound (24 Nov 2026)
+- `gudi/film.py` + `gudi/assemble.py`: one FFmpeg pass for the picture (FFmpeg decodes the clips, so the
+  macOS 12 Remotion limit does not apply), Remotion renders only transparent text PNGs (one per caption phrase
+  or card) and the cover, FFmpeg overlays them and muxes the mix. Same path on the Mac and in the cloud.
+- `gudi/captions.py`: phrase-level Telugu captions cut at punctuation and word boundaries, never across a shot;
+  timing from ElevenLabs character timestamps, else from the take's pauses (zero cost). SRT alongside the MP4.
+- `gudi/audio_mix.py`: narration stem checked before mixing; FFmpeg-synthesised tanpura-style bed; sidechain
+  ducking; two-pass loudness to -14 LUFS / -1.5 dBTP; the mix checked on its own.
+- `gudi/providers/operator.py`: attended live runs keep the ledger and reservations while a session submits.
+- Zero-spend checks: `scripts/plan/ep01_pipeline_test.py` (EP01 footage), `python3 -m gudi.operator_rehearsal` (EP02).

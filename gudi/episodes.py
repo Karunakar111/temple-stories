@@ -55,6 +55,9 @@ class Episode:
             self.approval = batch.approval.get("episodes", {}).get(slug)
 
     # ------------------------------------------------------------ fingerprints
+    def voice_text(self):
+        return (self.dir / "voice.te.txt").read_text(encoding="utf-8").strip()
+
     def has_script(self):
         return (self.dir / "voice.te.txt").exists()
 

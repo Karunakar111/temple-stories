@@ -77,5 +77,8 @@ def make(job, job_id, dest):
         text = (ROOT / job["text_path"]).read_text(encoding="utf-8").strip()
         secs = len(text.replace("\n\n", "")) / CPS + PARA * text.count("\n\n")
         _narration(dest, secs, job_id)
+        import json
+        from ..captions import estimated_alignment
+        Path(str(dest) + ".alignment.json").write_text(json.dumps(estimated_alignment(text, secs), ensure_ascii=False), encoding="utf-8")
     else:
         dest.write_bytes(job_id.encode())

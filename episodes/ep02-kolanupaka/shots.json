@@ -473,7 +473,7 @@
       "K-RENUKA",
       "STYLE-PATNAM"
      ],
-     "prompt": "Lopamudra (reference image 2) walking from the hut with a brass water vessel towards Agastya (reference image 2), the visiting sage (reference image 1) standing nearby, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Outside the hermitage: Lopamudra (reference image 2) has just arrived beside Agastya (reference image 2), holding a brass water vessel out to him with both hands; Agastya reaches for it; the visiting Shaiva sage (reference image 1) stands a step away, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "CS-RENUKA:still",
       "CS-AGASTYA:still"
@@ -502,7 +502,7 @@
       "S09:still"
      ],
      "timing_dependent": true,
-     "prompt": "Lopamudra walks to Agastya and hands him the water vessel; he takes it in both hands. Faces and dress stay the same; hands whole. Camera still."
+     "prompt": "Lopamudra offers the brass vessel; Agastya takes it in both hands and she lets go and steps back. One continuous hand-over. Faces and dress stay the same; hands whole with five fingers. Camera still."
     }
    ],
    "local": [],
@@ -610,7 +610,7 @@
       "K-RENUKA",
       "STYLE-PATNAM"
      ],
-     "prompt": "Agastya (reference image 2) and the Shaiva sage (reference image 1) seated facing each other in the hermitage, Agastya asking with an open hand, the sage listening with lowered eyes, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
+     "prompt": "Agastya (reference image 2) and the Shaiva sage (reference image 1) seated facing each other on mats inside the hermitage, Lopamudra seated a little behind Agastya; Agastya asks with an open hand, the sage listens with lowered eyes, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image.",
      "after": [
       "CS-RENUKA:still",
       "CS-AGASTYA:still"

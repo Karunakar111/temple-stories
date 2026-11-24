@@ -5,6 +5,7 @@ import React from "react";
 import { Composition, registerRoot } from "remotion";
 import { EpisodePreview, PreviewProps } from "./EpisodePreview";
 import { EpisodeFilm, FilmProps } from "./EpisodeFilm";
+import { OverlayLayer, Cover } from "./TextLayers";
 
 const meta = (fallback: number) => ({ props }: { props: Record<string, unknown> }) => ({
   durationInFrames: Math.ceil(((props as unknown as { total_s?: number }).total_s || fallback) * 30),
@@ -33,6 +34,27 @@ const Root: React.FC = () =>
       durationInFrames: 300,
       defaultProps: { episode: "none", title: [], total_s: 10, narration: "", music: null, label: null, shots: [] } as unknown as Record<string, unknown>,
       calculateMetadata: meta(10),
+    }),
+    React.createElement(Composition, {
+      id: "OverlayLayer",
+      component: OverlayLayer as unknown as React.FC<Record<string, unknown>>,
+      fps: 30,
+      width: 1080,
+      height: 1920,
+      durationInFrames: 1,
+      defaultProps: { items: [] } as unknown as Record<string, unknown>,
+      calculateMetadata: ({ props }: { props: Record<string, unknown> }) => ({
+        durationInFrames: Math.max(1, ((props as unknown as { items: unknown[] }).items || []).length),
+      }),
+    }),
+    React.createElement(Composition, {
+      id: "Cover",
+      component: Cover as unknown as React.FC<Record<string, unknown>>,
+      fps: 30,
+      width: 1080,
+      height: 1920,
+      durationInFrames: 1,
+      defaultProps: { bg: "", title: [], line: "" } as unknown as Record<string, unknown>,
     }),
   );
 

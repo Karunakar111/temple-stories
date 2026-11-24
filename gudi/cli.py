@@ -55,6 +55,10 @@ class Providers:
             from .providers.mock import MockProvider
 
             p = MockProvider(name, paths.STATE / f"mock-{name}.json")
+        elif self.mode == "operator":
+            from .providers.operator import OperatorProvider
+
+            p = OperatorProvider(name)
         else:
             if name == "higgsfield":
                 from .paid.higgsfield import HiggsfieldViaClaude as P
@@ -351,6 +355,37 @@ def cmd_batch(a):
     raise SystemExit("unknown batch action")
 
 
+def cmd_operator(a):
+    import json as _j
+    from .providers.operator import box
+
+    if a.action == "list":
+        for f in sorted(box("outbox").glob("*.json")):
+            if not (box("inbox") / f.name).exists():
+                e = _j.loads(f.read_text(encoding="utf-8"))
+                print(_j.dumps({"request_key": e["request_key"], "provider": e["provider"], "beat": e["beat"],
+                                "asset_type": e["asset_type"], "quote": e["quote"], "payload": e["payload"],
+                                "text_path": e["text_path"]}, ensure_ascii=False))
+        return 0
+    if a.action == "submitted":
+        f = box("inbox") / f"{a.key}.json"
+        if f.exists():
+            raise SystemExit(f"already recorded: {f.read_text()}")
+        if not (box("outbox") / f"{a.key}.json").exists():
+            raise SystemExit("no such request in the outbox")
+        f.write_text(_j.dumps({"job_id": a.value}))
+        print("recorded", a.key[:12], "->", a.value)
+        return 0
+    if a.action == "done":
+        rec = {"state": "completed", "url": a.value}
+        if a.charged is not None:
+            rec["charged"] = a.charged
+        (box("done") / f"{a.key}.json").write_text(_j.dumps(rec))
+        print("completed", a.key, "->", a.value)
+        return 0
+    raise SystemExit("unknown operator action")
+
+
 def cmd_film(a):
     from .episodes import Episode
     from .render import render_and_verify
@@ -407,6 +442,12 @@ def main(argv=None):
     s.add_argument("--yes", action="store_true")
     s.set_defaults(f=cmd_schedule)
     sub.add_parser("demo").set_defaults(f=cmd_demo)
+    op = sub.add_parser("operator")
+    op.add_argument("action", choices=["list", "submitted", "done"])
+    op.add_argument("key", nargs="?", help="request key (submitted) or job id (done)")
+    op.add_argument("value", nargs="?", help="job id (submitted) or result URL / file path (done)")
+    op.add_argument("--charged")
+    op.set_defaults(f=cmd_operator)
     fm = sub.add_parser("film")
     fm.add_argument("episode")
     fm.set_defaults(f=cmd_film)

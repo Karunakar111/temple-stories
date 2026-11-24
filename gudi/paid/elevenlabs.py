@@ -1,6 +1,9 @@
 """ElevenLabs narration: exactly one take per request, identified through Speech History.
 
-- One REST call to /v1/text-to-speech is one take. (The chat connector's creative_generate_speech
+- One REST call to /v1/text-to-speech/{voice}/with-timestamps is one take; it also returns the
+  start and end time of every character, saved next to the take as <take>.alignment.json for
+  phrase-level captions. If the model returns no alignment, captions fall back to the take's
+  pauses (gudi/captions.py), at no cost. (The chat connector's creative_generate_speech
   defaults to generations_count 2 and charges per take; this adapter never uses it.)
 - The documented REST response carries no history-item id we rely on. After the call, and on any
   resume, the take is identified in Speech History by voice, model, exact text and time window.
@@ -69,12 +72,15 @@ class ElevenLabsTTS(Provider):
         since = int(time.time())
         body = json.dumps({"text": text, "model_id": self.voice["model"]}).encode("utf-8")
         req = urllib.request.Request(
-            f"{API}/text-to-speech/{self.voice['voiceId']}?output_format=mp3_44100_128",
+            f"{API}/text-to-speech/{self.voice['voiceId']}/with-timestamps?output_format=mp3_44100_128",
             data=body, method="POST",
-            headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "audio/mpeg"},
+            headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "application/json"},
         )
         with urllib.request.urlopen(req, timeout=600) as r:
-            audio = r.read()
+            resp = json.loads(r.read())
+        import base64
+        audio = base64.b64decode(resp["audio_base64"])
+        self._alignment = resp.get("alignment")
         for _ in range(6):  # history can lag the response by a few seconds
             hid = self._lookup(text, since)
             if hid:
@@ -97,4 +103,7 @@ class ElevenLabsTTS(Provider):
         if len(data) < 2000:
             raise RuntimeError(f"history audio for {job_id} is only {len(data)} bytes")
         dest.write_bytes(data)
+        al = getattr(self, "_alignment", None)
+        if al:
+            Path(str(dest) + ".alignment.json").write_text(json.dumps(al, ensure_ascii=False), encoding="utf-8")
         return dest

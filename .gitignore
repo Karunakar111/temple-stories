@@ -13,3 +13,4 @@ __pycache__/
 public/render-stage/
 exports/films/
 exports/rehearsal/
+exports/pipeline-test/

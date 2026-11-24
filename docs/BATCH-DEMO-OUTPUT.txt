@@ -5,10 +5,10 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
 1. One approval for the week (scripts + visual approach + caps)
 
    $ gudi balance record higgsfield 1000 --source demo
-     recorded higgsfield balance 1000 as of 2026-11-23T19:11:18+00:00 (demo)
+     recorded higgsfield balance 1000 as of 2026-11-24T04:18:09+00:00 (demo)
      (exit 0)
    $ gudi balance record elevenlabs 20000 --source demo
-     recorded elevenlabs balance 20000 as of 2026-11-23T19:11:18+00:00 (demo)
+     recorded elevenlabs balance 20000 as of 2026-11-24T04:18:09+00:00 (demo)
      (exit 0)
    $ gudi batch approve week-1 --by Karunakar (demo) --cap higgsfield=500 --cap elevenlabs=9000 --release-start 2026-11-26 --i-have-reviewed
      approved week-1: 7 episodes, caps {'higgsfield': '500', 'elevenlabs': '9000'}, release from 2026-11-26
@@ -39,7 +39,11 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
      
      [ep02-kolanupaka] release 2026-11-26
        ep02-kolanupaka: 8 new paid submission(s); done
-       film   ep02-kolanupaka: READY FOR REVIEW  101.0 s vs take 100.02 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep02-kolanupaka: ok {'duration_s': 100.02, 'sample_rate': 22050, 'loudness_lufs': -19.4, 'true_peak_dbtp': -4.1, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 96.5}
+       picture ep02-kolanupaka: 19 segments, 3031 frames in 22.1 s
+       text   ep02-kolanupaka: 63 transparent PNGs (56 caption phrases)
+       mix    ep02-kolanupaka: ok {'duration_s': 101.02, 'picture_s': 101.02, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.6, 'clipped_samples': 0, 'narration_corr': 0.998, 'narration_lag_ms': 0}
+       film   ep02-kolanupaka: READY FOR REVIEW  101.03 s vs take 100.02 s, decode ok, -14.0 LUFS, TP -1.6, narration corr 0.998, sync 0 ms, SRT 56 cues, cover 1080x1920
        review export -> <sandbox>/review/ep02-kolanupaka/2026-11-24
      
      [ep03-vemulavada] release 2026-11-27
@@ -51,7 +55,11 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        submit S01:clip               job mock-higgsfield-0025
        saved  S01:clip               -> assets/ep03-S01-clip.mp4
        ep03-vemulavada: 17 new paid submission(s); done
-       film   ep03-vemulavada: READY FOR REVIEW  89.13 s vs take 88.06 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep03-vemulavada: ok {'duration_s': 88.06, 'sample_rate': 22050, 'loudness_lufs': -19.8, 'true_peak_dbtp': -4.3, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 84.0}
+       picture ep03-vemulavada: 13 segments, 2674 frames in 20.7 s
+       text   ep03-vemulavada: 47 transparent PNGs (46 caption phrases)
+       mix    ep03-vemulavada: ok {'duration_s': 89.13, 'picture_s': 89.13, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.5, 'clipped_samples': 0, 'narration_corr': 0.996, 'narration_lag_ms': 0}
+       film   ep03-vemulavada: READY FOR REVIEW  89.13 s vs take 88.06 s, decode ok, -14.0 LUFS, TP -1.3, narration corr 0.996, sync 0 ms, SRT 46 cues, cover 1080x1920
        review export -> <sandbox>/review/ep03-vemulavada/2026-11-24
      
      [ep04-srikalahasti] release 2026-11-28
@@ -63,8 +71,16 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        submit S01:clip               job mock-higgsfield-0040
        saved  S01:clip               -> assets/ep04-S01-clip.mp4
        ep04-srikalahasti: 13 new paid submission(s); done
-       film   ep04-srikalahasti: attempt 1 failed the check: length 20.07 s does not match the 73.38 s narration (allowed 73.38-76.88) -> free automatic re-render
-       film   ep04-srikalahasti: READY FOR REVIEW  74.33 s vs take 73.38 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep04-srikalahasti: ok {'duration_s': 73.38, 'sample_rate': 22050, 'loudness_lufs': -19.4, 'true_peak_dbtp': -4.3, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 69.8}
+       picture ep04-srikalahasti: 10 segments, 2231 frames in 13.9 s
+       text   ep04-srikalahasti: 42 transparent PNGs (41 caption phrases)
+       mix    ep04-srikalahasti: ok {'duration_s': 74.38, 'picture_s': 74.38, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.8, 'clipped_samples': 0, 'narration_corr': 0.998, 'narration_lag_ms': 0}
+       film   ep04-srikalahasti: attempt 1 failed the check: length 20.07 s does not match the 73.38 s narration (allowed 73.38-76.88); SRT cue out of order or outside the film at 18.82 s -> free automatic re-render
+       stem   ep04-srikalahasti: ok {'duration_s': 73.38, 'sample_rate': 22050, 'loudness_lufs': -19.4, 'true_peak_dbtp': -4.3, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 69.8}
+       picture ep04-srikalahasti: 10 segments, 2231 frames in 14.9 s
+       text   ep04-srikalahasti: 42 transparent PNGs (41 caption phrases)
+       mix    ep04-srikalahasti: ok {'duration_s': 74.38, 'picture_s': 74.38, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.8, 'clipped_samples': 0, 'narration_corr': 0.998, 'narration_lag_ms': 0}
+       film   ep04-srikalahasti: READY FOR REVIEW  74.38 s vs take 73.38 s, decode ok, -14.0 LUFS, TP -1.8, narration corr 0.998, sync 0 ms, SRT 41 cues, cover 1080x1920
        review export -> <sandbox>/review/ep04-srikalahasti/2026-11-24
      
      [ep05-yadagirigutta] release 2026-11-29
@@ -80,7 +96,11 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        submit S01:still              job mock-higgsfield-0064
        saved  S01:still              -> assets/ep06-S01-still.png
        ep06-kanipakam: 16 new paid submission(s); done
-       film   ep06-kanipakam: READY FOR REVIEW  77.53 s vs take 76.56 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep06-kanipakam: ok {'duration_s': 76.56, 'sample_rate': 22050, 'loudness_lufs': -19.3, 'true_peak_dbtp': -4.2, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 73.5}
+       picture ep06-kanipakam: 11 segments, 2327 frames in 13.4 s
+       text   ep06-kanipakam: 44 transparent PNGs (43 caption phrases)
+       mix    ep06-kanipakam: ok {'duration_s': 77.56, 'picture_s': 77.56, 'loudness_lufs': -13.9, 'true_peak_dbtp': -1.8, 'clipped_samples': 0, 'narration_corr': 0.998, 'narration_lag_ms': 0}
+       film   ep06-kanipakam: READY FOR REVIEW  77.57 s vs take 76.56 s, decode ok, -13.9 LUFS, TP -1.9, narration corr 0.998, sync 0 ms, SRT 43 cues, cover 1080x1920
        review export -> <sandbox>/review/ep06-kanipakam/2026-11-24
      
      [ep07-puri] release 2026-12-01
@@ -92,7 +112,11 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        submit S01:clip               job mock-higgsfield-0079
        saved  S01:clip               -> assets/ep07-S01-clip.mp4
        ep07-puri: 13 new paid submission(s); done
-       film   ep07-puri: READY FOR REVIEW  71.5 s vs take 70.45 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep07-puri: ok {'duration_s': 70.45, 'sample_rate': 22050, 'loudness_lufs': -19.7, 'true_peak_dbtp': -4.2, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 68.4}
+       picture ep07-puri: 11 segments, 2144 frames in 12.4 s
+       text   ep07-puri: 42 transparent PNGs (41 caption phrases)
+       mix    ep07-puri: ok {'duration_s': 71.47, 'picture_s': 71.47, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.5, 'clipped_samples': 0, 'narration_corr': 0.997, 'narration_lag_ms': 0}
+       film   ep07-puri: READY FOR REVIEW  71.47 s vs take 70.45 s, decode ok, -14.0 LUFS, TP -1.5, narration corr 0.997, sync 0 ms, SRT 41 cues, cover 1080x1920
        review export -> <sandbox>/review/ep07-puri/2026-11-24
      
      [ep08-bhadrachalam] release 2026-12-02
@@ -101,7 +125,11 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        submit S01:still              job mock-higgsfield-0092
        saved  S01:still              -> assets/ep08-S01-still.png
        ep08-bhadrachalam: 19 new paid submission(s); done
-       film   ep08-bhadrachalam: READY FOR REVIEW  79.9 s vs take 78.89 s, decode ok, narration corr 1.0, sync 0 ms
+       stem   ep08-bhadrachalam: ok {'duration_s': 78.89, 'sample_rate': 22050, 'loudness_lufs': -19.7, 'true_peak_dbtp': -4.2, 'head_silence_s': 0.0, 'tail_silence_s': 0.0, 'longest_pause_s': 0.0, 'clipped_samples': 0, 'decode_clean': True, 'expected_s': 75.8}
+       picture ep08-bhadrachalam: 16 segments, 2397 frames in 19.6 s
+       text   ep08-bhadrachalam: 43 transparent PNGs (42 caption phrases)
+       mix    ep08-bhadrachalam: ok {'duration_s': 79.89, 'picture_s': 79.89, 'loudness_lufs': -14.0, 'true_peak_dbtp': -1.5, 'clipped_samples': 0, 'narration_corr': 0.996, 'narration_lag_ms': 0}
+       film   ep08-bhadrachalam: READY FOR REVIEW  79.9 s vs take 78.89 s, decode ok, -14.0 LUFS, TP -1.5, narration corr 0.996, sync 0 ms, SRT 42 cues, cover 1080x1920
        review export -> <sandbox>/review/ep08-bhadrachalam/2026-11-24
      
      BATCH SUMMARY week-1
@@ -158,7 +186,7 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
        ep04-srikalahasti: 0 new paid submission(s); done
        film   ep04-srikalahasti: already verified (ep04-srikalahasti.mp4); not re-rendered
        ep05-yadagirigutta: 2 new paid submission(s); done
-       film   ep05-yadagirigutta: READY FOR REVIEW  81.77 s vs take 80.72 s, decode ok, narration corr 1.0, sync 0 ms
+       film   ep05-yadagirigutta: READY FOR REVIEW  81.77 s vs take 80.72 s, decode ok, -14.0 LUFS, TP -1.5, narration corr 0.997, sync 0 ms, SRT 43 cues, cover 1080x1920
        ep06-kanipakam: 0 new paid submission(s); done
        film   ep06-kanipakam: already verified (ep06-kanipakam.mp4); not re-rendered
        ep07-puri: 0 new paid submission(s); done
@@ -178,15 +206,15 @@ Left unresolved on purpose: Y-HILL in ep05-yadagirigutta. Damaged first export o
 ------------------------------------------------------------------------------
 7. The seven films
 
-   ep02-kolanupaka      ready for review  101.0 s (take 100.02 s)  decode True  corr 1.0  sync 0 ms  attempts 1
-   ep03-vemulavada      ready for review  89.13 s (take 88.06 s)  decode True  corr 1.0  sync 0 ms  attempts 1
-   ep04-srikalahasti    ready for review  74.33 s (take 73.38 s)  decode True  corr 1.0  sync 0 ms  attempts 2
-   ep05-yadagirigutta   ready for review  81.77 s (take 80.72 s)  decode True  corr 1.0  sync 0 ms  attempts 1
-   ep06-kanipakam       ready for review  77.53 s (take 76.56 s)  decode True  corr 1.0  sync 0 ms  attempts 1
-   ep07-puri            ready for review  71.5 s (take 70.45 s)  decode True  corr 1.0  sync 0 ms  attempts 1
-   ep08-bhadrachalam    ready for review  79.9 s (take 78.89 s)  decode True  corr 1.0  sync 0 ms  attempts 1
+   ep02-kolanupaka      ready for review  101.03 s (take 100.02 s)  decode True  corr 0.998  sync 0 ms  attempts 1
+   ep03-vemulavada      ready for review  89.13 s (take 88.06 s)  decode True  corr 0.996  sync 0 ms  attempts 1
+   ep04-srikalahasti    ready for review  74.38 s (take 73.38 s)  decode True  corr 0.998  sync 0 ms  attempts 2
+   ep05-yadagirigutta   ready for review  81.77 s (take 80.72 s)  decode True  corr 0.997  sync 0 ms  attempts 1
+   ep06-kanipakam       ready for review  77.57 s (take 76.56 s)  decode True  corr 0.998  sync 0 ms  attempts 1
+   ep07-puri            ready for review  71.47 s (take 70.45 s)  decode True  corr 0.997  sync 0 ms  attempts 1
+   ep08-bhadrachalam    ready for review  79.9 s (take 78.89 s)  decode True  corr 0.996  sync 0 ms  attempts 1
 
-   Machine wall time: 1398 s total; step 3 (assets + renders + checks) 1218 s.
+   Machine wall time: 473 s total; step 3 (assets + renders + checks) 408 s.
 ------------------------------------------------------------------------------
 All week scenarios passed.
 EXIT=0
