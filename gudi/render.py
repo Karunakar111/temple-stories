@@ -71,10 +71,23 @@ def film_spec(ep, ledger, cfg, out_dir):
         ranges.append((a, a + len(s["text"])))
         pos = a + len(s["text"])
     take_s = audio_mix.duration(narr) if narr else 0.0
-    total = round(max(take_s + 1.0, (on[-1]["est_start_s"] + on[-1]["est_dur_s"]) * scale_t + 1.0), 3) if on else 1.0
+    al = load_alignment(narr) if narr else None
+    if narr and al is None:
+        al = pause_alignment(voice, narr)
+        notes.append("caption and cut timing from the take's pauses (no character alignment returned)")
+    if al is not None:
+        # cuts follow the real take: a shot starts 0.12 s before its first spoken character
+        st = al["character_start_times_seconds"]
+        starts_t = [0.0] + [max(0.0, round(st[a] - 0.12, 3)) for a, _ in ranges[1:]]
+        total = round(max(take_s + 1.0, al["character_end_times_seconds"][-1] + 1.0), 3)
+    else:
+        starts_t = [0.0] + [round(s["est_start_s"] * scale_t, 3) for s in on[1:]]
+        total = round(max(take_s + 1.0, (on[-1]["est_start_s"] + on[-1]["est_dur_s"]) * scale_t + 1.0), 3) if on else 1.0
+    shot_win = {}
     for i, s in enumerate(on):
-        start = 0.0 if i == 0 else round(s["est_start_s"] * scale_t, 3)
-        end = round(on[i + 1]["est_start_s"] * scale_t, 3) if i + 1 < len(on) else total
+        start = starts_t[i]
+        end = starts_t[i + 1] if i + 1 < len(on) else total
+        shot_win[s["id"]] = (start, end)
         path, kind = _picture(ep, ledger, s["id"], by_id)
         if not path:
             missing.append(f"picture for {s['id']}")
@@ -85,22 +98,16 @@ def film_spec(ep, ledger, cfg, out_dir):
             if not cp:
                 missing.append(f"picture for {cut[0]}")
                 continue
-            mid = round(start + cut[1] * scale_t, 3)
+            mid = round(min(end - 0.5, start + cut[1] * scale_t), 3)
             segs.append({"kind": kind, "src": str(path), "start": start, "end": mid})
             segs.append({"kind": ck, "src": str(cp), "start": mid, "end": end})
         else:
             segs.append({"kind": kind, "src": str(path), "start": start, "end": end})
     if missing:
         return None, missing
-    al = load_alignment(narr)
-    if al is None:
-        al = pause_alignment(voice, narr)
-        notes.append("caption timing from the take's pauses (no character alignment returned)")
     phrases = from_alignment(voice, al, ranges)
     ov = load_json(ep.dir / "overlays.json", {}) or {}
-    starts = {s["id"]: (seg_start, seg_end) for s, seg_start, seg_end in
-              ((s, 0.0 if i == 0 else round(s["est_start_s"] * scale_t, 3),
-                round(on[i + 1]["est_start_s"] * scale_t, 3) if i + 1 < len(on) else total) for i, s in enumerate(on))}
+    starts = shot_win
     overlays, no_caption = [], []
     for o in ov.get("items", []):
         a, b = starts[o["shot"]]

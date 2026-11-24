@@ -76,11 +76,23 @@ class ElevenLabsTTS(Provider):
             data=body, method="POST",
             headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "application/json"},
         )
-        with urllib.request.urlopen(req, timeout=600) as r:
-            resp = json.loads(r.read())
         import base64
-        audio = base64.b64decode(resp["audio_base64"])
-        self._alignment = resp.get("alignment")
+        import urllib.error
+        try:
+            with urllib.request.urlopen(req, timeout=600) as r:
+                resp = json.loads(r.read())
+            audio = base64.b64decode(resp["audio_base64"])
+            self._alignment = resp.get("alignment")
+        except urllib.error.HTTPError as e:
+            if not (400 <= e.code < 500) or e.code in (401, 402, 429):
+                raise  # not a validation refusal: stop, never resend blindly
+            # the model refused timestamps before generating anything: one plain take instead
+            plain = urllib.request.Request(
+                f"{API}/text-to-speech/{self.voice['voiceId']}?output_format=mp3_44100_128", data=body, method="POST",
+                headers={"xi-api-key": _key(), "Content-Type": "application/json", "Accept": "audio/mpeg"})
+            with urllib.request.urlopen(plain, timeout=600) as r:
+                audio = r.read()
+            self._alignment = None
         for _ in range(6):  # history can lag the response by a few seconds
             hid = self._lookup(text, since)
             if hid:

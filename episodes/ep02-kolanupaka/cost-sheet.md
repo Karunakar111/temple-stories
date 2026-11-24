@@ -25,14 +25,13 @@ Higgsfield quotes come from the connector's free estimate tools (2 credits per 2
 | S14 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
 | S15 | clip | higgsfield | kling3_0 mode=pro, sound=off, aspect_ratio=9:16, duration=5 | 7.5 | quotable now |
 | S16b | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | quotable now |
-| S17 | still | higgsfield | nano_banana_2 resolution=2k, aspect_ratio=9:16 | 2 | BLOCKED: K-EXTERIOR: needs photo |
 
 ## Totals by provider
 
 | Provider | Unit | Full plan | Of which unblocked today |
 |---|---|---|---|
 | elevenlabs | ElevenLabs credits (1 take) | 1430 | 1430 |
-| higgsfield | credits | 69 | 67 |
+| higgsfield | credits | 67 | 67 |
 
 Not included and not reserved: any repair of a still or clip (each needs your explicit retry approval), outsourced illustration (none planned), and the cover image (made locally from approved stills).
 

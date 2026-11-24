@@ -1,13 +1,13 @@
 # EP02 Kolanupaka: live run plan (prepared 24 Nov 2026, not started)
 
-Quote: **69 Higgsfield credits, 1,430 ElevenLabs credits** (22 paid calls: 15 stills, 6 clips, 1 narration take).
-Nothing runs until Karunakar confirms the ElevenLabs balance and approves.
+Quote: **67 Higgsfield credits, 1,430 ElevenLabs credits** (21 paid calls: 14 stills, 6 clips, 1 narration take). Approved cap: 69 / 1,430.
+Revised 24 Nov: S16a uses the 1067 inscription still, S17 closes on the Renukacharya still (S05); no exterior photo needed.
+Clips are re-sized from the real take and never longer than quoted, so spend cannot exceed 67.
+Approved 24 Nov on two conditions: the EP01 zero-spend test passes on the Mac, and the ElevenLabs balance covers 1,430.
 
 ## Approval covers
 - Script `episodes/ep02-kolanupaka/voice.te.txt` (sha pinned at approval), shot list revision 3, reference board.
 - Caps: Higgsfield 69, ElevenLabs 1,430 (episode, daily and monthly caps all set to these for this run).
-- The Kolanupaka exterior reference (K-EXTERIOR) for S17 and S16a: the photo Karunakar picks, imported to Higgsfield at no cost.
-  Without it, those two shots wait and the film cannot finish.
 
 ## Steps
 1. Mac online in the Claude desktop app. `npx -y @elevenlabs/cli@latest onboard check` confirms the key without printing it.

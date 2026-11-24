@@ -775,16 +775,16 @@
   },
   {
    "id": "S16a",
-   "media_from": "S17",
+   "media_from": "S16b",
    "text": "ఇదే గుడి గురించి రాతి మీద మిగిలిన మాట కూడా ఒకటుంది.",
-   "picture": "Museum courtyard of the temple: carved stones along the ambulatory.",
-   "what_changes": "Slow lateral move past the stones.",
-   "class": "reuse (S17 exterior still) + local",
+   "picture": "The inscription card: the carved stone in raking light (the S16b still) before the date builds.",
+   "what_changes": "Light rakes across the stone.",
+   "class": "reuse (S16b inscription still) + local",
    "paid": [],
    "local": [
     "Stage camera"
    ],
-   "note": "Inscription beat split: was one 13.3 s hold on a single stone",
+   "note": "No exterior photo needed (24 Nov)",
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,
@@ -852,36 +852,16 @@
   },
   {
    "id": "S17",
-   "media_from": null,
+   "media_from": "S05",
    "text": "కొలనుపాక వెళ్తే ఈ రెండు గుర్తుపెట్టుకోండి. లింగం దగ్గర రేణుకాచార్యుడి కథ. గుడి ఆవరణలోని శాసనంలో, ఆ పూజలు కొనసాగేందుకు ఎవరో ఇచ్చిన దానం.",
-   "picture": "Identified Someshwara exterior; map card; the two reminders typeset.",
-   "what_changes": "Map pin; two lines appear.",
-   "class": "paid still + local",
-   "paid": [
-    {
-     "provider": "higgsfield",
-     "asset_type": "still",
-     "model": "nano_banana_2",
-     "quote": "2",
-     "settings": {
-      "resolution": "2k",
-      "aspect_ratio": "9:16"
-     },
-     "references": [
-      "K-EXTERIOR",
-      "STYLE-PATNAM"
-     ],
-     "needs": [
-      "K-EXTERIOR",
-      "STYLE-PATNAM"
-     ],
-     "prompt": "Exterior of the Someshwara Shiva temple at Kolanupaka exactly as in reference image 1 (NOT the Jain temple), late afternoon, devotees at the entrance, attached style. All figures fully clothed in simple period dress. No text, letters or script anywhere in the image."
-    }
-   ],
+   "picture": "Close on the approved Renukacharya artwork (the S05 still: the sage addressing the villagers); the two reminders typeset.",
+   "what_changes": "Slow push; two lines appear.",
+   "class": "reuse (S05 Renukacharya still) + local",
+   "paid": [],
    "local": [
-    "map card"
+    "reminders"
    ],
-   "note": null,
+   "note": "No exterior photo needed (24 Nov)",
    "hold_after_s": 0.0,
    "clip_spans": null,
    "on_screen": true,

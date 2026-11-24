@@ -84,8 +84,30 @@ def _probe_seconds(path):
 
 
 def retime(ep, ledger, audio_path):
-    """Size each clip from the real take. Within the approval as long as scope and caps hold."""
+    """Size each clip from the real take: the spoken span of its shot(s), from the take's character
+    timestamps (else its pauses). A clip may get shorter, never longer than quoted, so spend stays
+    within the approved quote; a shot longer than its clip holds the clip's last frame."""
+    from .captions import load_alignment, pause_alignment
+
     audio_s = _probe_seconds(audio_path)
+    voice = ep.voice_text()
+    on = [s for s in ep.shots_doc["shots"] if s.get("text")]
+    al = load_alignment(audio_path) if audio_s else None
+    method = "character timestamps"
+    if audio_s and al is None:
+        al = pause_alignment(voice, audio_path)
+        method = "pauses"
+    span = {}
+    if al:
+        st = al["character_start_times_seconds"]
+        pos, starts = 0, []
+        for s in on:
+            a = voice.index(s["text"], pos)
+            starts.append(st[a])
+            pos = a + len(s["text"])
+        for i, s in enumerate(on):
+            end = starts[i + 1] if i + 1 < len(on) else al["character_end_times_seconds"][-1] + 1.0
+            span[s["id"]] = end - starts[i]
     est = ep.shots_doc.get("est_total_s")
     scale = audio_s / est if (audio_s and est) else 1.0
     by_id = {s["id"]: s for s in ep.shots_doc["shots"]}
@@ -94,20 +116,23 @@ def retime(ep, ledger, audio_path):
         for c in s["paid"]:
             if c["asset_type"] != "clip":
                 continue
-            spans = [by_id[x].get("est_dur_s") for x in (s.get("clip_spans") or [s["id"]])]
-            if None in spans:  # no estimate for this shot: keep the approved length
-                d = c["settings"]["duration"]
+            ids = s.get("clip_spans") or [s["id"]]
+            if all(x in span for x in ids):
+                need = sum(span[x] for x in ids)
+            elif all(by_id[x].get("est_dur_s") for x in ids):
+                need = sum(by_id[x]["est_dur_s"] for x in ids) * scale
             else:
-                d = min(c.get("max_s", 5), max(3, math.ceil(sum(spans) * scale - 0.25)))
-            rate = to_milli(c["quote"]) / c["settings"]["duration"]
-            clips[s["id"]] = {"duration": d, "quote": fmt(round(d * rate))}
-    doc = {"source": "take" if audio_s else "take (mock audio: estimate timing kept)", "audio_s": audio_s,
+                need = c["settings"]["duration"]
+            quoted = c["settings"]["duration"]
+            d = min(quoted, max(3, math.ceil(need - 0.25)))
+            rate = to_milli(c["quote"]) / quoted
+            clips[s["id"]] = {"duration": d, "quote": fmt(round(d * rate)), "spoken_s": round(need, 2)}
+    doc = {"source": ("take (" + method + ")") if audio_s else "take (mock audio: estimate timing kept)", "audio_s": audio_s,
            "scale": round(scale, 3), "derived_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "clips": clips}
     (ep.dir / "timing.json").write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
-    return f"{doc['source']}; scale {scale:.2f}; {len(clips)} clips sized"
+    return f"{doc['source']}; {len(clips)} clips sized, none longer than quoted"
 
 
-# ---------------------------------------------------------------------------- run
 def _fault_for(slug):
     """Rehearsal only: GUDI_RENDER_FAULT=<slug>:truncate damages that film's first export."""
     import os
