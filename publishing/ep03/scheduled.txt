@@ -7,3 +7,4 @@ Video: publish encode of the approved release cut (vemulavada-rajanna-ep03.mp4, 
 Both entries checked in Zoho > Posts > Scheduled Posts (Instagram tab and YouTube tab).
 
 Update 25 Nov 13:3x IST: added the bio-link line to the Instagram caption and https://gudikathalu.vercel.app/vemulawada/ to the YouTube description (single #shorts, which Zoho appends). Re-checked in the stored post: caption matches instagram-caption.txt, description SHA-256 matches youtube-description.txt. Still 6:00 PM IST on both.
+Update 25 Nov 13:4x IST: added "🙏 ఓం నమః శివాయ" above the hashtags in the Instagram caption; stored caption re-checked against instagram-caption.txt (normalized SHA-256 4bcb21aa9f7284d3); YouTube description unchanged; still 6:00 PM IST.

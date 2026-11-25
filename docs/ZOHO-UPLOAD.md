@@ -20,3 +20,10 @@ Instagram bio link: https://gudikathalu.vercel.app/ (temple guides at /<temple>/
 - Instagram caption: one line before the comment question, "🛕 <guide label>: బయోలోని లింక్‌లో 🔗" (captions cannot hold clickable links). Without a guide page for the temple: "🛕 మరిన్ని గుడి కథలు, దర్శనం గైడ్‌లు: బయోలోని లింక్‌లో 🔗".
 - YouTube description: the direct page URL under the 📍 location line.
 - Zoho appends "#shorts" to Shorts descriptions, so the description file ends with a single "#shorts".
+
+## Closing blessing (from 25 Nov 2026)
+A devotional sign-off for the episode's deity, never an instruction ("type this", "share for good luck"): Instagram treats explicit asks for comments of a set word or for shares as engagement bait and stops recommending the post.
+- Instagram caption: "🙏 <blessing>" just above the hashtags.
+- Film (from the next render): the same blessing on screen at the end, after the comment card.
+- Sharing asks, if any, stay off Instagram and are tied to use ("send this to someone going to <temple>"), e.g. a pinned YouTube comment.
+Blessings so far: Vemulawada and Srikalahasti "ఓం నమః శివాయ", Yadagirigutta "ఓం నమో నారసింహాయ", Kanipakam "ఓం గం గణపతయే నమః", Puri "జై జగన్నాథ్".
