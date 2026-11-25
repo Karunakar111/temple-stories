@@ -1,0 +1,7 @@
+EP03 · వేములవాడ రాజన్న · scheduled 25 Nov 2026 13:2x IST via Zoho Social (approved by Karunakar, 13:00 IST)
+
+Release: Today 25 Nov 2026, 06:00 PM IST (brand time zone IST), schedule type Custom Scheduled.
+- Instagram @gudikathalu: Reel, added to feed, custom thumbnail = cover-1080x1920.jpg; caption = instagram-caption.txt (text matched).
+- YouTube @gudikathalutelugu: Short, Public; title and description = youtube-description.txt (SHA-256 matched in the form).
+Video: publish encode of the approved release cut (vemulavada-rajanna-ep03.mp4, CRF 20, 6 Mbps cap, 60,519,358 bytes, sha256 eef89fb2cbe18c9a...), uploaded by the method in docs/ZOHO-UPLOAD.md.
+Both entries checked in Zoho > Posts > Scheduled Posts (Instagram tab and YouTube tab).
