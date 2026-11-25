@@ -33,3 +33,4 @@ Remove the old video (x on the thumbnail), attach the new one as in step 5, re-s
 
 ## Release time test (from 25 Nov 2026)
 EP01 at 6:00 PM got about 300 views; EP02 at 4:30 PM got about 28K. One post each cannot separate time from content or account age, so: EP03 at 6:00 PM (25 Nov), the next release at 4:30 PM (26 Nov). Compare each post's views at 24 hours on both channels, then fix one time. Baselete and personal posts at the same time do not compete for reach (separate accounts).
+Actual publish times (Zoho Published Posts): EP01 23 Nov, Instagram 7:40 PM, YouTube 7:56 PM; EP02 24 Nov, Instagram 4:26 PM, YouTube 4:24 PM; EP03 25 Nov, Instagram 6:02 PM, YouTube 6:00 PM.
