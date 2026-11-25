@@ -52,6 +52,16 @@ const Block: React.FC<{ it: Item }> = ({ it }) => {
       </div>
     );
   }
+  if (it.kind === "blessing") {
+    // closing frame: the deity's chant large in gold, the temple name small beneath
+    return (
+      <div style={{ ...base, top: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 26 }}>
+        <div style={{ fontSize: 40, color: GOLD, letterSpacing: 18, opacity: 0.9 }}>✦ ✦ ✦</div>
+        <div style={{ fontSize: 128, fontWeight: 900, color: GOLD, lineHeight: 1.25 }}>{lines[0]}</div>
+        {lines[1] ? <div style={{ fontSize: 62, fontWeight: 700, color: CREAM, lineHeight: 1.3 }}>{lines[1]}</div> : null}
+      </div>
+    );
+  }
   if (it.kind === "mark") {
     // small disclosure on an illustrated stand-in for a real object, e.g. ప్రతీకాత్మక చిత్రం
     return (
