@@ -1,0 +1,14 @@
+{
+  "_about": "Which temple guide must be live on gudikathalu.vercel.app before each day's 6 PM IST reel. Read by the daily guide task. Dates are IST. Edit this file when the posting plan changes. status: done = guide is live; todo = the task builds it on that date.",
+  "source": "Gudi Kathalu week 1 review artifact (23 Nov 2026): EP02-EP08 released one a day from 24 Nov",
+  "episodes": [
+    {"date": "2026-11-23", "ep": 1, "slug": "komuravelli", "temple_en": "Komuravelli Mallanna", "temple_te": "కొమురవెల్లి మల్లన్న", "status": "done"},
+    {"date": "2026-11-24", "ep": 2, "slug": "kolanupaka", "temple_en": "Kolanupaka Someshwara", "temple_te": "కొలనుపాక సోమేశ్వరుడు", "status": "done"},
+    {"date": "2026-11-25", "ep": 3, "slug": "vemulawada", "temple_en": "Vemulawada Rajanna", "temple_te": "వేములవాడ రాజన్న", "hook": "కోడె మొక్కు ఎందుకు?", "status": "done"},
+    {"date": "2026-11-26", "ep": 4, "slug": "srikalahasti", "temple_en": "Srikalahasti", "temple_te": "శ్రీకాళహస్తి", "hook": "ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?", "status": "todo"},
+    {"date": "2026-11-27", "ep": 5, "slug": "yadagirigutta", "temple_en": "Yadagirigutta Narasimha", "temple_te": "యాదగిరిగుట్ట నరసింహుడు", "hook": "గుహ దారి ఎవరికి తెలిసింది?", "status": "todo"},
+    {"date": "2026-11-28", "ep": 6, "slug": "kanipakam", "temple_en": "Kanipakam Varasiddhi Vinayaka", "temple_te": "కాణిపాకం వరసిద్ధి వినాయకుడు", "hook": "బావిలో ఎందుకున్నాడు?", "status": "todo"},
+    {"date": "2026-11-29", "ep": 7, "slug": "puri", "temple_en": "Puri Jagannath", "temple_te": "పూరీ జగన్నాథుడు", "hook": "పూరీ జగన్నాథుడి రథం ఎక్కడికి వెళ్తుంది?", "status": "todo"},
+    {"date": "2026-11-30", "ep": 8, "slug": "bhadrachalam", "temple_en": "Bhadrachalam Ramadasu", "temple_te": "భద్రాచలం రామదాసు", "hook": "భద్రాచలం రామదాసు జైలుకెందుకు వెళ్లాడు?", "status": "todo"}
+  ]
+}

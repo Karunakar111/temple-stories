@@ -1,0 +1,102 @@
+{
+  "slug": "vemulawada",
+  "title": "Vemulawada Rajanna Temple",
+  "description": "వేములవాడ రాజన్న ఆలయం: కథ, దారి, ప్రస్తుత దర్శన ఏర్పాట్లు, కోడె మొక్కు. Vemulawada Rajanna temple visit guide.",
+  "short_name": ["వేములవాడ", "Vemulawada"],
+  "share_msg": "వేములవాడ రాజన్న యాత్ర పూర్తి చేశాను. మీరూ ఈ గైడ్ చూడండి:",
+  "checked": ["నవంబర్ 2026", "November 2026"],
+  "hero": {
+    "h1": ["వేములవాడ శ్రీ రాజ రాజేశ్వర స్వామి (రాజన్న)", "Vemulawada Sri Raja Rajeshwara Swamy (Rajanna)"],
+    "sub": ["దక్షిణ కాశి, రాజన్న సిరిసిల్ల జిల్లా", "Dakshina Kashi, Rajanna Sircilla district"],
+    "lead": ["ధర్మగుండం కోనేరు, కోడె మొక్కుకు ప్రసిద్ధి. ప్రస్తుతం దర్శనం పక్కనే ఉన్న భీమేశ్వర ఆలయంలో.", "Known for the Dharma Gundam tank and the Kode Mokku. For now, darshan is at the nearby Bheemeshwara temple."],
+    "photo": {"src": "img/gate.jpg", "alt": "Lit-up entrance gate of the Vemulawada Raja Rajeshwara temple at night", "caption": ["ప్రధాన ఆలయ ద్వారం, పనులకు ముందు", "Main temple gate, before the works"], "credit": "RATHOD SRAVAN, CC0"}
+  },
+  "facts": [
+    {"value": "~150 km", "desc": ["హైదరాబాద్ నుంచి, రోడ్డుపై సుమారు 3.5 గంటలు", "from Hyderabad, about 3.5 hours by road"]},
+    {"value": "4:30 AM – 9 PM", "desc": ["సుమారు, తాత్కాలిక ఏర్పాట్లు, ముందే కనుక్కోండి", "approximate; temporary arrangements, confirm first"]},
+    {"value": ["2–3 గం.", "2–3 hrs"], "desc": ["సోమవారాలు, శివరాత్రికి ఇంకా ఎక్కువ", "longer on Mondays and at Shivaratri"]},
+    {"value": ["సంప్రదాయ దుస్తులు", "Traditional dress"], "desc": ["నిండుగా, మర్యాదగా", "modest, shoulders and knees covered"]}
+  ],
+  "notice": {
+    "title": ["ప్రధాన ఆలయంలో విస్తరణ పనులు జరుగుతున్నాయి", "The main temple is closed for expansion works"],
+    "text": ["పనులు జరుగుతున్నంత కాలం రాజన్న దర్శనం, కోడె మొక్కు, ఆర్జిత సేవలు నడక దూరంలో ఉన్న శ్రీ భీమేశ్వర ఆలయంలో జరుగుతున్నాయి. కింద మ్యాప్ భీమేశ్వర ఆలయాన్ని చూపిస్తుంది. పనులను ఆగస్టు 2027 నాటికి పూర్తి చేయాలని అధికారుల లక్ష్యం.", "While the works go on, Rajanna's darshan, the Kode Mokku and arjitha sevas are held at Sri Bheemeshwara temple, within walking distance. The map below points to Bheemeshwara. Officials aim to finish the works by August 2027."]
+  },
+  "map": {
+    "coords": "18.4690677,78.8669748",
+    "addr": ["శ్రీ భీమేశ్వర ఆలయం, వేములవాడ బైపాస్ రోడ్, వేములవాడ, రాజన్న సిరిసిల్ల జిల్లా, తెలంగాణ 505302", "Sri Bheemeshwara temple, Vemulawada Bypass Rd, Vemulawada, Rajanna Sircilla district, Telangana 505302"],
+    "rows": [
+      ["హైదరాబాద్ నుంచి రాజీవ్ రహదారి (SH-1) మీదుగా సుమారు 150 కి.మీ.", "About 150 km from Hyderabad via the Rajiv Rahadari (SH-1)"],
+      ["కరీంనగర్ నుంచి సుమారు 38 కి.మీ.", "About 38 km from Karimnagar"],
+      ["ప్రధాన రాజన్న ఆలయం భీమేశ్వర నుంచి సుమారు అర కిలోమీటరు", "The main Rajanna temple is about half a kilometre from Bheemeshwara"],
+      ["వేములవాడ బస్ స్టాండ్ నుంచి సుమారు 1.5–2 కి.మీ.", "About 1.5 to 2 km from Vemulawada bus stand"]
+    ]
+  },
+  "story": {
+    "h2": ["రాజన్న కథ", "The story of Rajanna"],
+    "paras": [
+      ["ఇక్కడ శివుడు శ్రీ రాజ రాజేశ్వర స్వామిగా కొలువై ఉన్నాడు. భక్తులు ప్రేమగా రాజన్న అంటారు. ఈ క్షేత్రాన్ని దక్షిణ కాశి అని కూడా పిలుస్తారు.", "Here Shiva is worshipped as Sri Raja Rajeshwara Swamy, whom devotees lovingly call Rajanna. The shrine is also known as Dakshina Kashi."],
+      ["స్థలపురాణం ప్రకారం, వేటకు వచ్చిన రాజ రాజ నరేంద్రుడు కోనేటి దగ్గర నీళ్ళు తాగుతున్న ఒక బ్రాహ్మణ బాలుడిని పొరపాటున చంపాడు. ఆ పాపంతో వ్యాధి సోకింది. ఆ కోనేరు, ధర్మగుండంలో స్నానం చేయగానే నయమైంది. కోనేటిలోని శివలింగాన్ని తీసి గుడి కట్టమని శివుడు కలలో ఆదేశించాడని చెబుతారు.", "According to the temple's legend, King Raja Raja Narendra, out hunting, accidentally killed a young Brahmin drinking at a pond and was struck by disease. He was cured after bathing in that pond, the Dharma Gundam, and Shiva is said to have told him in a dream to take the Shiva Linga from the tank and build a temple around it."],
+      ["ఇక్కడి ప్రత్యేక మొక్కు కోడె మొక్కు. భక్తులు కోడెను (చిన్న ఎద్దు) గుడి చుట్టూ ప్రదక్షిణ చేయించి దేవస్థానానికి అప్పగిస్తారు. ఒక కథ ప్రకారం ధర్మదేవత తపస్సు చేసి శివుని వాహనం అయింది. అందుకే కోడెను సమర్పించడం ముందుగా ధర్మదేవతను పూజించడమేనని నమ్మకం.", "The shrine's signature vow is the Kode Mokku: devotees walk a kode, a young bull, around the temple and hand it over to the temple. One legend says Dharma Devata did penance to become Shiva's vahanam, so offering a calf is first of all an offering to Dharma."]
+    ],
+    "episode": ["గుడి కథలు ఎపిసోడ్ 3: వేములవాడ రాజన్న, కోడె మొక్కు ఎందుకు?", "Gudi Kathalu episode 3: Vemulawada Rajanna, why the Kode Mokku?"]
+  },
+  "plan": {
+    "car": ["హైదరాబాద్ నుంచి రాజీవ్ రహదారి (SH-1) మీదుగా సుమారు 150 కి.మీ., 3.5 గంటలు. కరీంనగర్ నుంచి సుమారు 38 కి.మీ.", "From Hyderabad via the Rajiv Rahadari (SH-1), about 150 km and 3.5 hours. From Karimnagar it is about 38 km."],
+    "bus": ["హైదరాబాద్, కరీంనగర్ నుంచి వేములవాడకు TGSRTC బస్సులు. బస్ స్టాండ్ నుంచి ఆలయం సుమారు 1.5–2 కి.మీ.", "TGSRTC buses run to Vemulawada from Hyderabad and Karimnagar. The temple is about 1.5 to 2 km from the bus stand."],
+    "train": ["దగ్గరి పెద్ద స్టేషన్ కరీంనగర్, సుమారు 38 కి.మీ. అక్కడి నుంచి బస్సు లేదా ట్యాక్సీ.", "The nearest major station is Karimnagar, about 38 km away. Take a bus or taxi from there."]
+  },
+  "when": [
+    ["మహా శివరాత్రికి మూడు రోజుల జాతర, భారీ రద్దీ. కోడె మొక్కులు ఎక్కువ.", "Maha Shivaratri brings a three-day jatara, huge crowds and many Kode Mokku offerings."],
+    ["శ్రీరామ నవమి రెండో పెద్ద పండుగ. శైవ, వైష్ణవ పండుగలు రెండూ జరుగుతాయి.", "Sri Rama Navami is the second major festival; both Shaiva and Vaishnava festivals are kept."],
+    ["సోమవారాల్లో రద్దీ ఎక్కువ.", "Mondays are busy."],
+    ["ప్రశాంతంగా దర్శనం కావాలంటే వారం మధ్యలో, ఉదయం త్వరగా.", "For a quiet darshan, go early on a weekday."]
+  ],
+  "when_note": ["పనుల వల్ల సమయాలు, క్యూ ఏర్పాట్లు మారవచ్చు. Google లో భీమేశ్వర ఆలయం రాత్రి 9 వరకు తెరిచి ఉంటుందని ఉంది.", "Timings and queues can change during the works. Google lists Bheemeshwara as open until 9 PM."],
+  "carry": [
+    ["నీళ్ళు, టోపీ.", "Water and a cap."],
+    ["సేవలు, కోడె మొక్కు టికెట్, హుండీ కోసం చిల్లర, UPI.", "Small change and UPI for sevas, the Kode Mokku ticket and the hundi."],
+    ["కోడె మొక్కు చేయాలనుకుంటే ముందే కౌంటర్‌లో వివరాలు అడగండి.", "If you plan a Kode Mokku, ask at the counter first how it works now."],
+    ["పర్సు, ఫోన్ జాగ్రత్త. రద్దీలో జాగ్రత్తగా ఉండండి.", "Keep your purse and phone close in the crowds."]
+  ],
+  "stops": [
+    {"text": ["ధర్మగుండం", "Dharma Gundam", "దర్శనానికి ముందు భక్తులు ఈ కోనేటిలో స్నానం చేసే సంప్రదాయం ఉంది. ఈ నీటికి ఔషధ గుణాలున్నాయని నమ్మకం.", "Devotees traditionally bathe in this temple tank before darshan; its water is believed to heal.", "పనుల సమయంలో స్నానానికి అనుమతి ఉందో అక్కడే అడగండి.", "Ask on site whether bathing is allowed during the works."], "art": 0},
+    {"text": ["కోడె మొక్కు", "Kode Mokku", "కోడెను గుడి చుట్టూ ప్రదక్షిణ చేయించి దేవస్థానానికి అప్పగిస్తారు. రాజన్న కోరికలు తీరుస్తాడని నమ్మకం.", "Devotees walk a young bull around the temple and hand it to the temple, trusting Rajanna to grant their wish.", "పనులు జరుగుతున్నంత కాలం కోడె మొక్కు భీమేశ్వర ఆలయంలో.", "While the works go on, the Kode Mokku happens at Bheemeshwara."], "photo": {"src": "img/kode.jpg", "caption": ["వేములవాడ ఆలయ ప్రాంగణంలో కోడెలు", "Bulls in the Vemulawada temple square"], "credit": "Thistheyear2023, CC BY-SA 4.0"}},
+    {"text": ["భీమేశ్వర ఆలయంలో దర్శనం", "Darshan at Bheemeshwara", "ప్రస్తుతం రాజన్న దర్శనం, ఆర్జిత సేవలు ఇక్కడే. ఇది రాజన్న ఆలయానికి అనుబంధ ఆలయం.", "For now, Rajanna's darshan and the arjitha sevas are held here, at the main temple's associate shrine.", "భీమేశ్వర ఆలయం 9వ శతాబ్దం నాటిదని చెబుతారు.", "Bheemeshwara itself is said to date to the 9th century."], "art": 3},
+    {"text": ["ప్రసాదం", "Prasadam", "దర్శనం తర్వాత ప్రసాదం కౌంటర్. లడ్డు, పులిహోర ప్రసాదాలు.", "After darshan, the prasadam counter: laddu and pulihora.", "తాత్కాలిక ఏర్పాట్లు కాబట్టి కౌంటర్ ఎక్కడో క్యూలోనే అడగండి.", "Arrangements are temporary, so ask in the queue where the counter is."], "art": 4},
+    {"text": ["ప్రధాన రాజన్న ఆలయం", "The main Rajanna temple", "విస్తరణ పనులు జరుగుతున్నాయి. లోపల ఏకాంత సేవలు మాత్రం కొనసాగుతున్నాయి.", "Expansion works are under way; only the ekantha sevas continue inside.", "బయట నుంచి చూడండి. పనులు పూర్తయ్యాక కొత్త రూపంలో దర్శనం.", "See it from outside. It will reopen in its new form."], "photo": {"src": "img/gate.jpg", "caption": ["ప్రధాన ఆలయ ద్వారం, పనులకు ముందు", "Main temple gate, before the works"], "credit": "RATHOD SRAVAN, CC0"}},
+    {"text": ["బద్ది పోచమ్మ ఆలయం", "Baddi Pochamma temple", "రాష్ట్రకూట రాజు బద్దెగ భూపతి కట్టించాడని చెబుతారు.", "Said to have been built by the Rashtrakuta king Baddega Bhupathi.", "మ్యాప్‌లో భీమేశ్వర ఆలయం పక్కనే ఉంది.", "On the map it sits right beside Bheemeshwara."], "art": 7},
+    {"text": ["కాళీయమర్దన విగ్రహం", "The Kaliyamardhana statue", "కొండపై ఉన్న కాళీయమర్దన విగ్రహం ఊరికి కొత్త ఆకర్షణ.", "The Kaliyamardhana statue on the hill is the town's newer landmark.", "పైకి దారి స్థానికులను అడగండి.", "Ask locals for the way up."], "art": 5}
+  ],
+  "miss": [
+    ["ధర్మగుండం కోనేరు, నరేంద్రుడి కథ", "The Dharma Gundam and King Narendra's story"],
+    ["భీమేశ్వర ఆలయం పక్కనే బద్ది పోచమ్మ ఆలయం", "Baddi Pochamma temple, right beside Bheemeshwara"],
+    ["భీమేశ్వర ఆలయపు పాత రాతి నిర్మాణం", "Bheemeshwara's own old stonework"],
+    ["కొండపై కాళీయమర్దన విగ్రహం", "The Kaliyamardhana statue on the hill"]
+  ],
+  "nearby": [
+    {"title": ["కొండగట్టు ఆంజనేయ స్వామి", "Kondagattu Anjaneya Swamy"], "text": ["చాలామంది భక్తులు వేములవాడతో పాటు కొండగట్టు ఆంజనేయ స్వామిని కూడా దర్శించుకుంటారు.", "Many devotees pair Vemulawada with a visit to Kondagattu Anjaneya Swamy."]},
+    {"title": ["కొమురవెల్లి మల్లన్న →", "Komuravelli Mallanna →"], "text": ["రాజీవ్ రహదారి మీదే, సిద్దిపేట దగ్గర. మా పూర్తి గైడ్ చూడండి.", "Also on the Rajiv Rahadari, near Siddipet. Open our full guide."], "href": "/komuravelli/"}
+  ],
+  "sevas": {
+    "at_temple": ["ఆర్జిత సేవలు, అభిషేకం, కోడె మొక్కు. కాలసర్ప దోష పూజ కూడా జరుగుతుంది. పనుల సమయంలో అన్నీ భీమేశ్వర ఆలయంలో.", "Arjitha sevas, abhishekam and the Kode Mokku; Kala Sarpa dosha puja is also performed. During the works, all of these are at Bheemeshwara."],
+    "note": ["ధరలు, సమయాలు దేవస్థానం కౌంటర్‌లో అడగండి.", "Ask at the Devasthanam counter for prices and timings."],
+    "online": {
+      "status": ["అధికారిక వెబ్‌సైట్ చూడండి", "Check the official site"],
+      "text": ["వేములవాడ ఆలయానికి అధికారిక వెబ్‌సైట్ ఉంది. తెలంగాణ దేవాదాయ శాఖ మీసేవ ద్వారా వేములవాడ సేవా టికెట్లు ఆన్‌లైన్‌లో అమ్ముతుంది. పనుల సమయంలో ఏ సేవలు బుక్ చేయవచ్చో అక్కడే చూడండి.", "The temple has an official website, and the Endowments Department sells Vemulawada seva tickets online through MeeSeva. Check there which sevas can be booked during the works."],
+      "links": [["Official site", "https://vemulawadatemple.telangana.gov.in/"], ["MeeSeva", "https://ts.meeseva.telangana.gov.in/meeseva/home.html"]]
+    }
+  },
+  "day": [
+    ["5:30", "హైదరాబాద్ నుంచి బయలుదేరండి.", "Leave Hyderabad."],
+    ["9:00", "వేములవాడ చేరుకుని ధర్మగుండం, కోడె మొక్కు.", "Reach Vemulawada: the Dharma Gundam and the Kode Mokku."],
+    ["10:30", "భీమేశ్వర ఆలయంలో రాజన్న దర్శనం, ప్రసాదం.", "Rajanna's darshan at Bheemeshwara, then prasadam."],
+    ["12:00", "బద్ది పోచమ్మ ఆలయం, ప్రధాన ఆలయం బయట నుంచి.", "Baddi Pochamma temple, and the main temple from outside."],
+    ["13:00", "భోజనం, సాయంత్రానికి హైదరాబాద్.", "Lunch, back in Hyderabad by evening."]
+  ],
+  "day_note": ["ఇది సూచన మాత్రమే. సోమవారాలు, శివరాత్రి రోజుల్లో ఎక్కువ సమయం పడుతుంది.", "A suggested plan. Mondays and Shivaratri take much longer."],
+  "photo_ask": ["భీమేశ్వర ఆలయం, ధర్మగుండం, కోడె మొక్కు ఫోటోలు మీ దగ్గర ఉన్నాయా? Instagram లో @gudikathalu కి పంపండి, మీ పేరుతో ఇక్కడ పెడతాం.", "Have photos of Bheemeshwara, the Dharma Gundam or a Kode Mokku? Send them to @gudikathalu on Instagram and we will add them here with your name."],
+  "credits": [
+    {"what": ["ప్రధాన ఆలయ ద్వారం", "Main temple gate"], "author": "RATHOD SRAVAN", "license": "CC0", "source": "https://commons.wikimedia.org/wiki/File:Vemalawada_Ramanna_Temple.jpg"},
+    {"what": ["ఆలయ ప్రాంగణంలో కోడెలు", "Bulls in the temple square"], "author": "Thistheyear2023", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Sri_Raja_Rajeshwara_temple.jpg"}
+  ]
+}
