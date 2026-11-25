@@ -1,0 +1,350 @@
+{
+ "_comment": "EP03 release cut (25 Nov 2026 brief, for 6 PM IST): title వేములవాడ రాజన్న from frame one over the bull and the tether; the tying gesture plays to its end; the hunt and the riverbank get their own pictures; the legend is marked స్థలపురాణం on screen. R01 (tether), R07c (riverbank) and R09 (three handfuls) are the quoted new shots.",
+ "cover_shot": "S03",
+ "assets": {
+  "R01": "Hands knot the bull's rope to a square-cut stone post, pull it tight and let go; the bull stands beside it.",
+  "S02": "Bull hooves beside devotees' feet; a family walks holding the rope.",
+  "S03": "The Vemulawada temple front with families and their bulls.",
+  "S04": "A family and their bull walk clockwise along the shrine wall.",
+  "S05": "Ink sketch: two stone uprights at the east gate, a calf tied to one.",
+  "S06": "The Dharmagundam beside the temple (illustration, marked ప్రతీకాత్మక చిత్రం).",
+  "S07": "King Narendra draws his bow on a hunt.",
+  "R07c": "The rishi fills his pot at the stream; the pot slips from his hands into the water.",
+  "S07b": "The pot floats in the stream; the king stands in the water.",
+  "S08": "The king walks a long road through the hills.",
+  "S09": "The king's hands in the tank water.",
+  "R09": "The king's hands scoop water from the tank three times.",
+  "S10": "Night by the tank: the king asleep, a glow under the water.",
+  "S11": "The king waist-deep in the tank holding the glowing find.",
+  "S11b": "The king kneels before a small lamp-lit shrine on the bank."
+ },
+ "segments": [
+  {
+   "at": "",
+   "asset": "R01",
+   "kind": "clip"
+  },
+  {
+   "at": "భక్తుల అడుగుల",
+   "asset": "S02",
+   "kind": "clip"
+  },
+  {
+   "at": "ఇక్కడి శివుడి",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "ఇంటిల్లిపాదీ",
+   "asset": "S03",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.25,
+     0.62,
+     1.9
+    ],
+    "to": [
+     0.25,
+     0.62,
+     2.1
+    ]
+   },
+   "sees": "Close on a family with their bull, the vow."
+  },
+  {
+   "at": "కోడెతో కలిసి",
+   "asset": "S04",
+   "kind": "clip",
+   "speed": 1.15
+  },
+  {
+   "at": "దాన్ని స్వామికి",
+   "offset": 0.6,
+   "asset": "R01",
+   "kind": "clip",
+   "sees": "The rope is knotted to the post and released (the offering is tied)."
+  },
+  {
+   "at": "అరవై ఏళ్ల",
+   "asset": "S05",
+   "kind": "still",
+   "push": 0.04
+  },
+  {
+   "at": "భక్తులు తెచ్చిన",
+   "asset": "S05",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.35,
+     0.62,
+     1.7
+    ],
+    "to": [
+     0.35,
+     0.62,
+     1.9
+    ]
+   },
+   "sees": "Close on the calf tied at the pillar."
+  },
+  {
+   "at": "మరి ఆ రాజన్న",
+   "asset": "S06",
+   "kind": "still",
+   "push": 0.06
+  },
+  {
+   "at": "నరేంద్రుడనే",
+   "asset": "S07",
+   "kind": "still",
+   "push": 0.06
+  },
+  {
+   "at": "నీళ్లు తెచ్చుకోవడానికి",
+   "asset": "R07c",
+   "kind": "clip",
+   "speed": 1.1
+  },
+  {
+   "at": "ఋషి చనిపోయాడు",
+   "asset": "S07b",
+   "kind": "still",
+   "push": 0.04
+  },
+  {
+   "at": "ఆ పాపం నుంచి",
+   "asset": "S08",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "చివరికి",
+   "asset": "S06",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.55,
+     1.3
+    ]
+   },
+   "sees": "Arrival at the Dharmagundam."
+  },
+  {
+   "at": "ఇక్కడి ధర్మగుండంలోకి",
+   "asset": "R09",
+   "kind": "clip",
+   "ss": 0.0,
+   "focus": {
+    "from": [
+     0.42,
+     0.7,
+     1.6
+    ],
+    "to": [
+     0.42,
+     0.7,
+     1.6
+    ]
+   },
+   "sees": "First handful lifted and drunk."
+  },
+  {
+   "at": "ఇక్కడి ధర్మగుండంలోకి",
+   "offset": 1.4,
+   "asset": "R09",
+   "kind": "clip",
+   "ss": 2.05,
+   "focus": {
+    "from": [
+     0.42,
+     0.7,
+     1.6
+    ],
+    "to": [
+     0.42,
+     0.7,
+     1.6
+    ]
+   },
+   "sees": "Second handful: hands dip and lift."
+  },
+  {
+   "at": "ఇక్కడి ధర్మగుండంలోకి",
+   "offset": 2.8,
+   "asset": "R09",
+   "kind": "clip",
+   "ss": 2.05,
+   "hflip": true,
+   "focus": {
+    "from": [
+     0.58,
+     0.7,
+     1.6
+    ],
+    "to": [
+     0.58,
+     0.7,
+     1.6
+    ]
+   },
+   "sees": "Third handful (second scoop mirrored).",
+   "flag": "third scoop is the second scoop mirrored; a true three-scoop retake is 7.5 credits"
+  },
+  {
+   "at": "ఆ పాపం తొలగిందని",
+   "asset": "S09",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.42,
+     0.68,
+     1.55
+    ],
+    "to": [
+     0.4,
+     0.7,
+     1.75
+    ]
+   }
+  },
+  {
+   "at": "ఆ రాత్రి",
+   "asset": "S10",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.64,
+     1.5
+    ],
+    "to": [
+     0.5,
+     0.6,
+     1.6
+    ]
+   },
+   "sees": "The king asleep by the tank."
+  },
+  {
+   "at": "గుండం అడుగున",
+   "asset": "S10",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.33,
+     1.6
+    ],
+    "to": [
+     0.5,
+     0.3,
+     1.9
+    ]
+   },
+   "sees": "The glow at the bottom of the tank."
+  },
+  {
+   "at": "రాజు నీటిలో",
+   "asset": "S11",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "దొరికిన గుండం",
+   "asset": "S11b",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "మీ ఇంట్లో",
+   "asset": "S02",
+   "kind": "still",
+   "push": 0.05
+  }
+ ],
+ "overlays": [
+  {
+   "at": "",
+   "until": "ఎందుకు కడతారు",
+   "kind": "title",
+   "lines": [
+    "వేములవాడ",
+    "రాజన్న"
+   ]
+  },
+  {
+   "at": "రాజరాజేశ్వరుడు",
+   "until": "భక్తులు పిలిచేది",
+   "kind": "name",
+   "lines": [
+    "రాజరాజేశ్వరుడు"
+   ]
+  },
+  {
+   "at": "రాజన్నా అని",
+   "until": "ఇంటిల్లిపాదీ",
+   "kind": "name",
+   "lines": [
+    "రాజన్న"
+   ]
+  },
+  {
+   "at": "అరవై ఏళ్ల",
+   "until": "గుడి తూర్పు",
+   "kind": "card",
+   "lines": [
+    "అరవై ఏళ్ల కిందట",
+    "1961 జనగణన నమోదు"
+   ]
+  },
+  {
+   "at": "మరి ఆ రాజన్న",
+   "until": "నరేంద్రుడనే",
+   "kind": "mark",
+   "lines": [
+    "ప్రతీకాత్మక చిత్రం"
+   ]
+  },
+  {
+   "at": "నరేంద్రుడనే",
+   "until": "చివరికి",
+   "kind": "mark",
+   "lines": [
+    "స్థలపురాణం"
+   ]
+  },
+  {
+   "at": "చివరికి",
+   "until": "ఇక్కడి ధర్మగుండంలోకి",
+   "kind": "mark",
+   "lines": [
+    "స్థలపురాణం · ప్రతీకాత్మక చిత్రం"
+   ]
+  },
+  {
+   "at": "ఇక్కడి ధర్మగుండంలోకి",
+   "until": "మీ ఇంట్లో",
+   "kind": "mark",
+   "lines": [
+    "స్థలపురాణం"
+   ]
+  },
+  {
+   "at": "మీ ఇంట్లో",
+   "kind": "questions",
+   "lines": [
+    "మీ ఇంట్లో ఎవరైనా రాజన్నకి కోడె మొక్కు తీర్చారా?",
+    "ఆ రోజు మీకు గుర్తున్నది ఏంటో చెప్పండి."
+   ]
+  }
+ ]
+}

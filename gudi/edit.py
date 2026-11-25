@@ -69,7 +69,7 @@ def edit_spec(ep, ledger, cfg, out_dir, name):
         t = an.time(s.get("at", ""), s.get("offset", 0.0))
         seg = {"kind": s["kind"], "src": str(_asset_path(ep, s["asset"], s["kind"])), "start": t,
                "asset": s["asset"], "sees": s.get("sees") or doc.get("assets", {}).get(s["asset"], ""), "flag": s.get("flag")}
-        for k in ("focus", "lead", "ss", "push", "speed"):
+        for k in ("focus", "lead", "ss", "push", "speed", "hflip"):
             if k in s:
                 seg[k] = s[k]
         segs.append(seg)

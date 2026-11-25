@@ -42,6 +42,7 @@ def build_picture(segments, out, size, fps=30):
                 cx, cy, z = s["focus"]["from"]
                 fc = (f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{cx}-iw/{z}/2))':"
                       f"'max(0,min(ih-ih/{z},ih*{cy}-ih/{z}/2))',")
+            fc = ("hflip," if s.get("hflip") else "") + fc
             chains.append(f"[{i}:v]setpts=(PTS-STARTPTS)/{sp},fps={fps},{fc}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,"
                           f"{head}tpad=stop_mode=clone:stop_duration={dur + 1:.3f},trim=end_frame={n},setpts=PTS-STARTPTS[v{i}]")
         else:
