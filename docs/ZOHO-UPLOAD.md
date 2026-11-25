@@ -14,3 +14,9 @@ Why: the Chrome upload tool takes at most 3.8 MB per call and connector uploads 
 8. YouTube icon: tick Post as Shorts, set Title and Description (form_input), Visibility Public; compare SHA-256 of both with youtube-description.txt; Update.
 9. Instagram icon: Add to Instagram Feed on.
 10. Schedule for a Specific Date: date, 06 : 00 PM, Time Zone IST; Schedule. Verify under Posts > Scheduled Posts, each channel tab.
+
+## Bio link (from 25 Nov 2026)
+Instagram bio link: https://gudikathalu.vercel.app/ (temple guides at /<temple>/, e.g. /vemulawada/).
+- Instagram caption: one line before the comment question, "🛕 <guide label>: బయోలోని లింక్‌లో 🔗" (captions cannot hold clickable links). Without a guide page for the temple: "🛕 మరిన్ని గుడి కథలు, దర్శనం గైడ్‌లు: బయోలోని లింక్‌లో 🔗".
+- YouTube description: the direct page URL under the 📍 location line.
+- Zoho appends "#shorts" to Shorts descriptions, so the description file ends with a single "#shorts".

@@ -5,3 +5,5 @@ Release: Today 25 Nov 2026, 06:00 PM IST (brand time zone IST), schedule type Cu
 - YouTube @gudikathalutelugu: Short, Public; title and description = youtube-description.txt (SHA-256 matched in the form).
 Video: publish encode of the approved release cut (vemulavada-rajanna-ep03.mp4, CRF 20, 6 Mbps cap, 60,519,358 bytes, sha256 eef89fb2cbe18c9a...), uploaded by the method in docs/ZOHO-UPLOAD.md.
 Both entries checked in Zoho > Posts > Scheduled Posts (Instagram tab and YouTube tab).
+
+Update 25 Nov 13:3x IST: added the bio-link line to the Instagram caption and https://gudikathalu.vercel.app/vemulawada/ to the YouTube description (single #shorts, which Zoho appends). Re-checked in the stored post: caption matches instagram-caption.txt, description SHA-256 matches youtube-description.txt. Still 6:00 PM IST on both.
