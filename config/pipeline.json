@@ -47,7 +47,8 @@
   },
   "_caps_note": "Set 24 Nov 2026 19:55 IST for week 1, as approved by Karunakar: EP03-EP08 under 299.5 Higgsfield and 6,668 ElevenLabs, one narration take per episode. Caps = EP02's committed spend today (56 / 1,430) + the batch allowance. EP08 runs only if its full remaining quote fits the live balance.",
   "publishing": {
-    "release_time": "18:00",
+    "release_time": "16:30",
+    "_release_note": "Timing test from 26 Nov 2026: EP03 at 18:00, next release at 16:30; compare 24-hour views, then fix one time",
     "timezone": "Asia/Kolkata",
     "_note": "Karunakar, 24 Nov 2026: every future Gudi Kathalu Reel and Short is scheduled for 6:00 PM IST. Posting still needs his approval per episode."
   }

@@ -30,3 +30,6 @@ Blessings so far: Vemulawada and Srikalahasti "ఓం నమః శివాయ"
 
 ## Swapping the video in a scheduled post
 Remove the old video (x on the thumbnail), attach the new one as in step 5, re-set the Instagram thumbnail. Replacing the video resets YouTube Video Options: tick Post as Shorts again and re-enter title and description, then compare hashes before Update Schedule.
+
+## Release time test (from 25 Nov 2026)
+EP01 at 6:00 PM got about 300 views; EP02 at 4:30 PM got about 28K. One post each cannot separate time from content or account age, so: EP03 at 6:00 PM (25 Nov), the next release at 4:30 PM (26 Nov). Compare each post's views at 24 hours on both channels, then fix one time. Baselete and personal posts at the same time do not compete for reach (separate accounts).
