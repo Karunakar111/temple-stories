@@ -1,0 +1,22 @@
+{
+ "approval": "Karunakar, 25 Nov 2026 12:12 IST: Higgsfield Ultra active, go ahead with the EP04 repair as quoted (58 Higgsfield, 0 ElevenLabs). Deliver 0:18-0:54 first for review on phone; publishing separate.",
+ "cap_higgsfield": 58,
+ "balance_before": 3067.3,
+ "calls": [
+  {
+   "what": "R-ANIMALS still",
+   "credits": 2
+  },
+  {
+   "what": "R04b R05 R06 R07 R08 R08b stills",
+   "credits": 12
+  },
+  {
+   "what": "clips R04b 5s, R05 4s, R06 5s, R07 5s, R08 5s",
+   "credits": 36
+  }
+ ],
+ "spent": 50,
+ "balance_after": 3017.3,
+ "left_in_quote": "8 (S09b moksha still 2 + 4 s clip 6), held until the sequence is reviewed"
+}

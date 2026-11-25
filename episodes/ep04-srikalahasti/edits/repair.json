@@ -1,0 +1,253 @@
+{
+ "_comment": "EP04 repair (25 Nov 2026 brief): every story event gets its own picture and each physical action plays to its end. New shots R04b-R08b from the corrected animal sheet (natural animals, no clothing). Crops only where they reveal what the voice names. S09b (moksha light) not made yet: S09 wide holds that line in this cut.",
+ "cover_shot": "S01",
+ "assets": {
+  "S01": "Macro: water pours from a trunk through the web; the web tears and the red gem rolls; tilt up to the trunk.",
+  "S03": "The Srikalahasti gopurams beside the Swarnamukhi river.",
+  "S04": "The forest clearing, the stone a dark shape in shadow.",
+  "R04b": "A tiny spider spins its web above the stone; sun on one half, rain beading on the other.",
+  "R05": "A real cobra leaves its burrow with a glowing gem in its mouth and sets it down near the stone.",
+  "R06": "A real elephant wades out of the stream, raises its trunk and pours water over the stone.",
+  "R07": "The cobra rears with its hood spread at the washed-aside gem and darts at the trunk tip; the trunk jerks up.",
+  "R08": "The elephant swings its head against the tree; the tree shudders, leaves fall; the small web on the bark trembles.",
+  "R08b": "Dusk: the elephant lies still at the foot of the tree; the torn web hangs above. No injury.",
+  "S09": "The clearing with the three offerings: the web, the red gem, the water."
+ },
+ "segments": [
+  {
+   "at": "",
+   "asset": "S01",
+   "kind": "clip",
+   "speed": 0.5
+  },
+  {
+   "at": "స్వర్ణముఖి",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.06
+  },
+  {
+   "at": "అడవిలో ఒక",
+   "asset": "S04",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "ఎండ పడినా",
+   "asset": "R04b",
+   "kind": "clip",
+   "speed": 0.72
+  },
+  {
+   "at": "పాము నేల",
+   "asset": "R05",
+   "kind": "clip",
+   "speed": 0.9
+  },
+  {
+   "at": "ఏనుగు వంతు",
+   "asset": "R06",
+   "kind": "clip",
+   "speed": 0.92
+  },
+  {
+   "at": "ఆ ధార",
+   "asset": "S01",
+   "kind": "clip",
+   "ss": 1.5,
+   "sees": "Web tears and the gem rolls (reused from the opening)."
+  },
+  {
+   "at": "తాను తెచ్చిన",
+   "asset": "R07",
+   "kind": "clip",
+   "speed": 0.9,
+   "focus": {
+    "from": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.1
+    ]
+   }
+  },
+  {
+   "at": "ఊపిరాడక",
+   "asset": "R08",
+   "kind": "clip",
+   "focus": {
+    "from": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.1
+    ]
+   },
+   "ss": 1.9
+  },
+  {
+   "at": "ఆ బోదె",
+   "asset": "R08",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.77,
+     0.31,
+     2.6
+    ],
+    "to": [
+     0.77,
+     0.31,
+     2.8
+    ]
+   },
+   "sees": "Close on the small spider in its web on the bark."
+  },
+  {
+   "at": "ఈ కథనంలో",
+   "asset": "R08b",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "ఒకటి నీడ",
+   "asset": "S09",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.38,
+     0.32,
+     2.8
+    ],
+    "to": [
+     0.38,
+     0.32,
+     3.0
+    ]
+   },
+   "sees": "Close on the web (shade)."
+  },
+  {
+   "at": "ఒకటి తనకి",
+   "asset": "S09",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.7,
+     0.56,
+     3.2
+    ],
+    "to": [
+     0.7,
+     0.56,
+     3.4
+    ]
+   },
+   "sees": "Close on the red gem."
+  },
+  {
+   "at": "ఇంకొకటి",
+   "asset": "S09",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.7,
+     0.75,
+     2.6
+    ],
+    "to": [
+     0.7,
+     0.75,
+     2.8
+    ]
+   },
+   "sees": "Close on the glistening water."
+  },
+  {
+   "at": "మూడింటి",
+   "asset": "S09",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.32,
+     1.25
+    ],
+    "to": [
+     0.5,
+     0.3,
+     1.4
+    ]
+   },
+   "sees": "Light falling through the trees onto the clearing (interim until S09b).",
+   "flag": "interim: S09b moksha light not made yet"
+  },
+  {
+   "at": "ఆ మూడు ప్రాణుల్ని",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.05,
+   "sees": "The real temple for the kshetram's name."
+  }
+ ],
+ "overlays": [
+  {
+   "at": "",
+   "until": "ఏనుగు పూజ",
+   "kind": "title",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "శ్రీకాళహస్తీశ్వర ఆలయం"
+   ]
+  },
+  {
+   "at": "స్వర్ణముఖి",
+   "until": "అడవిలో ఒక",
+   "kind": "card",
+   "lines": [
+    "స్వర్ణముఖి ఒడ్డున",
+    "శ్రీకాళహస్తి · ఆంధ్రప్రదేశ్"
+   ]
+  },
+  {
+   "at": "శ్రీ అంటే",
+   "until": "కాళం అంటే",
+   "kind": "card",
+   "lines": [
+    "శ్రీ · సాలెపురుగు"
+   ]
+  },
+  {
+   "at": "కాళం అంటే",
+   "until": "హస్తి అంటే",
+   "kind": "card",
+   "lines": [
+    "కాళం · పాము"
+   ]
+  },
+  {
+   "at": "హస్తి అంటే",
+   "until": "కలిపి పలకండి",
+   "kind": "card",
+   "lines": [
+    "హస్తి · ఏనుగు"
+   ]
+  },
+  {
+   "at": "కలిపి పలకండి",
+   "kind": "date",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "శ్రీ + కాళం + హస్తి"
+   ]
+  }
+ ]
+}
