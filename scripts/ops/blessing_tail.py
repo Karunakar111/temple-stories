@@ -40,6 +40,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("film"); ap.add_argument("bg"); ap.add_argument("out"); ap.add_argument("lines", nargs="+")
     ap.add_argument("--seconds", type=float, default=2.5)
+    ap.add_argument("--voice", help="spoken chant take (same cloned voice); starts as the blessing appears")
+    ap.add_argument("--voice-gain", type=float, default=9.0, help="dB added to the take before a -2 dBFS limiter")
     a = ap.parse_args()
     out = Path(a.out); work = out.parent / (out.stem + "-tail-work")
     shutil.rmtree(work, ignore_errors=True); work.mkdir(parents=True)
@@ -53,6 +55,13 @@ def main():
         im.paste(px[y], (0, y, W, y + 1))
     im.save(shade)
     film_s, T = dur(a.film), a.seconds
+    VO_AT = XF * 0.6 + 0.15  # seconds into the tail: as the blessing has faded in
+    vo = None
+    if a.voice:
+        vo = work / "voice.wav"  # leading silence trimmed, lifted to sit with the narration, a little temple air
+        run("-i", a.voice, "-af", f"silenceremove=start_periods=1:start_threshold=-45dB,volume={a.voice_gain}dB,"
+            "aecho=0.8:0.6:70|140:0.22|0.12,alimiter=limit=0.79:level=disabled", "-ar", "48000", "-ac", "2", str(vo))
+        T = max(T, round(VO_AT + dur(vo) + 0.7, 2))
     n = round(T * FPS)
 
     # picture of the tail: still, cover-cropped, slow push, dimmed toward the centre band, blessing fades in
@@ -77,6 +86,12 @@ def main():
     run("-f", "lavfi", "-i", f"aevalsrc='{bell}':s=48000:c=stereo:d={T:.3f}",
         "-af", f"afade=t=out:st={T - 0.9:.3f}:d=0.9", str(tail_a))
 
+    if vo:
+        mixed = work / "tail-vo.wav"
+        ms = int(VO_AT * 1000)
+        run("-i", str(tail_a), "-i", str(vo), "-filter_complex",
+            f"[1:a]adelay={ms}|{ms}[v];[0:a][v]amix=inputs=2:normalize=0:duration=first", str(mixed))
+        tail_a = mixed
     run("-i", a.film, "-i", str(tail), "-i", str(tail_a),
         "-filter_complex",
         f"[0:v][1:v]xfade=transition=fade:duration={XF}:offset={film_s - XF:.3f},format=yuv420p[v];"
