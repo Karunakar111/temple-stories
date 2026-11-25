@@ -24,6 +24,9 @@ Instagram bio link: https://gudikathalu.vercel.app/ (temple guides at /<temple>/
 ## Closing blessing (from 25 Nov 2026)
 A devotional sign-off for the episode's deity, never an instruction ("type this", "share for good luck"): Instagram treats explicit asks for comments of a set word or for shares as engagement bait and stops recommending the post.
 - Instagram caption: "🙏 <blessing>" just above the hashtags.
-- Film (from the next render): the same blessing on screen at the end, after the comment card.
+- Film: after the comment card, a 0.4 s fade to a temple still with the blessing large in gold and the temple name beneath, one bell, and the blessing spoken softly in the narration voice (`scripts/ops/blessing_tail.py film.mp4 still.png out.mp4 "<blessing>" "<temple>" --voice chant.mp3 --voice-gain 13.5`). First used on EP03.
 - Sharing asks, if any, stay off Instagram and are tied to use ("send this to someone going to <temple>"), e.g. a pinned YouTube comment.
 Blessings so far: Vemulawada and Srikalahasti "ఓం నమః శివాయ", Yadagirigutta "ఓం నమో నారసింహాయ", Kanipakam "ఓం గం గణపతయే నమః", Puri "జై జగన్నాథ్".
+
+## Swapping the video in a scheduled post
+Remove the old video (x on the thumbnail), attach the new one as in step 5, re-set the Instagram thumbnail. Replacing the video resets YouTube Video Options: tick Post as Shorts again and re-enter title and description, then compare hashes before Update Schedule.
