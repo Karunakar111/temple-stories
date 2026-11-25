@@ -16,3 +16,4 @@ Checked in the exported MP4
 Posting is left to Karunakar's approval of this export.
 25 Nov: blessing ending. ElevenLabs 74 credits (2 takes of "ఓం... నమః శివాయ" at 37 each; take 2 used, saved as takes/ep03-chant-om-namah-shivaya.mp3). Higgsfield 0.
 25 Nov: MAGI-2 test, handfuls (R09m), 5 s 9:16, start/end = first/last frame of the Kling R09 clip, no audio: 12.5 Higgsfield credits (approved). Result shows three scoops (mouth at ~1.3, 2.9, 4.6 s); saved as assets/ep03-R09m-clip.mp4. Not used in the live film.
+25 Nov 18:10: Karunakar judged the MAGI-2 and Kling handfuls clips the same on his phone. Decision: Kling 3.0 stays the default; MAGI-2 only for an action Kling fails after one try.
