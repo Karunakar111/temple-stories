@@ -1,0 +1,105 @@
+{
+  "slug": "srikalahasti",
+  "title": "Srikalahasti Temple",
+  "description": "శ్రీకాళహస్తి ఆలయం: సాలీడు, పాము, ఏనుగు కథ, దారి, రాహు కేతు పూజ, అడుగడుగునా గైడ్. Srikalahasti temple visit guide.",
+  "short_name": ["శ్రీకాళహస్తి", "Srikalahasti"],
+  "share_msg": "శ్రీకాళహస్తి యాత్ర పూర్తి చేశాను. మీరూ ఈ గైడ్ చూడండి:",
+  "checked": ["నవంబర్ 2026", "November 2026"],
+  "hero": {
+    "h1": ["శ్రీకాళహస్తీశ్వర స్వామి ఆలయం", "Sri Kalahasteeswara Swamy Temple"],
+    "sub": ["శ్రీకాళహస్తి, తిరుపతి జిల్లా, ఆంధ్రప్రదేశ్", "Srikalahasti, Tirupati district, Andhra Pradesh"],
+    "lead": ["పంచభూత క్షేత్రాల్లో వాయు లింగం. రాహు కేతు పూజకు ప్రసిద్ధి. తిరుపతి నుంచి సుమారు 36 కి.మీ.", "The Vayu Linga among the Pancha Bhuta shrines, famous for the Rahu Ketu puja. About 36 km from Tirupati."],
+    "photo": {"src": "img/hero.jpg", "alt": "Srikalahasti temple gopuram and a green hill beside the Swarnamukhi river", "caption": ["స్వర్ణముఖి నది ఒడ్డున ఆలయ గోపురం", "The temple gopuram on the Swarnamukhi river"], "credit": "Ravichandra, CC BY-SA 3.0"}
+  },
+  "facts": [
+    {"value": "~555 km", "desc": ["హైదరాబాద్ నుంచి, రోడ్డుపై సుమారు 10 గంటలు. తిరుపతి నుంచి 36 కి.మీ.", "from Hyderabad, about 10 hours by road. 36 km from Tirupati"]},
+    {"value": "5:30 AM – 9 PM", "desc": ["వారాంతాల్లో 9:30 వరకు, ముందే కనుక్కోండి", "till 9:30 PM at weekends; confirm before you go"]},
+    {"value": ["3–4 గం.", "3–4 hrs"], "desc": ["రాహు కేతు పూజతో కలిపి. పండుగల్లో ఇంకా ఎక్కువ", "including the Rahu Ketu puja; longer at festivals"]},
+    {"value": ["సంప్రదాయ దుస్తులు", "Traditional dress"], "desc": ["రాహు కేతు పూజకు సంప్రదాయ దుస్తులే మంచిది", "best for the Rahu Ketu puja"]}
+  ],
+  "map": {
+    "coords": "13.7497357,79.698532",
+    "addr": ["శ్రీకాళహస్తీశ్వర స్వామి ఆలయం, శ్రీకాళహస్తి, తిరుపతి జిల్లా, ఆంధ్రప్రదేశ్ 517644", "Sri Kalahasteeswara Swamy temple, Srikalahasti, Tirupati district, Andhra Pradesh 517644"],
+    "rows": [
+      ["హైదరాబాద్ నుంచి రోడ్డుపై సుమారు 555 కి.మీ., 10 గంటలు", "About 555 km and 10 hours by road from Hyderabad"],
+      ["తిరుపతి నుంచి సుమారు 36 కి.మీ., 45 నిమిషాలు", "About 36 km, 45 minutes, from Tirupati"],
+      ["శ్రీకాళహస్తి రైల్వే స్టేషన్ నుంచి సుమారు 2–3 కి.మీ.", "About 2 to 3 km from Srikalahasti railway station"],
+      ["తిరుపతి విమానాశ్రయం (రేణిగుంట) సుమారు 26 కి.మీ.", "Tirupati airport (Renigunta) is about 26 km away"]
+    ]
+  },
+  "story": {
+    "h2": ["శ్రీ, కాళ, హస్తి కథ", "The story of Sri, Kala and Hasti"],
+    "paras": [
+      ["ఇక్కడ శివుడు శ్రీకాళహస్తీశ్వరుడిగా, అమ్మవారు జ్ఞాన ప్రసూనాంబగా కొలువై ఉన్నారు. పంచభూత క్షేత్రాల్లో ఇది వాయు క్షేత్రం.", "Here Shiva is worshipped as Sri Kalahasteeswara and the Goddess as Gnana Prasunambika. Among the five Pancha Bhuta shrines, this is the shrine of Vayu, the wind."],
+      ["స్థలపురాణం ప్రకారం ఒక సాలీడు (శ్రీ) లింగం చుట్టూ గూడు అల్లి కాపాడేది. ఒక పాము (కాళ) లింగంపై మణులు పెట్టేది. ఒక ఏనుగు (హస్తి) తొండంతో నీళ్ళు తెచ్చి లింగాన్ని కడిగి, పూలు, ఆకులతో పూజించేది.", "The legend says a spider (Sri) wove its web around the Linga to protect it, a snake (Kala) laid gems on it, and an elephant (Hasti) brought water in its trunk to wash the Linga and worshipped it with flowers and leaves."],
+      ["మరి సాలెగూడు ఎందుకు తెగింది? ఏనుగుకు మిగతా ఇద్దరి భక్తి తెలియదు. లింగాన్ని శుభ్రం చేయాలని నీళ్ళు పోస్తే సాలెగూడు కొట్టుకుపోయింది, పాము పెట్టిన మణి కూడా పడిపోయింది. కోపంతో పాము ఏనుగు తొండంలోకి దూరి కాటేసింది. బాధతో ఏనుగు బండకేసి తల కొట్టుకుంది. రెండూ చనిపోయాయి. ముగ్గురి భక్తికీ మెచ్చి శివుడు మోక్షం ఇచ్చాడని, ఆ ముగ్గురి పేర్లతో ఈ క్షేత్రం శ్రీకాళహస్తి అయిందని చెబుతారు. లింగంపై సాలీడు, ఏనుగు దంతాలు, ఐదు తలల పాము రూపాలు కనిపిస్తాయని భక్తుల నమ్మకం.", "So why did the web break? The elephant did not know about the other two. When it poured water to clean the Linga, the web was washed away and the snake's gem fell off. The angry snake crept into the elephant's trunk and bit it; in pain, the elephant struck its head on a rock, and both died. Pleased with all three, Shiva is said to have given them moksha, and the shrine took their names: Sri, Kala, Hasti. Devotees believe the Linga bears the marks of a spider, elephant tusks and a five-hooded snake."],
+      ["ఇక్కడే వేటగాడు తిన్నడు భక్త కన్నప్పగా మారాడు. లింగం కంటి నుంచి రక్తం కారడం చూసి తన కన్నే పెకిలించి పెట్టాడు. రెండో కన్ను కూడా ఇవ్వబోతుంటే శివుడు ఆపాడని కథ.", "This is also where the hunter Thinnadu became Bhakta Kannappa. Seeing blood flow from the Linga's eye, he plucked out his own eye and placed it there; as he moved to give the second, Shiva stopped him, the story goes."]
+    ],
+    "episode": ["గుడి కథలు ఎపిసోడ్ 4: శ్రీకాళహస్తి, ఏనుగు పూజ చేస్తే సాలెగూడు ఎందుకు తెగింది?", "Gudi Kathalu episode 4: Srikalahasti, why did the web break when the elephant worshipped?"]
+  },
+  "plan": {
+    "car": ["హైదరాబాద్ నుంచి సుమారు 555 కి.మీ., 10 గంటలు. చాలామంది ముందు రోజు తిరుపతి చేరి, ఉదయాన్నే శ్రీకాళహస్తి వెళ్తారు.", "About 555 km and 10 hours from Hyderabad. Many people reach Tirupati the day before and drive over early in the morning."],
+    "bus": ["హైదరాబాద్ నుంచి తిరుపతికి రాత్రి బస్సులు ఉన్నాయి. తిరుపతి నుంచి శ్రీకాళహస్తికి APSRTC బస్సులు తరచుగా ఉంటాయి.", "Overnight buses run from Hyderabad to Tirupati, and APSRTC buses run often from Tirupati to Srikalahasti."],
+    "train": ["శ్రీకాళహస్తికి సొంత రైల్వే స్టేషన్ ఉంది, ఆలయానికి 2–3 కి.మీ. హైదరాబాద్ నుంచి తిరుపతి లేదా రేణిగుంటకు రైళ్ళు ఎక్కువ. అక్కడి నుంచి బస్సు, ట్యాక్సీ.", "Srikalahasti has its own station, 2 to 3 km from the temple. More trains from Hyderabad go to Tirupati or Renigunta; take a bus or taxi from there."]
+  },
+  "when": [
+    ["మహా శివరాత్రికి బ్రహ్మోత్సవాలు, భారీ రద్దీ. రథోత్సవం కూడా ఉంటుంది.", "Maha Shivaratri brings the Brahmotsavams, a chariot procession and huge crowds."],
+    ["కార్తీక మాసం, సోమవారాలు, అమావాస్య రోజుల్లో రద్దీ ఎక్కువ.", "Karthika masam, Mondays and Amavasya days are busy."],
+    ["రాహు కేతు పూజకు అమావాస్య, ఆదివారం, మంగళవారం రాహుకాలం మంచివని భక్తుల నమ్మకం. ఆ రోజుల్లో క్యూ పెద్దగా ఉంటుంది.", "Devotees prefer Amavasya, and Rahu kalam on Sundays and Tuesdays, for the Rahu Ketu puja, so queues are long then."],
+    ["ప్రశాంతంగా దర్శనం కావాలంటే వారం మధ్యలో, ఉదయం త్వరగా. అక్టోబర్ నుంచి ఫిబ్రవరి వాతావరణం బాగుంటుంది.", "For a quiet darshan, go early on a weekday. October to February has the best weather."]
+  ],
+  "when_note": ["Google లో ఆలయం ఉదయం 5:30 నుంచి రాత్రి 9 వరకు, శని ఆదివారాల్లో 9:30 వరకు ఉంది. పండుగల్లో సమయాలు మారతాయి.", "Google lists the temple as open 5:30 AM to 9 PM, and till 9:30 PM at weekends. Timings change at festivals."],
+  "carry": [
+    ["మొబైల్, కెమెరా గుడి లోపలికి అనుమతి లేదు. బయట డిపాజిట్ కౌంటర్ ఉంటుంది.", "Phones and cameras are not allowed inside; there is a deposit counter outside."],
+    ["చెప్పులు, తోలు వస్తువులు బయటే వదలండి.", "Leave footwear and leather items outside."],
+    ["టికెట్లు, హుండీ కోసం చిల్లర, UPI.", "Small change and UPI for tickets and the hundi."],
+    ["నీళ్ళు, టోపీ. కన్నప్ప కొండ ఎక్కాలంటే సౌకర్యమైన అడుగులు.", "Water and a cap, and comfortable feet if you plan to climb Kannappa hill."]
+  ],
+  "stops": [
+    {"text": ["స్వర్ణముఖి నది", "The Swarnamukhi river", "ఆలయం స్వర్ణముఖి నది ఒడ్డునే ఉంది. ఈ నదిలో స్నానం చేసి ఇక్కడ పూజిస్తే శాపాలు తొలగాయని పురాణ కథలు చెబుతాయి.", "The temple stands on the bank of the Swarnamukhi. Legends say bathing in this river and worshipping here lifted curses.", "నది ఒడ్డు నుంచి గోపురం, పక్కనే కన్నప్ప కొండ కనిపిస్తాయి. వర్షాకాలంలో నీటి దగ్గర జాగ్రత్త.", "From the bank you see the gopuram and Kannappa hill beside it. Take care near the water in the monsoon."], "photo": {"src": "img/hill.jpg", "caption": ["స్వర్ణముఖి నది, గోపురం, కన్నప్ప కొండ", "The Swarnamukhi, the gopuram and Kannappa hill"], "credit": "Ravichandra, CC BY-SA 3.0"}},
+    {"text": ["రాజగోపురం", "The Rajagopuram", "పాత రాజగోపురం 2010 లో కూలిపోయింది. అదే చోట కొత్త రాజగోపురం కట్టారు.", "The old Rajagopuram collapsed in 2010, and a new one was built in its place.", "రాతి కింది భాగం, తెల్లటి పై అంతస్తులు చూడండి.", "Look at the dark stone base and the white tiers above."], "photo": {"src": "img/gopuram.jpg", "caption": ["కొత్త రాజగోపురం, 2018", "The new Rajagopuram, 2018"], "credit": "Ravichandra, CC BY-SA 3.0"}},
+    {"text": ["రాహు కేతు పూజ", "The Rahu Ketu puja", "కాలసర్ప దోష నివారణకు ఇక్కడ రాహు కేతు పూజ చేస్తారు. కౌంటర్‌లో టికెట్ తీసుకుంటే పూజ సామగ్రి ఇస్తారు. పూజ మండపాల్లో బ్యాచ్‌లుగా జరుగుతుంది.", "The Rahu Ketu puja here is done to ease Kala Sarpa dosha. Buy a ticket at the counter and you get the puja items; it is held in batches in the mandapams.", "టికెట్లు వేర్వేరు ధరల్లో ఉంటాయి. ధర, సమయం కౌంటర్‌లోనే అడగండి.", "Tickets come at several price levels. Ask at the counter for the price and timing."], "art": 1},
+    {"text": ["శ్రీకాళహస్తీశ్వర దర్శనం", "Darshan of Sri Kalahasteeswara", "వాయు లింగం దర్శనం. ఉచిత సర్వ దర్శనంతో పాటు త్వరగా అయ్యే టికెట్ దర్శనాలు ఉన్నాయి.", "Darshan of the Vayu Linga. Along with the free sarva darshan, there are paid quicker darshan tickets.", "లింగంపై సాలీడు, ఏనుగు దంతాలు, ఐదు తలల పాము రూపాలను చూడండి.", "Look for the spider, the elephant tusks and the five-hooded snake on the Linga."], "art": 3},
+    {"text": ["జ్ఞాన ప్రసూనాంబ అమ్మవారు", "Goddess Gnana Prasunambika", "ఇదే ఆలయంలో అమ్మవారి సన్నిధి. స్వామి దర్శనం తర్వాత అమ్మవారిని దర్శించుకోండి.", "The Goddess has her own shrine in the same temple. Visit her after the Lord's darshan.", "అమ్మవారి సన్నిధి ఎటో క్యూలోనే అడగండి.", "Ask in the queue for the way to her shrine."], "art": 4},
+    {"text": ["కన్నప్ప కొండ మెట్లు", "Steps up Kannappa hill", "ఆలయం పక్కనే ఉన్న కొండపైకి మెట్ల దారి ఉంది.", "A flight of steps climbs the hill beside the temple.", "ఎండ పెరగక ముందే ఎక్కండి. నీళ్ళు తీసుకెళ్ళండి.", "Climb before the sun gets strong, and carry water."], "photo": {"src": "img/steps.jpg", "caption": ["భక్త కన్నప్ప కొండకు మెట్లు", "Steps to the Bhakta Kannappa hill temple"], "credit": "Ravichandra, CC BY-SA 4.0"}},
+    {"text": ["భక్త కన్నప్ప ఆలయం", "Bhakta Kannappa temple", "కొండపైన కన్నప్ప ఆలయం. కన్ను ఇచ్చిన భక్తుడి కథ ఇక్కడ గుర్తుకొస్తుంది.", "Kannappa's temple sits on the hilltop, where the story of the devotee who gave his eye comes alive.", "పై నుంచి శ్రీకాళహస్తి ఊరు, గోపురం కనిపిస్తాయి.", "From the top you can see the town and the gopuram."], "photo": {"src": "img/kannappa.jpg", "caption": ["కొండపై భక్త కన్నప్ప ఆలయ ద్వారం", "Entrance of the Bhakta Kannappa temple on the hill"], "credit": "Ravichandra, CC BY-SA 4.0"}},
+    {"text": ["భరద్వాజ తీర్థం", "Bharadwaja Teertham", "ఆలయానికి దగ్గర్లో ఉన్న ప్రశాంతమైన కోనేరు. మధ్యలో చిన్న మండపం ఉంటుంది.", "A calm temple tank near the main temple, with a small mandapam in the middle.", "సాయంత్రం వెలుగులో బాగుంటుంది. దారి స్థానికులను అడగండి.", "Lovely in the evening light. Ask locals for the way."], "photo": {"src": "img/teertham.jpg", "caption": ["భరద్వాజ తీర్థం", "Bharadwaja Teertham"], "credit": "Ravichandra, CC BY-SA 4.0"}}
+  ],
+  "miss": [
+    ["లింగంపై సాలీడు, ఏనుగు, పాము రూపాలు", "The spider, elephant and snake marks on the Linga"],
+    ["స్వర్ణముఖి నది ఒడ్డు నుంచి గోపురం", "The gopuram from the Swarnamukhi bank"],
+    ["కన్నప్ప కొండపై నుంచి ఊరి దృశ్యం", "The view of the town from Kannappa hill"],
+    ["జ్ఞాన ప్రసూనాంబ అమ్మవారి దర్శనం", "Darshan of Goddess Gnana Prasunambika"]
+  ],
+  "nearby": [
+    {"title": ["తిరుపతి, తిరుమల", "Tirupati and Tirumala"], "text": ["సుమారు 36 కి.మీ. చాలామంది భక్తులు తిరుమల యాత్రతో పాటే శ్రీకాళహస్తి దర్శనం చేసుకుంటారు.", "About 36 km away. Many devotees combine Srikalahasti with their Tirumala trip."]},
+    {"title": ["కాణిపాకం వరసిద్ధి వినాయకుడు", "Kanipakam Varasiddhi Vinayaka"], "text": ["ఇదే తిరుపతి యాత్రలో కలుపుకోవచ్చు. గుడి కథల్లో త్వరలో.", "Fits into the same Tirupati trip. Coming soon on Gudi Kathalu."]}
+  ],
+  "sevas": {
+    "at_temple": ["రాహు కేతు పూజ, రుద్రాభిషేకం, అర్చన, ఇతర ఆర్జిత సేవలు. మహా శివరాత్రి రోజున రాహు కేతు పూజ జరగదని చెబుతారు.", "The Rahu Ketu puja, Rudrabhishekam, archana and other arjitha sevas. The Rahu Ketu puja is said not to be held on Maha Shivaratri day."],
+    "note": ["ధరలు, సమయాలు దేవస్థానం కౌంటర్‌లో అడగండి. Google లో ఆలయ ఫోన్ నంబర్ 08578 222240 అని ఉంది.", "Ask at the Devasthanam counter for prices and timings. Google lists the temple phone as 08578 222240."],
+    "online": {
+      "status": ["అధికారిక సైట్ మాత్రమే వాడండి", "Use only the official site"],
+      "text": ["ఆంధ్రప్రదేశ్ దేవాదాయ శాఖ అధికారిక పోర్టల్‌లో శ్రీకాళహస్తి దేవస్థానం సేవలు చూడండి. ఆలయాల పేరుతో నకిలీ వెబ్‌సైట్లు ఉన్నాయి, వాటిలో డబ్బు కట్టకండి.", "Check Srikalahasti Devasthanam's services on the AP Endowments Department's official portal. Fake temple websites exist; do not pay on them."],
+      "links": [["AP Temples (official)", "https://aptemples.ap.gov.in/"]]
+    }
+  },
+  "day": [
+    ["6:00", "తిరుపతి నుంచి బయలుదేరండి.", "Leave Tirupati."],
+    ["7:00", "శ్రీకాళహస్తి చేరుకుని స్వర్ణముఖి ఒడ్డు, రాజగోపురం.", "Reach Srikalahasti: the Swarnamukhi bank and the Rajagopuram."],
+    ["7:30", "రాహు కేతు పూజ (చేయాలనుకుంటే).", "The Rahu Ketu puja, if you plan one."],
+    ["9:00", "స్వామి, అమ్మవారి దర్శనం.", "Darshan of the Lord and the Goddess."],
+    ["11:00", "కన్నప్ప కొండ, తర్వాత భోజనం.", "Kannappa hill, then lunch."],
+    ["13:30", "తిరుపతికి తిరుగు ప్రయాణం.", "Head back to Tirupati."]
+  ],
+  "day_note": ["ఇది సూచన మాత్రమే. వారాంతాలు, అమావాస్య, కార్తీక మాసంలో ఎక్కువ సమయం పడుతుంది.", "A suggested plan. Weekends, Amavasya and Karthika masam take much longer."],
+  "photo_ask": ["రాహు కేతు పూజ మండపం, అమ్మవారి సన్నిధి బయటి భాగం ఫోటోలు మీ దగ్గర ఉన్నాయా? Instagram లో @gudikathalu కి పంపండి, మీ పేరుతో ఇక్కడ పెడతాం.", "Have photos of the Rahu Ketu puja mandapam or the outside of the Goddess's shrine? Send them to @gudikathalu on Instagram and we will add them here with your name."],
+  "credits": [
+    {"what": ["స్వర్ణముఖి నది, ఆలయ గోపురం", "The Swarnamukhi and the temple gopuram"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Srikalahasti_gopuram.jpg"},
+    {"what": ["గోపురం, కన్నప్ప కొండ", "Gopuram and Kannappa hill"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:View_of_Srikalahasti_gopuram_and_kannappa_hill.jpg"},
+    {"what": ["కొత్త రాజగోపురం", "The new Rajagopuram"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Srikalahasti_Rajagopuram.jpg"},
+    {"what": ["కన్నప్ప కొండ మెట్లు", "Steps up Kannappa hill"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Steps_to_Bhakta_Kannappa_Hill_temple_Srikalahasti.jpg"},
+    {"what": ["భక్త కన్నప్ప ఆలయ ద్వారం", "Bhakta Kannappa temple entrance"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Entrance_of_Bhakta_Kannappa_Temple,_Srikalahasti.jpg"},
+    {"what": ["భరద్వాజ తీర్థం", "Bharadwaja Teertham"], "author": "రవిచంద్ర (Ravichandra)", "license": "CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:SrikalahastiLobavi.JPG"}
+  ]
+}
