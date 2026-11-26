@@ -14,3 +14,9 @@ Notes
 - Check: in S09 and S10 the stone is a large solid black shape; it reads as a hole. Zero-cost option: reframe tighter on the three offerings.
 
 Posting is left to Karunakar after a full watch-through.
+26 Nov release export (edit release.json; head trimmed at 5.0 s; blessing ending; peak limiter): 74.67 s, -14.7 LUFS, TP -1.6 dBTP, decode clean, sha256 edf6a0749a0c6cb5...
+- Web tear fixed with existing art (scripts/ops/web_tear_fix.py): intact web from P03b kept behind trunk and water until the snap; snap on "పడింది" in the hook (0:01.7) and on "గూడు" in the story (0:32.4); gem drops into the stream on "దొర్లిపోయాయి" (0:04.4) and "మణులు అక్కడే ఉంటాయా?" (0:34.3).
+- Cobra shot at 1.5x crop; R07 cropped 1.14x to remove its paper border; S09 (black stone shape) replaced by P02/P03b/P04b crops; name reveal: spider, cobra, elephant on శ్రీ/కాళం/హస్తి, three-panel on కలిపి పలకండి, S03 on శ్రీకాళహస్తి.
+- Cover from the new clearing (PCOVER). SRT has the full narration (35 cues), including lines shown as title or cards on screen.
+- Paid today for EP04: passage test 37.5 Higgsfield credits. ElevenLabs: none (chant reused from EP03).
+- Awaiting Karunakar's approval of this export before Zoho scheduling (6:00 PM IST).

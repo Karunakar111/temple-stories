@@ -12,7 +12,7 @@ const GOLD = "#f6c454";
 const CREAM = "#fff4dc";
 const SHADOW = "0 4px 0 #140a04, 0 0 18px rgba(0,0,0,0.85), 0 6px 30px rgba(0,0,0,0.8)";
 
-export type Item = { kind: string; text?: string; lines?: string[]; names?: string[] };
+export type Item = { kind: string; text?: string; lines?: string[]; names?: string[]; top?: number };  // top: optional override, px from the top of 1920
 
 const Words: React.FC<{ text: string; names: string[] }> = ({ text, names }) => (
   <>
@@ -38,7 +38,7 @@ const Block: React.FC<{ it: Item }> = ({ it }) => {
   const base: React.CSSProperties = { position: "absolute", left: 40, right: 40, textAlign: "center", fontFamily: F, textShadow: SHADOW };
   if (it.kind === "title") {
     return (
-      <div style={{ ...base, top: 600 }}>
+      <div style={{ ...base, top: it.top ?? 600 }}>
         <div style={{ fontSize: 100, fontWeight: 900, color: GOLD, lineHeight: 1.2 }}>{lines[0]}</div>
         {lines[1] ? <div style={{ fontSize: 118, fontWeight: 900, color: CREAM, lineHeight: 1.2 }}>{lines[1]}</div> : null}
       </div>
@@ -46,7 +46,7 @@ const Block: React.FC<{ it: Item }> = ({ it }) => {
   }
   if (it.kind === "date") {
     return (
-      <div style={{ ...base, top: 720 }}>
+      <div style={{ ...base, top: it.top ?? 720 }}>
         <div style={{ fontSize: 132, fontWeight: 900, color: GOLD }}>{lines[0]}</div>
         {lines[1] ? <div style={{ fontSize: 72, fontWeight: 700, color: CREAM }}>{lines[1]}</div> : null}
       </div>
@@ -73,7 +73,7 @@ const Block: React.FC<{ it: Item }> = ({ it }) => {
   }
   const boxed = it.kind === "questions" || it.kind === "reminders" || it.kind === "comment";
   const size = it.kind === "name" ? 92 : it.kind === "card" ? 72 : 54;
-  const top = boxed ? 700 : 820;
+  const top = it.top ?? (boxed ? 700 : 820);
   return (
     <div style={{ ...base, top, display: "flex", flexDirection: "column", alignItems: "center", gap: 22 }}>
       {lines.map((l, i) => (

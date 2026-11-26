@@ -1,0 +1,349 @@
+{
+ "_comment": "EP04 release (26 Nov 2026): hook opens on the pour (PHOOK, web snaps on పడింది, gem rolls on దొర్లిపోయాయి), R06 reveals the elephant on ఏనుగే; story passage from the one-clearing test (P01, PSPIDER close, PCOBRA slightly closer, PELEFIX with the web intact until the water snaps it on గూడు); name reveal spider/cobra/elephant on శ్రీ/కాళం/హస్తి, the three together on కలిపి పలకండి, S03 on శ్రీకాళహస్తి. Rendered, then head-trimmed at 5.0 s and given the blessing ending.",
+ "cover_shot": "PCOVER",
+ "assets": {
+  "S01": "Macro: water pours from a trunk through the web; the web tears and the red gem rolls; tilt up to the trunk.",
+  "S03": "The Srikalahasti gopurams beside the Swarnamukhi river.",
+  "S04": "The forest clearing, the stone a dark shape in shadow.",
+  "R04b": "A tiny spider spins its web above the stone; sun on one half, rain beading on the other.",
+  "R05": "A real cobra leaves its burrow with a glowing gem in its mouth and sets it down near the stone.",
+  "R06": "A real elephant wades out of the stream, raises its trunk and pours water over the stone.",
+  "R07": "The cobra rears with its hood spread at the washed-aside gem and darts at the trunk tip; the trunk jerks up.",
+  "R08": "The elephant swings its head against the tree; the tree shudders, leaves fall; the small web on the bark trembles.",
+  "R08b": "Dusk: the elephant lies still at the foot of the tree; the torn web hangs above. No injury.",
+  "S09": "The clearing with the three offerings: the web, the red gem, the water.",
+  "PHOOK": "Shared clearing: the trunk pours onto the stone, the web stays whole until the water snaps it, then the gem rolls off into the stream (brief).",
+  "P01": "The clearing: branch over a stone on a ledge, stream on the right.",
+  "PSPIDER": "Close: the spider drops from the branch, fastens its strand, and the web fills in over the stone.",
+  "PCOBRA": "Slightly closer: the cobra rises at the right of the ledge, releases the gem beside the stone, slides away.",
+  "PELEFIX": "Shared clearing: the trunk comes in full, pours onto the stone; the water snaps the web; the gem rolls off the ledge into the stream.",
+  "RVSPIDER": "The spider at the centre of its web.",
+  "RVCOBRA": "The cobra beside the stone.",
+  "PTRIO": "Spider, cobra and elephant, stacked.",
+  "P02": "The clearing with the web over the stone.",
+  "P03b": "The clearing: web over the stone, the red gem beside it.",
+  "P04b": "After the pour: wet stone, torn web, the gem in the stream.",
+  "PCOVER": "The trunk pours onto the stone under the intact web, the red gem beside it."
+ },
+ "segments": [
+  {
+   "at": "",
+   "asset": "S03",
+   "kind": "still"
+  },
+  {
+   "at": "లింగం మీదికి",
+   "asset": "PHOOK",
+   "kind": "clip",
+   "speed": 1.0
+  },
+  {
+   "at": "ఆ నీళ్లు పోసింది",
+   "asset": "R06",
+   "kind": "clip",
+   "ss": 2.8,
+   "speed": 1.0,
+   "focus": {
+    "from": [
+     0.36,
+     0.55,
+     1.7
+    ],
+    "to": [
+     0.36,
+     0.55,
+     1.7
+    ]
+   }
+  },
+  {
+   "at": "స్వర్ణముఖి",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.06
+  },
+  {
+   "at": "అడవిలో ఒక",
+   "asset": "P01",
+   "kind": "still",
+   "push": 0.04
+  },
+  {
+   "at": "ఎండ పడినా",
+   "asset": "PSPIDER",
+   "kind": "clip",
+   "speed": 0.985
+  },
+  {
+   "at": "పాము నేల",
+   "asset": "PCOBRA",
+   "kind": "clip",
+   "speed": 1.12,
+   "focus": {
+    "from": [
+     0.58,
+     0.5,
+     1.5
+    ],
+    "to": [
+     0.58,
+     0.5,
+     1.5
+    ]
+   }
+  },
+  {
+   "at": "ఏనుగు వంతు",
+   "asset": "PELEFIX",
+   "kind": "clip",
+   "speed": 1.0
+  },
+  {
+   "at": "తాను తెచ్చిన",
+   "asset": "R07",
+   "kind": "clip",
+   "speed": 0.9,
+   "focus": {
+    "from": [
+     0.5,
+     0.5,
+     1.14
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.14
+    ]
+   }
+  },
+  {
+   "at": "ఊపిరాడక",
+   "asset": "R08",
+   "kind": "clip",
+   "focus": {
+    "from": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.1
+    ]
+   },
+   "ss": 1.9
+  },
+  {
+   "at": "ఆ బోదె",
+   "asset": "R08",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.77,
+     0.31,
+     2.6
+    ],
+    "to": [
+     0.77,
+     0.31,
+     2.8
+    ]
+   },
+   "sees": "Close on the small spider in its web on the bark."
+  },
+  {
+   "at": "ఈ కథనంలో",
+   "asset": "R08b",
+   "kind": "still",
+   "push": 0.05
+  },
+  {
+   "at": "ఒకటి నీడ",
+   "asset": "P02",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.36,
+     1.35
+    ],
+    "to": [
+     0.5,
+     0.36,
+     1.5
+    ]
+   },
+   "sees": "Close on the web (shade)."
+  },
+  {
+   "at": "ఒకటి తనకి",
+   "asset": "P03b",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.6,
+     0.57,
+     1.5
+    ],
+    "to": [
+     0.6,
+     0.57,
+     1.65
+    ]
+   },
+   "sees": "Close on the red gem."
+  },
+  {
+   "at": "ఇంకొకటి",
+   "asset": "P04b",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.62,
+     0.62,
+     1.35
+    ],
+    "to": [
+     0.62,
+     0.66,
+     1.5
+    ]
+   },
+   "sees": "Close on the glistening water."
+  },
+  {
+   "at": "మూడింటి",
+   "asset": "P03b",
+   "kind": "still",
+   "sees": "Light falling through the trees onto the clearing (interim until S09b).",
+   "flag": "interim: S09b moksha light not made yet",
+   "push": 0.05
+  },
+  {
+   "at": "ఆ మూడు ప్రాణుల్ని",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.05,
+   "sees": "The real temple for the kshetram's name."
+  },
+  {
+   "at": "శ్రీ అంటే",
+   "asset": "RVSPIDER",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.5,
+     0.4,
+     1.5
+    ],
+    "to": [
+     0.5,
+     0.4,
+     1.7
+    ]
+   }
+  },
+  {
+   "at": "కాళం అంటే",
+   "asset": "RVCOBRA",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.6,
+     0.47,
+     1.8
+    ],
+    "to": [
+     0.6,
+     0.47,
+     2.0
+    ]
+   }
+  },
+  {
+   "at": "హస్తి అంటే",
+   "asset": "R06",
+   "kind": "still",
+   "focus": {
+    "from": [
+     0.33,
+     0.6,
+     1.6
+    ],
+    "to": [
+     0.33,
+     0.6,
+     1.75
+    ]
+   }
+  },
+  {
+   "at": "కలిపి పలకండి",
+   "asset": "PTRIO",
+   "kind": "still"
+  },
+  {
+   "at": "శ్రీకాళహస్తి",
+   "asset": "S03",
+   "kind": "still",
+   "push": 0.05
+  }
+ ],
+ "overlays": [
+  {
+   "at": "లింగం మీదికి",
+   "until": "పాము తెచ్చి",
+   "kind": "title",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "సాలెగూడు ఎందుకు తెగింది?"
+   ],
+   "top": 1400
+  },
+  {
+   "at": "స్వర్ణముఖి",
+   "until": "అడవిలో ఒక",
+   "kind": "card",
+   "lines": [
+    "స్వర్ణముఖి ఒడ్డున",
+    "శ్రీకాళహస్తి · ఆంధ్రప్రదేశ్"
+   ]
+  },
+  {
+   "at": "శ్రీ అంటే",
+   "until": "కాళం అంటే",
+   "kind": "card",
+   "lines": [
+    "శ్రీ · సాలెపురుగు"
+   ],
+   "top": 1330
+  },
+  {
+   "at": "కాళం అంటే",
+   "until": "హస్తి అంటే",
+   "kind": "card",
+   "lines": [
+    "కాళం · పాము"
+   ],
+   "top": 1330
+  },
+  {
+   "at": "హస్తి అంటే",
+   "until": "కలిపి పలకండి",
+   "kind": "card",
+   "lines": [
+    "హస్తి · ఏనుగు"
+   ],
+   "top": 1330
+  },
+  {
+   "at": "శ్రీకాళహస్తి",
+   "kind": "date",
+   "lines": [
+    "శ్రీకాళహస్తి",
+    "శ్రీ + కాళం + హస్తి"
+   ]
+  }
+ ]
+}

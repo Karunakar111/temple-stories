@@ -86,7 +86,7 @@ def edit_spec(ep, ledger, cfg, out_dir, name):
         pos = an.pos
         b = an.time(o["until"], o.get("until_offset", 0.0), lead=0.10) if o.get("until") else total - 0.04
         an.pos = pos
-        overlays.append({"kind": o["kind"], "lines": o["lines"], "start": a, "end": round(min(b, total - 0.04), 3)})
+        overlays.append({"kind": o["kind"], "lines": o["lines"], "start": a, "end": round(min(b, total - 0.04), 3), **({"top": o["top"]} if "top" in o else {})})
     overlays.sort(key=lambda o: o["start"])
 
     # one text block at a time: drop captions under a card, cut short any caption that runs into one
