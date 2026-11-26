@@ -23,7 +23,8 @@
   "P02": "The clearing with the web over the stone.",
   "P03b": "The clearing: web over the stone, the red gem beside it.",
   "P04b": "After the pour: wet stone, torn web, the gem in the stream.",
-  "PCOVER": "The trunk pours onto the stone under the intact web, the red gem beside it."
+  "PCOVER": "The trunk pours onto the stone under the intact web, the red gem beside it.",
+  "PMUKTI": "After the pour: torn web, wet stone, gem in the stream; warm light rises on the stone."
  },
  "segments": [
   {
@@ -102,7 +103,7 @@
    "at": "తాను తెచ్చిన",
    "asset": "R07",
    "kind": "clip",
-   "speed": 0.9,
+   "speed": 0.75,
    "focus": {
     "from": [
      0.5,
@@ -114,7 +115,9 @@
      0.5,
      1.14
     ]
-   }
+   },
+   "ss": 0.0,
+   "flag": "interim: R07 trimmed before the lunge (src 0-4.2 s); trunk-tip entry shot pending approval"
   },
   {
    "at": "ఊపిరాడక",
@@ -214,11 +217,9 @@
   },
   {
    "at": "మూడింటి",
-   "asset": "P03b",
-   "kind": "still",
-   "sees": "Light falling through the trees onto the clearing (interim until S09b).",
-   "flag": "interim: S09b moksha light not made yet",
-   "push": 0.05
+   "asset": "PMUKTI",
+   "kind": "clip",
+   "speed": 1.0
   },
   {
    "at": "ఆ మూడు ప్రాణుల్ని",
