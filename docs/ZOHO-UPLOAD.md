@@ -34,3 +34,9 @@ Remove the old video (x on the thumbnail), attach the new one as in step 5, re-s
 ## Release time test (from 25 Nov 2026)
 EP01 at 6:00 PM got about 300 views; EP02 at 4:30 PM got about 28K. One post each cannot separate time from content or account age, so: EP03 at 6:00 PM (25 Nov), the next release at 4:30 PM (26 Nov). Compare each post's views at 24 hours on both channels, then fix one time. Baselete and personal posts at the same time do not compete for reach (separate accounts).
 Actual publish times (Zoho Published Posts): EP01 23 Nov, Instagram 7:40 PM, YouTube 7:56 PM; EP02 24 Nov, Instagram 4:26 PM, YouTube 4:24 PM; EP03 25 Nov, Instagram 6:02 PM, YouTube 6:00 PM.
+
+## Stats snapshot, 26 Nov 2026 10:25 IST (Zoho Post Stats for Instagram, YouTube Studio)
+| Ep | IG views | IG reach | Likes | Comments | Shares | Saves | YT views | YT stayed to watch |
+| EP01 Komuravelli (23 Nov 7:40 PM) | 1.65K | 1.17K | 131 | 4 | 35 | 23 | 6.4K | 75.2% |
+| EP02 Kolanupaka (24 Nov 4:26 PM) | 48K | 36.5K | 3.37K | 17 | 2.06K | 495 | 209 | 44.3% |
+| EP03 Vemulawada (25 Nov 6:02 PM, blessing ending) | 345K | 280K | 24.7K | 148 | 8.15K | 3.66K | 1.4K | 75.7% |
