@@ -21,3 +21,9 @@ Posting is left to Karunakar after a full watch-through.
 - Paid today for EP04: passage test 37.5 Higgsfield credits. ElevenLabs: none (chant reused from EP03).
 - Awaiting Karunakar's approval of this export before Zoho scheduling (6:00 PM IST).
 26 Nov 13:4x revision: pour retimed so the first gush touches the web and it snaps before the water reaches the stone (hook ~0:01.3, story ~0:29.9); mukti on the post-pour clearing (PMUKTI: P04b with rising light); R07 trimmed before the lunge as an interim. Trunk-tip entry shot quoted (Kling 3.0 pro 6 s, 9 credits), not yet approved.
+26 Nov 14:2x ending revision (approved 25.5 Higgsfield + 164 ElevenLabs):
+- PSHIVA keyframe deefb149 (1.5) + 4 s clip a5fbc86e (6): Shiva blesses spider, cobra, elephant in the post-pour clearing, on the mukti line, with the "ప్రతీకాత్మక చిత్రం" mark.
+- PENTRY 6 s clip ff619245 (9): cobra rises, hood flares, head enters the open trunk tip; used to 5.1 s (after that the generated cobra falls back out).
+- PLAMP keyframe 50fcc7ca (1.5) + 5 s clip deb1fb9c (7.5): brass lamp flame, ping-pong under the new visitor line.
+- Visitor line, eleven_v4, cloned voice, one take (164 ElevenLabs credits), 12.6 s: takes/ep04-visitor-line.mp3.
+- Export 87.98 s, -14.5 LUFS, TP -1.6 dBTP, decode clean. SRT 40 cues.

@@ -24,7 +24,9 @@
   "P03b": "The clearing: web over the stone, the red gem beside it.",
   "P04b": "After the pour: wet stone, torn web, the gem in the stream.",
   "PCOVER": "The trunk pours onto the stone under the intact web, the red gem beside it.",
-  "PMUKTI": "After the pour: torn web, wet stone, gem in the stream; warm light rises on the stone."
+  "PMUKTI": "After the pour: torn web, wet stone, gem in the stream; warm light rises on the stone.",
+  "PSHIVA": "Shiva in golden light behind the stone, right hand raised in blessing over the spider, the cobra and the elephant.",
+  "PENTRY": "After the pour: the cobra rises at the ledge, sees its gem in the stream, hood flares, and slides head-first into the open trunk tip."
  },
  "segments": [
   {
@@ -101,23 +103,10 @@
   },
   {
    "at": "తాను తెచ్చిన",
-   "asset": "R07",
+   "asset": "PENTRY",
    "kind": "clip",
-   "speed": 0.75,
-   "focus": {
-    "from": [
-     0.5,
-     0.5,
-     1.14
-    ],
-    "to": [
-     0.5,
-     0.5,
-     1.14
-    ]
-   },
-   "ss": 0.0,
-   "flag": "interim: R07 trimmed before the lunge (src 0-4.2 s); trunk-tip entry shot pending approval"
+   "speed": 0.914,
+   "flag": "uses src 0-5.1 s: the head enters the trunk tip; the clip after 5.1 s has the cobra falling back out"
   },
   {
    "at": "ఊపిరాడక",
@@ -217,9 +206,9 @@
   },
   {
    "at": "మూడింటి",
-   "asset": "PMUKTI",
+   "asset": "PSHIVA",
    "kind": "clip",
-   "speed": 1.0
+   "speed": 1.03
   },
   {
    "at": "ఆ మూడు ప్రాణుల్ని",
@@ -309,6 +298,14 @@
    "lines": [
     "స్వర్ణముఖి ఒడ్డున",
     "శ్రీకాళహస్తి · ఆంధ్రప్రదేశ్"
+   ]
+  },
+  {
+   "at": "మూడింటి",
+   "until": "ఆ మూడు ప్రాణుల్ని",
+   "kind": "mark",
+   "lines": [
+    "ప్రతీకాత్మక చిత్రం"
    ]
   },
   {
