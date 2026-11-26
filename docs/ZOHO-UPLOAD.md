@@ -40,3 +40,6 @@ Actual publish times (Zoho Published Posts): EP01 23 Nov, Instagram 7:40 PM, You
 | EP01 Komuravelli (23 Nov 7:40 PM) | 1.65K | 1.17K | 131 | 4 | 35 | 23 | 6.4K | 75.2% |
 | EP02 Kolanupaka (24 Nov 4:26 PM) | 48K | 36.5K | 3.37K | 17 | 2.06K | 495 | 209 | 44.3% |
 | EP03 Vemulawada (25 Nov 6:02 PM, blessing ending) | 345K | 280K | 24.7K | 148 | 8.15K | 3.66K | 1.4K | 75.7% |
+
+## Separate YouTube cut (from EP04, 26 Nov 2026)
+YouTube gets its own shorter cut (about 55 to 60 s, whole sentences only, scripts/ops/short_cut.py) as a separate YouTube-only post; Instagram keeps the full film. In New Post, the + channel selector unticks a channel.

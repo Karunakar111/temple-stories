@@ -2,3 +2,6 @@ EP04 Srikalahasti, scheduled 26 Nov 2026 ~14:20 IST in Zoho Social (approved by 
 Release: Today 26 Nov, 6:00 PM IST, Instagram @gudikathalu (Reel, Add to Instagram Feed on, cover thumbnail) and YouTube @gudikathalutelugu (Post as Shorts, Public).
 Upload: publish encode of srikalahasti-ep04.mp4 (87.98 s), 46,269,287 bytes, sha256 9eb44e4e41027bce..., reassembled in the page and matched before attaching.
 Stored post re-checked: Instagram caption equals instagram-caption.txt (normalized); YouTube title as in youtube-description.txt; description SHA-256 411824ada8455588 (matches file); 11/26/2026 06:00 PM IST.
+Update 26 Nov ~15:30 IST (approved 15:10): split into two posts, both Today 6:00 PM IST.
+- Instagram only: the original post, full 88 s film, cover thumbnail, caption normalized SHA-256 f8a5859490e0ba51 (matches instagram-caption.txt).
+- YouTube only: new post, 59.3 s cut srikalahasti-ep04-youtube.mp4 (publish encode 33,380,851 bytes, sha256 468c86f2acc405ef..., matched in the page before attaching), Post as Shorts, Public, title "శ్రీకాళహస్తి పేరు వెనుక కథ | సాలెపురుగు, పాము, ఏనుగు | Srikalahasti Temple Story #Shorts", description SHA-256 411824ada8455588.
