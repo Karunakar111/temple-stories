@@ -1,0 +1,4 @@
+EP04 Srikalahasti, scheduled 26 Nov 2026 ~14:20 IST in Zoho Social (approved by Karunakar 14:07).
+Release: Today 26 Nov, 6:00 PM IST, Instagram @gudikathalu (Reel, Add to Instagram Feed on, cover thumbnail) and YouTube @gudikathalutelugu (Post as Shorts, Public).
+Upload: publish encode of srikalahasti-ep04.mp4 (87.98 s), 46,269,287 bytes, sha256 9eb44e4e41027bce..., reassembled in the page and matched before attaching.
+Stored post re-checked: Instagram caption equals instagram-caption.txt (normalized); YouTube title as in youtube-description.txt; description SHA-256 411824ada8455588 (matches file); 11/26/2026 06:00 PM IST.
