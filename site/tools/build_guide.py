@@ -116,7 +116,7 @@ def body(g):
   </div>
   <figure class="scene">
     <img src="{e(ph['src'])}" alt="{e(ph['alt'])}"{pos}>
-    <figcaption>{t(ph['caption'])}. Photo: {e(ph['credit'])}</figcaption>
+    <figcaption>{t(ph['caption'])}{('. Photo: ' + e(ph['credit'])) if ph.get('credit') else ''}</figcaption>
   </figure>
 </header>
 

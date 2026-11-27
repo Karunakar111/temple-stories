@@ -79,7 +79,9 @@ Without Chrome: publish with the built-in drawings, and list the photos still ne
      either a `photo` or an `art` drawing index:
      0 steps and water tap, 1 Nandi mandapam, 2 oath at a pedestal, 3 lamplit sanctum doorway,
      4 garlanded shrine door, 5 shrine with a pradakshina path, 6 museum, 7 small temple with a
-     distance sign, 8 white marble temple.
+     distance sign, 8 white marble temple, 9 hill with a ghat road, 10 temple tank.
+     The hero needs an image: without a photo, use a drawing rendered to `img/hero.jpg` and set the
+     hero `credit` to "" so the caption does not say "Photo".
    - `credits`: one entry per photo; `license` must be a key in `LIC` in `site/tools/build_guide.py`.
 2. Build: `python3 site/tools/build_guide.py site/<slug>/guide.json`
 3. Test in headless Chrome (Playwright, `executable_path="/usr/bin/google-chrome"`) at 1280 and 390 px:

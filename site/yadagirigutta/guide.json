@@ -1,0 +1,393 @@
+{
+  "slug": "yadagirigutta",
+  "title": "Yadagirigutta Lakshmi Narasimha Temple",
+  "description": "యాదగిరిగుట్ట లక్ష్మీ నరసింహ స్వామి ఆలయం: గుహ దారి కథ, దారి, దర్శనం, సేవలు, అడుగడుగునా గైడ్. Yadagirigutta temple visit guide.",
+  "short_name": [
+    "యాదగిరిగుట్ట",
+    "Yadagirigutta"
+  ],
+  "share_msg": "యాదగిరిగుట్ట యాత్ర పూర్తి చేశాను. మీరూ ఈ గైడ్ చూడండి:",
+  "checked": [
+    "నవంబర్ 2026",
+    "November 2026"
+  ],
+  "hero": {
+    "h1": [
+      "యాదగిరిగుట్ట శ్రీ లక్ష్మీ నరసింహ స్వామి",
+      "Yadagirigutta Sri Lakshmi Narasimha Swamy"
+    ],
+    "sub": [
+      "యాదగిరిగుట్ట, యాదాద్రి భువనగిరి జిల్లా, తెలంగాణ",
+      "Yadagirigutta, Yadadri Bhuvanagiri district, Telangana"
+    ],
+    "lead": [
+      "గుట్టపై గుహలో కొలువైన నరసింహుడు. పంచ నరసింహ క్షేత్రం. హైదరాబాద్ నుంచి సుమారు 65 కి.మీ.",
+      "Narasimha in a cave on the hilltop, the Pancha Narasimha kshetram. About 65 km from Hyderabad."
+    ],
+    "photo": {
+      "src": "img/hero.jpg",
+      "alt": "Gudi Kathalu illustration of a stone temple with gopurams on a hilltop at sunrise",
+      "caption": [
+        "గుట్టపై ఆలయం, గుడి కథలు చిత్రం",
+        "The hilltop temple, a Gudi Kathalu illustration"
+      ],
+      "credit": ""
+    }
+  },
+  "facts": [
+    {
+      "value": "~65 km",
+      "desc": [
+        "హైదరాబాద్ నుంచి, ట్రాఫిక్‌ను బట్టి రోడ్డుపై 1.5 నుంచి 2 గంటలు",
+        "from Hyderabad, 1.5 to 2 hours by road depending on traffic"
+      ]
+    },
+    {
+      "value": "4 AM – 9:45 PM",
+      "desc": [
+        "సుమారు. మధ్యాహ్నం కొద్దిసేపు విరామం ఉంటుంది, ముందే కనుక్కోండి",
+        "approximate, with a short afternoon break; confirm before you go"
+      ]
+    },
+    {
+      "value": [
+        "2–4 గం.",
+        "2–4 hrs"
+      ],
+      "desc": [
+        "వారాంతాలు, కార్తీక మాసంలో సర్వ దర్శనానికే 3 గంటలు పట్టవచ్చు",
+        "weekends and Karthika masam: general darshan alone can take 3 hours"
+      ]
+    },
+    {
+      "value": [
+        "సంప్రదాయ దుస్తులు",
+        "Traditional dress"
+      ],
+      "desc": [
+        "సేవలు, VIP దర్శనానికి తప్పనిసరి. సాధారణ క్యూకి మినహాయింపు",
+        "required for sevas and VIP darshan; the general queue is exempt"
+      ]
+    }
+  ],
+  "map": {
+    "coords": "17.5892,78.9446",
+    "addr": [
+      "శ్రీ లక్ష్మీ నరసింహ స్వామి దేవస్థానం, యాదగిరిగుట్ట, యాదాద్రి భువనగిరి జిల్లా, తెలంగాణ",
+      "Sri Lakshmi Narasimha Swamy Devasthanam, Yadagirigutta, Yadadri Bhuvanagiri district, Telangana"
+    ],
+    "rows": [
+      [
+        "హైదరాబాద్ (MGBS) నుంచి సుమారు 65 కి.మీ.",
+        "About 65 km from Hyderabad (MGBS)"
+      ],
+      [
+        "భువనగిరి పట్టణం నుంచి సుమారు 16 కి.మీ.",
+        "About 16 km from Bhuvanagiri (Bhongir) town"
+      ],
+      [
+        "యాదాద్రి రైల్వే స్టేషన్ (పాత పేరు రాయగిరి) సుమారు 5 కి.మీ.",
+        "Yadadri railway station (formerly Raigir) is about 5 km away"
+      ],
+      [
+        "హైదరాబాద్ విమానాశ్రయం (శంషాబాద్) సుమారు 82 కి.మీ.",
+        "Hyderabad airport (Shamshabad) is about 82 km away"
+      ]
+    ]
+  },
+  "story": {
+    "h2": [
+      "గుహ దారి ఎవరికి తెలిసింది?",
+      "Who found the way to the cave?"
+    ],
+    "paras": [
+      [
+        "ఇక్కడ నరసింహ స్వామి లక్ష్మీ సమేతుడిగా గుట్టపై ఒక గుహలో కొలువై ఉన్నాడు. యాద ఋషి పేరుతోనే ఈ గుట్టకు యాదగిరి అనే పేరు వచ్చిందని చెబుతారు.",
+        "Here Narasimha is worshipped with Lakshmi, in a cave on the hilltop. The hill is said to take its name, Yadagiri, from the sage Yada."
+      ],
+      [
+        "దేవస్థానం చెప్పే కథ ప్రకారం, త్రేతాయుగంలో ఋష్యశృంగ మహర్షి, శాంతాదేవిల కుమారుడు యాద ఋషి ఆంజనేయుని ఆశీస్సులతో ఈ గుట్టపై ఒక గుహలో తపస్సు చేశాడు. మెచ్చిన స్వామి ఐదు రూపాల్లో దర్శనమిచ్చాడు: జ్వాల నరసింహుడు, యోగానంద నరసింహుడు, గండభేరుండ నరసింహుడు, ఉగ్ర నరసింహుడు, లక్ష్మీ నరసింహుడు. అందుకే దీన్ని పంచ నరసింహ క్షేత్రం అంటారు. ఈ కథ స్కంద పురాణంలో ఉందని దేవస్థానం చెబుతుంది.",
+        "The Devasthanam's telling says that in the Treta yuga the sage Yada, son of Rishyasringa and Shanta Devi, did penance in a cave on this hill with Anjaneya's blessing. Pleased, the Lord appeared in five forms: Jwala, Yogananda, Gandabherunda, Ugra and Lakshmi Narasimha. That is why it is called the Pancha Narasimha kshetram. The Devasthanam traces the story to the Skanda Purana."
+      ],
+      [
+        "మరి గుహ దారి ఎవరికి తెలిసింది? దేవస్థానం చెప్పే మరో కథ ప్రకారం, ఆంజనేయుడు యాద ఋషికి దారి చూపాడు, ఋషికి మొదటి దర్శనం గుట్ట కింద జరిగింది. ఋషి కాలం తర్వాత చుట్టుపక్కల గిరిజనులు పూజకు వచ్చేవారు. కొంతకాలానికి స్వామి గుట్ట మీదకు వెళ్ళిపోయాడని, ఎంత వెతికినా జాడ దొరకలేదని కథ. ఒక రోజు ఒక భక్తురాలికి స్వామి కలలో కనిపించి, గుట్ట మీద ఒక పెద్ద గుహలో ఉన్నానని చెప్పాడట. అలా అందరికీ గుహ దారి తెలిసింది. అక్కడ స్వామి అందరికీ ఐదు రూపాల్లో దర్శనమిచ్చాడని చెబుతారు.",
+        "So who found the way to the cave? In another telling from the Devasthanam, Anjaneya showed Yada the way, and the sage's first darshan was at the foot of the hill. After the sage's time, tribal people from around the hill came to worship. In time, the story goes, the Lord moved up into the hill, and however much they searched they could not find him. One day he appeared in a dream to a woman devotee and told her he was in a large cave on the hill. That is how everyone came to know the way to the cave, where, it is said, he gave darshan to all in five forms."
+      ],
+      [
+        "గర్భాలయం పైన ఉన్న బంగారు సుదర్శన చక్రం సుమారు 6 కి.మీ. దూరం నుంచే భక్తులకు దారి చూపేదని దేవస్థానం చెబుతుంది. 2016 నుంచి 2022 వరకు ఆలయాన్ని రాతితో కొత్తగా నిర్మించి, మార్చి 2022 లో తిరిగి తెరిచారు. కొంతకాలం ఈ ఊరిని యాదాద్రి అని పిలిచారు. ప్రభుత్వం ఇప్పుడు యాదగిరిగుట్ట అనే పాత పేరును తిరిగి పెట్టింది.",
+        "The Devasthanam says the golden Sudarshana Chakra above the sanctum once guided devotees from about 6 km away. The temple was rebuilt in stone from 2016 to 2022 and reopened in March 2022. For a while the town was called Yadadri; the government has now restored the old name, Yadagirigutta."
+      ]
+    ],
+    "episode": [
+      "గుడి కథలు ఎపిసోడ్ 5: యాదగిరిగుట్ట, గుహ దారి ఎవరికి తెలిసింది?",
+      "Gudi Kathalu episode 5: Yadagirigutta, who found the way to the cave?"
+    ]
+  },
+  "plan": {
+    "car": [
+      "హైదరాబాద్ నుంచి వరంగల్ హైవే మీదుగా సుమారు 65 కి.మీ. ఆలయం వరకు కొండపైకి ఘాట్ రోడ్డు ఉంది. పండుగ రోజుల్లో ఉదయాన్నే బయలుదేరండి.",
+      "About 65 km from Hyderabad by the Warangal highway. A ghat road climbs the hill to the temple. On festival days, leave early."
+    ],
+    "bus": [
+      "హైదరాబాద్ నుంచి యాదగిరిగుట్టకు TGSRTC బస్సులు ఉన్నాయి. ఆలయ అభివృద్ధిలో భాగంగా ఊళ్ళో కొత్త బస్ స్టేషన్ కట్టారు. కొండపైకి వెళ్ళే బస్సుల గురించి అక్కడే అడగండి.",
+      "TGSRTC buses run from Hyderabad to Yadagirigutta, where a new bus station was built as part of the temple development. Ask there about buses up the hill."
+    ],
+    "train": [
+      "దగ్గరి స్టేషన్ యాదాద్రి (పాత పేరు రాయగిరి), సుమారు 5 కి.మీ. భువనగిరి స్టేషన్ సుమారు 13 కి.మీ. అక్కడి నుంచి బస్సు లేదా ఆటో.",
+      "The nearest station is Yadadri (formerly Raigir), about 5 km away; Bhuvanagiri station is about 13 km. Take a bus or auto from there."
+    ]
+  },
+  "when": [
+    [
+      "కార్తీక మాసం, వారాంతాలు, సెలవుల్లో రద్దీ చాలా ఎక్కువ. 22 నవంబర్ 2026 ఆదివారం సర్వ దర్శనానికి సుమారు 3 గంటలు పట్టింది.",
+      "Karthika masam, weekends and holidays are very busy. On Sunday 22 November 2026, general darshan took up to 3 hours."
+    ],
+    [
+      "స్వాతి నక్షత్రం రోజున ప్రత్యేక అభిషేకం, గిరి ప్రదక్షిణ జరుగుతాయి. వేలాది భక్తులు వస్తారు.",
+      "On Swati nakshatra days there is a special abhishekam and a giri pradakshina around the hill, drawing thousands."
+    ],
+    [
+      "బ్రహ్మోత్సవాలు, నరసింహ జయంతి అతి పెద్ద ఉత్సవాలు. తేదీలు అధికారిక సైట్‌లో చూడండి.",
+      "The Brahmotsavams and Narasimha Jayanthi are the biggest festivals. Check the dates on the official site."
+    ],
+    [
+      "ప్రశాంతంగా దర్శనం కావాలంటే వారం మధ్యలో, ఉదయాన్నే వెళ్ళండి. అక్టోబర్ నుంచి ఫిబ్రవరి వాతావరణం బాగుంటుంది.",
+      "For a quieter darshan, go early on a weekday. October to February has the best weather."
+    ]
+  ],
+  "when_note": [
+    "ఆలయం తెల్లవారుజాము సుమారు 4 గంటలకు (కొన్ని చోట్ల 3:30) తెరిచి రాత్రి 9:45 కి మూస్తారని, మధ్యాహ్నం కొద్దిసేపు విరామం ఉంటుందని వివిధ ఆధారాలు చెబుతున్నాయి. పండుగల్లో సమయాలు మారతాయి. వెళ్ళే ముందు కనుక్కోండి.",
+    "Sources list the temple as open from about 4 AM (some say 3:30) to 9:45 PM, with a short afternoon break. Timings change at festivals; confirm before you go."
+  ],
+  "carry": [
+    [
+      "సేవ లేదా VIP దర్శనం ఉంటే సంప్రదాయ దుస్తులు.",
+      "Traditional dress if you have a seva or VIP darshan."
+    ],
+    [
+      "చెప్పులు బయటే వదలండి.",
+      "Leave footwear outside."
+    ],
+    [
+      "నీళ్ళు, టోపీ. క్యూలు పెద్దవి, గుట్టపై ఎండ ఎక్కువ.",
+      "Water and a cap: the queues are long and the hilltop gets hot."
+    ],
+    [
+      "ప్రసాదం, హుండీ కోసం చిల్లర, UPI.",
+      "Small change and UPI for prasadam and the hundi."
+    ],
+    [
+      "మొబైల్, కెమెరా నియమాలు మారుతుంటాయి. ప్రవేశం దగ్గర అడగండి.",
+      "Rules on phones and cameras change; ask at the entrance."
+    ]
+  ],
+  "stops": [
+    {
+      "text": [
+        "గుట్టపైకి",
+        "Up the hill",
+        "ఆలయం గుట్టపై ఉంది. కొండపైకి ఘాట్ రోడ్డు ఉంది, పైన పార్కింగ్ ఉంది.",
+        "The temple stands on top of the hill. A ghat road climbs up, and there is parking on top.",
+        "ఆదివారాలు, పండుగల్లో కొండపై పార్కింగ్ నిండిపోతుంది. ఉదయాన్నే చేరుకోండి.",
+        "On Sundays and festivals the hilltop parking fills up, so arrive early."
+      ],
+      "art": 9
+    },
+    {
+      "text": [
+        "విష్ణు పుష్కరిణి",
+        "Vishnu Pushkarini",
+        "గుట్టపై ఉన్న పవిత్ర కోనేరు. భక్తులు ఇక్కడ స్నాన సంకల్పం చేసే సంప్రదాయం ఉంది.",
+        "The sacred temple tank on the hilltop, where devotees traditionally take a ritual bath.",
+        "2025 లో కొన్ని నెలలు దీన్ని మూసి ఉంచారని వార్తలు వచ్చాయి. ఇప్పుడు స్నానానికి అనుమతి ఉందో అక్కడే అడగండి.",
+        "It was reported locked for months in 2025. Ask on site whether bathing is allowed now."
+      ],
+      "art": 10
+    },
+    {
+      "text": [
+        "రాతి గోపురాలు",
+        "The stone gopurams",
+        "2016 నుంచి 2022 వరకు ఆలయాన్ని రాతితో కొత్తగా కట్టారు. ఏడు గోపురాలు, మండపాలు ఉన్నాయి.",
+        "The temple was rebuilt in stone between 2016 and 2022, with seven gopurams and new mandapams.",
+        "ప్రధాన ఆలయంలో 12 మంది ఆళ్వార్ల రూపాలున్న స్తంభాలను చూడండి.",
+        "Inside the main temple, look for the pillars carved with the twelve Alvars."
+      ],
+      "art": 5
+    },
+    {
+      "text": [
+        "గుహలో స్వామి దర్శనం",
+        "Darshan in the cave",
+        "గర్భాలయం ఒక పెద్ద వాలు బండ కింద, గుహలో ఉంది. గుహ సుమారు 12 అడుగుల ఎత్తు, 30 అడుగుల పొడవు ఉంటుంది.",
+        "The sanctum is a cave under a huge sloping rock, about 12 feet high and 30 feet long.",
+        "లక్ష్మీ నరసింహ స్వామితో పాటు జ్వాల, యోగానంద నరసింహ రూపాలను భక్తులు ఇక్కడ దర్శిస్తారు.",
+        "Along with Lakshmi Narasimha, devotees have darshan of the Jwala and Yogananda forms here."
+      ],
+      "art": 3
+    },
+    {
+      "text": [
+        "గండభేరుండ నరసింహుడి చోటు",
+        "The Gandabherunda spot",
+        "పక్కనే ఉన్న ఆంజనేయ స్వామి సన్నిధి కింద బండల మధ్య ఉన్న సందులో గండభేరుండ నరసింహుడు వెలిశాడని చెబుతారు.",
+        "Gandabherunda Narasimha is said to have appeared in the gap between the rocks below the nearby Anjaneya shrine.",
+        "ఆంజనేయ స్వామి సన్నిధి ఎటో సిబ్బందిని అడగండి.",
+        "Ask the temple staff for the way to the Anjaneya shrine."
+      ],
+      "art": 4
+    },
+    {
+      "text": [
+        "సత్యనారాయణ వ్రతం, కళ్యాణం",
+        "Vratham and Kalyanam",
+        "ఇక్కడ సత్యనారాయణ స్వామి వ్రతాలు, నిత్య కళ్యాణం, సుదర్శన నరసింహ హోమం జరుగుతాయి.",
+        "Satyanarayana Swamy vrathams, the Nitya Kalyanam and the Sudarshana Narasimha Homam are held here.",
+        "వీటికి సంప్రదాయ దుస్తులు తప్పనిసరి. టికెట్, సమయం కౌంటర్‌లో లేదా అధికారిక సైట్‌లో చూడండి.",
+        "Traditional dress is required for these. Check tickets and timings at the counter or on the official site."
+      ],
+      "art": 2
+    },
+    {
+      "text": [
+        "ప్రసాదం",
+        "Prasadam",
+        "దర్శనం తర్వాత ప్రసాదం కౌంటర్‌లో లడ్డు, పులిహోర దొరుకుతాయి.",
+        "After darshan, the prasadam counter sells laddu and pulihora.",
+        "ధరలు కౌంటర్‌లోనే చూడండి.",
+        "Check the prices at the counter."
+      ],
+      "art": 4
+    },
+    {
+      "text": [
+        "శివాలయం",
+        "The Shiva temple",
+        "ప్రధాన ఆలయం పక్కనే గుట్టపై శివాలయం ఉంది.",
+        "A Shiva temple stands beside the main temple on the hilltop.",
+        "నరసింహ దర్శనం తర్వాత శివుణ్ని కూడా దర్శించుకోండి.",
+        "After Narasimha's darshan, visit Shiva too."
+      ],
+      "art": 1
+    },
+    {
+      "text": [
+        "పాతగుట్ట ఆలయం",
+        "The old temple (Pathagutta)",
+        "గుట్ట కింద దగ్గర్లో పాత లక్ష్మీ నరసింహ ఆలయం ఉంది. ఇక్కడ స్వామి ఒక పెద్ద బండపై వెలిశాడని చెబుతారు.",
+        "Near the foot of the hill is the old Lakshmi Narasimha temple, where the Lord is said to appear on a large rock.",
+        "దారి స్థానికులను అడగండి.",
+        "Ask locals for the way."
+      ],
+      "art": 3
+    }
+  ],
+  "miss": [
+    [
+      "ఆంజనేయ సన్నిధి కింద గండభేరుండ నరసింహుడి చోటు",
+      "The Gandabherunda spot below the Anjaneya shrine"
+    ],
+    [
+      "స్తంభాలపై 12 మంది ఆళ్వార్లు",
+      "The twelve Alvars on the pillars"
+    ],
+    [
+      "గర్భాలయం పైన బంగారు సుదర్శన చక్రం",
+      "The golden Sudarshana Chakra above the sanctum"
+    ],
+    [
+      "గుట్ట కింద పాతగుట్ట ఆలయం",
+      "The old Pathagutta temple below the hill"
+    ]
+  ],
+  "nearby": [
+    {
+      "title": [
+        "కొలనుపాక సోమేశ్వర స్వామి →",
+        "Kolanupaka Someshwara Swamy →"
+      ],
+      "text": [
+        "సుమారు 22 కి.మీ., ఇదే జిల్లాలో. మా పూర్తి గైడ్ చూడండి.",
+        "About 22 km away in the same district. Open our full guide."
+      ],
+      "href": "/kolanupaka/"
+    },
+    {
+      "title": [
+        "భువనగిరి కోట",
+        "Bhuvanagiri (Bhongir) fort"
+      ],
+      "text": [
+        "యాదగిరిగుట్ట నుంచి సుమారు 16 కి.మీ., హైదరాబాద్ దారిలోనే.",
+        "About 16 km from Yadagirigutta, on the way back to Hyderabad."
+      ]
+    }
+  ],
+  "sevas": {
+    "at_temple": [
+      "నిత్య కళ్యాణం, సుదర్శన నరసింహ హోమం, సత్యనారాయణ స్వామి వ్రతం, అభిషేకం, ఇతర ఆర్జిత సేవలు.",
+      "The Nitya Kalyanam, the Sudarshana Narasimha Homam, the Satyanarayana Swamy vratham, abhishekam and other arjitha sevas."
+    ],
+    "note": [
+      "ఈ సేవలకు, VIP దర్శనానికి సంప్రదాయ దుస్తులు తప్పనిసరి: మహిళలకు చీర లేదా చుడీదార్ దుపట్టాతో, పురుషులకు ధోతి లేదా తెల్ల లుంగీ, ఉత్తరీయం. ధరలు, సమయాలు కౌంటర్‌లో లేదా అధికారిక సైట్‌లో చూడండి.",
+      "Traditional dress is required for these sevas and for VIP darshan: a sari, or a chudidar with a dupatta, for women; a dhoti or white lungi with an uttareeyam for men. Check prices and timings at the counter or on the official site."
+    ],
+    "online": {
+      "status": [
+        "అధికారిక సైట్ ఒక్కటే",
+        "One official site only"
+      ],
+      "text": [
+        "yadagiriguttatemple.telangana.gov.in ఒక్కటే అధికారిక వెబ్‌సైట్ అని దేవస్థానం అక్టోబర్ 2026 లో ప్రకటించింది. YTD, YADADRI వంటి పేర్లతో ఉన్న నకిలీ సైట్లలో దర్శనం, సేవలు, గదులు, విరాళాల కోసం డబ్బు కట్టకండి.",
+        "In October 2026 the Devasthanam said yadagiriguttatemple.telangana.gov.in is its only official website. Do not pay for darshan, sevas, rooms or donations on look-alike sites using names such as YTD or YADADRI."
+      ],
+      "links": [
+        [
+          "Yadagirigutta Devasthanam (official)",
+          "https://yadagiriguttatemple.telangana.gov.in/"
+        ]
+      ]
+    }
+  },
+  "day": [
+    [
+      "5:30",
+      "హైదరాబాద్ నుంచి బయలుదేరండి.",
+      "Leave Hyderabad."
+    ],
+    [
+      "7:30",
+      "యాదగిరిగుట్ట చేరి, ఘాట్ రోడ్డు మీదుగా గుట్టపైకి.",
+      "Reach Yadagirigutta and drive up the ghat road."
+    ],
+    [
+      "8:00",
+      "దర్శనం క్యూ. గోపురాలు, గుహలో స్వామి దర్శనం.",
+      "Join the darshan queue: the gopurams and darshan in the cave."
+    ],
+    [
+      "10:30",
+      "ప్రసాదం, శివాలయం.",
+      "Prasadam and the Shiva temple."
+    ],
+    [
+      "11:30",
+      "పాతగుట్ట ఆలయం.",
+      "The old Pathagutta temple."
+    ],
+    [
+      "12:30",
+      "భోజనం. తర్వాత కొలనుపాక లేదా భువనగిరి కోట, లేదా హైదరాబాద్‌కు తిరుగు ప్రయాణం.",
+      "Lunch, then Kolanupaka or Bhongir fort, or head back to Hyderabad."
+    ]
+  ],
+  "day_note": [
+    "ఇది సూచన మాత్రమే. వారాంతాలు, కార్తీక మాసం, పండుగల్లో ఎక్కువ సమయం పడుతుంది.",
+    "A suggested plan. Weekends, Karthika masam and festivals take much longer."
+  ],
+  "photo_ask": [
+    "యాదగిరిగుట్ట గోపురాలు, విష్ణు పుష్కరిణి, పాతగుట్ట ఆలయం ఫోటోలు మీ దగ్గర ఉన్నాయా? Instagram లో @gudikathalu కి పంపండి, మీ పేరుతో ఇక్కడ పెడతాం.",
+    "Have photos of the Yadagirigutta gopurams, the Vishnu Pushkarini or the old Pathagutta temple? Send them to @gudikathalu on Instagram and we will add them here with your name."
+  ],
+  "credits": []
+}

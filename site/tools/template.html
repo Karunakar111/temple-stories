@@ -440,7 +440,16 @@ footer p{max-width:70ch}
     // 9 jain temple
     B + `<rect x="40" y="96" width="160" height="24" style="fill:#e9e3d8"/><rect x="40" y="112" width="160" height="8" style="fill:#cfc6b6"/>
     ${[[70,60,0.7],[120,40,1],[170,60,0.7]].map(([x,y,k])=>`<path d="M${x-26*k} 96 Q${x-24*k} ${y} ${x} ${y-14*k} Q${x+24*k} ${y} ${x+26*k} 96Z" style="fill:#f4efe6"/><path d="M${x} ${y-14*k} Q${x+24*k} ${y} ${x+26*k} 96 H${x}Z" style="fill:#ddd4c5"/><rect x="${x-1.5}" y="${y-34*k}" width="3" height="${20*k}" style="fill:var(--stone2)"/><path d="M${x+1.5} ${y-34*k} l${16*k} ${5*k} l${-16*k} ${5*k}z" style="fill:var(--kumkum)"/>`).join('')}
-    <rect x="108" y="102" width="24" height="18" rx="10" style="fill:#a89c88"/>`
+    <rect x="108" y="102" width="24" height="18" rx="10" style="fill:#a89c88"/>`,
+    // 10 hill with a ghat road
+    B + `<path d="M10 120 Q70 56 120 46 Q170 56 230 120Z" style="fill:var(--stone)"/><path d="M120 46 Q170 56 230 120 H150 Q140 80 120 46Z" style="fill:var(--stone2)"/>
+    <path d="M60 120 Q140 110 150 96 Q158 84 110 80 Q80 76 104 64 Q116 58 120 50" style="fill:none;stroke:var(--sky2);stroke-width:5;stroke-linecap:round"/>
+    <rect x="104" y="30" width="32" height="18" style="fill:var(--stone3)"/><path d="M110 30 L114 16 H126 L130 30Z" style="fill:var(--stone3)"/>
+    <circle cx="196" cy="34" r="12" style="fill:var(--sun)"/>`,
+    // 11 temple tank
+    B + `<rect x="30" y="104" width="180" height="16" style="fill:var(--stone3)"/><rect x="40" y="112" width="160" height="10" style="fill:var(--stone)"/>
+    <rect x="50" y="120" width="140" height="30" style="fill:#6f9fb0"/><path d="M60 132 q10 -4 20 0 t20 0 M120 140 q10 -4 20 0 t20 0" style="fill:none;stroke:#cfe3ea;stroke-width:2"/>
+    <rect x="30" y="60" width="12" height="44" style="fill:var(--stone2)"/><rect x="198" y="60" width="12" height="44" style="fill:var(--stone2)"/><rect x="24" y="54" width="192" height="8" style="fill:var(--stone3)"/>`
   ];
   const stops = [
     ["స్వాగత ద్వారం", "The welcome arch", "దారిలో రంగుల స్వాగత ద్వారం కనిపిస్తే గుడి దగ్గరకు వచ్చేసినట్టే.", "The colourful arch on the approach road means you are nearly there.", "పార్కింగ్ దగ్గరే చెప్పులు వదిలేయండి.", "Leave footwear near the parking."],
